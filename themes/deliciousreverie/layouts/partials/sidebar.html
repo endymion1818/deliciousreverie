@@ -1,0 +1,20 @@
+	<aside class="container">
+		<div>
+			<div>
+				<h3>LATEST POSTS</h3>
+			</div>
+			<div>
+				<ul class="postsummary">
+					{{ range first 5 .Site.Pages }}
+					<li>
+						<a href="{{ .Permalink }}">{{ .Title }}</a>
+						<br>
+						{{ .Summary }}
+						<br>
+						<a href="{{ .Permalink }}">Read</a>
+					</li>
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+	</aside>

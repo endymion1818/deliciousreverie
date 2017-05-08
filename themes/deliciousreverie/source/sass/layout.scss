@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+.preheader {
+  height: .5%;
+}
+.container {
+    padding: 1% 1em;
+}
+.home-listing li h4 {
+  margin: 4px 0;
+}
+article h1 {
+  margin-bottom: 0;
+  font-size: 1.8em;
+}
+.entry-title {
+  line-height: 1.6em;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 781px) {
+  section.central-content {
+    margin: 0 auto;
+    width: 38em;
+  }
+  .jumbo {
+    padding-top: 10%;
+  }
+}
+@media (max-width: 780px) {
+  .quote {
+    padding-top: 4%;
+  }
+}

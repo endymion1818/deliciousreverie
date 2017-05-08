@@ -1,0 +1,33 @@
+baseURL = "https://deliciousreverie.co.uk/"
+languageCode = "en-gb"
+title = "deliciousreverie"
+theme = "deliciousreverie"
+
+# color-codes for highlighting derived from this style
+pygmentsStyle= "monokai"
+PygmentsCodeFences = true
+pygmentsuseclasses = false
+
+[params]
+  description = "blog of frontend designer benjamin read"
+  author = "Benjamin Read"
+
+defaultContentLanguage = "en"
+
+[languages.en]
+weight = 0
+languageName = "English"
+
+# Main menu
+[[languages.en.menu.main]]
+url    = "/"
+name   = "Home"
+weight = 0
+[[languages.en.menu.main]]
+url    = "/_about"
+name   = "About"
+weight = 0
+[[languages.en.menu.main]]
+url    = "/_portfolio"
+name   = "Portfolio"
+weight = 0

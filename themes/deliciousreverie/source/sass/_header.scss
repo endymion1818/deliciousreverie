@@ -1,0 +1,55 @@
+.title {
+  background-color: $accentgreen;
+}
+.title h1 a,
+.bannertext a {
+  color: $background;
+  // text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+  font-weight: 700;
+  margin-bottom: 1%;
+  text-decoration: none;
+}
+.bannertext {
+  font-size: 2em;
+}
+.jumbo h1  {
+  margin-bottom: 0;
+  line-height: 160%;
+
+  > a {
+    font-size: 2em;
+  }
+}
+.jumbo h2 {
+  text-transform: lowercase;
+  font-weight: 400;
+  color: white;
+  font-size: 130%;
+  line-height: 160%;
+  margin-top: 0;
+}
+nav.primary {
+  display: flex;
+  align-items: center;
+
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style-type: none;
+    display: inline;
+  }
+  a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.25s $bezier;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: rgba(255,255,255,0.5);
+      color: black;
+    }
+  }
+}
