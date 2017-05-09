@@ -42,15 +42,12 @@
 }
 header.title {
 
-	> .central-content {
+	> .container {
 		animation: fadeInUp ease-in-out 1s both;
 	}
 }
-main.main {
-
-	> .central-content {
-		animation: fadeInDown ease-in-out 1s both;
-	}
+main {
+	animation: fadeInDown ease-in-out 1s both;
 }
 .outUp {
   animation: fadeOutUp ease-in-out 0.5s forwards;
