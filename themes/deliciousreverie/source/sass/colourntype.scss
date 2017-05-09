@@ -81,3 +81,23 @@ hr {
 .quote blockquote small {
   display: block;
 }
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+  background: $accentgreen;
+  color: white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: lighten($accentgreen, 20%);
+  }
+}
+@media (min-width: 768px){
+
+  .container {
+    max-width: 60vw;
+    margin: 0 auto;
+  }
+}

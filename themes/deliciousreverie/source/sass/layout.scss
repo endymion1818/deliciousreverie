@@ -21,11 +21,11 @@ article h1 {
   padding-left: 15px;
   padding-right: 15px;
 }
+.postsummary {
+  list-style-type: none;
+  padding-left: 0;
+}
 @media (min-width: 781px) {
-  section.central-content {
-    margin: 0 auto;
-    width: 38em;
-  }
   .jumbo {
     padding-top: 10%;
   }

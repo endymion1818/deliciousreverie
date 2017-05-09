@@ -22,12 +22,14 @@ languageName = "English"
 [[languages.en.menu.main]]
 url    = "/"
 name   = "Home"
-weight = 0
+weight = 1
+
 [[languages.en.menu.main]]
 url    = "/_about"
 name   = "About"
-weight = 0
+weight = 2
+
 [[languages.en.menu.main]]
 url    = "/_portfolio"
 name   = "Portfolio"
-weight = 0
+weight = 3

@@ -24,3 +24,6 @@ _testmain.go
 *.prof
 
 node_modules/
+
+themes/deliciousreverie/static/css/
+themes/deliciousreverie/static/js/

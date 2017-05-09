@@ -6,13 +6,14 @@
 			<div>
 				<ul class="postsummary">
 					{{ range first 5 .Site.Pages }}
+					<br>
 					<li>
-						<a href="{{ .Permalink }}">{{ .Title }}</a>
-						<br>
+						<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
 						{{ .Summary }}
-						<br>
-						<a href="{{ .Permalink }}">Read</a>
+						<br><br>
+						<a class="btn" href="{{ .Permalink }}">Read</a>
 					</li>
+					<hr>
 					{{ end }}
 				</ul>
 			</div>
