@@ -10,4 +10,4 @@ I hope that some of the things I write can support you in your role and also cha
 
 I want to help all of us to continue to become better at this web thing.
 
-[More about me »](/_about "More about Benjamin Read")
+[More about me »](/about "More about Benjamin Read")
