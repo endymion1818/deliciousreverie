@@ -8,7 +8,7 @@
 			</div>
 			<div>
 				{{ range .Params.tags }}
-				Read more in <a class="btn" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+				Read more in <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
 				{{ end }}
 			</div>
 			<div>
