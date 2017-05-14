@@ -2,7 +2,12 @@
 date = "2015-08-10T15:21:21+01:00"
 draft = false
 title = "The Future is Headless"
-
+categories = [
+  "development"
+]
+tags = [ 
+    "industry thought", 
+]
 +++
 
 **If you've been in the industry for any length of time, the chances are that you've been in one of those discussions about CMSes that are _never_ resolved. That is about to change forever ...**

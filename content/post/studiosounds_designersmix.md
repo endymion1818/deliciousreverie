@@ -2,7 +2,12 @@
 date = "2015-02-16T15:21:21+01:00"
 draft = false
 title = "#StudioSounds: Designer's Mix"
-
+categories = [
+  "personal"
+]
+tags = [ 
+    "music", 
+]
 +++
 
 I have recently discovered Designer's Mix, an online site containing designer- and coder- friendly soundtracks of awesomeness.

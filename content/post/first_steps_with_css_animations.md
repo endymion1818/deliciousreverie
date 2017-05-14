@@ -2,7 +2,12 @@
 date = "2015-04-14T15:21:21+01:00"
 draft = false
 title = "First Steps with CSS Animations"
-
+categories = [
+  "development"
+]
+tags = [ 
+    "CSS", 
+]
 +++
 
 **CSS Animations are quickly complimenting if not replacing Javascript for generating a little bit of on-page whizz (that's the technical term). This is the first time I've delved into the syntax for CSS Animations that I hope can replace the tired carousels resident on many websites. Here's how I implemented it.**

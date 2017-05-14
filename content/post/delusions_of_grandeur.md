@@ -2,7 +2,13 @@
 date = "2015-05-26T15:21:21+01:00"
 draft = false
 title = "On Having Delusions of Grandeur"
-
+categories = [
+  "personal"
+]
+tags = [ 
+    "review", 
+    "professional development"
+]
 +++
 
 I'm not as good at this as I thought I was.

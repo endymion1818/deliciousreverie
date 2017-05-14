@@ -2,7 +2,13 @@
 date = "2015-02-14T15:21:21+01:00"
 draft = false
 title = "Design is Broken"
-
+categories = [
+  "design"
+]
+tags = [ 
+    "design thinking", 
+    "professional development"
+]
 +++
 
 I was getting nowhere. For the previous four years, I had been self employed and had managed the transition from print design to web design. I was enjoying life, but then a desire to build on my success as part of a forward thinking and dynamic team motivated me to submit my CV to a number of local agencies.

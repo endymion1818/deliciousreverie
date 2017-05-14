@@ -2,7 +2,12 @@
 date = "2016-01-06T15:21:21+01:00"
 draft = false
 title = "Do We Need Industry Regulation?"
-
+categories = [
+  "development"
+]
+tags = [ 
+    "industry thought"
+]
 +++
 
 **This is an awkward question to ask. There are many benefits that I can see to our clients and to us as professionals, but there are also some really bad pitfalls that could damage our industry.**

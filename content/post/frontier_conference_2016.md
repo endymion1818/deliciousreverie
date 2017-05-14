@@ -2,7 +2,12 @@
 date = "2016-11-16T15:21:21+01:00"
 draft = false
 title = "Frontier Conference 2016"
-
+categories = [
+  "personal"
+]
+tags = [ 
+    "conference writeup", 
+]
 +++
 
 I recently attended what I hope will be the first Frontier Conference held in London. The event was a mix of design & development, with some experienced speakers and some who are fairly new to public speaking. I benefited from the opportunity to network as well as listening to these insightful talks.

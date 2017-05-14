@@ -2,7 +2,15 @@
 date = "2015-04-14T15:21:21+01:00"
 draft = false
 title = "Understanding Developers and Time"
-
+categories = [
+  "development"
+  "project coordination"
+]
+tags = [ 
+    "professional development", 
+    "team interaction",
+    "project management"
+]
 +++
 
 **Project managers (and clients) view time very differently from developers. It's not just in the way we structure our thinking in order to work, but in order to plan and decide too. On 2 occasions recently I have been able to manage expectations better in order to allow both managers and developers the space to complete their respective tasks.**

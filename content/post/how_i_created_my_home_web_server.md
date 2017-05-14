@@ -2,7 +2,12 @@
 date = "2017-02-18T15:21:21+01:00"
 draft = false
 title = "How I Created My Home Web Server"
-
+categories = [
+  "development"
+]
+tags = [ 
+    "sysadmin", 
+]
 +++
 
 **Is it just me or does Apple's iCloud seem like a very simple solution to a problem all of us in a connected world face? That of storing, managing and sharing photos of our loved ones, holidays and interests with others?**

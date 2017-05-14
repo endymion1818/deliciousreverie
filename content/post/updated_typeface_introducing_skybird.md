@@ -2,7 +2,12 @@
 date = "2016-04-28T15:21:21+01:00"
 draft = false
 title = "Updated Typeface: Introducing Skybird"
-
+categories = [
+  "design"
+]
+tags = [ 
+    "typography", 
+]
 +++
 
 **So a few weeks' ago I discovered a very small but excellently designed typeface from a Phitra Design called [Skybird](http://phitradesign-fonts.com/#skybird "Phitra Design - Skybird").** I decided almost at once that I would use it on deliciousreverie, and replace the old typeface, Vollkorn from Google Fonts.

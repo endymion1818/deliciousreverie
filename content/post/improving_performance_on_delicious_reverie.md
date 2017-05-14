@@ -2,7 +2,12 @@
 date = "2015-10-06T15:21:21+01:00"
 draft = false
 title = "Improving Performance on Deliciousreverie.co.uk"
-
+categories = [
+  "development"
+]
+tags = [ 
+    "performance", 
+]
 +++
 
 **I can't possibly think I could get away with [a post about performance](http://deliciousreverie.co.uk/blog/post.php?s=2015-10-06-why-performance-matters "Why Performance Matters on deliciousreverie.co.uk") when my own site wasn't as spot-on as I could get. So I've been spending a bit of time investigating how to reduce my load times. This is what I found out and how I implemented it.**

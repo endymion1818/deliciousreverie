@@ -2,7 +2,12 @@
 date = "2015-04-14T15:21:21+01:00"
 draft = false
 title = "#StudioSounds: Crossroads Playlist"
-
+categories = [
+  "personal"
+]
+tags = [ 
+    "music", 
+]
 +++
 
 Here's another fantastic playlist from Designer's Mix, called Crossroads. If you're an 80s kid, or possibly 90s too, you'll love the synth beats of this track listing.

@@ -2,7 +2,12 @@
 date = "2016-08-24T15:21:21+01:00"
 draft = false
 title = "First Steps with zsh"
-
+categories = [
+  "development"
+]
+tags = [ 
+    "command line", 
+]
 +++
 
 **I'm one of those guys (coming from a design background) that was terrified of the command line. Literally, terrified. I knew enough that simple commands could irreparably break my computer, and that scared me. But gradually, I've begun to use more command line tools, and recently discovered ways to make my workflow easier by using zsh terminal commands.**

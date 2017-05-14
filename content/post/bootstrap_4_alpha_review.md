@@ -2,7 +2,13 @@
 date = "2015-09-10T15:21:21+01:00"
 draft = false
 title = "Bootstrap 4 Alpha Review"
-
+categories = [
+  "development"
+]
+tags = [ 
+    "CSS",
+    "Bootstrap" 
+]
 +++
 
 **Bootstrap 4 was released last week, and I downloaded it straight away, plugging it into my Wordpress base theme. Some things that have been added to the project are really good ... but the team have made some interesting design choices in what they've changed ...**

@@ -2,7 +2,12 @@
 date = "2015-03-14T15:21:21+01:00"
 draft = false
 title = "Things I Learned By Working for Free"
-
+categories = [
+  "personal"
+]
+tags = [ 
+    "professional development", 
+]
 +++
 
 Developers sometimes get asked to do stuff for free. If that happens, it generally can be a warning sign that would be right to steer well clear of. It's easy to end up feeling cheated.

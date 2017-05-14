@@ -2,7 +2,12 @@
 date = "2015-11-17T15:21:21+01:00"
 draft = false
 title = "My Workflow Today"
-
+categories = [
+  "development"
+]
+tags = [ 
+    "tools and processes", 
+]
 +++
 
 **Workflows and tools are constantly changing. The tools we use and the workflow we have means we've simplified our build process and cut out some of the repetitive tasks, so that we can concentrate on simply doing the stuff we love as well as we can. This is my current set up:**

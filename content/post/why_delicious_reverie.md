@@ -2,7 +2,13 @@
 date = "2015-02-11T15:21:21+01:00"
 draft = false
 title = "Why 'Delicious Reverie'?"
-
+categories = [
+  "personal"
+]
+tags = [ 
+    "explaining things",
+    "professional development"
+]
 +++
 
 I may have confused some of you with titling my personal site "Delicious Reverie". So I'm going to attempt to explain my decision, and discuss perhaps the greatest work of fiction ever produced in either French or English...

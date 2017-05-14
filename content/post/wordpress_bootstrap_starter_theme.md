@@ -2,7 +2,13 @@
 date = "2015-06-26T15:21:21+01:00"
 draft = false
 title = "I Built A Wordpress Bootstrap starter theme"
-
+categories = [
+  "development"
+]
+tags = [ 
+    "PHP" ,
+    "Wordpress", 
+]
 +++
 
 **I've been using the esteemed [Rachel Baker's BootstrapWP](https://github.com/rachelbaker/bootstrapwp-Twitter-Bootstrap-for-WordPress/tree/bootstrap3 "Rachel Baker's BootstrapWP on GitHub") theme for a while, but recently I decided to build my own Wordpress / Bootstrap starter theme. Here's why I took this step and what I plan to do with it in the future.**

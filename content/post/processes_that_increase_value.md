@@ -2,14 +2,18 @@
 date = "2015-02-25T15:21:21+01:00"
 draft = false
 title = "Processes that Increase Value: A Cost Effective Service"
-
+categories = [
+  "project coordination",
+  "design"
+]
+tags = [ 
+    "year in review", 
+]
 +++
 
 **I've recently taken a step back from my work to scope out a process that would make an organisation as efficient, competent and successful as it can be in the hopes of having a clearer understanding of where we are as a company and where we have the opportunity to improve.**
 
 I was surprised to find some key lessons in my analysis that I hope you can benefit from too.
-
-This is part 1 of a series, which I hope will eventually include _Part 2:_ Increasing value to stakeholders, _Part 3:_ Providing a build that matches clients needs and _Part 4:_ Demonstrating confidence in the value of the organisation.
 
 ### 1. Clearly designed processes that are followed through consistently
 
@@ -29,7 +33,6 @@ This almost goes without saying, and has saved my bacon on a number of occasions
 
 I've used GitHub extensively, and love it.
 
-![Github's Octocat](/perch/resources/screen-shot-2015-03-31-at-17.38.00-1.png)
 
 ### 4. Deliver websites on time
 

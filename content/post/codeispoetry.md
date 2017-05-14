@@ -2,7 +2,14 @@
 date = "2015-02-06T15:21:21+01:00"
 draft = false
 title = "Code really is Poetry"
-
+categories = [
+  "personal"
+]
+tags = [ 
+    "professional development", 
+    "soft skills",
+    "poetry"
+]
 +++
 
 I'm not sure if you remember the early days of the web.

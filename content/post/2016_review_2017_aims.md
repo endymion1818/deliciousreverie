@@ -2,6 +2,13 @@
 date = "2017-01-12T15:21:21+01:00"
 draft = false
 title = "2016 Review / 2017 Aims"
+categories = [
+  "personal"
+]
+tags = [ 
+    "year in review", 
+]
+
 
 +++
 

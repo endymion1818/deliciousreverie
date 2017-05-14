@@ -2,6 +2,12 @@
 date = "2015-07-04T15:21:21+01:00"
 draft = false
 title = "Three Tips to Help Effect Change"
+categories = [
+  "soft skills"
+]
+tags = [ 
+    "managing up", 
+]
 
 +++
 

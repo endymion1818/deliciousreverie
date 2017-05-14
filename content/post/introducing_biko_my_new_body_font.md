@@ -2,7 +2,13 @@
 date = "2016-12-06T15:21:21+01:00"
 draft = false
 title = "Introducing Biko: my new body font"
-
+categories = [
+  "personal",
+  "design"
+]
+tags = [ 
+    "typography", 
+]
 +++
 
 **Typography on the web is a world of hard choices. I started this website using quite a different set of fonts than I have now. But since then my perspective has changed on a few things, and I've finally switched to an entirely new set of fonts for deliciousreverie.co.uk. Here's a few of the processes I've been through when considering these changes.**

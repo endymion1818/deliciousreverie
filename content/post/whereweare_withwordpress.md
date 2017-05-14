@@ -2,7 +2,13 @@
 date = "2015-02-18T15:21:21+01:00"
 draft = false
 title = "Where We Are with Wordpress"
-
+categories = [
+  "development"
+]
+tags = [ 
+    "industry thought", 
+    "wordpress"
+]
 +++
 
 **Wordpress is becoming to websites what Facebook is to the Internet in some countries: inseperable. Almost as if you can't build a website without Wordpress, at least not one that has a Content Management System (CMS). I'm making a case for change.**

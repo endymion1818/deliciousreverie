@@ -2,7 +2,12 @@
 date = "2015-02-11T15:21:21+01:00"
 draft = false
 title = "Maintaining Goodwill on Difficult Projects"
-
+categories = [
+  "project coordination"
+]
+tags = [ 
+    "client interaction", 
+]
 +++
 
 It's been great to work with some excellent developers recently, but on one or two occasions, like all of us at some point, we've had relationships with clients and sometimes suppliers, that have been tested.

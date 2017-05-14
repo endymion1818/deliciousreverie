@@ -2,7 +2,12 @@
 date = "2015-09-10T15:21:21+01:00"
 draft = false
 title = "What I learned this year"
-
+categories = [
+  "personal"
+]
+tags = [ 
+    "year in review", 
+]
 +++
 
 **For the past year and a bit, I've worked at Blaze Communication, a marketing agency in Enfield. I've learned so many new things at this company. My knowledge and understanding is far, far different than it was a year ago. Here are some of my observations.**

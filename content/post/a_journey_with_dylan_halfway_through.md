@@ -2,6 +2,12 @@
 date = "2016-12-06T15:21:21+01:00"
 draft = false
 title = "A Journey With Dylan: Halfway Through"
+categories = [
+  "personal"
+]
+tags = [ 
+    "music", 
+]
 
 +++
 

@@ -2,7 +2,12 @@
 date = "2015-11-01T15:21:21+01:00"
 draft = false
 title = "Project Documentation Templates"
-
+categories = [
+  "project coordination"
+]
+tags = [ 
+    "tools and processes", 
+]
 +++
 
 **Writing documentation for new team members - or just to provide a referenceable standard - is hard. I've provided these documents with the aim of helping this process.**

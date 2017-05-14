@@ -2,7 +2,12 @@
 date = "2015-02-23T15:21:21+01:00"
 draft = false
 title = "Normal People Don't Understand Sidebars"
-
+categories = [
+  "design"
+]
+tags = [ 
+    "design thinking", 
+]
 +++
 
 **We've reached a point that, like the image carousel, sidebars have become overused and for a lot of projects superfluous. And, as I've discovered, people don't always understand the concept or how they work.**

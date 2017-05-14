@@ -2,7 +2,12 @@
 date = "2016-03-22T15:21:21+01:00"
 draft = false
 title = "Delaying click event in vanilla JavaScript"
-
+categories = [
+  "development"
+]
+tags = [ 
+    "javascript", 
+]
 +++
 
 **I was inspired by Rachel Nabors' site to add a short delay to users' clicking on a link on my website, so that I could add a brief animation that would run before the redirection took place. Here's how I did it.**

@@ -2,7 +2,12 @@
 date = "2016-12-02T15:21:21+01:00"
 draft = false
 title = "A Journey with Dylan"
-
+categories = [
+  "personal"
+]
+tags = [ 
+    "music", 
+]
 +++
 
 **I've been in & out of love with Bob Dylan for many years. I started listening in my early 20's, bought a compilation album, but I have to say that I just didn't get it. Now, 16 years later, I'm listening to every album he's produced so far.**
