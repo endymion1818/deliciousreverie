@@ -5,7 +5,7 @@
 			<h1>{{ .Title }}</h1>
 			<div>
 				<ul class="postsummary">
-					{{ range .Site.Pages }}
+					{{ range (where .Site.Pages "Type" "post") }}
 					<br>
 					<li>
 						<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
@@ -23,12 +23,10 @@
 							&nbsp; &bull; &nbsp;
 							<time>{{ .Date.Format "Jan 01 2006" }}</time>
 						</span>
-						<br><br>
-						{{ .Summary }}
-						<br><br>
+						<br>
+						<p>{{ .Summary }}</p>
 						<a class="btn" href="{{ .Permalink }}">Read</a>
 					</li>
-					<hr>
 					{{ end }}
 				</ul>
 			</div>
