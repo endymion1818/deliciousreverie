@@ -25,11 +25,16 @@ name   = "Home"
 weight = 1
 
 [[languages.en.menu.main]]
-url    = "/_about"
+url    = "/about"
 name   = "About"
 weight = 2
 
 [[languages.en.menu.main]]
-url    = "/_portfolio"
+url    = "/portfolio"
 name   = "Portfolio"
 weight = 3
+
+[[languages.en.menu.main]]
+url    = "/blog"
+name   = "Blog"
+weight = 4

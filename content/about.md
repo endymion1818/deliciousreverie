@@ -1,5 +1,5 @@
 +++
-date = "2017-05-07T16:12:46+01:00"
+date = "2012-05-07T16:12:46+01:00"
 draft = false
 title = "About"
 type = "staticpage"
@@ -16,7 +16,7 @@ As a web designer, I quickly found a background in [game level design](http://si
 
 I'm a proponent of designing / deciding in the browser.
 
-###Development focus
+### Development focus
 
 I started learning modern development in HTML and CSS because I had some grounding in [table layouts from an earlier life](/blog/post.php?s=2015-02-06-code-really-is-poetry "My first blog entry - first brushes with the Web").
 

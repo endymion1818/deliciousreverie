@@ -1,11 +1,11 @@
-	<aside class="container animateOutUp">
-		<div class="animateInDown">
-			<div>
-				<h3>Latest Posts</h3>
-			</div>
+
+{{ partial "header.html" . }}
+	<main>
+		<article class="container animateOutUp">
+			<h1>{{ .Title }}</h1>
 			<div>
 				<ul class="postsummary">
-					{{ range first 5 .Site.Pages }}
+					{{ range .Site.Pages }}
 					<br>
 					<li>
 						<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
@@ -17,5 +17,6 @@
 					{{ end }}
 				</ul>
 			</div>
-		</div>
-	</aside>
+		</article>
+	</main>
+{{ partial "footer.html" . }}
