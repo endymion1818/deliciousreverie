@@ -2,21 +2,17 @@
 	<main>
 		<article class="container">
 			<h1>{{ .Title }}</h1>
-			<time>{{ .Date.Format "02.01.2006 15:04" }}</time>
+			<time>{{ .Date.Format "Jan 01 2006" }}</time>
 			<div>
 				{{ .Content }}
 			</div>
 			<div>
-				<ul id="tags">
-					{{ range .Params.tags }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
-					{{ end }}
-				</ul>
+				{{ range .Params.tags }}
+				Read more in <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+				{{ end }}
 			</div>
 			<div>
-				{{ template "_internal/disqus.html" . }}
 			</div>
 		</article>
 	</main>
-{{ partial "sidebar.html" . }}
 {{ partial "footer.html" . }}

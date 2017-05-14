@@ -30,8 +30,22 @@ article h1 {
     padding-top: 10%;
   }
 }
+@media (min-width: 768px){
+
+  .container {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 780px) {
   .quote {
     padding-top: 4%;
+  }
+}
+@media (min-width: 992px){
+
+  .container {
+    max-width: 42vw;
+    margin: 0 auto;
   }
 }

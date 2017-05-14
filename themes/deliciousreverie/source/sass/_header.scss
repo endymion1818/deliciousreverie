@@ -15,10 +15,6 @@
 .jumbo h1  {
   margin-bottom: 0;
   line-height: 160%;
-
-  > a {
-    font-size: 2em;
-  }
 }
 .jumbo h2 {
   text-transform: lowercase;
@@ -44,12 +40,29 @@ nav.primary {
     color: white;
     text-decoration: none;
     transition: all 0.25s $bezier;
+    display: inline-block;
 
     &:hover,
     &:active,
     &:focus {
       background-color: rgba(255,255,255,0.5);
       color: black;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .jumbo h1  {
+
+    > a {
+      font-size: 1em;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .jumbo h1  {
+
+    > a {
+      font-size: 2em;
     }
   }
 }

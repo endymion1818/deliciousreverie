@@ -20,6 +20,8 @@
 							{{ range .Params.tags }}
 								<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
 							{{ end }}
+							&nbsp; &bull; &nbsp;
+							<time>{{ .Date.Format "Jan 01 2006" }}</time>
 						</span>
 						<br><br>
 						{{ .Summary }}
