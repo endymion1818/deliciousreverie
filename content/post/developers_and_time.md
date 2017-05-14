@@ -3,7 +3,7 @@ date = "2015-04-14T15:21:21+01:00"
 draft = false
 title = "Understanding Developers and Time"
 categories = [
-  "development"
+  "development",
   "project coordination"
 ]
 tags = [ 
