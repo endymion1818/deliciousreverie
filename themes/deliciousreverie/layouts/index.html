@@ -2,5 +2,25 @@
 	<main class="animateOutUp">
 			{{ partial "articlestatic.html" . }}
 	</main>
-{{ partial "sidebar.html" . }}
+    <aside class="container animateOutUp">
+        <div class="animateInDown">
+            <div>
+                <h3>Latest Posts</h3>
+            </div>
+            <div>
+                <ul class="postsummary">
+                    {{ range first 5 .Site.Pages }}
+                    <br>
+                    <li>
+                        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                        {{ .Summary }}
+                        <br><br>
+                        <a class="btn" href="{{ .Permalink }}">Read</a>
+                    </li>
+                    <hr>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </aside>
 {{ partial "footer.html" . }}

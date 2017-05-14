@@ -1,20 +1,23 @@
 	<aside class="container animateOutUp">
 		<div class="animateInDown">
 			<div>
-				<h3>Latest Posts</h3>
+				<h3>All Categories</h3>
 			</div>
 			<div>
-				<ul class="postsummary">
-					{{ range first 5 .Site.Pages }}
-					<br>
-					<li>
-						<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-						{{ .Summary }}
-						<br><br>
-						<a class="btn" href="{{ .Permalink }}">Read</a>
-					</li>
-					<hr>
-					{{ end }}
+				<ul id="all-tags">
+				  {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+				    <li><a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+				  {{ end }}
+				</ul>
+			</div>
+			<div>
+				<h3>All Tags</h3>
+			</div>
+			<div>
+				<ul id="all-tags">
+				  {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+				    <li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+				  {{ end }}
 				</ul>
 			</div>
 		</div>
