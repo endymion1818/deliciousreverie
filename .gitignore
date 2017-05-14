@@ -25,5 +25,4 @@ _testmain.go
 
 node_modules/
 
-themes/deliciousreverie/static/css/../*
-themes/deliciousreverie/static/js/../*
+public/
