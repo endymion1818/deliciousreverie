@@ -20,7 +20,7 @@ If you take a look at the code on the [FutureLearn website](http://futurelearn.c
 
 Yes, it's true that you can nest elements inside one another, and therefore more easily scan your CSS. So an element would be described something like this:
 
-```scss
+{{< highlight css >}}
 .panel {
     ...
 
@@ -37,7 +37,8 @@ Yes, it's true that you can nest elements inside one another, and therefore more
         }
     }
 }
-```
+{{< /highlight >}}
+
 But have you ever looked at the output for that in your CSS file?
 
 ```scss
