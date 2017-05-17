@@ -34,7 +34,7 @@ module.exports = function(grunt) {
       },
       postcss: {
         options: {
-          map: true, // inline sourcemaps
+          map: { inline: false }, // inline sourcemaps
           processors: [
             require('autoprefixer-core')({browsers: 'last 2 versions'}), // add vendor prefixes
             // require('cssnano')() // minify the result
