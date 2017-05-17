@@ -1,12 +1,10 @@
 @font-face {
   font-family: 'skybird';
-  src: url('../fonts/Skybird-Regular.woff2') format('woff2'),
-       url('../fonts/Skybird-Regular.woff') format('woff'),
+  src: url('../fonts/Skybird-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'biko';
-  src: url('../fonts/Biko_Regular.woff2') format('woff2'),
-       url('../fonts/Biko_Regular.woff') format('woff'),
+  src: url('../fonts/Biko_Regular.woff2') format('woff2');
 }
 html {
   font-size: 16px;
