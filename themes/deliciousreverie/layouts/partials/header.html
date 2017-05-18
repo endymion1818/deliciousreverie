@@ -2,8 +2,14 @@
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
 	<meta charset="UTF-8">
+	<!-- gah, browsers -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- preload pls -->
+	<link rel="preload" as="image" href="/img/fancybg-light.jpg">
+	<link rel="preload" as="font" href="/fonts/Biko_Regular.woff2">
+	<link rel="preload" as="font" href="/fonts/Skybird_Regular.woff2">
+	<!-- content -->
 	<title>{{ .Title }} | Delicious Reverie - blog of developer Benjamin Read</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
