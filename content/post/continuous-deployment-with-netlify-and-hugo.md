@@ -48,6 +48,7 @@ I eventually found out that you need to add a `netlify.toml` file in the root di
 
 That seemed to work! I switched my DNS over to Cloudflare and the site went live!
 
+
 ## Using Pygments on Netlify
 
 One thing I noticed post-launch was a that a Python dependency I had started to use wasn't working on Netlify. My code blocks would render as plain text, making them unfathomable and messy.
@@ -56,24 +57,17 @@ I came across [this post - entitled Hugo on Netlify](https://discuss.gohugo.io/t
 
 So I ran `hugo` again, added the commit, and waited ... and waited. Quite a long wait this time actually. Pygments does slow Netlify down quite a bit. But the alternative to Pygments is a Javascript library, which would slow down my users. So I don't mind taking a bit of a hit to save them the extra load time.
 
-## Custom Headers
 
-After this, my site loaded in around 2 seconds. I'd shaved a whole second off by using AWS, Cloudflare and a static site generator. Whoo hoo!
+## HTTPS
 
-I celebrated by adding a large background image that added another second to the load time.
+I initially had trouble setting up by DNS with Cloudflare and applying Netlify's HTTPs certificate. It turns out, after having talked to Netlify, that they don't have IPv6 yet. Cloudflare adds an AAAA record to your DNS which messes up the HTTPS somehow. 
 
-To reduce the weight, I cropped the file as much as I dared, then compressed the file using [kraken.io](https://kraken.io). I also added _another_ config file to the root directory to specify some custom headers for the project. In a file called `_headers` I added the following:
+Once I'd disabled Cloudflare's CDN, I reapplied the certificate and everything worked fine, and I was able to secure my content.
 
-```
-Link: </img/fancybg-light.jpg>; rel=preload; as=image, </fonts/Biko_Regular.woff2>; rel=preload; as=font, </fonts/Skybird_Regular.woff2>; rel=preload; as=font
-```
-This allowed the browser to prioritise my `woff2` fonts and the background image, so that they'd begin to load before they were found in the CSS file. This shaved off a further few milliseconds. 
-
-One caveat: that means I now have 3 seperate files to configure Netlify. Why?! Can't we have a `netlify.toml` that contains all settings, requirements and headers?
 
 ## Aims
 
-My site now loads in 2.285 seconds. This still seems to be quite large time for 185kb of content. I'm going to continue to refine this so that hopefully I can find out how to cache static content, or find other improvements that'll hopefully bring this down as much as I can.
+My site now loads in 1.526 seconds and serves 182kb of content in 8 requests. I'm going to continue to refine this so that hopefully I can find out how to preload fonts and the background image, inline my CSS and JavaScript, or find other improvements that'll hopefully bring this down as much as I can.
 
 I also aim to add commenting via [Staticman](https://staticman.net), contact forms using [Formspree](https://formspree.io), and [Forestry](https://forestry.io) as a CMS so that I can author posts online.
 
@@ -83,6 +77,11 @@ Ahh, static sites aren't so static after all, are they?
 
 As the web becomes more bloated, I really believe static site generators are going to be the way to get ahead. Once you add the previously mentioned services, they can adequately compete with some of the lumbering, huge CMSes out there (of which [Perch](https://grabaperch.com) isn't one, I hasten to add).
 
-Continuous delivery is a bit cumbersome. I'm on the free Netlify plan, which means I get a lot less in terms of build previews. However, it's certainly a lot more safe than the shaky transfers of FTP/SFTP, and because it's built on the server for you, if it fails you won't break your site, which I know I've done a few times.
+Continuous delivery can a bit cumbersome to manage for some projects in my view. I say this because my build and production environments were different and that caused me a few issues. I'm on the free Netlify plan, which means I get a lot less in terms of build previews. Looking through their documentation, it seems there's a lot more available on their paid tiers.
+
+That being said, it's certainly a lot more safe than the somewhat shakier transfers of FTP/SFTP. One of the benefits became real to me when a friend of mine submitted a pull request, but I was able to see before I merged the code that the change would've broken my site, resulting in down time. That was a really useful feature. Now I know I can change my theme, and even if it succeeds locally, if it fails on production you won't break your site, which I know I've done a few times.
 
 
+#### Addendum
+
+This article was edited to remove the references to custom headers, which aren't yet available on Netlify yet.
