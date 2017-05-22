@@ -40,11 +40,6 @@ name   = "Links"
 weight = 4
 
 [[languages.en.menu.main]]
-url    = "/blog"
-name   = "Blog"
-weight = 5
-
-[[languages.en.menu.main]]
 url    = "/contact"
 name   = "Contact"
 weight = 6

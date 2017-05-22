@@ -28,5 +28,3 @@ A. Go right ahead.
     <br>
     <input class="btn" type="submit" value="Send">
 </form>
-
----

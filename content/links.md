@@ -56,5 +56,3 @@ It's the only way to experience the web as it was intended.
 ### Keeps Me Sane
 - [DesignersMX: Your Mix of Inspiration](https://designers.mx)
 - [JW.org](https://www.jw.org)
-
----
