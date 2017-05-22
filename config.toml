@@ -30,16 +30,11 @@ name   = "About"
 weight = 2
 
 [[languages.en.menu.main]]
-url    = "/portfolio"
-name   = "Portfolio"
-weight = 3
-
-[[languages.en.menu.main]]
 url    = "/links"
 name   = "Links"
-weight = 4
+weight = 3
 
 [[languages.en.menu.main]]
 url    = "/contact"
 name   = "Contact"
-weight = 6
+weight = 4
