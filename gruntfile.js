@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         js: {
           files: {
             // 'assets/js/deliciousreverie-headerscripts.js': ['assets/source/js/header/*.js'],
-            'themes/deliciousreverie/static/js/deliciousreverie-footerscripts.js': ['themes/deliciousreverie/source/js/footer/*.js'],
+            'themes/deliciousreverie-v2/static/js/deliciousreverie-footerscripts.js': ['themes/deliciousreverie-v2/source/js/footer/*.js'],
           },
         },
       },
@@ -15,21 +15,21 @@ module.exports = function(grunt) {
         my_target: {
           files: {
             // 'assets/js/deliciousreverie-headerscripts.min.js': ['assets/js/deliciousreverie-headerscripts.js'],
-            'themes/deliciousreverie/static/js/deliciousreverie-footerscripts.min.js': ['themes/deliciousreverie/static/js/deliciousreverie-footerscripts.js']
+            'themes/deliciousreverie-v2/static/js/deliciousreverie-footerscripts.min.js': ['themes/deliciousreverie-v2/static/js/deliciousreverie-footerscripts.js']
           }
         }
       },
       sass: {
         dist: {
           files: {
-            'themes/deliciousreverie/static/css/deliciousreverie.css': 'themes/deliciousreverie/source/sass/all.scss'
+            'themes/deliciousreverie-v2/static/css/deliciousreverie.css': 'themes/deliciousreverie-v2/source/sass/all.scss'
           }
         }
       },
       cssmin : {
         css:{
-          src: 'themes/deliciousreverie/static/css/deliciousreverie.css',
-          dest: 'themes/deliciousreverie/static/css/deliciousreverie.min.css'
+          src: 'themes/deliciousreverie-v2/static/css/deliciousreverie.css',
+          dest: 'themes/deliciousreverie-v2/static/css/deliciousreverie.min.css'
         }
       },
       postcss: {
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
           ]
         },
         dist: {
-          src: 'themes/deliciousreverie/static/css/*.css'
+          src: 'themes/deliciousreverie-v2/static/css/*.css'
         }
       }
   });

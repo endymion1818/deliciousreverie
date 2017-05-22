@@ -1,0 +1,12 @@
+form#contactform {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    form#contactform {
+        max-width: 80%;
+    }
+    input.btn {
+        width: 100px
+    }
+}
