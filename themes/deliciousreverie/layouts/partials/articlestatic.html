@@ -1,9 +1,0 @@
-<article class="container animateOutUp">
-  <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-  {{ range .Params.tags }}
-  <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-  {{ end }}
-  <div>
-    {{ .Content }}
-  </div>
-</article>

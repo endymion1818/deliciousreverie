@@ -1,0 +1,15 @@
+{{ partial "head" . }}
+<main>
+    <div class="container animateOutUp">
+  <header>
+    {{ partial "content/h1-title" . }}
+  </header>
+  <ul class="container">
+    {{ range $index, .Paginator.Pages }}
+      <li>{{ partial "content/title-link" . }}</li>
+    {{ end }}
+  </ul>
+  {{ partial "content/pagination.html" . }}
+</div>
+</main>
+{{ partial "foot" . }}

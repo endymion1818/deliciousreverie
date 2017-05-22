@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'skybird';
+  src: url('../fonts/Skybird-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'biko';
+  src: url('../fonts/Biko-Regular.woff2') format('woff2');
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  background: 
+      linear-gradient(
+        rgba(247, 235, 193, 0.2),
+        rgba(247, 235, 193, 0.8)
+      ),
+      url('../img/fancybg-light.jpg');
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  font-size: 110%;
+  font-family: 'biko', verdana, sans-serif;
+}
+header.site-header,
+section.quote {
+    background: 
+      linear-gradient(
+        rgba(51, 31, 51, 0.8),
+        rgba(51, 31, 51, 0.95)
+      ),
+      url('../img/fancybg-light.jpg');
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+  font-family: 'skybird', serif;
+  color: $main;
+}
+h1,
+h2,
+h3,
+blockquote {
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 0;
+}
+h3 {
+  margin-top: 1.6em;
+}
+h2 a {
+  text-decoration: none;
+}
+h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 120%;
+}
+p {
+  font-size: 110%;
+  line-height: 1.4em;
+}
+strong {
+  line-height: 1.2em;
+}
+a {
+  color: #4f4f4f;
+
+  &:hover,
+  &:active {
+    color: #878787;
+  }
+}
+i {
+  font-style: italic;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+hr {
+  border: 1px solid $accentgreen;
+  margin: 2em 0 0;
+}
+.quote blockquote {
+  color: white;
+  font-size: 1.8em;
+  margin: 0;
+}
+.quote blockquote small {
+  display: block;
+}
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+  background: $accentgreen;
+  color: white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: lighten($accentgreen, 20%);
+  }
+}

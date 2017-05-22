@@ -1,0 +1,8 @@
+{{ partial "head" . }}
+<main>
+    <div class="container animateOutUp">
+      {{ .Render "single.content" }}
+      {{ partial "content/sidebar" .}}
+</div>
+</main>
+{{ partial "foot" . }}

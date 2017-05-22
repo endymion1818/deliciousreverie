@@ -1,0 +1,10 @@
+{{ partial "head" . }}
+<main>
+    <div class="container animateOutUp">
+      {{ .Render "single.content" }}
+        {{ range (where .Site.RegularPages "Type" "post") }}
+            {{ .Render "summary" }}
+        {{ end }}
+</div>
+</main>
+{{ partial "foot" . }}

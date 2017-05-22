@@ -1,0 +1,24 @@
+<footer>
+    <!--navigation-->
+    {{ if .IsPage }}
+      {{ if or ( .NextInSection ) ( .PrevInSection ) }}
+        <nav><ul class="pagination">
+        {{ if .PrevInSection }}
+            <li class="page-item">
+              <a href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.Title }} " class="page-link">
+                <span aria-hidden="true">&larr;</span>{{ .Site.Data.Strings.previous }}
+              </a>
+            </li>
+        {{end}}
+
+        {{ if .NextInSection }}
+          <li class="page-item">
+            <a href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title }}" class="page-link">
+                {{ .Site.Data.Strings.next }} <span aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+        {{end}}
+        </ul> </nav>
+      {{ end }}
+    {{ end }}
+</footer>

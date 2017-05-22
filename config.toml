@@ -1,7 +1,7 @@
 baseURL = "https://deliciousreverie.co.uk"
 languageCode = "en-gb"
 title = "Delicious Reverie"
-theme = "deliciousreverie"
+theme = "deliciousreverie-v2"
 
 # color-codes for highlighting derived from this style
 pygmentsStyle= "monokai"
