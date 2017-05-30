@@ -8,11 +8,9 @@ type = "staticpage"
 
 ## A links page?! This is a bit old school, isn't it?
 
-I don't believe it is. Although I've seen the world wide web morph from AOL and eWorld to Angelfire and Geocites, to a massive conglomeration of independent city-states, to the control of the Megacorporations of today, I still fight for the IndieWeb. 
+I don't believe it is. Although I've seen the world wide web morph from AOL and eWorld to Angelfire and Geocites, to a massive conglomeration of independent city-states, to the control of the Megacorporations of today, I still fear the loss of the World Wide Web as Sir Tim saw it:— a vast store of interconnected knowledge.
 
 [Here's why.](https://medium.com/matter/the-web-we-have-to-save-2eb1fe15a426)
-
-It's the only way to experience the web as it was intended.
 
 ### This Website
 
