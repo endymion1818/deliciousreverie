@@ -209,11 +209,18 @@ code {
   padding-left: 0;
   line-height: 120%; }
 
-footer {
+.pagination {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  list-style-type: none; }
+
+footer.site-footer {
   background-color: #333333;
   color: white; }
 
-footer a {
+footer.site-footer a {
   color: white; }
 
 @keyframes fadeInUp {

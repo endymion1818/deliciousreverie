@@ -1,7 +1,12 @@
-footer {
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+footer.site-footer {
   background-color: $main;
   color: white;
 }
-footer a {
+footer.site-footer a {
   color: white;
 }

@@ -6,26 +6,28 @@ type = "staticpage"
 
 +++
 
-This is hard to write. Identifying your own core skills is difficult. It becomes more so when you're patently trying to eschew overconfident, bombastic and brash attitudes and behaviour. But doing so is, I believe, crucial to the success of what I do. So I'm grouping this under a couple of subheadings that I hope are useful to you.
+This is hard to write. Identifying your own core skills is difficult. It becomes more so because I'm patently trying to minimise attitudes that can have a negative effect on my work. I'm grouping this under a couple of subheadings that I hope are useful to you.
+
+To begin, let me say that I really love web development. It's my hobby as well as my profession. Outside of work hours I'm often on Twitter, Stack Overflow and on a number of Slack channels actively discussing industry concerns. I'm on here writing blog posts. Or I'm investigating some new shiny that may be hopefully useful to my professional work.
 
 ## Background
 
-I started off wanting to be a writer and working as a graphic designer before I got really involved in the web. This hasn't hurt my career. Far from that, it's actually helped me express my intentions more clearly and comprehend others' assumptions more readily. I got involved in the web in earnest in about 2011, first of all working freelance and subsequently a number of small - medium sized businesses.
+I started off wanting to be a writer and working as a graphic designer before I got really involved in the web. This background has helped me express my intentions more clearly and comprehend others' assumptions more readily. I got involved in the web in earnest in about 2011, first of all working freelance and subsequently a number of small - medium sized businesses.
+
+Because of this I'm used to mucking in and doing whatever becomes necessary for the success of the project and the team.
 
 ## Technical Skills
 
-I will never be the best developer in the world. That I readily acknowledge. But in my experience I have proved competent enough at the following to hold my own in a development team.
-
 ### PHP
-My preferred framework is Laravel, but I've also worked with Perch and other systems such as OpenCart. The bulk of my work has been on Wordpress, but I consider that a necessary evil. I can create my own themes, plugins, shortcodes and widgets.
+My preferred framework is Laravel, but I've also worked with Perch and other systems such as OpenCart. The bulk of my work has been on Wordpress, but I want to move away from that. I can create my own themes, plugins, shortcodes and widgets.
 
-. I have never had the opportunity to do Test Driven Development.
+I have never had the opportunity to do Test Driven Development.
 
 ### JavaScript
-I enjoy using JavaScript to manipulate DOM elements including SVGs, and implement scroll effects with the usei of such libraries as GreenSock, Waypoints.js and ScrollMagic. I have also used AJAX requests for search functionality and to load page content. Although I have studied React, Backbone and some rudimentary Angular, I have never had the opportunity to use them in a project. 
+I enjoy using JavaScript to manipulate DOM elements including SVGs, and implement scroll effects with the use of such libraries as GreenSock, Waypoints.js and ScrollMagic. I have also used AJAX requests for search functionality and to load page content. Although I have studied React, Backbone and some rudimentary Angular, I have never had the opportunity to use them in a project. 
 
 ### HTML & CSS
-I maintain the determination to write semantic HTML & maintainable CSS modules using SASS and prefer BEM syntax. I can use Bootstrap and Foundation UI kits with ease but feel that they are bloated, can be harder to maintain and are inappropriate for many of the projects they're used for.
+I maintain the determination to write semantic HTML & maintainable CSS modules using SASS and prefer BEM syntax. I can use Bootstrap and Foundation UI kits with ease but feel that they are bloated, can be harder to maintain and are inappropriate for many of the projects they're used for. This blog for example has 279 lines of CSS.
 
 ## Holistic Skills
 My MBTI personality type is "INFJ" , which means that I can be described as an advocate. 
@@ -35,6 +37,15 @@ I'm often found negotiating conversations among my team members and project mana
 I have a strong awareness of business objectives and will look for ways to optimise delivery where I find an opportunity to do so. If I notice a skillset is lacking in one of my team mates I'll try to find a way to tactfully, kindly and discreetly, enable them overcome it.
 
 I've had many years' experience at public speaking, I delight in writing well, and also enjoy designing graphics in Sketch, Illustator, Photoshop and similar programs.
+
+## Progression
+The more I become involved in planning development projects, the more I find I enjoy the project scoping and design stage more and more. 
+
+In this, it seems in some ways as if I've come full circle because I'm using my writing skills again. 
+
+I really enjoy investigating, researching and coming to understand user requirements and documenting how we enable people to achieve them.
+
+I'd like to keep my hand on the code. However, I am definitely seeing a role for myself in UX design that can utilise the skills I have acquired up to this point.
 
 [I'm on LinkedIn](https://www.linkedin.com/in/benjaminread1980/ "Linkedin profile of Benjamin Read")
 
