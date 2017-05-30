@@ -25,6 +25,9 @@ article h1 {
   list-style-type: none;
   padding-left: 0;
 }
+li {
+  line-height: 1.6;
+}
 @media (min-width: 781px) {
   .jumbo {
     padding-top: 10%;
