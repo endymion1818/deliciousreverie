@@ -17,7 +17,7 @@ tags = [
 
 I started off by designing the assets in Adobe Illustrator. The design required a gray background with an overlay of a specific colour that would feature the main animation. To achieve this I layered 2 circles, one on top of the other.
 
-To easily enable animating, these layers are SVG path elements. I'm cheating a bit by making the top layer a linear path, instead of a true circle, but it's easier to animate with GreenSock's DrawSVG plugin this way.
+To easily enable animating, these layers are SVG path elements. I'm cheating a bit by making the top layer a linear path, instead of a true circle, but GreenSock's DrawSVG plugin works by animating the path, not the fill, of an SVG element.
 
 ## The Setup
 For the initial setup I grabbed the elements and a few values, wrapping these in a jQuery `each()` function to isolate them from sibling animations that were occurring on the same page:
