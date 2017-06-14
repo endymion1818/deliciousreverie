@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'skybird';
-  src: url('../fonts/Skybird-Regular.woff2') format('woff2');
+  src: url('/fonts/Skybird-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'biko';
-  src: url('../fonts/Biko-Regular.woff2') format('woff2');
+  src: url('/fonts/Biko-Regular.woff2') format('woff2');
 }
 html {
   font-size: 16px;
@@ -16,7 +16,7 @@ body {
         rgba(247, 235, 193, 0.2),
         rgba(247, 235, 193, 0.8)
       ),
-      url('../img/fancybg-light.jpg');
+      url('/img/fancybg-light.jpg');
   background-blend-mode: multiply;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@ section.quote {
         rgba(51, 31, 51, 0.8),
         rgba(51, 31, 51, 0.95)
       ),
-      url('../img/fancybg-light.jpg');
+      url('/img/fancybg-light.jpg');
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;

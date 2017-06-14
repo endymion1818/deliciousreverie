@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'skybird';
-  src: url("../fonts/Skybird-Regular.woff2") format("woff2"); }
+  src: url("/fonts/Skybird-Regular.woff2") format("woff2"); }
 
 @font-face {
   font-family: 'biko';
-  src: url("../fonts/Biko-Regular.woff2") format("woff2"); }
+  src: url("/fonts/Biko-Regular.woff2") format("woff2"); }
 
 html {
   font-size: 16px; }
 
 body {
-  background: linear-gradient(rgba(247, 235, 193, 0.2), rgba(247, 235, 193, 0.8)), url("../img/fancybg-light.jpg");
+  background: linear-gradient(rgba(247, 235, 193, 0.2), rgba(247, 235, 193, 0.8)), url("/img/fancybg-light.jpg");
   background-blend-mode: multiply;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body {
 
 header.site-header,
 section.quote {
-  background: linear-gradient(rgba(51, 31, 51, 0.8), rgba(51, 31, 51, 0.95)), url("../img/fancybg-light.jpg");
+  background: linear-gradient(rgba(51, 31, 51, 0.8), rgba(51, 31, 51, 0.95)), url("/img/fancybg-light.jpg");
   background-blend-mode: multiply;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -134,7 +134,7 @@ li {
 @media (min-width: 768px) {
   .container {
     max-width: 80vw;
-    margin-left: 20vw; } }
+    margin-left: 10vw; } }
 
 @media (max-width: 780px) {
   .quote {
@@ -142,7 +142,8 @@ li {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 42vw; } }
+    max-width: 42vw;
+    margin-left: 20vw; } }
 
 .title h1 a,
 .bannertext a {
@@ -199,7 +200,7 @@ pre {
   padding: 3% 1.1em;
   color: white;
   background-color: #331F33;
-  overflow: scroll; }
+  overflow: auto; }
 
 code {
   background-color: #331F33;
