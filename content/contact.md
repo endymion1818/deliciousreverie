@@ -6,19 +6,19 @@ type = "staticpage"
 
 +++
 
-## Q. Is Ben Looking for Work?
+Got a question or a comment? I'd love to hear from you! You can reach me on `endymion1818@gmail.com` or using the form below.
 
-A. No. 
+## Note for Recruiters:
 
-Recruiters, please don't spam me, it won't make this any better.
+Hi. I'm not looking for a new role at the moment, and I don't know anyone else who can fill your role. Please contact me via [LinkedIn](https://www.linkedin.com/in/benjaminread1980/) if you have a role you genuinely think **I personally** would be interested on based on your research (I will ask you about this).
 
-## Q. Is Ben undertaking Mentorship Programmes?
+Otherwise, I don't wish to waste your time&mdash;equally, I'm sure you don't wish to waste mine.
 
-A. Sorry, also no.
+## I'd like to hear from you!
 
-## Q. Can I email Ben about something else?
+Have a question about an article you've read here? Or are you a new developer who's starting out and looking for a bit of support? Do you have a project you'd like me to take look at? I'd be only too glad to help.
 
-A. Go right ahead.
+
 
 <form id="contactform" action="https://formspree.io/endymion1818@gmail.com"
       method="POST">
