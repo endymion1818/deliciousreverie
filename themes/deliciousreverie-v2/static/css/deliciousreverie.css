@@ -13,6 +13,8 @@ body {
   background: linear-gradient(rgba(247, 235, 193, 0.2), rgba(247, 235, 193, 0.8)), url("../img/fancybg-light.jpg");
   background-blend-mode: multiply;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 110%;
   font-family: 'biko', verdana, sans-serif; }
 
@@ -20,7 +22,9 @@ header.site-header,
 section.quote {
   background: linear-gradient(rgba(51, 31, 51, 0.8), rgba(51, 31, 51, 0.95)), url("../img/fancybg-light.jpg");
   background-blend-mode: multiply;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 h1,
 h2,
@@ -130,7 +134,7 @@ li {
 @media (min-width: 768px) {
   .container {
     max-width: 80vw;
-    margin: 0 auto; } }
+    margin-left: 20vw; } }
 
 @media (max-width: 780px) {
   .quote {
@@ -138,8 +142,7 @@ li {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 42vw;
-    margin: 0 auto; } }
+    max-width: 42vw; } }
 
 .title h1 a,
 .bannertext a {

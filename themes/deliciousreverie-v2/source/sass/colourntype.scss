@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: 
+  background:
       linear-gradient(
         rgba(247, 235, 193, 0.2),
         rgba(247, 235, 193, 0.8)
@@ -19,12 +19,14 @@ body {
       url('../img/fancybg-light.jpg');
   background-blend-mode: multiply;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 110%;
   font-family: 'biko', verdana, sans-serif;
 }
 header.site-header,
 section.quote {
-    background: 
+    background:
       linear-gradient(
         rgba(51, 31, 51, 0.8),
         rgba(51, 31, 51, 0.95)
@@ -32,6 +34,8 @@ section.quote {
       url('../img/fancybg-light.jpg');
     background-blend-mode: multiply;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 h1,
