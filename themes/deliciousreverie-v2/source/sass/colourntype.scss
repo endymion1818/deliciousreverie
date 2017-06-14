@@ -20,7 +20,6 @@ body {
   background-blend-mode: multiply;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
   font-size: 110%;
   font-family: 'biko', verdana, sans-serif;
 }
@@ -35,7 +34,6 @@ section.quote {
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
 
 }
 h1,
@@ -114,5 +112,12 @@ hr {
   &:active,
   &:focus {
     background: lighten($accentgreen, 20%);
+  }
+}
+@media (min-width: 992px) {
+  body,
+  header.site-header,
+  section.quote {
+    background-size: cover;
   }
 }

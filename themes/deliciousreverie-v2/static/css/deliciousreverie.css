@@ -14,7 +14,6 @@ body {
   background-blend-mode: multiply;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
   font-size: 110%;
   font-family: 'biko', verdana, sans-serif; }
 
@@ -23,8 +22,7 @@ section.quote {
   background: linear-gradient(rgba(51, 31, 51, 0.8), rgba(51, 31, 51, 0.95)), url("/img/fancybg-light.jpg");
   background-blend-mode: multiply;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-repeat: no-repeat; }
 
 h1,
 h2,
@@ -96,6 +94,12 @@ hr {
   border-width: 0; }
   .btn:hover, .btn:active, .btn:focus {
     background: #724672; }
+
+@media (min-width: 992px) {
+  body,
+  header.site-header,
+  section.quote {
+    background-size: cover; } }
 
 body {
   margin: 0; }
