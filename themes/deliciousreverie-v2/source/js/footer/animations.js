@@ -1,6 +1,6 @@
 window.onload = function(){
 
-  var links = document.getElementsByTagName('a');
+  var links = document.querySelector('a:not(.sr-only)');
 
   for( var i=0,il = links.length; i< il; i ++ ){
    links[i].onclick = clickHandler;

@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         my_target: {
           files: {
             // 'assets/js/deliciousreverie-headerscripts.min.js': ['assets/js/deliciousreverie-headerscripts.js'],
-            'themes/deliciousreverie-v2/layouts/partials/scripts.html': ['themes/deliciousreverie-v2/static/js/deliciousreverie-footerscripts.js']
+            'themes/deliciousreverie-v2/static/js/deliciousreverie-footerscripts.min.js': ['themes/deliciousreverie-v2/static/js/deliciousreverie-footerscripts.js']
           }
         }
       },
