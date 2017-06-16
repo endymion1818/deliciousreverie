@@ -309,9 +309,9 @@ aside.bunnies {
     display: block;
     position: fixed;
     width: 35vw;
-    height: 35vh;
+    height: 400px;
     right: 0;
-    bottom: 0; }
+    bottom: -20px; }
   #tree-summer,
   #rabbit-0,
   #rabbit-1,
