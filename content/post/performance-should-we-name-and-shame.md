@@ -1,7 +1,7 @@
 +++
 date = "2017-06-16T15:21:21+01:00"
 draft = false
-title = "Performance: Name and Shame"
+title = "Performance: Should We Name and Shame?"
 categories = [
   "development"
 ]
