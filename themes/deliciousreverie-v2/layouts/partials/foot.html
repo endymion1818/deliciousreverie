@@ -1,3 +1,20 @@
+    {{ if .IsHome }}
+        {{ partial "bunnies" . }}
+            <script type="text/javascript">
+            // Mustard Cutting for fancy anims
+            if ('querySelector' in document && 'addEventListener' in window) {
+                var windowWidth = document.body.clientWidth;
+                if(windowWidth > 768){
+
+                    // add class to HTML tag
+                    (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+         
+                    // local scripts
+                    document.write(unescape("%3Cscript src='{{ .Site.BaseURL }}/js/deliciousreverie-noncriticalscripts.min.js' type='text/javascript' defer%3E%3C/script%3E"));
+                    }
+            };
+            </script>
+    {{ end }}
     <section class="title jumbo quote animateOutDown">
         <div class="container">
                 <blockquote>&ldquo;Design isn't just how it looks. Design is what it does.&rdquo;

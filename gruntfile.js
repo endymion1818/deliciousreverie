@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       concat: {
         js: {
           files: {
-            // 'assets/js/deliciousreverie-headerscripts.js': ['assets/source/js/header/*.js'],
+            'themes/deliciousreverie-v2/static/js/deliciousreverie-noncriticalscripts.js': ['themes/deliciousreverie-v2/source/js/noncritical/*.js'],
             'themes/deliciousreverie-v2/static/js/deliciousreverie-footerscripts.js': ['themes/deliciousreverie-v2/source/js/footer/*.js'],
           },
         },
@@ -14,7 +14,7 @@ module.exports = function(grunt) {
       uglify: {
         my_target: {
           files: {
-            // 'assets/js/deliciousreverie-headerscripts.min.js': ['assets/js/deliciousreverie-headerscripts.js'],
+            'themes/deliciousreverie-v2/static/js/deliciousreverie-noncriticalscripts.min.js': ['themes/deliciousreverie-v2/static/js/deliciousreverie-noncriticalscripts.js'],
             'themes/deliciousreverie-v2/static/js/deliciousreverie-footerscripts.min.js': ['themes/deliciousreverie-v2/static/js/deliciousreverie-footerscripts.js']
           }
         }

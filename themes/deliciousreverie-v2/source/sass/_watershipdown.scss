@@ -1,0 +1,27 @@
+aside.bunnies {
+  display: none;
+}
+@media (min-width: 768px){
+  aside.bunnies {
+    display: block;
+    position: fixed;
+    width: 35vw;
+    height: 35vh;
+    right: 0;
+    bottom: -5px;
+  }
+  #tree-summer,
+  #rabbit-0,
+  #rabbit-1,
+  #rabbit-3,
+  #rabbit-4,
+  #rabbit-5,
+  #rabbit-6,
+  #rabbit-8 {
+    opacity: 0;
+  }
+  #tree-winter,
+  #tree-roots {
+    opacity: 0.6;
+  }
+}
