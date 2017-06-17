@@ -31,6 +31,7 @@ h5,
 h6,
 blockquote {
   font-family: 'skybird', serif;
+  word-break: break-word;
   color: #333333; }
 
 h1,
@@ -113,14 +114,8 @@ hr {
 body {
   margin: 0; }
 
-.preheader {
-  height: .5%; }
-
 .container {
   padding: 1% 1em; }
-
-.home-listing li h4 {
-  margin: 4px 0; }
 
 article h1 {
   margin-bottom: 0;
@@ -220,11 +215,6 @@ code {
   color: white;
   padding: 0.3% 0.4em;
   line-height: 1.4; }
-
-.home-listing {
-  list-style-type: none;
-  padding-left: 0;
-  line-height: 120%; }
 
 .pagination {
   display: -ms-flexbox;
