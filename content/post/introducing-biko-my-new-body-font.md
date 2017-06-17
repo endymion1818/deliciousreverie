@@ -15,9 +15,6 @@ tags = [
 
 I started out using one font in 2 styles and 2 weights from Google's excellently stocked and totally free Fonts library. At that time, I knew I wanted to convey a slightly more umm, could you call it "old fashioned" appearance to my site. This was because I wanted more than anything to differentiate myself from the ubiquitous "bootstrap" look.
 
-![delicious reverie website shortly after its inception](/perch/resources/screen-shot-2016-11-20-at-12.18.06.png)
-##### How the site looked in January 2016
-
 Vollkorn is a beautiful font, and I still love it very much. The trouble for me is two things that I've been thinking a lot about:
 
 1) Performance

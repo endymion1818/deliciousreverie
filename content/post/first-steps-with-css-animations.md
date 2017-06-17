@@ -108,7 +108,7 @@ So we settled on .6 seconds, which seemed to be the optimum delay we could achie
 
 Here's the result (sorry for the high compression - wanted to keep a smaller file size as possible!
 
-![Animation demo](/perch/resources/wdb.gif)
+![Animation demo](/resources/wdb.gif)
 
 ### Browser Caveats
 

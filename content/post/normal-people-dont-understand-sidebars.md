@@ -26,9 +26,6 @@ But when you're reading a post, why would you have other content straggling down
 
 Yeah, some of it might be relevant to the interests of your users at some point in their journey ... but even then you're stabbing in the dark. You don't know what their motivations are.
 
-![Screenshot of the first Wordpress theme (and it's sidebar content)](/perch/resources/screenshot.png)
-#### Screenshot of the first Wordpress theme ... and it's sidebar.
-
 ### Sidebar Blindness
 
 Ever heard of this? Sidebar Blindness is becoming increasingly apparent in eye tracking studies. YOUR users are ignoring that content more and more.

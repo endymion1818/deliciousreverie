@@ -17,7 +17,7 @@ When we're designing, we tend to think more about design principles instead of b
 
 But the web is still a unique animal. If we're truly going to design for the web, we need to think about the medium itself, much as a printer considers the stock, the inks, and the situation artwork is going to be displayed in.
 
-![atomic design : a book by Brad Frost](/perch/resources/screen-shot-2015-12-18-at-08.19.57.png)
+![atomic design : a book by Brad Frost](/resources/screen-shot-2015-12-18-at-08.19.57.png)
 
 ##### [http://atomicdesign.bradfrost.com](http://atomicdesign.bradfrost.com "Link to Brad's website where he's writing the book")
 

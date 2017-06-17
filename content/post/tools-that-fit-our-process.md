@@ -36,7 +36,7 @@ So I have created a Trello board for that purpose. Now I can see easily what sit
 
 We also have one board called "Project Overview" which is an overview of all of our projects and where they are—perhaps our client services team is working on it, perhaps the UX guys are currently in control, or it could be with developers.
 
-![Our Trello board for overview of projects in progress or to be greenlit](/perch/resources/screen-shot-2015-03-13-at-20.04.26.png)
+![Our Trello board for overview of projects in progress or to be greenlit](/resources/screen-shot-2015-03-13-at-20.04.26.png)
 
 The 'Project Overview" is a birds-eye view of everything going on currently, at an easy glance and accessible by every team member.
 

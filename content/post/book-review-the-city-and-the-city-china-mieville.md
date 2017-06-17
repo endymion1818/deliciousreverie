@@ -14,8 +14,6 @@ tags = [
 
 I'm not typically a reader of crime fiction, however I've really enjoyed some of Mieville's urban fantasy work in the past, and know he's a smart, well-researched writer who is prone to a bit of genre-hopping ... his plots often take unexpected twists, for which this work is no exception.
 
-![The city and the city cover](/perch/resources/mieville.jpg)
-
 ### The City
 
 Melville, writing as he often does from the first person perspective, describes an inspector sent to investigate a grimy murder in Beszel, a city "on the outskirts of Europe", which we hear is jostling for economic position with it's more successful neighbour, Ul Quoma.

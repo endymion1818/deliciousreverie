@@ -43,9 +43,6 @@ I'm going to try to use the hamburger to contain more "discoverable" content in 
 
 See Luke Wroblewski's article [Obvious Always Wins](http://www.lukew.com/ff/entry.asp?1945 "LukeW: Obvious Always Wins").
 
-![Navbar example from Bootstrap 4 docs](/perch/resources/screen-shot-2015-09-11-at-08.50.18.png)
-#### Navbar content in the latest Bootstrap examples are shown always collapsed - even at large breakpoints
-
 ### Get it: Cards
 
 "Cards" — an interface element that splits relevant content up into visual containers — are everywhere. Not that ubiquity is necessarily a good thing, but they certainly are a useful design tool and really good for reducing cognitive load.

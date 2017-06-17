@@ -26,13 +26,13 @@ Perhaps the design of a blog post has so many separate blocks of text that I kno
 
 These things bother me, and whilst I'm not in a position to choose what I build, I'm always dreaming about a time when I could have more involvement in the planning and design stage.
 
-##Enter The Frontend Designer
+## Enter The Frontend Designer
 
 But now there are rumblings of change.
 
 Brad Frost published this post a few weeks ago, in many ways defining the role of Frontend Designer, someone who is adept at code—but also has a keen eye for design. Brad's GIF says this way better than any words do:
 
-![Two seperate circles - labeled design and development - being overlapped by a third circle labelled 'frontend design'](/perch/resources/frontend-design.gif)
+![Two seperate circles - labeled design and development - being overlapped by a third circle labelled 'frontend design'](/resources/frontend-design.gif)
 
 This is where I find I have a niche.
 
@@ -40,7 +40,7 @@ I believe I am a competent designer with a good understanding and application of
 
 I also like to think I'm a competent developer. I can wrangle JavaScript frameworks, have begun to write vanilla PHP, and whilst not fully comprehending the backend, can write the odd SQL query and use SSL on the command line.
 
-##What It Means for the Industry
+## What It Means for the Industry
 
 This could change things.
 
@@ -52,7 +52,7 @@ I'm writing this as a leading eCommerce retailer has posted a job description wh
 
 Is it finally time for the web to grow up, to strike out on it's own, to lift off (what has to my mind become) the shackles of print design forever?
 
-###UPDATE
+### UPDATE
 
 So, talking this over with a few of my esteemed colleagues, it seems [this title isn't as new as I thought](http://rachelnabors.com/2010/11/whats-a-front-end-designerdeveloper/ "Rachel Nabors: What's a Front End Designer / Developer") — thanks Lee.
 I also must emphasis that I'm not trying to minimise the roles that UX Designers / Web Designers and others who go by different job titles .. this one just seems to fit for me. Thanks for calling me out on that one, Dean.

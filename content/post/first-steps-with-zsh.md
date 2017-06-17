@@ -17,9 +17,7 @@ I started using the terminal because of the benefits of build tools. I use Grunt
 ###GIT in its Native Environment
 I recently ditched my 2 git graphical user interface programs (Github and Git Kraken) in favour of using the terminal. I liked how I could have more control over my commits this way, and not have the extra overhead of another program open whilst I'm trying to work (I have a very minimalist approach to working, as far as that's possible).
 
-Git on the command line is fantastically useful, and I've never been more comfortable stashing, switching branches and doing all kinds of fancy things ... but I always wanted my terminal to do something like this:
-
-![My current terminal setup, which shows the git branch, and the latest commit reference number](/perch/resources/screen-shot-2016-08-24-at-08.45.08.png)
+Git on the command line is fantastically useful, and I've never been more comfortable stashing, switching branches and doing all kinds of fancy things ... but I always wanted my terminal to do something more.
 
 I find the following things really useful:
 

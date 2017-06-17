@@ -56,15 +56,15 @@ I've made a promise with myself to look at the source code of these libraries be
 
 I've gained some great results from these excercises:
 
-![Web Page Test shows many 'A's](/perch/resources/straight-a.png)
+![Web Page Test shows many 'A's](/resources/straight-a.png)
 
 Seeing this result on [Web Page Test](www.webpagetest.org/ "Web Page Test speed testing site") was a big encouragement to me:- I had achieved much of what I wanted to.
 
 I'm especially proud of the fact that I have no images at all on my home page. The render chart is similarly encouraging:
 
-![My site loads in 1.1 seconds!!](/perch/resources/onesecond.png)
+![My site loads in 1.1 seconds!!](/resources/onesecond.png)
 
-![Fonts make up 92% of the size of my site. Wow.](/perch/resources/bytesized.png)
+![Fonts make up 92% of the size of my site. Wow.](/resources/bytesized.png)
 
 As you can see here, I have made some huge sacrifices for including three Google fonts. On the other hand, I have had a big win with regards to images, it feels nice to splash out a bit on this form of branding.
 

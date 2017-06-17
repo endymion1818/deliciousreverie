@@ -63,7 +63,7 @@ Here's the HTML:
 
 As you can see from the following screenshot from before the site went live, the problem was that the 4 columns weren't lining up. This has long been almost impossible to do in HTML / CSS, certainly without misappropriating the `position: absolute` property.
 
-![Anton Paar UK Microsite without using flex-box](/perch/resources/antonpaar-before.png)
+![Anton Paar UK Microsite without using flex-box](/resources/antonpaar-before.png)
 
 But using Flexbox allowed us to simplify the code by removing the `well` DIVs as well as provide a solution to the problem:
 
@@ -87,6 +87,9 @@ But using Flexbox allowed us to simplify the code by removing the `well` DIVs as
 ```
 
 We added this attribute under a `media-query` of `(min-width: 992px)` so that the columns would stack at smaller viewport sizes.
+
+![Anton Paar UK Microsite after using flex-box](/resources/antonpaar-after.png)
+
 
 This exercise has proved to be a great solution to an ongoing problem in web development.
 

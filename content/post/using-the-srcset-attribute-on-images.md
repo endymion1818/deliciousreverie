@@ -14,11 +14,11 @@ tags = [
 
 ### Situation 1: You want to use SVGs, but need to support browsers that don't
 
-![Can I Use screenshot for SVG support](/perch/resources/screen-shot-2016-01-15-at-21.19.20.png)
+![Can I Use screenshot for SVG support](/resources/screen-shot-2016-01-15-at-21.19.20.png)
 
 SVG support is fairly advanced across the browser spectrum (above), but srcset is supported less, especially by legacy IE browsers (below). This allows us to use the srcset attribute to specify an SVG image (or WebP for that matter), allowing newer browsers to download the Srcset image in preference, and older browsers to use the fallback .png file (or whatever else).
 
-![Can I Use browser support chart for Srcsets](/perch/resources/screen-shot-2016-01-15-at-21.19.45.png)
+![Can I Use browser support chart for Srcsets](/resources/screen-shot-2016-01-15-at-21.19.45.png)
 
 I can't claim to have thought of this myself, Sara Soueidan covered this concept [on her blog in February 2015](https://sarasoueidan.com/blog/svg-picture/ "Better SVG Fallback and Art Direction with the <picture> Element on sarasouiedan.com").
 
@@ -37,7 +37,7 @@ I routinely add dimensions to my srcsets to avoid rendering problems in certain 
 
 Just recently I had a client requirement for an image that would be wide & narrow at large breakpoints, and thinner and taller at smaller, like this image demonstrates:
 
-![two images at different breakpoints](/perch/resources/srcset-example.png)
+![two images at different breakpoints](/resources/srcset-example.png)
 
 Yes I could do this with background images in CSS, but then the browser would *have* to download _both_ images, increasing the page weight. Srcset solves this problem by fetching the appropriate image based on what sizes you stipulate in your media queries. This took me a few tries to get right, but I ended up with a robust solution that would conserve bandwidth:
 
