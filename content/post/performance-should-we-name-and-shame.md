@@ -67,4 +67,18 @@ I haven't acted on this league table idea. But I am gathering a catalogue of the
 On the other hand, promoting performance within the industry is a good way of positively affecting those I associate with to focus on performance, sell it to their clients as a benefit, and to do better when building sites in the future.
 
 It's something we should all be intensely interested in doing.
+
+**Update: 2nd July 2017**
+I have decided against this idea. I think perhaps this idea is taking the principle too far. I spoke to a friend who hosts Relative Paths podcast, and decided that it would be best to shelve the idea. I don't wish to cause conflict in an already divisive environment.
+
+I wish to say that websites with poor performance aren't usually the result of a choice developer makes about a website, in my experience. Rather, it's been the cumulative poor decicions of agencies (not individuals) who build websites for one person: the client, or the MD who has commissioned the project, and not with the ordinary visitor in mind.
+
+Google recently launched a tool which excellently captures the essence of my idea: Test My Site with Google shows pretty clearly where a site is positioned in terms of performance.
+
+I really think that this tool can be a good way of promoting performance best practice within our industry.
+
+[> Test My Site With Google](https://testmysite.withgoogle.com/intl/en-gb)
+
+
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
