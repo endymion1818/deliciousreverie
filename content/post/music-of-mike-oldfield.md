@@ -19,7 +19,7 @@ I had never heard of the artist before, but that wasn't unusual. What impressed 
 
 <iframe src="https://open.spotify.com/embed/track/3PMDIrVYvCEiToekxLI5J3" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
-Looking back now on the albums released around that time, I can see this album represented a clear shift in Mike's style. For years he'd been releasing albums of rock music, with tracks typically around 5 minutes, lots of prominent vocals by mostly unknown artists, and some outstanding music and guitar solos.
+Looking back now on the albums released around that time, I can see this one represented a clear shift in Mike's style. For years he'd been releasing albums of rock music, with tracks typically around 5 minutes, lots of prominent vocals by mostly unknown artists, and some outstanding music and guitar solos.
 
 <iframe src="https://open.spotify.com/embed/track/6Yg8kYhVLjFxqKBSbLVfpv" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
@@ -45,9 +45,9 @@ I think of this era of ending with the very left-field classical album "Music of
 
 The album is nonetheless fantastic and one I listen to very frequently.
 
-Others that I would recommend are "Tubular Bells 3" and "Tr3s Lunas".
+Others that I would recommend from this era are "Tubular Bells 3" and "Tr3s Lunas".
 
-But there are two albums near the beginning and end of this group that are totally different: "Voyager", which consists mostly of arrangements of folk music, and "Man on the Rocks", a heavily vocal-led album which seems to have been a bit of a catharthis from the solely classical "Music of the Spheres".
+But there are two albums near the beginning and end of this group that are totally different: "Voyager", which consists mostly of arrangements of folk music, and "Man on the Rocks", a heavily vocal-led collection which seems to have been a bit of a catharthis from the solely classical "Music of the Spheres".
 
 ## Origin Story
 
@@ -59,9 +59,9 @@ Primarily, it seems this album was "one for the fans" - Mike was rewarding the p
 
 I must be honest, it took me years to understand and appreciate these albums.
 
-I think my first mistake was believing that I had to enjoy the original Tubular Bells album to do so. I didn't - and still don't - enjoy the one album that people generally remember Mike for! Yes it was a groundbreaking album that displayed a certain genius.
+I think my first mistake was believing that I had to enjoy the original Tubular Bells in order to do so. I didn't - and still don't - enjoy the one single album that people generally remember Mike for! 
 
-But for me, it didn't hold together.
+Yes it was a groundbreaking album that displayed a certain genius. But for me, it doesn't resonate for some reason.
 
 Now, going through that early set, I genuinely can say I enjoy these albums as much as the others. Something that helped a great deal was the [Elements album](spotify:user:11155153810:playlist:1qfqJdIgW34wrt9PADuxcv), which showcases shortened excerpts from these longer works.
 
@@ -69,8 +69,8 @@ Now, going through that early set, I genuinely can say I enjoy these albums as m
 
 ## The Future
 
-Mike Oldfield has produced a body of work that I constantly go back to. I eagerly anticipate his next work, and appreciate that even if I don't love it, at least I will enjoy it, and see how it fits into his overall body of work.
+Mike Oldfield has produced a body of work that I constantly go back to. I eagerly anticipate his next work, and appreciate that even if I don't love it, at least I know I will enjoy and appreciate it.
 
-Mike might not be one of those artists who get a vast amount of attention. However, his work really resonated with me. I hope this short tour gives you some background and insight into an artist who is multi-layered, complex and deeply moving.
+Mike might not be one of those artists who get a vast amount of attention. However, his work on the whole has really resonated with me. I hope this short tour gives you some background and insight into an artist who is multi-layered, complex and deeply moving.
 
-If you're looking for a few tracks to introduce you to his work, I've embedded only individual tracks on this page that are around the 5 minute mark. Hope you like them!
+If you're looking for a few tracks to introduce you to his work, I've embedded a few individual tracks on this page that are around the 5 minute mark. Hope you like them!

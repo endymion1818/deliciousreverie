@@ -47,7 +47,7 @@ The way I've traditionally coped with this is very convoluted:
 ```
 Phew!
 
-This assumes that 1) Your frontend developer is authorised to, and competent at, writing server-side code, 2) you have spare memory to do a lot of counting, 3) you don't mind spurious markup everywhere.
+This assumes that 1) Your frontend developer is authorised to, and competent at, writing server-side code, 2) you don't mond doing a lot of counting, 3) you don't mind spurious markup everywhere.
 
 This approach is messy, but it works.
 
@@ -104,14 +104,14 @@ Now, below that I use an `@supports` rule to scope the grid layouts:
   }
 } 
 ```
-This is only 11 lines of code, and doesn't use hacks like negative margins. Much better.
+This is only 11 lines of code (not counting the lack of a `<div class="row">` etc, and doesn't use hacks like negative margins. Much better.
 
 This works in 97% of browsers _today_, [even Internet Explorer](http://caniuse.com/#search=flexbox).
 
 Now, in both layouts, you get 2 columns of content, each item on a row has the same height, and they can expand to the content that you put into them.
 
-One thing to note: I'm not replacing my floated grid in this project. I'm complementing them at this stage  for when floats are inadequate.
+One thing to note: I'm not replacing my floated grid in this project. I'm complementing them at this stage for when floats are inadequate.
 
-But in the near future, I'm really looking forward to swapping out this bloated approach for much more semantic, web-native code.
+But in the near future, I'm really looking forward to swapping out this approach for more semantic, web-native code.
 
-So what are we waiting for? Grid works, is faster, less costly to maintain, and great for the web.
+I hope this little demonstratons helps you to see how CSS grid works, is faster, less costly to maintain, and great for the web.
