@@ -8,7 +8,7 @@ categories = [
 ]
 tags = [ 
     "performance", 
-   "indigo tree bo
+   "indigotree"
 ]
 
 +++
