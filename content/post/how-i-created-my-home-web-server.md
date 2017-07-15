@@ -2,6 +2,7 @@
 date = "2017-02-18T15:21:21+01:00"
 draft = false
 title = "How I Created My Home Web Server"
+description = "Is it just me or does Apple's iCloud seem like a very simple solution to a problem all of us in a connected world face? That of storing, managing and sharing photos of our loved ones, holidays and interests with others? Instead of being faced with ever increasing charges from Apple to store my stuff, I decided to get a solution I could be more in control of."
 categories = [
   "development"
 ]

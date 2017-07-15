@@ -2,6 +2,7 @@
 date = "2015-02-11T15:21:21+01:00"
 draft = false
 title = "Not Using SASS: Rebellion in the ranks"
+description = "A little while ago, I had a telephone interview in which the lead developer customarily dismissed my application because I didn't know how to write SASS or LESS. He was very "born again" about the whole thing, and I resolved to learn at least one of these frameworks in response."
 categories = [
   "development"
 ]
@@ -12,7 +13,7 @@ tags = [
 ]
 +++
 
-A little while ago, I had a telephone interview in which the lead developer customarily dismissed my application because I didn't know how to write SASS or LESS. He was very "born again" about the whole thing, and I resolved to learn at least one of these frameworks in response.
+**A little while ago, I had a telephone interview in which the lead developer customarily dismissed my application because I didn't know how to write SASS or LESS. He was very "born again" about the whole thing, and I resolved to learn at least one of these frameworks in response.**
 
 Whilst I'm very glad I did learn SASS, I have to say there are a number of drawbacks I've noticed ...
 

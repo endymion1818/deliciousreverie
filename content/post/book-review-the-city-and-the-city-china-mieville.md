@@ -2,6 +2,7 @@
 date = "2016-06-15T15:21:21+01:00"
 draft = false
 title = "Book Review: The City & The City, China Mieville"
+description = "Time is precious for me having a kid and a demanding job, so I'm pleased I've managed to find the time to read The City & The City, China Mieville's (very successful) attempt at the crime thriller genre."
 categories = [
   "personal"
 ]

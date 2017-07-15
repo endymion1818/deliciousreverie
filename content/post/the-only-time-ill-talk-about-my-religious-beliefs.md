@@ -2,6 +2,7 @@
 date = "2016-05-16T15:21:21+01:00"
 draft = false
 title = "The Only Time I'll Talk About My Religious Beliefs"
+description = "You may have noticed that I refer to myself as one of Jehovah's Witnesses occasionally. I don't think I've openly discussed this subject with any of you so far. However, I think that, out of curiosity, someone might like to know a little bit more. This post aims to tell you the only time I'll talk about my religion in my professional sphere."
 categories = [
   "personal",
 ]

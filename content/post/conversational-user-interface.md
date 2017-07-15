@@ -2,6 +2,7 @@
 date = "2016-04-21T15:21:21+01:00"
 draft = false
 title = "The Conversational User Interface"
+description = "This phrase "the conversational interface" has been bouncing around in my brain since I attended Wordcamp London, I can't remember who mentioned it as being one of the things to watch out for in the coming year or years, but it has really struck me a something that I think could be significant and important."
 categories = [
   "design"
 ]

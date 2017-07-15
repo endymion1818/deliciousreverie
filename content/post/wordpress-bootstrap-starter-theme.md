@@ -2,6 +2,7 @@
 date = "2015-06-26T15:21:21+01:00"
 draft = false
 title = "I Built A Wordpress Bootstrap starter theme"
+description = "I've been using the esteemed Rachel Baker's BootstrapWP theme for a while, but recently I decided to build my own Wordpress / Bootstrap starter theme. Here's why I took this step and what I plan to do with it in the future."
 categories = [
   "development"
 ]

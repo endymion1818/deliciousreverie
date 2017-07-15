@@ -2,6 +2,7 @@
 date = "2017-06-16T15:21:21+01:00"
 draft = false
 title = "Performance: Should We Name and Shame?"
+description = "As a conscientious developer, I've become more determined to put performance front & center on new projects I create. As an industry, we've had more and more focus on this issue, and it's often the topic of conference talks and articles. But I think it could be time to go further than we have in the past."
 categories = [
   "development"
 ]

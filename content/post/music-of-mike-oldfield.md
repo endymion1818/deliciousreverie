@@ -2,6 +2,7 @@
 date = "2017-07-09T02:21:21+01:00"
 draft = false
 title = "The Music of Mike Oldfield"
+description = "I've enjoyed the music of Mike Oldfield since I was about 15. Wow, I've just realised that's about 20 years. What makes me keep coming back to this artist? What tracks would I recommend if you wanted to get an overview of his work?"
 categories = [
   "personal"
 ]

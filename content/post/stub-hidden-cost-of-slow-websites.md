@@ -2,6 +2,7 @@
 date = "2017-05-16T15:21:21+01:00"
 draft = false
 title = "Published article: The Hidden Cost of Slow Websites"
+description = "In this article, I ask Indigo Tree customers if they think that website load speed matters? Is it something they factor into design decisions, pricing, and expected Return on Investment when commissioning a website project? I then hilight the business reasons why it should…"
 categories = [
   "published content",
   "development"

@@ -2,6 +2,7 @@
 date = "2015-11-23T15:21:21+01:00"
 draft = false
 title = "To Rome, a Poem"
+description = "I wrote this poem more than 10 years ago, but I've never published it anywhere. I've always been afraid it's not any good or that it's of not enough interest to warrant any merit ... but that seems to matter less now. Anyway, here it is!"
 categories = [
   "personal"
 ]

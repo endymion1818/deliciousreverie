@@ -2,6 +2,7 @@
 date = "2015-02-15T15:21:21+01:00"
 draft = false
 title = "First Steps with Flexbox"
+description = "On a recent project for international research machine builder Anton Paar, I  used the new flex-box CSS module for the first time. Here's how it went."
 categories = [
   "development"
 ]
@@ -10,7 +11,7 @@ tags = [
 ]
 +++
 
-On a recent project for international research machine builder Anton Paar, I  used the new flex-box CSS module for the first time. Here's how it went.
+**On a recent project for international research machine builder Anton Paar, I  used the new flex-box CSS module for the first time. Here's how it went.**
 
 The flex box module has had a long gestation period, and there are 2 main specs of the module, so when researching methods of using it you have to be careful to find recent enough posts which outline the latest spec.
 

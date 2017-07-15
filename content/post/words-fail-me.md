@@ -2,6 +2,7 @@
 date = "2015-02-27T15:21:21+01:00"
 draft = false
 title = "Words Fail Me."
+description = "I'm a great fan of Virginia Woolf's Stream of Consciousness writing, but that isn't why this post is here."
 categories = [
   "personal",
   "development"

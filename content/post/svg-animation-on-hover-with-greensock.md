@@ -2,6 +2,7 @@
 date = "2017-05-21T15:21:21+01:00"
 draft = false
 title = "SVG Animation on Hover with GreenSock"
+description = "One thing I've tried to do more of is to use animations on frontend projects I've been involved with. GreenSock animation library is a great way of standardising and improving on animations that otherwise wouldn't be available on all browsers."
 categories = [
   "development"
 ]

@@ -2,6 +2,7 @@
 date = "2015-03-17T15:21:21+01:00"
 draft = false
 title = "Don't Do Everything The Same Way"
+description = "As a project manager, I sometimes get a bit fed up having to make decisions about which CMS should be used on a project. This is just one of those fields where it seems as if it would be much easier to just pick one and stick with it. But there's a reason we should not do everything the same way—and it's related to DNA."
 categories = [
   "project coordination"
 ]

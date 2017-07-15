@@ -2,6 +2,7 @@
 date = "2015-02-16T15:21:21+01:00"
 draft = false
 title = "#StudioSounds: Designer's Mix"
+description = "I have recently discovered Designer's Mix, an online site containing designer- and coder- friendly soundtracks of awesomeness."
 categories = [
   "personal"
 ]
@@ -10,7 +11,7 @@ tags = [
 ]
 +++
 
-I have recently discovered Designer's Mix, an online site containing designer- and coder- friendly soundtracks of awesomeness.
+**I have recently discovered Designer's Mix, an online site containing designer- and coder- friendly soundtracks of awesomeness.**
 
 I don't know about you, but there's only certain things I can listen to when I'm coding, and I do get bored of stuff pretty quickly ... but this site has proved to be a great resource:
 

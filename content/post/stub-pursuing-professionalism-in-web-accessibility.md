@@ -2,6 +2,7 @@
 date = "2017-05-16T15:21:21+01:00"
 draft = false
 title = "Published article: Pursuing Professionalism in Web Accessibility"
+description = "There’s been a growing amount of talk about making websites more useable to people with disabilities in recent weeks. In this article I wrote for the Indigo Tree blog, I notice how we have been increasingly aware of our role in providing access to the web to a wider range of people and discuss how it’s already helping our clients increase their reach."
 categories = [
   "published content",
   "development"
