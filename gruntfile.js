@@ -29,7 +29,7 @@ module.exports = function(grunt) {
       cssmin : {
         css:{
           src: 'themes/deliciousreverie-v2/static/css/deliciousreverie.css',
-          dest: 'themes/deliciousreverie-v2/layouts/partials/style.html'
+          dest: 'themes/deliciousreverie-v2/static/css/deliciousreverie.min.css'
         }
       },
       postcss: {
