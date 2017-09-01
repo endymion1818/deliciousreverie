@@ -6,8 +6,9 @@ description = "For a while now I've really enjoyed tinkering with animations as 
 categories = [
   "development"
 ]
-tags = [ 
-    "animation", 
+tags = [
+    "animation",
+    "javascript",
     "svg",
     "greensock",
     "scrollmagic"
@@ -114,7 +115,7 @@ I didn't think this approach was robust enough, especially since I want to build
 
 ## Performance Considerations
 
-Loading up these libraries does have a performance cost of course. A cost that is most noticeable on mobile devices. So instead of enqueueing my Javascript in the normal way, I've been working on a script that writes the tag into the DOM once you're at a certain breakpoint: 
+Loading up these libraries does have a performance cost of course. A cost that is most noticeable on mobile devices. So instead of enqueueing my Javascript in the normal way, I've been working on a script that writes the tag into the DOM once you're at a certain breakpoint:
 
 ```js
 // in the footer file:
