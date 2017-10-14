@@ -18,7 +18,7 @@ One author that I never encountered as part of that group was the Argentinian wr
 
 ## Borges the Translator
 
-Borges was a translator into Argentinian of popular Western works. I getthe sense that this work must not have challenged him very much, since he didn't exactly stick to the material he had been given. I am told that he sometimes introduces new text, plot lines and even entirely new characters.
+Borges was a translator into Argentinian of popular Western works. I get the sense that this work must not have challenged him very much, since he didn't exactly stick to the material he had been given. I am told that he sometimes introduces new text, plot lines and even entirely new characters.
 
 I know what you're thinking, "that is a betrayal of what it means to _translate_" ... and perhaps you would be right.
 
@@ -38,7 +38,7 @@ But what I really love is Borges' ability to get me to question my own world vie
 
 My absolute favourite of these stories is "Borges and I", the last story in the compendium I own. I'll reproduce the entire delicious text here by way of a conclusion.
 
-I argue that Borges should not so readily be ignored and be much less eagerly forgotten as he seems to be today. considered as among the core group of existentialist writers. I'd love to see more people recognise this talented, mischevious and thought-provoking artist for what he was, a true original among his contemporary 20th century authors.
+I argue that Borges should not so readily be ignored, and be much less eagerly forgotten as he seems to be today. Instead I think he should be considered as among the core group of existentialist writers that I mentioned at the start of this article. I'd love to see more people recognise this talented, mischevious and thought-provoking artist for what he was, a true original among his contemporary 20th century authors.
 
 ## _Borges and I_
 _It’s to that other one, to Borges, that things happen. I walk through Buenos Aires and I pause, one could say mechanically, to gaze at a vestibule’s arch and its inner door; of Borges I receive news in the mail and I see his name in a list of professors or in some biographical dictionary. I like hourglasses, maps, eighteenth-century typefaces, etymologies, the taste of coffee and the prose of Stevenson; the other shares these preferences, but in a vain kind of way that turns them into an actor’s attributes. It would be an exaggeration to claim that our relationship is hostile; I live, I let myself live so that Borges may write his literature, and this literature justifies me. It poses no great difficulty for me to admit that he has put together some decent passages, yet these passages cannot save me, perhaps because whatsoever is good does not belong to anyone, not even to the other, but to language and tradition. In any case, I am destined to lose all that I am, definitively, and only fleeting moments of myself will be able to live on in the other. Little by little, I continue ceding to him everything, even though I am aware of his perverse tendency to falsify and magnify._
