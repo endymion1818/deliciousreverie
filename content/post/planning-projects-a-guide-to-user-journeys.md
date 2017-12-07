@@ -6,7 +6,7 @@ description = "We're going to take a specific journey that was written for a pro
 categories = [
   "development"
 ]
-tags = [ 
+tags = [
     "project planning",
     "agile"
 ]
@@ -16,7 +16,7 @@ tags = [
 
 The team were good enough to train me in how to work within their process, and a few times I got invited to represent the frontend team in project scoping meetings.
 
-I'm going to outline what we did so that you can see the benefits of documenting a project as user journeys. 
+I'm going to outline what we did so that you can see the benefits of documenting a project as user journeys.
 
 We're going to take a specific story that we wrote for this project, examine who should be involved, what epics are and how they can help, then break down the story title and description to examine why we did things this way.
 
@@ -38,11 +38,11 @@ As a result, I began to empathise with them more, and started to think about how
 
 As the stakeholders talked we documented things, together with the business analyst, in a way that would lead to some specific user stories.
 
-Here's an example of an epic 
+Here's an example of an epic
 
-> As a department overseer I want to display current users so that I can select personnel for a project 
+> As a department overseer I want to display current users so that I can select personnel for a project
 
-The structure of this story is very important: 
+The structure of this story is very important:
 
 > as a (__role__) I want to (__tasks__) so that I can (__achieve goal__)
 
@@ -60,7 +60,7 @@ From this epic we built up a workflow that helped us see the task in context wit
 2.3.	transport required?
 2.4.	Can provide transport?
 2.5.	(Veggie – see separate user story re staff page)
-3.	Coordinator selects and sets staff dates 
+3.	Coordinator selects and sets staff dates
 4.	Reviews and generates email confirmation of dates
 4.1.	Includes in email, details of things they need to know (transport, PPE, badges, checklist)
 
@@ -78,7 +78,7 @@ Here's a story that's closely related to the epic above.
 
 > As a Department Overseer I want to select staff for projects, based on criteria so that the right mix of staff are invited
 
-I know what you're thinking, "what criteria?" - that's part of another story. It was easier for us to break this one down so that we could handle the criteria seperately. But this task was merely concerned with selecting volunteers.
+I know what you're thinking, "what criteria?" - that's part of another story. It was easier for us to break this one down so that we could handle the criteria seperately. But this task was merely concerned with selecting staff.
 
 Following this story is a description, which has three main groups of information: Prerequisites, Acceptance Criteria, and Process.
 
@@ -114,7 +114,7 @@ The benefits of investigation and conveying acceptance criteria are:
 Our acceptance criteria for this story was as follows:
 
 ---
-Display Volunteers information:  
+Display Staff information:  
 * Staff Name (static data, link to staff info, and display photo on hover, congregation).  
 * Team (static data, use for geographic division to meet Branch recommendation).  
 * 1st trade / 2nd trade.  
@@ -128,7 +128,7 @@ Display Volunteers information:
 
 ---
 
-Now there's no ambiguity about what needs to be displayed in this view so that the Overseer can complete his task of selecting the right people for the job. 
+Now there's no ambiguity about what needs to be displayed in this view so that the Overseer can complete his task of selecting the right people for the job.
 
 ### Anatomy of a Story: Process
 
