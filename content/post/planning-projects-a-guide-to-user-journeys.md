@@ -28,11 +28,15 @@ The user and stakeholder would start by describing what their current system was
 
 The project director would originate the spreadsheet and various site managers, materials handlers, personnel teams, would contribute to the spreadsheet, mailing it round to each other as they went.
 
-After costs had been approved and the project had been green lit, the most important thing to the project director was a colour-coded GANTT chart showing exactly when things should start and be completed by.
-
 Before this meeting, I had literally no idea of the workflow they were using. Already I was beginning to see the potential of what we were building, and how it would simplify and standardise things for our users.
 
 As a result, I began to empathise with them more, and started to think about how things could be represented so that they would be familiar and helpful.
+
+It is very important that user journeys are not composed in isolation. Individually, we were all pieces of a puzzle, and had essential insights into the process of building that resulted in a much clearer document that was practically useful.
+
+If no developers had been involved in the meeting, essential information about the functionality would have been missed, rendering the stories less useful or even potentially harmful to the build process.
+
+> "Hell is other peoples undocumented assumptions" &mdash; Nicole Fenton
 
 ## Part 2: Epics — Story Overviews
 
