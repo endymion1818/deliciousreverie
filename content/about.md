@@ -41,7 +41,7 @@ I have used Gatsby.js to build static websites using React.js and used Styled Co
 ### HTML & CSS
 I maintain the determination to write semantic HTML & maintainable CSS modules using SASS and prefer BEM syntax. I can use Bootstrap and Foundation UI kits with ease but feel that they are bloated, can be harder to maintain and are inappropriate for many of the projects they're used for. This blog for example has 279 lines of CSS.
 
-## Holistic Skills
+## Core Skills
 My MBTI personality type is "INFJ" , which means that I can be described as an advocate.
 
 I'm often found negotiating conversations among my team members and project managers that I hope will help both parties to accomplish more work and feel more fulfilled in their roles.
