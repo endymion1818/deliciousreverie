@@ -9,7 +9,7 @@ PygmentsCodeFences = true
 pygmentsuseclasses = false
 
 [params]
-  description = "blog of developer, writer & bookworm benjamin read"
+  description = "blog of developer & bookworm benjamin read"
   author = "Benjamin Read"
 
 defaultContentLanguage = "en"
