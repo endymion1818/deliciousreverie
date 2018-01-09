@@ -15,7 +15,6 @@ I don't believe it is. Although I've seen the world wide web morph from AOL and 
 ### This Website
 
 - Typeface for titles: Skybird by [PhitraDesign](http://phitradesign-fonts.com/)
-- Typeface for body: Biko by [JeSuisMonReve](http://jesuismonreve.org)
 - CMS: [GoHugo](http://gohugo.io)
 - Hosting: [Netlify](https://www.netlify.com)
 
