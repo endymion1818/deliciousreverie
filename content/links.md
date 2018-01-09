@@ -27,6 +27,8 @@ I don't believe it is. Although I've seen the world wide web morph from AOL and 
 - [Laravel](https://laravel.com/)
 - [Perch](https://grabaperch.com)
 - [GreenSock](https://greensock.com/)
+- [Pop!_OS](https://system76.com/pop)
+- [Snyk](https://snyk.io)
 - [Spotify](https://www.spotify.com/uk/) (yeah, of course it's a _tool_)
 
 ### Industry
