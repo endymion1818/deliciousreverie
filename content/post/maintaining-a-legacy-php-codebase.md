@@ -62,15 +62,6 @@ The first step was to modify an existing page to add the Stripe payment, which I
 
 I elected to redirect after Stripe's card verification process, rather than modify the display message in this page. I wanted to ensure that in the future, if they chose to monitor success/failure rates by adding analytics tracking, they could do that easily.
 
-The [Stripe Quickstart guide](https://stripe.com/docs/quickstart "Card Payments Quickstart") was pretty clear, and I followed it closely. However, once I redirected users to the new page, I noticed that the `data-amount` figure wasn't being sent in the header.
-
-For a quick fix, I added a hidden input to the form to send this data through, so that the card could be charged in the next step.
-
-```
-<input type="hidden" name="price" value="'. $stripe_fee .'">
-```
-This isn't a great solution, and I want to come back to refactor how I can avoid this so that users can't edit this by modifying the code.
-
 ### Protecting the Private Key
 
 In order to protect the customers' Stripe private key from anyone who gains access to the git repo, I added a `config.php` file that is gitignored, and stored the private key there.
