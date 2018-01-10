@@ -1,22 +1,22 @@
 +++
 date = "2018-01-09T15:21:21+01:00"
 draft = false
-title = "Maintainin a Legacy PHP Codebase"
-description = "Whilst simultaneously trying to decide what to build in Laravel and considering an old system we had recently inherited, I realised that I _liked_ looking at the spaghetti code, and was comparitively _scared_ of the shiny, new, empty Laravel installation I had just set up. Here's how I dealt with my first few tasks and began strategising how we could protect our clients' investment going forward."
+title = "Maintaining a Legacy PHP Codebase"
+description = "Whilst simultaneously trying to decide what to build in Laravel and considering an old system we had recently inherited, I realised that I _liked_ looking at the spaghetti code, and was comparatively _scared_ of the shiny, new, empty Laravel installation I had just set up. Here's how I dealt with my first few tasks and began strategising how we could protect our clients' investment going forward."
 categories = [
   "development"
 ]
-tags = [ 
-    "php", 
+tags = [
+    "php",
 ]
 +++
 Whilst simultaneously trying to decide what to build in Laravel and considering an old, 4GB spaghetti code monster site that I'd been given, I came to a bit of a realisation.
 
-I realised that I _liked_ looking at the spaghetti code, and was comparitively _scared_ of the shiny, new, empty Laravel installation I had just set up.
+I realised that I _liked_ looking at the spaghetti code, and was comparatively _scared_ of the shiny, new, empty Laravel installation I had just set up.
 
 The thing with a new project is that I can never decide where to start. Because you've got to make such important decisions that will affect the rest of the project upfront, I often feel a little nervous that I'm going to make a wrong choice.
 
-But the spaghetti code had _already made the choices_, and I was there to fix the wrong ones! 
+But the spaghetti code had _already made the choices_, and I was there to fix the wrong ones!
 
 This massive jumble of code provided the following functions for our client:
 
@@ -36,7 +36,7 @@ Over the past few months I have been tasked with the following:
 2. Version control the 4GB behemoth
 3. Install Stripe payments on their membership system, a custom PHP Database object
 4. Add Stripe subscriptions to one membership area
-5. Come up with a strategy to shard or seperate the server to mitigate potential downtime & data loss
+5. Come up with a strategy to shard or separate the server to mitigate potential downtime & data loss
 
 ## Task 1: Move the primary domain to HTTPS
 
@@ -50,13 +50,13 @@ There were 2 issues with this strategy. Firstly, downloading 4GB of content isn'
 
 I poked around the code until I found that actually there was an old .git directory that took up a lot of space, as well as old zip files that had been left on the server, and over 500MB worth of audio files (their podcasts) and other content that I decided could be backed up another way.
 
-I then downloaded the root directory seperate from their blog (a WordPress multisite install), which became more manageable.
+I then downloaded the root directory separate from their blog (a WordPress multisite install), which became more manageable.
 
 Using Git submodules in a similar way, I was able to get 2 repos that I wasn't locked out of adding to or editing by BitBucket's 2GB limit.
 
 ## Task 3: Stripe Payments
 
-As I mentioned, this site was a legacy system, running PHP 5.3, and though we want to modernise it, this is part of seperate task. For that reason, I elected not to use Composer or Autoloader on this fragile, live site, and instead to pull in the Stripe library manually. However I still located this in a `/vendor/` folder in the root directory so that it was hopefully obvious to others.
+As I mentioned, this site was a legacy system, running PHP 5.3, and though we want to modernise it, this is part of separate task. For that reason, I elected not to use Composer or Autoloader on this fragile, live site, and instead to pull in the Stripe library manually. However I still located this in a `/vendor/` folder in the root directory so that it was hopefully obvious to others.
 
 The first step was to modify an existing page to add the Stripe payment, which I did by following along with the Stripe docs, which are amazingly clear and easy to follow.
 
@@ -100,15 +100,15 @@ include($_SERVER['DOCUMENT_ROOT'] . '/common/config.php');
 
 	// Set API key
 	\Stripe\Stripe::setApiKey($stripe_key_private);
-	
+
     // Get data from the headers
 	$token = $_POST['stripeToken'];
 	$email = $_POST['stripeEmail'];
 	$price = $_POST['price'];
 	$plan = '' ?: $_POST['plan'];
-	
+
     // Plans - only one at this stage
-	if($plan == 'plan1') { 
+	if($plan == 'plan1') {
 		$plan = 1;
 	};
 
@@ -136,7 +136,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/common/config.php');
 						'email' => $email,
 						'source'  => $token
 				]);
-				// \Stripe\Charge is not needed on subscriptions as the first payment has been set up to be taken immediately 
+				// \Stripe\Charge is not needed on subscriptions as the first payment has been set up to be taken immediately
 				$subscription = \Stripe\Subscription::create(array(
 					"customer" => $customer->id,
 					"items" => array(
