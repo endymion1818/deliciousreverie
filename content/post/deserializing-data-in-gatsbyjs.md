@@ -25,7 +25,7 @@ When I switched to WordPress it took me only a few hours to implement 95% of the
 
 Using the existing data structure I was able to generate a page layout that looked like this:
 
-```jsx
+```js
 <div>
   <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
   <div dangerouslySetInnerHTML={{ __html: post.content }} />
@@ -36,7 +36,7 @@ This results in the result we expected, the content rendered as HTML inside the 
 
 However, the post.title is stored as escaped HTML, so when you try to pop the `post.title` into the meta tag using Helmet, like this:
 
-```jsx
+```js
 <Helmet title={`${post.title} } />
 ```
 
@@ -56,7 +56,7 @@ We knew we needed to parse the element so that it returned as HTML again, but th
 
 In the end we turned to the xmldom package on NPM, and pulled the `DOMParser` method in, decoding the string and then grabbing the textcontent.
 
-```jsx
+```js
 import React from 'react'
 import Helmet from 'react-helmet'
 import { DOMParser } from 'xmldom'
