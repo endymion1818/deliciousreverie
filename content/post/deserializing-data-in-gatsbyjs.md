@@ -9,7 +9,9 @@ categories = [
 tags = [
    "javascript",
    "gatsbyjs",
-   "react"
+   "react",
+   "wordpress",
+   "headless"
 ]
 
 +++
@@ -52,7 +54,7 @@ There wasn't a simple way around this issue that my colleague [David Hewitt](htt
 
 We knew we needed to parse the element so that it returned as HTML again, but there wasn't an easy way to do this in Gatsbyjs. We knew we could use the DOM parser to achieve these results but here there was no document, hence no DOM.
 
-In the end we turned to the xmldom package on NPM, and pulled the `DOMParser` method in.
+In the end we turned to the xmldom package on NPM, and pulled the `DOMParser` method in, decoding the string and then grabbing the textcontent.
 
 ```jsx
 import React from 'react'
@@ -73,6 +75,17 @@ class pageTemplate extends React.Component {
         <Helmet title={`${decodedString} | ${siteTitle}`} />
 ...
 ```
-I've filed an issue on GatsbyJS, but there are a few issues around how to write a normalizer to deal with this. For instance, in most cases we do want to use the escaped HTML, so that the Title field is rendered in the component. It's only when using Helmet that we want the string deserialized.
 
-So I'm not sure how to proceed with this .. at least there's a workaround for now, and I'm sure as a community we can address this issue so that we can drop the external dependency or build it into existing processes in some way.
+## Showing Gatsby's Strengths
+
+Although we encountered an issue here, in a lot of ways it has hilighted to me the strengths of GatsbyJS, not what you might perceive as weaknesses.
+
+In the first instance, the issue originated from WordPress which stores escaped HTML instead of JSON, MarkDown or any other format. I can see the benefits to this (being able to add `<br>` tags to titles etc) but it does present some unique challenges&mdash;and not just to GatsbyJS.
+
+This has also hilighted one of the fantastic strengths of GatsbyJS:- that I could pull in a package from NPM and use it in my build process. This opens up a world of possibility and makes GatsbyJS a lot more customizeable than I had thought previously.
+
+And the other strength is that it still took me only a few hours to switch from using MarkDown files to a WordPress backend, such is the strength of the node API and the `gatsby-source-wordpress` in the way that it transforms data so that there was no difference between the two builds.
+
+[I've filed an issue on GatsbyJS on the repo](https://github.com/gatsbyjs/gatsby/issues/4543), but there are a few issues around how to write a normalizer to deal with this. For instance, in most cases we do want to use the escaped HTML, so that the Title field is rendered in the component. It's only when using Helmet that we want the string deserialized.
+
+So I'm not sure how to proceed with this .. at least there's a workaround for now, and I'm sure as a community we can address this issue so that we can drop the external dependency or build it into the existing processes in some way.
