@@ -43,7 +43,7 @@ However, the post.title is stored as escaped HTML, so when you try to pop the `p
 you get whatever markup is stored. This is fine in most cases ... however, in WordPress land you'll quite often find people using things like `<br>` tags to adapt their layouts a little, or in my case, using a dash. When rendered as a meta tag, that looked like this:
 
 ```js
-mytitle &#8221; contains a dash
+mytitle \&#8221; contains a dash
 ```
 
 Not great for presentation, or SEO.
