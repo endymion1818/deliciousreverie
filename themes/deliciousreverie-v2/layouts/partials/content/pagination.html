@@ -4,14 +4,14 @@
         {{ if .Paginator.HasPrev }}
           <li class="page-item">
             <a class="page-link" rel="prev" href="{{ .Site.BaseURL }}{{.Paginator.Prev.URL}}">
-                « Previous
+                « Newer
             </a>
           </li>
         {{ end }}
         {{ if .Paginator.HasNext }}
           <li class="page-item">
             <a class="page-link" rel="next" href="{{ .Site.BaseURL }}{{.Paginator.Next.URL}}">
-                Next »
+                Older »
             </a>
           </li>
         {{ end }}
