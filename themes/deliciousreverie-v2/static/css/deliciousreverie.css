@@ -41,7 +41,7 @@ h1,
 h2,
 h3,
 blockquote {
-  font-weight: 700;
+  font-weight: 500;
   line-height: 120%;
   margin-bottom: 0; }
 
@@ -159,7 +159,6 @@ li {
 .title h1 a,
 .bannertext a {
   color: #F7EBC1;
-  font-weight: 700;
   margin-bottom: 1%;
   text-decoration: none; }
 
