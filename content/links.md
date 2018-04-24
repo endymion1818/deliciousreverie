@@ -18,16 +18,20 @@ I don't believe it is. Although I've seen the world wide web morph from AOL and 
 - CMS: [GoHugo](http://gohugo.io)
 - Hosting: [Netlify](https://www.netlify.com)
 
-### Tools
-- [Sublime Text](http://www.sublimetext.com)
+### Uses
 - [Hyper Terminal](https://hyper.is)
 - [GitHub](http://github.com)
-- [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about)
 - [CodePen](https://codepen.io)
 - [Laravel](https://laravel.com/)
 - [Perch](https://grabaperch.com)
+- [React](https://reactjs.org/)
+- [Gatsby](https://www.gatsbyjs.org/)
 - [GreenSock](https://greensock.com/)
+- [MeteorJS](https://www.meteor.com/)
+- [Apollo GraphQL](https://www.apollographql.com/)
+- [Snyk](https://snyk.io)
 - [Pop!_OS](https://system76.com/pop)
+- [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about)
 - [Snyk](https://snyk.io)
 - [Spotify](https://www.spotify.com/uk/) (yeah, of course it's a _tool_)
 
@@ -41,17 +45,16 @@ I don't believe it is. Although I've seen the world wide web morph from AOL and 
 - [Jeremy Keith - adactio.com](https://adactio.com/journal/)
 - [Aral Balkan](https://ar.al)
 
-
 ### Literature
 - [Hokku: Writing Through the Seasons](http://github.com)
 - [Wordsworth Trust](https://wordsworth.org.uk)
 - [John Keats Online](http://john-keats.com)
+- [Pure Poetry](http://pure-poetry.co.uk/)
 
 ### Popular Culture
 - [Babylon 5](http://freebabylon5.com)
 - [Farscape](http://www.farscapeworld.com)
 - [Firefly](http://browncoats.com)
-
 
 ### Keeps Me Sane
 - [Mike Oldfield](http://mikeoldfieldofficial.com)
