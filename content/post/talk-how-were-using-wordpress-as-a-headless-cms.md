@@ -26,6 +26,8 @@ It's thanks to them imparting their knowledge and expertise (and sometimes their
 
 ## The Talk
 
+There's a [full writeup on the Indigo Tree website](https://indigotree.co.uk/how-use-wordpress-headless-cms/). I'll update this post with the video on WordPress TV when it's uploaded there.
+
 My talk covered these main points:
 
 1. What is a headless (or decoupled) CMS
