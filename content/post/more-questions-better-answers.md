@@ -11,7 +11,7 @@ tags = [
     "core skills" 
 ]
 +++
-Working with a large FinTech organisation has taught me a lot about the potential loopholes and considerations around certain technical decisions that I have been asked to contribute to.
+**Working with a large FinTech organisation has taught me a lot about the potential loopholes and considerations around certain technical decisions that I have been asked to contribute to.**
 
 One of the decisions that we have considered recently is how to deliver content into the new website we are building.
 
@@ -25,11 +25,11 @@ With my current organisation, a very tech savvy company where about one quarter 
 
 Given this comment, I was prompted to think: what problem _was_ I trying to solve with my recommendation?
 
-## Unasking the Answer
+## Undo the Answer
 
 The charachter 无 (pronounced wú in Chinese or mu in Japanese) means more than just the negative, so writes author Dan Simmons. It's apparently more like a desire to "undo" what's already been said, or the absence of the object it refers to.
 
-I've been trying to "unask the answer" in reorganising my mind to think more carefully and understand the questions I come up with.
+I've been trying to "undo the answer" in reorganising my mind to think more carefully and understand the questions I come up with.
 
 In reality, it's quite easy to propose an answer that might fit. The answer you propose _could_ be the correct one, particularly if you've encountered a similar question in the past.
 
