@@ -67,8 +67,8 @@ Now, because I outlined the problems we're having accuratey, and a solution whic
 
 ## Unask the Answer, Not The Question
 
-"Never fear running out of answers, only running out of questions"
-— J Straczynski
+> "Never fear running out of answers, only running out of questions"
+> — J Straczynski
 
 I've decided that asking questions isn't to be feared or looked down upon, however silly the question may seem at the time. It's proposing the wrong solution ignorantly that leads to trouble.
 
