@@ -13,11 +13,14 @@ html {
   font-size: 16px; }
 
 body {
-  background: linear-gradient(rgba(247, 235, 193, 0.2), rgba(247, 235, 193, 0.8)), url("/img/fancybg-light.jpg");
-  background-blend-mode: multiply;
-  background-attachment: fixed;
+  background: linear-gradient(rgba(247, 235, 193, 0.2), rgba(247, 235, 193, 0.8));
   font-size: 110%;
   font-family: "system"; }
+  @media (min-width: 992px) {
+    body {
+      background: linear-gradient(rgba(247, 235, 193, 0.2), rgba(247, 235, 193, 0.8)), url("/img/fancybg-light.jpg");
+      background-blend-mode: multiply;
+      background-attachment: fixed; } }
 
 header.site-header,
 section.quote {

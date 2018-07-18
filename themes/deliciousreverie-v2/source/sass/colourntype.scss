@@ -18,12 +18,20 @@ body {
       linear-gradient(
         rgba(247, 235, 193, 0.2),
         rgba(247, 235, 193, 0.8)
-      ),
-      url('/img/fancybg-light.jpg');
-  background-blend-mode: multiply;
-  background-attachment: fixed;
+      );
   font-size: 110%;
   font-family: "system";
+
+  @media (min-width: 992px){
+    background:
+        linear-gradient(
+          rgba(247, 235, 193, 0.2),
+          rgba(247, 235, 193, 0.8)
+        ),
+        url('/img/fancybg-light.jpg');
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+  }
 }
 header.site-header,
 section.quote {
