@@ -2,7 +2,7 @@
 date = "2018-07-25T08:21:21+01:00"
 draft = false
 title = "Published Article: Using WordPress as a Headless CMS"
-description = "This is the text of an article I wrote for Net Magazine and was published in Issue 308 (August 2018)"
+description = "This is the reproduction of an article I wrote for Net Magazine and was published in Issue 308 (August 2018)."
 categories = [
   "development",
 ]
