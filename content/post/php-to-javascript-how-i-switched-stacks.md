@@ -47,7 +47,7 @@ I get so terrified about pushing myself forward in these ways, especially becaus
 
 ## Zopa's Serverless Initiative
 
-Around this time peer-to-peer lender Zopa were looking to reposition themselves and wanted to replace a Ruby app with a static website. So they approached me directly and called me for several weeks until I finally had time to hear what they were trying to say.
+Around this time peer-to-peer lender Zopa were looking to replace a Ruby app with a static website. So they approached me directly and called me for several weeks until I finally had time to hear what they were trying to say.
 
 Zopa had already identified Gatsbyjs as their tool of choice because they had lots of in-house JavaScript and React expertise. They had partnered with an agency to design and build the site, and wanted me on board to help develop it  because of my experience with the framework. I'll be able to tell you more about the site when it launches, but it's been a great experience working with some excellent and incredibly smart people both at the agency and at Zopa.
 
