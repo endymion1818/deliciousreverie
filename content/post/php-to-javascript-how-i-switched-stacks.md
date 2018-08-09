@@ -47,11 +47,11 @@ I get so terrified about pushing myself forward in these ways, especially becaus
 
 ## Zopa's Serverless Initiative
 
-Around this time peer-to-peer lender Zopa were looking to reposition themselves and wanted to replace the Ruby app that served zopa.com. So they approached me directly and called me for several weeks until I finally had time to hear what they were trying to say.
+Around this time peer-to-peer lender Zopa were looking to reposition themselves and wanted to replace a Ruby app with a static website. So they approached me directly and called me for several weeks until I finally had time to hear what they were trying to say.
 
 Zopa had already identified Gatsbyjs as their tool of choice because they had lots of in-house JavaScript and React expertise. They had partnered with an agency to design and build the site, and wanted me on board to help develop it  because of my experience with the framework. I'll be able to tell you more about the site when it launches, but it's been a great experience working with some excellent and incredibly smart people both at the agency and at Zopa.
 
-I've had to learn a lot in a short space of time, but Zopa have been supportive and patient with my learning experience. In return, I've been able to identify where Gatsby's APIs can be used to great effect instead of a custom solution that renders content on the frontend. I've been able to help other developers explore the GraphQL syntax and use Gatsbyjs's built-in IDE to query the data structure. And I've helped identify where opportunities to use functions hosted on other platforms enable us improve performance.
+I've had to learn a lot in a short space of time, but Zopa have been supportive and patient with my learning experience. In return, I've been able to help identify where Gatsby's APIs can be used to great effect instead of a custom solution that renders content on the frontend. I've been able to help other developers explore the GraphQL syntax and use Gatsbyjs's built-in IDE to query the data structure. And I've helped identify where opportunities to use functions hosted on other platforms enable us improve performance.
 
 What I've most enjoyed is seeing those "wow" moments as developers really _get_ GatsbyJS, and how, because of it's approach to data, it's not just a static site generator, it's much more than that.
 
