@@ -94,7 +94,7 @@ Often these services are low-cost, meaning you only pay for the server time you 
 
 An extra benefit is that if form submissions become extra busy, with concurrent POST requests,  the function container will be duplicated enough times to meet demand. Automatically.
 
-It's out of scope for this article how to write a serverless function. However, it's just a normal piece of code that you might want to implement anywhere. Here are a few that I like:
+It's out of scope for this article how to write a serverless function. However, it's just a normal piece of code that you might want to implement anywhere.
 
 
 ## Form The Future
