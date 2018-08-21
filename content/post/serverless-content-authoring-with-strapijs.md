@@ -36,7 +36,7 @@ Strapi showed promise, however version 1 was depracated, v2 hadn't made it out o
 ## Deploying Strapi on Heroku
 Since my  focus over the past few years has been Severless technology, I wanted to deploy Strapi on [Heroku](https://www.heroku.com/ "Cloud application platform"), a managed platform with a generous free tier that allows you to host applications in a raft of different languages, from PHP and Ruby, to Go and JavaScript.
 
-Fortunately for me, there's already a decent [Strapi starter for Heroku which is advertised right on the Strapi repo readme]((https://github.com/strapi/strapi/). One click and I had started my own Heroku instance, using [mLab](https://mlab.com/ "Database-as-a-service by Mlab") to host the MongoDB database, all connected up and ready to be used.
+Fortunately for me, there's already a decent [Strapi starter for Heroku](https://github.com/strapi/strapi/ "Strapi Github repo"),  which is advertised right on the Strapi repo readme. One click and I had started my own Heroku instance, using [mLab](https://mlab.com/ "Database-as-a-service by Mlab") to host the MongoDB database, all connected up and ready to be used.
 
 This is great for giving Strapi a spin, but I wanted this to be my content platform. To do that I needed to create my own fields and add some new content types. I added some, only to find they'd rolled back again afterwards. I tried uploading images, to find they disappeared after a few hours. What was happening?!
 
