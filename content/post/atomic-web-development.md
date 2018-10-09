@@ -10,8 +10,6 @@ tags = [
    "javascript",
    "gatsbyjs",
    "react",
-   "wordpress",
-   "headless"
 ]
 
 +++
