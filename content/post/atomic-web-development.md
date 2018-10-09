@@ -89,7 +89,7 @@ Molecules consist of stateless functional components, often comprising of severa
 
 This is a "popout" section, which has a custom MainContainer element that's only used in this Molecule. It can accept multiple props and can wrap other components.
 
-```JSX
+```JS
 const MainContainer = styled.div`
   width: 100%;
   background-color: ${props => props.backgroundColor ? props.backgroundColor : variable.BRAND_PRIMARY };
@@ -126,7 +126,7 @@ As we get to organisms, we start to see Classes being used, bringing in several 
 
 This is a carousel component. It had several smaller components and so many unique styles that they were collocated within a folder.
 
-```jsx
+```js
 class CardsCarousel extends React.Component {
   constructor(props) {
     super(props)
@@ -190,7 +190,7 @@ Fully formed JSX pages lived here, comprising of a component that would wrap eve
 
 Here's a short example of a page so you can see the final use of this approach:
 
-```JSX
+```JS
 import React from 'react'
 import Helmet from 'react-helmet'
 import * as variable from '../components/variables'
