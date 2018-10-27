@@ -22,20 +22,22 @@ Because of this I'm used to mucking in and doing whatever becomes necessary for 
 
 
 ### JavaScript
-I enjoy functional programming. I have created UI libraries using styled-components, connecting to APIs with axios and using a variety of resources from NPM to build single-page web apps. 
+I enjoy functional programming. I have created UI libraries, built apps with connected API sources, and have connected to APIs and using a variety of code resources to build single-page web apps. 
 
-I am increasingly mindful of creating what I call 'resilient' apps, which use a combint apis and other browser-native fallbacks. I do this to ensure my code is fast, performant and renders on the server as much as possible, in order to save client-side resources.
+I am increasingly mindful of creating what I call 'resilient' apps, which use a combination of apis and other browser-native fallbacks. I do this to ensure my code is fast, performant and renders on the server as much as possible, in order to save client-side resources.
 
+I've stayed away from mentioning specific technologies and frameworks, but you'll see what I've been working with recently by following the link below:
 
 [> Posts about JavaScript](/tags/javascript/ "All posts about JavaScript on Deliciousreverie.co.uk")
 
 ### HTML & CSS
-Even though I often use JSX and styled-components to create my apps, I build upon the foundations of the Semantic web, using native elements and CSS properties to create apps that are intrinsic to the web, not just to JavaScript.
+Even though I often use JSX and css-in-js to create my apps, I build upon the foundations of the Semantic web, using native elements and CSS properties to create apps that are intrinsic to the web, not just to JavaScript.
 
-Accessibility continues to be a chief concern of mine. I don't think this will ever change.
+Accessibility and performance continue to be a chief concern of mine. I don't think this will ever change.
 
 [> Posts about CSS](/tags/css/ "All posts about CSS on Deliciousreverie.co.uk")
 [> Posts about accessibility](/tags/accessibility/ "All posts about accesibility on Deliciousreverie.co.uk")
+[> Posts about performance](/tags/performance/ "All posts about performance")
 
 ## Core Skills
 My MBTI personality type is "INFJ" , which means that I can be described as an advocate.
