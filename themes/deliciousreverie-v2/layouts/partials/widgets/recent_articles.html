@@ -3,7 +3,7 @@
   <div class="card-text">
     <div class="widget">
       <ul id="recent-post">
-        {{ range first 5 (where .Site.RegularPages "Type" "post") }}
+        {{ range first 5 (where .Site.Pages "Type" "post") }}
         <li>
           <div class="item-thumbnail bg-inverse">
               <a href="{{ .Permalink }}" class="thumbnail">
