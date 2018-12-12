@@ -80,7 +80,7 @@ img {
   height: auto; }
 
 hr {
-  border: 1px solid #331F33;
+  border: 1px solid #331f33;
   margin: 2em 0 0; }
 
 .quote blockquote {
@@ -95,7 +95,7 @@ hr {
   text-decoration: none;
   display: inline-block;
   padding: 15px;
-  background: #331F33;
+  background: #331f33;
   color: white;
   border-width: 0; }
   .btn:hover, .btn:active, .btn:focus {
@@ -161,7 +161,7 @@ li {
 
 .title h1 a,
 .bannertext a {
-  color: #F7EBC1;
+  color: #f7ebc1;
   margin-bottom: 1%;
   text-decoration: none; }
 
@@ -211,11 +211,11 @@ nav.primary {
 pre {
   padding: 3% 1.1em;
   color: white;
-  background-color: #331F33;
+  background-color: #331f33;
   overflow: auto; }
 
 code {
-  background-color: #331F33;
+  background-color: #331f33;
   color: white;
   padding: 0.3% 0.4em;
   line-height: 1.4; }
@@ -293,6 +293,39 @@ form#contactform {
     max-width: 80%; }
   input.btn {
     width: 100px; } }
+
+.scrolltable {
+  overflow-x: scroll; }
+
+table {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse; }
+
+table td,
+table th {
+  border: 1px solid #000000;
+  padding: 3px 4px; }
+
+table td:nth-child(even) {
+  background: rgba(0, 0, 0, 0.2); }
+
+table thead {
+  border-bottom: 2px solid #333333; }
+
+table thead th {
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  border-left: 2px solid #333333; }
+
+table thead th:first-child {
+  border-left: 2px solid #333333; }
+
+table tfoot {
+  font-weight: bold;
+  border-top: 2px solid #333333; }
 
 aside.bunnies {
   display: none; }
