@@ -15,7 +15,7 @@ tags = [
 
 **People are demanding more and more out of their online services, and businesses strive to excel these demands, leading to more and more complex sites ... and larger JavaScript bundles too!**
 
-How can continue to deliver a first-class experience for users whilst still building for these levels of complexity? One good way of doing this - whilst at the same time as delivering more performant apps - is by using React's Context API.
+How can we continue to deliver a first-class experience for users whilst still building for these levels of complexity? One good way of doing this - whilst at the same time as delivering more performant apps - is by using React's Context API.
 
 This article was first published in Net Magazine. However, the Context API has been updated since. Please visit the React docs for a more up to date version of how to use Context.  
 
@@ -151,7 +151,7 @@ But wait! There's more we can do to boost performance here.
 
 
 ---
-## Analyse Performance with React Developer Tools
+## Boxout: Analyse Performance with React Developer Tools
 
 React Developer Tools, an extension available on both Firefox and Chrome browsers, is a tool provided by Facebook to help debug your React apps.
 
@@ -169,7 +169,7 @@ Now you know where to start fixing the problem!
 ---
 
 
-## Reducing Re-rendering 
+## Boxout: Reducing Re-rendering 
 
 First of all, let's explain that term. Re-rensweing is what happens when the component you're using is updated. This has performance implications especially for interactions like dragging (think sliders), and inputting text. Without proper care users could notice lagginess and be put off from using your site. And the potential for laggy or unresponsiveness increases with complexity (because more re-rendering will happen).
 
@@ -190,6 +190,7 @@ Context isn't going to fit everyone's use case, nor was it meant to. But it is a
 Check out the working code on CodeSandbox: https://codesandbox.io/s/0pl62xq030
 
 ---
+
 # Resources
 You can learn more about how to use the Context API by using the following resources:
 
