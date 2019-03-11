@@ -1,23 +1,28 @@
 +++
-date = "2019-03-07T14:21:21+01:00"
+date = "2017-03-07T14:21:21+01:00"
 draft = false
 title = "Published Article: Better Performance with the React Context API"
 description = "Build for complexity and performance in this deep dive into React's Context API. This article was originally published in Net Magazine."
 categories = [
   "development"
 ]
-tags = [ 
-    "performance", 
+tags = [
+    "performance",
    "Net Magazine"
 ]
 
 +++
+**Whoops!**
 
-**People are demanding more and more out of their online services, and businesses strive to excel these demands, leading to more and more complex sites ... and larger JavaScript bundles too!**
+I inadvertenly published this post befoefr it was printed in Net Magazine!
+
+Please check back in a few weeks to see this content, or purchase the May edition of the magazine!
+
+<!-- **People are demanding more and more out of their online services, and businesses strive to excel these demands, leading to more and more complex sites ... and larger JavaScript bundles too!**
 
 How can we continue to deliver a first-class experience for users whilst still building for these levels of complexity? One good way of doing this - whilst at the same time as delivering more performant apps - is by using React's Context API.
 
-This article was first published in Net Magazine. However, the Context API has been updated since. Please visit the React docs for a more up to date version of how to use Context.  
+This article was first published in Net Magazine. However, the Context API has been updated since. Please visit the React docs for a more up to date version of how to use Context.
 
 ## What is Context and Why Use It?
 
@@ -169,7 +174,7 @@ Now you know where to start fixing the problem!
 ---
 
 
-## Boxout: Reducing Re-rendering 
+## Boxout: Reducing Re-rendering
 
 First of all, let's explain that term. Re-rensweing is what happens when the component you're using is updated. This has performance implications especially for interactions like dragging (think sliders), and inputting text. Without proper care users could notice lagginess and be put off from using your site. And the potential for laggy or unresponsiveness increases with complexity (because more re-rendering will happen).
 
@@ -202,12 +207,12 @@ I used these docs to get started using Context, as well as Flavio Copes' guide t
 
 Those resources are great. But there's nothing like diving in and trying it for yourself. It'll be challenging to begin with but that's the best way to learn! I freely admit to getting frustrated, writing poor implementations, and having to start over many times before I understood Context well enough to use it in a project. But if you give up, you only have to come back to it one more time ... until you finally crack it!
 
-To do that, you could use two fantastic resources that have recently become available: 
+To do that, you could use two fantastic resources that have recently become available:
 
 ## Codesandbox
-Codesandbox (codesandbox.io) is an online editor for creating apps in many languages, with built-in support for React. It's like codesandbox but with support for javascript modules 
+Codesandbox (codesandbox.io) is an online editor for creating apps in many languages, with built-in support for React. It's like codesandbox but with support for javascript modules
 
 ## Spectrum.chat
-[Spectrum.chat](Spectrum.chat), built by the creator of styled-components and recently acquired by GitHub, is rapidly becoming a lively community. I've found it a great place to share ideas, ask for help and chat about the latest developments in JavaScript, React and other tools I use every day. Hope to see you there!
+[Spectrum.chat](Spectrum.chat), built by the creator of styled-components and recently acquired by GitHub, is rapidly becoming a lively community. I've found it a great place to share ideas, ask for help and chat about the latest developments in JavaScript, React and other tools I use every day. Hope to see you there! -->
 
 ---
