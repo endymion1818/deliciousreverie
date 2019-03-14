@@ -14,7 +14,7 @@ tags = [
 +++
 **Whoops!**
 
-I inadvertenly published this post befoefr it was printed in Net Magazine!
+I inadvertenly published this post before it was printed in Net Magazine!
 
 Please check back in a few weeks to see this content, or purchase the May edition of the magazine!
 
