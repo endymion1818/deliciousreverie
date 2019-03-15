@@ -1,7 +1,7 @@
 +++
 date = "2018-10-04T14:21:21+01:00"
 draft = false
-title = "Published Article: Atomic Development"
+title = "Atomic Development"
 description = "Structuring components in a reusable, discoverable way has been a challenge for some recent projects I've worked on. I've seen different approaches used, but now I think I've found a method that's basically intuitive, avoids duplication of effort and facilitates easy discovery of components."
 categories = [
   "development"
@@ -9,8 +9,7 @@ categories = [
 tags = [
    "javascript",
    "gatsbyjs",
-   "react",
-   "netmag articles"
+   "react"
 ]
 
 +++

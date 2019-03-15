@@ -6,8 +6,8 @@ description = "Is it just me or does Apple's iCloud seem like a very simple solu
 categories = [
   "development"
 ]
-tags = [ 
-    "sysadmin", 
+tags = [
+    "system-administration", 
 ]
 +++
 
