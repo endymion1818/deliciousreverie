@@ -7,6 +7,23 @@ footer.site-footer {
   background-color: $main;
   color: white;
 }
+footer.site-footer ul {
+  padding-left: 0;
+}
+footer.site-footer ul li {
+  display: inline-block;
+}
+footer.site-footer ul li a {
+    display: block;
+    padding: 0.5rem;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $main;
+      background-color: white;
+    }
+}
 footer.site-footer a {
   color: white;
 }
