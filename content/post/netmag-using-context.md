@@ -8,7 +8,7 @@ categories = [
 ]
 tags = [
     "performance",
-   "Net Magazine"
+   "netmag articles"
 ]
 
 +++
