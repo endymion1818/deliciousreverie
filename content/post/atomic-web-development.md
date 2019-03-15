@@ -9,7 +9,7 @@ categories = [
 tags = [
    "javascript",
    "gatsbyjs",
-   "react",
+   "react"
 ]
 
 +++

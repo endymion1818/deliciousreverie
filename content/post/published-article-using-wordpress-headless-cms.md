@@ -9,7 +9,8 @@ categories = [
 tags = [
     "serverless",
    "gatsby",
-   "wordpress"
+   "wordpress",
+   "netmag articles"
 ]
 
 +++
@@ -35,7 +36,7 @@ Code for this example:  https://github.com/endymion1818/netmag-wpheadless
 
 WordPress comes out-of-the box with the REST API, and that is what we're going to use to query your data. So we don't really need anything else! Our display site is totally separate from our content site, so we won't need a theme or any other customisation outside a few (optional) plugins.
 
-The exception is if you need custom meta fields for extra content areas you're probably using Advanced Custom Fields to do so. You can add that data to the WordPress API buy installing this plugin: [https://en-gb.wordpress.org/plugins/acf-to-rest-api](https://en-gb.wordpress.org/plugins/acf-to-rest-api)  
+The exception is if you need custom meta fields for extra content areas you're probably using Advanced Custom Fields to do so. You can add that data to the WordPress API buy installing this plugin: [https://en-gb.wordpress.org/plugins/acf-to-rest-api](https://en-gb.wordpress.org/plugins/acf-to-rest-api)
 
 **Using a Static Site Generator**
 
