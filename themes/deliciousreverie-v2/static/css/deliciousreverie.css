@@ -231,6 +231,19 @@ footer.site-footer {
   background-color: #333333;
   color: white; }
 
+footer.site-footer ul {
+  padding-left: 0; }
+
+footer.site-footer ul li {
+  display: inline-block; }
+
+footer.site-footer ul li a {
+  display: block;
+  padding: 0.5rem; }
+  footer.site-footer ul li a:hover, footer.site-footer ul li a:active, footer.site-footer ul li a:focus {
+    color: #333333;
+    background-color: white; }
+
 footer.site-footer a {
   color: white; }
 
@@ -350,5 +363,11 @@ aside.bunnies {
   #tree-winter,
   #tree-roots {
     opacity: 0.6; } }
+
+.infobox {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(247, 235, 193, 0.2);
+  background: rgba(51, 31, 51, 0.8); }
 
 /*# sourceMappingURL=deliciousreverie.css.map */
