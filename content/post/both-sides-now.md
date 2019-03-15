@@ -14,7 +14,9 @@ tags = [
 +++
 **CSS isn't a programming language. CSS is a programming language. JavaScript shouldn't be used to render HTML. JavaScript is the only way of writing HTML. CSS is overly complicated, difficult to learn and hopelessly outdated. All of these opinions provoke a response in me. It's just perhaps not the one the authors intended.**
 
-When I see comments like the ones above I can't help but wonder if they're written out of a genuine frustration or concern a person has, whether they're meant to provoke an argument, or whether they are using others' frustration to raise their own profile.
+When I see comments like the ones above I can't help but wonder if they're written out of a genuine frustration or concern a person has, whether they're meant to provoke an argument, or even whether they are using others' frustration to raise their own profile.
+
+Whatever the case, there's another way of looking at the situation that I hope others can benefit from:
 
 # Both Sides, Now
 
@@ -22,9 +24,9 @@ I was surprised on checking Rolling Stone Magazine's top 500 songs that Joni Mit
 
 The song suggests for me that there are different ways of looking at everything in life ... even conceptually simple things such as clouds can appear totally different to two observers.
 
-The lyrics seem to convey for me the idea that eventually we can learn to look at things from other perspectives, not just our own.
+The lyrics seem to convey the idea that eventually we can learn to look at things from other perspectives, not just our own.
 
-For me that invokes a more mature and happier approach to life: that with hindsight the things we argued about once can seem somewhat trivial compared to the way we look back on them.
+That invokes a more mature and happier approach to life: with hindsight the things we argued about once can seem somewhat trivial compared to the way we look back on them.
 
 I imagine the author of this song looking back on an experience and thinking, I wish I hadn't argued that point, now I'm older I can see it from a different perspective. All I achieved was conflict. And that conflict stopped me from enjoying and appreciating the differences I encountered.
 
@@ -44,6 +46,5 @@ Conflict is paralysing. It stops anything useful from being achieved. It's far b
 
 Starting now, and in years to come, if there are to be any, we ought to try to do the same. If we see someone voice an opinion that riles you, try to think, can I see it from both sides, now?
 
-Or is it something I will look back on with only regret.
 
 <iframe src="https://open.spotify.com/embed/track/1pjATX7sbd6Y4jMVqIvzHk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
