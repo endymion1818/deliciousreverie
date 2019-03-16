@@ -6,7 +6,7 @@ type = "staticpage"
 
 +++
 
-This is hard to write. Identifying your own core skills is difficult. 
+This is hard to write. Identifying your own core skills is difficult.
 
 To begin, let me say that I really love web development. It's my hobby as well as my profession. Outside of work hours I'm often on Twitter, Slack channels or writing, actively discussing industry concerns. I'm on here writing blog posts. Or I'm investigating some new technique or technology that may be hopefully useful to my professional work.
 
@@ -22,29 +22,29 @@ Because of this I'm used to mucking in and doing whatever becomes necessary for 
 
 
 ### JavaScript
-I enjoy functional programming. I have created UI libraries, built apps with connected API sources, and have connected to APIs and using a variety of code resources to build single-page web apps. 
+I enjoy functional programming. I have created UI libraries, built apps with connected API sources, and have used a variety of code resources to build single-page web apps. I write unit and integration test and use TypeScript where the need arises.
 
-I am increasingly mindful of creating what I call 'resilient' apps, which use a combination of apis and other browser-native fallbacks. I do this to ensure my code is fast, performant and renders on the server as much as possible, in order to save client-side resources.
+I am increasingly mindful of the amount of JavaScript we send down to and that is parsed by the browser. I have seen clear evidence that the more we can do to move rendering to the server (as much as possible), the better our conversion metrics will become.
 
 I've stayed away from mentioning specific technologies and frameworks, but you'll see what I've been working with recently by following the link below:
 
 [> Posts about JavaScript](/tags/javascript/ "All posts about JavaScript on Deliciousreverie.co.uk")
 
 ### HTML & CSS
-Even though I often use JSX and css-in-js to create my apps, I build upon the foundations of the Semantic web, using native elements and CSS properties to create apps that are intrinsic to the web, not just to JavaScript.
+Even though I often use JavaScript to template my HTML and css-in-js to create my CSS, I build upon the foundations of the Semantic web, using native elements and the CSS cascade to create apps that are intrinsic to the web, not just to JavaScript.
 
 Accessibility and performance continue to be a chief concern of mine. I don't think this will ever change.
 
-[> Posts about CSS](/tags/css/ "All posts about CSS on Deliciousreverie.co.uk")
-[> Posts about accessibility](/tags/accessibility/ "All posts about accesibility on Deliciousreverie.co.uk")
-[> Posts about performance](/tags/performance/ "All posts about performance")
+[> Posts about CSS](/tags/css/ "All posts about CSS on Deliciousreverie.co.uk")&nbsp;
+[> Posts about accessibility](/tags/accessibility/ "All posts about accesibility on Deliciousreverie.co.uk") &nbsp;  
+[> Posts about performance](/tags/performance/ "All posts about performance")&nbsp;
 
 ## Core Skills
 My MBTI personality type is "INFJ" , which means that I can be described as an advocate.
 
-I advocate for those in my team who are less experienced, less able to have a voice, or feel they have less representation. I want to actively help them to grow by helping them to gain access to resources and situations that will help them exceed and achieve their potential. 
+I advocate for those in my team who are less experienced, less able to have a voice, or feel they have less representation. I want to actively help them to grow by helping them to gain access to resources and situations that will help them exceed and achieve their potential.
 
-I have a strong awareness of business objectives and will look for ways to optimise delivery where I find an opportunity to do so. 
+I have a strong awareness of business objectives and will look for ways to optimise delivery where I find an opportunity to do so.
 
 Writing blog posts and articles for print magazines, contributing to open source projects, and speaking at conferences are some other ways that I can add value to organisations by boosting their reputation. It's something I'd do without the support of my employers, but it's nice when I can talk about the work I do.
 
@@ -59,4 +59,4 @@ Along with that I want to work more heavily with organisation that solve real wo
 
 [Let's meet on Twitter](https://twitter.com/muzzlehatch_ "Twitter profile of Benjamin Read")
 
-[I'm also a Member of the Web Guild](https://www.thewebguild.org/ "I'm also a Member of the Web Guild")
+[Or contact me directly](https://deliciousreverie.co.uk/contact "Contact Benjamin Read")
