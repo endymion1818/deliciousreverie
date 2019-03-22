@@ -8,7 +8,7 @@ type = "staticpage"
 
 ## A links page?! This is a bit old school, isn't it?
 
-I don't believe it is. Although I've seen the world wide web morph from AOL and eWorld to Angelfire and Geocites, to a massive conglomeration of independent city-states, to the control of the Megacorporations of today, I still fear the loss of the World Wide Web as Sir Tim saw it:— a vast store of interconnected knowledge.
+I don't believe it is. I've seen the world wide web morph from AOL and eWorld to Angelfire and Geocites, to a massive conglomeration of independent city-states, to the control of the Megacorporations of today. I fear the loss of the World Wide Web as Sir Tim saw it:— a vast store of interconnected knowledge.
 
 [Here's why.](https://medium.com/matter/the-web-we-have-to-save-2eb1fe15a426)
 
@@ -18,9 +18,13 @@ I don't believe it is. Although I've seen the world wide web morph from AOL and 
 - CMS: [GoHugo](http://gohugo.io)
 - Hosting: [Netlify](https://www.netlify.com)
 
-### My Sites
+### My Projects
 - [Free Babylon 5 campaign](https://freebabylon5.com)
 - [Discover the Music of Mike Oldfield](https://discovermikeoldfield.info)
+- [Maintainer for React Headroom](https://github.com/KyleAMathews/react-headroom/)
+- [Awesome Developer Blogs](https://github.com/endymion1818/awesome-developer-blogs)
+- [Contributor to GatsbyJS](https://github.com/gatsbyjs/gatsby)
+- [Contributor to StrapiJS](https://github.com/strapi/strapi)
 
 ### Uses
 - [Hyper Terminal](https://hyper.is)
@@ -59,5 +63,4 @@ I don't believe it is. Although I've seen the world wide web morph from AOL and 
 
 ### Keeps Me Sane
 - [Mike Oldfield](http://mikeoldfieldofficial.com)
-- [DesignersMX: Your Mix of Inspiration](https://designers.mx)
 - [JW.org](https://www.jw.org)
