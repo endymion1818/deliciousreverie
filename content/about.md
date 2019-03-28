@@ -8,6 +8,14 @@ type = "staticpage"
 
 Delicious Reverie is the personal blog of [Benjamin Read](/about-benjamin-read "recruiters, click here"), a web developer from just outside London, UK.
 
+## The Design
+The style of the site reflects my enjoyment of the countryside, especially during the fresh, bright winter days we often get here after an intense storm has passed. I particularly enjoy taking long walks around Aylesbury and Tring reservoirs in Hertfordshire after one of these storms. During these walks I'm frequently reminded of the classical musical piece "The Lark Ascending" by Vaughn Williams.
+
+Text and background colours have been selected that hopefully improve readability for those with cognitive and visual impairments.
+
+As soon as I saw the "Skybird" typeface I fell in love with it. It perfectly reflects my interest in a personal, home-grown, labour-of-love approach to crafted work instead of what can end up looking mass-produced, impersonal and somewhat homogenous.
+
+## The Name
 I called this site "Delicious Reverie" after an expression which occurs in Norman Denny's English translation of Victor Hugo's epic masterpiece _Les Miserables_.
 
 After being reminded of one of his favourite books, a minor charachter, Monsieur Mabeuf, is said to slip "into a delicious reverie", which means that he becomes absorbed in his thoughts and memories in a delightful state of meditation.
