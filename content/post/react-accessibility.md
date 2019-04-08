@@ -6,9 +6,10 @@ description = "In the recent past, I've heard React being criticised for not bei
 categories = [
   "development",
 ]
-tags = [ 
+tags = [
     "accessibility",
-    "react"
+    "react",
+    "netmag articles"
 ]
 +++
 

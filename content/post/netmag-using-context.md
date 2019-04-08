@@ -1,5 +1,5 @@
 +++
-date = "2017-03-07T14:21:21+01:00"
+date = "2019-04-08T14:21:21+01:00"
 draft = false
 title = "Published Article: Better Performance with the React Context API"
 description = "Build for complexity and performance in this deep dive into React's Context API. This article was originally published in Net Magazine."
@@ -12,13 +12,8 @@ tags = [
 ]
 
 +++
-**Whoops!**
 
-I inadvertenly published this post before it was printed in Net Magazine!
-
-Please check back in a few weeks to see this content, or purchase the May edition of the magazine!
-
-<!-- **People are demanding more and more out of their online services, and businesses strive to excel these demands, leading to more and more complex sites ... and larger JavaScript bundles too!**
+**People are demanding more and more out of their online services, and businesses strive to excel these demands, leading to more and more complex sites ... and larger JavaScript bundles too!**
 
 How can we continue to deliver a first-class experience for users whilst still building for these levels of complexity? One good way of doing this - whilst at the same time as delivering more performant apps - is by using React's Context API.
 
@@ -213,6 +208,6 @@ To do that, you could use two fantastic resources that have recently become avai
 Codesandbox (codesandbox.io) is an online editor for creating apps in many languages, with built-in support for React. It's like codesandbox but with support for javascript modules
 
 ## Spectrum.chat
-[Spectrum.chat](Spectrum.chat), built by the creator of styled-components and recently acquired by GitHub, is rapidly becoming a lively community. I've found it a great place to share ideas, ask for help and chat about the latest developments in JavaScript, React and other tools I use every day. Hope to see you there! -->
+[Spectrum.chat](Spectrum.chat), built by the creator of styled-components and recently acquired by GitHub, is rapidly becoming a lively community. I've found it a great place to share ideas, ask for help and chat about the latest developments in JavaScript, React and other tools I use every day. Hope to see you there!
 
 ---
