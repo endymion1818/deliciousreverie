@@ -9,7 +9,11 @@ type = "staticpage"
 Delicious Reverie is the personal blog of [Benjamin Read](/about-benjamin-read "recruiters, click here"), a web developer from just outside London, UK.
 
 ## The Design
-The style of the site reflects my enjoyment of the countryside, especially during the fresh, bright winter days we often get here after an intense storm has passed. I particularly enjoy taking long walks around Aylesbury and Tring reservoirs in Hertfordshire after one of these storms. During these walks I'm frequently reminded of the classical musical piece "The Lark Ascending" by Vaughn Williams.
+The style of the site reflects my enjoyment of the countryside, especially during the fresh, bright winter days we often get here after an intense storm has passed. I particularly enjoy taking long walks around Aylesbury and Tring reservoirs in Hertfordshire after one of these storms. During these walks I'm frequently reminded of the classical musical piece "The Lark Ascending" by Vaughn Williams and the painting "Chill October" by John Everett Millais.
+
+![Painting of a winter lake, with reeds and bulrushes surrounding it, larks flying in the air overhead](/images/chill-october-john-everett-millais.jpg)
+
+<iframe src="https://open.spotify.com/embed/track/7IULcUDWt4I9crI2BEdXN0" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 Text and background colours have been selected that hopefully improve readability for those with cognitive and visual impairments.
 
