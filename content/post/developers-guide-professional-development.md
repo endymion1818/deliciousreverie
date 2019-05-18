@@ -2,7 +2,7 @@
 date = "2019-05-18T14:21:21+01:00"
 draft = false
 title = "A Developer's Guide to Professional Development"
-description = "I wrote this post for the Indigo Tree blog. It's a case study about how I reduced loading times on a site from 42 seconds (I know, right?!) to only 3 seconds."
+description = "How do we not get overloaded with what's going on in web development, but not left behind either? Should we try to keep up with latest trends that might fade away into nothing? Here's my take on how (and why) I continue to learn about web development, and how."
 categories = [
   "development"
 ]
@@ -11,7 +11,6 @@ tags = [
 ]
 
 +++
-# A Developer's Guide to Professional Development
  
 I got asked today why I was applying to attend two different conferences this year. Neither of these conferences were cheap; on top of these my company generously provides me with access to 2 learning platforms as well. As well as that, I pay for another learning platform myself. Is so much needed to keep ahead?
  
