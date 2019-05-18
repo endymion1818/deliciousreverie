@@ -2,7 +2,7 @@
 date = "2019-05-18T14:21:21+01:00"
 draft = false
 title = "A Developer's Guide to Professional Development"
-description = "How do we not get overloaded with what's going on in web development, but not left behind either? Should we try to keep up with latest trends that might fade away into nothing? Here's my take on how (and why) I continue to learn about web development, and how."
+description = "How do we not get overloaded with what's going on in web development, but not left behind either? Should we try to keep up with latest trends that might fade away into nothing? Here's my take on how (and why) I continue to learn about web development."
 categories = [
   "development"
 ]
