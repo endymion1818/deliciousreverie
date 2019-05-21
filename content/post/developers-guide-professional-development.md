@@ -12,7 +12,7 @@ tags = [
 
 +++
  
-I got asked today why I was applying to attend two different conferences this year. Neither of these conferences were cheap; on top of these my company generously provides me with access to 2 learning platforms as well. As well as that, I pay for another learning platform myself. Is so much needed to keep ahead?
+I got asked today why I was applying to attend two different conferences this year. Neither of these conferences were cheap; I feel very lucky to have a training budget where I work. On top of these my company generously provides me with access to 2 learning platforms as to help me become a better developer. As well as that, I pay for another learning platform myself. Is so much needed to keep ahead?
  
 Is any of it really necessary?
  
