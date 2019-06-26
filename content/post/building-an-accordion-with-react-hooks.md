@@ -193,7 +193,7 @@ Did you see the extra square brackets (`[]`) at the end? By passing an empty arr
  
 I think using React Hooks is a simpler and tidier workflow that helps our code to be quicker to understand and more flexible. There are some significant changes to the way we use React, but understanding the differences in my opinion is only going to improve the way you write your code.
 
-You can find this example on Code Sandbox: https://codesandbox.io/s/j2kl6zl769
+You can find this example on Code Sandbox: https://codesandbox.io/s/wqnmql8l78
  
 <hr>
 
