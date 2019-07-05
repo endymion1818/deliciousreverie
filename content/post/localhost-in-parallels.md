@@ -20,14 +20,14 @@ So typing in `http://localhost:8000` was never going to work. After much googlin
 I thought to myself that the Angular CLI probably uses the same common code (Node's HTTP interface) and tried that in my app:
 
 ```bash
-gatsby serve --host:0.0.0.0
+gatsby serve --host=0.0.0.0
 ```
 
 This little trick mentioned in the forum means that the server will allow access on any port, not just on localhost. So now I had to find out what port Parallels would accept.
 
 Following that thread down, I found this IP address mentioned by one of the Parallels developers: `10.211.55.2`. Aha, that worked.
 
-So in future, if you're running a NodeJS server on their mac and wants to view the site on Windows using Parallels, first spin up your server with the `--host:0.0.0.0` (that's four dots and four zeros) and visit the following address in the browser on Windows:
+So in future, if you're running a NodeJS server on their mac and wants to view the site on Windows using Parallels, first spin up your server with the `--host=0.0.0.0` (that's four dots and four zeros) and visit the following address in the browser on Windows:
 
 ```bash
 http://10.211.55.2:8000 // or whatever your port is.
