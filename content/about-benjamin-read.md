@@ -22,9 +22,11 @@ Because of this I'm used to mucking in and doing whatever becomes necessary for 
 
 
 ### JavaScript
-I enjoy functional programming. I have created UI libraries, built apps with connected API sources, and have used a variety of code resources to build single-page web apps. I write unit and integration test and use TypeScript where the need arises.
+I enjoy functional programming. I have created UI libraries, built apps with connected API sources, and have used a variety of code resources to build single-page web apps. I write unit and integration test and enjoy using TypeScript.
 
-I am increasingly mindful of the amount of JavaScript we send down to and that is parsed by the browser. I have seen clear evidence that the more we can do to move rendering to the server (as much as possible), the better our conversion metrics will become.
+I am increasingly mindful of the amount of JavaScript we send down to and that is parsed by the browser. I have seen clear evidence that the more we can do to move rendering to the server (as much as possible), and being mindful of the external libraries we import, the better our conversion metrics will become.
+
+Having said that, I'm a self-taught developer with no CS degree. If you ask me about bubble sorts, binary trees or other theoretical stuff I will stare blankly at you. I might be able to do those things, but don't expect me to demonstrate degree knowledge when I don't have one.
 
 I've stayed away from mentioning specific technologies and frameworks, but you'll see what I've been working with recently by following the link below:
 
