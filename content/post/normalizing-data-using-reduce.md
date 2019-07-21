@@ -51,7 +51,7 @@ The first thing I did was to map the new values of the team using the following 
 
 ```js
 
-ItemsTeamsMap {
+itemsTeamsMap {
                 "teamone" : "team1",
                 "teamtwo" : "team2",
 }
@@ -59,7 +59,7 @@ ItemsTeamsMap {
 const itemsMapped = []
  
   const filteredItems = edges.map(item => {
-    career.node.categories.team = ItemsTeamsMap[career.node.categories.team]
+    item.node.categories.team = itemsTeamsMap[item.node.categories.team]
     itemsMapped.push(item)
   })
 ```
@@ -71,7 +71,7 @@ This was especially important because it wasn't a 1:1 match, some teams would be
 Once I had that, I needed to sort my items by the new team values I'd given them so that grouping would be easier using a bubble sort:
 
 ```js
-  const sortedCareers = careersMapped.reduce((acc, current) => {
+  const sortedItems = ItemsMapped.reduce((acc, current) => {
     acc[current.node.categories.team] = acc[current.node.categories.team] || []
     acc[current.node.categories.team].push(current)
     return acc
@@ -108,7 +108,7 @@ This was a good deal closer to the final object that I needed. Of course though,
 ## Step 3: Array of Objects
 
 ```js
-  const finalisedCareers = Object.entries(sortedCareers).reduce(
+  const finalisedItems = Object.entries(sortedItems).reduce(
     (acc, [team, items]) =>
       acc.concat({
         team,
