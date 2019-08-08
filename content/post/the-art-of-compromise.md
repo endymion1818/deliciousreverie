@@ -5,10 +5,10 @@ title = "The Art of Compromise"
 description = "Working as part of a larger team often involves skills that aren't readily taught as part of a person's development career. But they are essential if you're going to be developing software as part of a team."
 categories = [
   "development",
-  "industry"
+  "personal"
 ]
 tags = [
-    "css",
+    "professional-development",
    "javascript"
 ]
 +++
