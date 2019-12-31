@@ -1,18 +1,16 @@
-+++
-date = "2019-04-08T14:21:21+01:00"
-draft = false
-title = "Published Article: Better Performance with the React Context API"
-description = "Build for complexity and performance in this deep dive into React's Context API. This article was originally published in Net Magazine."
-categories = [
-  "development"
-]
-tags = [
-    "performance",
-   "netmag articles",
-   "javascript"
-]
-
-+++
+---
+categories:
+- development
+date: "2019-04-08T14:21:21+01:00"
+description: Build for complexity and performance in this deep dive into React's Context
+  API. This article was originally published in Net Magazine.
+draft: false
+tags:
+- performance
+- netmag articles
+- javascript
+title: 'Published Article: Better Performance with the React Context API'
+---
 
 **People are demanding more and more out of their online services, and businesses strive to excel these demands, leading to more and more complex sites ... and larger JavaScript bundles too!**
 

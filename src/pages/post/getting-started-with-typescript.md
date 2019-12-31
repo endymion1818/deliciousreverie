@@ -1,17 +1,16 @@
-+++
-date = "2019-08-22T14:21:21+01:00"
-draft = false
-title = "Published Article: Getting Started with TypeScript"
-description = "TypeScript. You either love it, or hate it ... or are terrified of it. But it could be a valuable tool that benefits your workflow. This article, originally published in Net magazine, shows you how to get started with TypeScript"
-categories = [
-  "development"
-]
-tags = [ 
-    "netmag articles",
-   "javascript"
-]
-
-+++
+---
+categories:
+- development
+date: "2019-08-22T14:21:21+01:00"
+description: TypeScript. You either love it, or hate it ... or are terrified of it.
+  But it could be a valuable tool that benefits your workflow. This article, originally
+  published in Net magazine, shows you how to get started with TypeScript
+draft: false
+tags:
+- netmag articles
+- javascript
+title: 'Published Article: Getting Started with TypeScript'
+---
 Mention TypeScript to a developer who works with JavaScript and you'll probably get one of two responses: they will either struggle to understand why someone would NOT want to use TypeScript, or they will struggle to see why someone WOULD use it.
 
 I think this sometimes depends on where you started your journey to JavaScript. Often people come to the language from a server-side language such as C or Java, which are statically typed. In these languages, dynamic typing is seen as a real hazard, an unsafe practice.

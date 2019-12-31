@@ -1,16 +1,17 @@
-+++
-date = "2018-02-10T15:21:21+01:00"
-draft = false
-title = "Using Pop!_OS for Work"
-description = "In November last year I switched from using Windows at my place of work to using Pop!_OS by System76, an Ubuntu derivative designed for developers, researchers and scientists. What motivated me to make the switch? What benefits, and disadvantages, has it brought me?"
-categories = [
-  "sysAdmin"
-]
-tags = [
-    "system administration",
-    "linux"
-]
-+++
+---
+categories:
+- sysAdmin
+date: "2018-02-10T15:21:21+01:00"
+description: In November last year I switched from using Windows at my place of work
+  to using Pop!_OS by System76, an Ubuntu derivative designed for developers, researchers
+  and scientists. What motivated me to make the switch? What benefits, and disadvantages,
+  has it brought me?
+draft: false
+tags:
+- system administration
+- linux
+title: Using Pop!_OS for Work
+---
 
 **In November last year I switched from using Windows at my place of work to using Pop!_OS by System76, an Ubuntu derivative designed for developers, researchers and scientists. What motivated me to make the switch? What benefits, and disadvantages, has it brought me?**
 

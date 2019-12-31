@@ -1,18 +1,19 @@
-+++
-date = "2018-07-06T14:21:21+01:00"
-draft = false
-title = "How Website Forms Work"
-description = "'Form Follows Function' goes the saying, but with HTML forms, it's the other way round. At least in terms of what happens when you fill out a form, and then click the button to 'send': a function processes the form. What happens during this process? Why is it necessary? What are some of the options for serverless form handling?"
-categories = [
-  "development"
-]
-tags = [
-    "understanding the web",
-   "php",
-	 "serverless"
-]
-
-+++
+---
+categories:
+- development
+date: "2018-07-06T14:21:21+01:00"
+description: '''Form Follows Function'' goes the saying, but with HTML forms, it''s
+  the other way round. At least in terms of what happens when you fill out a form,
+  and then click the button to ''send'': a function processes the form. What happens
+  during this process? Why is it necessary? What are some of the options for serverless
+  form handling?'
+draft: false
+tags:
+- understanding the web
+- php
+- serverless
+title: How Website Forms Work
+---
 HTML Forms are one of the most fundamental elements in the web builder's toolbox. It would be a rare website that doesn't use this element to complete any of the most basic tasks someone might want to achieve. But there's a lot that goes on behind the scenes. Here's a bit more of an in-depth look at what happens when you click 'Send' on a form, and why you need some server-side code (somewhere) to handle that process.
 
 First of all, we need a short history lesson about the form HTML element.

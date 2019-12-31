@@ -1,18 +1,16 @@
-+++
-date = "2018-04-24T14:21:21+01:00"
-draft = false
-title = "Talk: How Were Using WordPress as a Headless CMS"
-description = "At a recent WordPress conference in London I gave this talk. It was a terrifying and yet validating experience!"
-categories = [
-  "development"
-]
-tags = [
-    "performance",
-   "indigotree",
-   "wordpress"
-]
-
-+++
+---
+categories:
+- development
+date: "2018-04-24T14:21:21+01:00"
+description: At a recent WordPress conference in London I gave this talk. It was a
+  terrifying and yet validating experience!
+draft: false
+tags:
+- performance
+- indigotree
+- wordpress
+title: 'Talk: How Were Using WordPress as a Headless CMS'
+---
 **I'm not a stranger to public speaking. But speaking on a technical subject? To people who are smarter than me? Not something I relish. Yet, I felt I had something to offer the WordPress community, so I volunteered to speak at one of the UK's biggest WordPress meetups, WordCamp London.**
 
 Ever since starting my web development career I've wanted to be in the place where I could help other developers out with their development dilemmas. It's taken me a long time to get to this stage, and it's only because of some great help from the following people:

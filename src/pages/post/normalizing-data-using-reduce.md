@@ -1,15 +1,16 @@
-+++
-date = "2019-07-18T15:21:21+01:00"
-draft = false
-title = "Normalizing data using array.prototype.reduce"
-description = "reduce() has terrified me for some time! I hadn't wanted to touch this new array method because I couldn't quite follow what each of it's properties meant. But recently I had an opportunity to deep dive into this function. Here's how I refactored an object to get the results I needed"
-categories = [
-  "development"
-]
-tags = [ 
-    "javascript", 
-]
-+++
+---
+categories:
+- development
+date: "2019-07-18T15:21:21+01:00"
+description: reduce() has terrified me for some time! I hadn't wanted to touch this
+  new array method because I couldn't quite follow what each of it's properties meant.
+  But recently I had an opportunity to deep dive into this function. Here's how I
+  refactored an object to get the results I needed
+draft: false
+tags:
+- javascript
+title: Normalizing data using array.prototype.reduce
+---
 
 **reduce() has terrified me for some time! I hadn't wanted to touch this new array method because I couldn't quite follow what each of it's properties meant. But recently I had an opportunity to deep dive into this function. Here's how I refactored an object to get the results I needed:**
 

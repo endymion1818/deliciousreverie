@@ -1,17 +1,17 @@
-+++
-date = "2017-09-14T14:21:21+01:00"
-draft = false
-title = "Losing Peter"
-description = "Recently I found out that a close friend of mine whom I had lost touch with had taken his own life. This has had a great impact on me, and still saddens me every time I think of him. I want to share this to document our friendship and share some of the thoughts I've had since."
-categories = [
-  "personal"
-]
-tags = [ 
-   "bereavement", 
-   "depression"
-]
-
-+++
+---
+categories:
+- personal
+date: "2017-09-14T14:21:21+01:00"
+description: Recently I found out that a close friend of mine whom I had lost touch
+  with had taken his own life. This has had a great impact on me, and still saddens
+  me every time I think of him. I want to share this to document our friendship and
+  share some of the thoughts I've had since.
+draft: false
+tags:
+- bereavement
+- depression
+title: Losing Peter
+---
 
 I don't recall how Peter and I became friends. We must've struck up some conversation at school, is the only thing I can think of, and quickly found out we had similar interests. Peter is the guy who I used to call up on a Tuesday evening after the latest episode of Babylon 5 aired, and talk abut the episode, speculate about further plot details, and share our amazement of its then cutting edge FX.
 

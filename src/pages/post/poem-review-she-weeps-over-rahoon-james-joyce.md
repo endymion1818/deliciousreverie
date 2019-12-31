@@ -1,15 +1,16 @@
-+++
-date = "2016-07-07T15:21:21+01:00"
-draft = false
-title = "Poem Review: She Weeps Over Rahoon, James Joyce"
-description = "A very dear friend introduced me to James Joyce many years ago with his coming-of-age almost-biography, A Portrait of a Young Man, which had a deep impact on me. But it's only now I'm starting to pick up on just what a master of the English language Joyce was—through his poetry."
-categories = [
-  "personal"
-]
-tags = [ 
-    "poetry", 
-]
-+++
+---
+categories:
+- personal
+date: "2016-07-07T15:21:21+01:00"
+description: A very dear friend introduced me to James Joyce many years ago with his
+  coming-of-age almost-biography, A Portrait of a Young Man, which had a deep impact
+  on me. But it's only now I'm starting to pick up on just what a master of the English
+  language Joyce was—through his poetry.
+draft: false
+tags:
+- poetry
+title: 'Poem Review: She Weeps Over Rahoon, James Joyce'
+---
 
 *A very dear friend introduced me to James Joyce many years ago with his coming-of-age almost-biography, A Portrait of a Young Man, which had a deep impact on me. But it's only now I'm starting to pick up on just what a master of the English language Joyce was—through his poetry.*
 

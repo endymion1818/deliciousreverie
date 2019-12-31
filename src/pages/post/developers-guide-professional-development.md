@@ -1,16 +1,16 @@
-+++
-date = "2019-05-18T14:21:21+01:00"
-draft = false
-title = "A Developer's Guide to Professional Development"
-description = "How do we not get overloaded with what's going on in web development, but not left behind either? Should we try to keep up with latest trends that might fade away into nothing? Here's my take on how (and why) I continue to learn about web development."
-categories = [
-  "development"
-]
-tags = [ 
-    "career development", 
-]
-
-+++
+---
+categories:
+- development
+date: "2019-05-18T14:21:21+01:00"
+description: How do we not get overloaded with what's going on in web development,
+  but not left behind either? Should we try to keep up with latest trends that might
+  fade away into nothing? Here's my take on how (and why) I continue to learn about
+  web development.
+draft: false
+tags:
+- career development
+title: A Developer's Guide to Professional Development
+---
  
 I got asked today why I was applying to attend two different conferences this year. Neither of these conferences were cheap; I feel very lucky to have a training budget where I work. On top of these my company generously provides me with access to 2 learning platforms as to help me become a better developer. As well as that, I pay for another learning platform myself. Is so much needed to keep ahead?
  

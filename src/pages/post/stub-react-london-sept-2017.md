@@ -1,18 +1,18 @@
-+++
-date = "2017-10-14T15:21:21+01:00"
-draft = false
-title = "Published article: Notes from React London September 2017"
-description = "In September I attended React London meetup at Facebooks offices near Kings Cross to hear Benjie Gillam, Faraz Khan and Robbie McCorkell talk about GraphQL and css-in-js strategies."
-categories = [
-  "published content",
-  "development"
-]
-tags = [
-    "javascript",
-    "css",
-    "indigotree"
-]
-+++
+---
+categories:
+- published content
+- development
+date: "2017-10-14T15:21:21+01:00"
+description: In September I attended React London meetup at Facebooks offices near
+  Kings Cross to hear Benjie Gillam, Faraz Khan and Robbie McCorkell talk about GraphQL
+  and css-in-js strategies.
+draft: false
+tags:
+- javascript
+- css
+- indigotree
+title: 'Published article: Notes from React London September 2017'
+---
 
 **In September I attended React London meetup at Facebook’s offices near King’s Cross to hear Benjie Gillam, Faraz Khan and Robbie McCorkell talk about GraphQL and css-in-js strategies.**
 

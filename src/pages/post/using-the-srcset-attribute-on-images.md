@@ -1,15 +1,16 @@
-+++
-date = "2016-01-15T15:21:21+01:00"
-draft = false
-title = "Using the Srcset attribute on images"
-description = "So, I've been using the relatively new (and somewhat confusing) srcset attribute to serve a couple of interesting use cases lately. This spec is really, really useful in certain circumstances, two of which I'd like to share with you here."
-categories = [
-  "development"
-]
-tags = [ 
-    "HTML", 
-]
-+++
+---
+categories:
+- development
+date: "2016-01-15T15:21:21+01:00"
+description: So, I've been using the relatively new (and somewhat confusing) srcset
+  attribute to serve a couple of interesting use cases lately. This spec is really,
+  really useful in certain circumstances, two of which I'd like to share with you
+  here.
+draft: false
+tags:
+- HTML
+title: Using the Srcset attribute on images
+---
 
 **So, I've been using the relatively new (and somewhat confusing) srcset attribute to serve a couple of interesting use cases lately. This spec is really, really useful in certain circumstances, two of which I'd like to share with you here.**
 

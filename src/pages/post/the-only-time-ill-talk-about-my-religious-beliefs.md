@@ -1,16 +1,17 @@
-+++
-date = "2016-05-16T15:21:21+01:00"
-draft = false
-title = "The Only Time I'll Talk About My Religious Beliefs"
-description = "You may have noticed that I refer to myself as one of Jehovah's Witnesses occasionally. I don't think I've openly discussed this subject with any of you so far. However, I think that, out of curiosity, someone might like to know a little bit more. This post aims to tell you the only time I'll talk about my religion in my professional sphere."
-categories = [
-  "personal",
-]
-tags = [ 
-    "personal",
-]
-
-+++
+---
+categories:
+- personal
+date: "2016-05-16T15:21:21+01:00"
+description: You may have noticed that I refer to myself as one of Jehovah's Witnesses
+  occasionally. I don't think I've openly discussed this subject with any of you so
+  far. However, I think that, out of curiosity, someone might like to know a little
+  bit more. This post aims to tell you the only time I'll talk about my religion in
+  my professional sphere.
+draft: false
+tags:
+- personal
+title: The Only Time I'll Talk About My Religious Beliefs
+---
 **You may have noticed that I refer to myself as one of Jehovah's Witnesses occasionally. I don't think I've openly discussed this subject with any of you so far. However, I think that, out of curiosity, someone might like to know a little bit more. This post aims to tell you the only time I'll talk about my religion in my professional sphere.**
 
 It's no accident that there aren't any articles of a religious nature on this site, despite me being one of Jehovah's Witnesses. The main reason is that it very rarely affects my professional life. And it has never affected my relationships at work or in my professional community, at least not in a negative way ( I hope my colleagues will back me up on that! )

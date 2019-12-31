@@ -1,16 +1,16 @@
-+++
-date = "2018-02-10T15:21:21+01:00"
-draft = false
-title = "Hugo theme - Delicious Reverie"
-description = "Recently someone reached out to ask if they could use my theme that I use on deliciousreverie.co.uk on their site. So I've decided to release this theme to the public, albeit with a few changes."
-categories = [
-  "hugo"
-]
-tags = [
-    "theme authoring",
-    "go"
-]
-+++
+---
+categories:
+- hugo
+date: "2018-02-10T15:21:21+01:00"
+description: Recently someone reached out to ask if they could use my theme that I
+  use on deliciousreverie.co.uk on their site. So I've decided to release this theme
+  to the public, albeit with a few changes.
+draft: false
+tags:
+- theme authoring
+- go
+title: Hugo theme - Delicious Reverie
+---
 
 **Recently someone reached out to ask if they could use my theme that I use on deliciousreverie.co.uk on their site. So I've decided to release this theme to the public, albeit with a few changes.**
 

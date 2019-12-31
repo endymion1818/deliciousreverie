@@ -1,16 +1,16 @@
-+++
-date = "2017-05-12T15:21:21+01:00"
-draft = false
-title = "2016 Review / 2017 Aims"
-description = "2016 as a year was as unconventional as they come. Globally there have been some massive shifts politically, socially and in other ways. My life too has taken some pretty interesting turns. I'm following suit here by posting a quick review of my year and what I hope I can achieve in 2017 from a professional perspective."
-categories = [
-  "personal"
-]
-tags = [ 
-    "year in review", 
-]
-
-+++
+---
+categories:
+- personal
+date: "2017-05-12T15:21:21+01:00"
+description: 2016 as a year was as unconventional as they come. Globally there have
+  been some massive shifts politically, socially and in other ways. My life too has
+  taken some pretty interesting turns. I'm following suit here by posting a quick
+  review of my year and what I hope I can achieve in 2017 from a professional perspective.
+draft: false
+tags:
+- year in review
+title: 2016 Review / 2017 Aims
+---
 
 **2016 as a year was as unconventional as they come. Globally there have been some massive shifts politically, socially and in other ways. My life too has taken some pretty interesting turns. I'm following suit here by posting a quick review of my year and what I hope I can achieve in 2017 from a professional perspective.**
 

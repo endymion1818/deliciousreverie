@@ -1,17 +1,18 @@
-+++
-date = "2019-03-12T14:21:21+01:00"
-draft = false
-title = "Both Sides, Now"
-description = "Many people I respect and admire have voiced conflicting opinions on their blogs and Twitter recently. I wanted to reply in general with reference to a song that pops into my head every time I hear those conflicting opinions being discussed."
-categories = [
-  "development",
-  "industry"
-]
-tags = [
-    "css",
-   "javascript"
-]
-+++
+---
+categories:
+- development
+- industry
+date: "2019-03-12T14:21:21+01:00"
+description: Many people I respect and admire have voiced conflicting opinions on
+  their blogs and Twitter recently. I wanted to reply in general with reference to
+  a song that pops into my head every time I hear those conflicting opinions being
+  discussed.
+draft: false
+tags:
+- css
+- javascript
+title: Both Sides, Now
+---
 **CSS isn't a programming language. CSS is a programming language. JavaScript shouldn't be used to render HTML. JavaScript is the only way of writing HTML. CSS is overly complicated, difficult to learn and hopelessly outdated. All of these opinions provoke a response in me. It's just perhaps not the one the authors intended.**
 
 When I see comments like the ones above I can't help but wonder if they're written out of a genuine frustration or concern a person has, whether they're meant to provoke an argument, or even whether they are using others' frustration to raise their own profile.

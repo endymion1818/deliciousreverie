@@ -1,17 +1,17 @@
-+++
-date = "2019-06-25T14:21:21+01:00"
-draft = false
-title = "Published Article: Building an Accordion Component with React Hooks"
-description = "I wrote this post for Net Magazine issue 320. I wanted to showcase how I have begun using React Hooks, and hilight some best practices to follow for better accessibility."
-categories = [
-  "development"
-]
-tags = [ 
-    "netmag articles",
-   "javascript"
-]
-
-+++ 
+---
+categories:
+- development
+date: "2019-06-25T14:21:21+01:00"
+description: I wrote this post for Net Magazine issue 320. I wanted to showcase how
+  I have begun using React Hooks, and hilight some best practices to follow for better
+  accessibility.
+draft: false
+tags:
+- netmag articles
+- javascript
+title: 'Published Article: Building an Accordion Component with React Hooks'
+---
+ 
 In this article, we takes a deep dive into creating an accordion module for React that renders on the server, and that works in Internet Explorer 11.
  
 On a recent project I was involved in creating this Accordion component with a few key requirements:

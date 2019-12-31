@@ -1,17 +1,15 @@
-+++
-date = "2019-01-30T14:21:21+01:00"
-draft = false
-title = "I'm Not Proud"
-description = "I'm not proud of the code I wrote today. In fact, I hated it. But that's okay, it did what it needed to. And I'm going to redo it tomorrow."
-categories = [
-  "development"
-]
-tags = [
-    "professional-development",
-    "tools-and-processes"
-]
-
-+++
+---
+categories:
+- development
+date: "2019-01-30T14:21:21+01:00"
+description: I'm not proud of the code I wrote today. In fact, I hated it. But that's
+  okay, it did what it needed to. And I'm going to redo it tomorrow.
+draft: false
+tags:
+- professional-development
+- tools-and-processes
+title: I'm Not Proud
+---
 
 Today was a stressful day. I was working to a set deadline on which a lot of other tasks depended. I felt that if I failed to achieve my work, there would be a cascade effect that could lead to delaying the release of a product I have been working on.
 

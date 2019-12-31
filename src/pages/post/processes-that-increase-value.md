@@ -1,16 +1,17 @@
-+++
-date = "2015-02-25T15:21:21+01:00"
-draft = false
-title = "Processes that Increase Value: A Cost Effective Service"
-description = "I've recently taken a step back from my work to scope out a process that would make an organisation as efficient, competent and successful as it can be in the hopes of having a clearer understanding of where we are as a company and where we have the opportunity to improve."
-categories = [
-  "project coordination",
-  "design"
-]
-tags = [ 
-    "year in review", 
-]
-+++
+---
+categories:
+- project coordination
+- design
+date: "2015-02-25T15:21:21+01:00"
+description: I've recently taken a step back from my work to scope out a process that
+  would make an organisation as efficient, competent and successful as it can be in
+  the hopes of having a clearer understanding of where we are as a company and where
+  we have the opportunity to improve.
+draft: false
+tags:
+- year in review
+title: 'Processes that Increase Value: A Cost Effective Service'
+---
 
 **I've recently taken a step back from my work to scope out a process that would make an organisation as efficient, competent and successful as it can be in the hopes of having a clearer understanding of where we are as a company and where we have the opportunity to improve.**
 

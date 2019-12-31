@@ -1,16 +1,17 @@
-+++
-date = "2015-10-06T15:21:21+01:00"
-draft = false
-title = "Why Performance Matters"
-description = "Performance seems to be increasingly becoming a battleground for those of us who create websites. How has this situation arisen? How do we cope with these new requirements? How do we ensure our sites and web apps (sorry, Jeremy) don't suffer because of changing landscapes of user — and search engine — requirements."
-categories = [
-  "development",
-  "design"
-]
-tags = [ 
-    "industry thought",
-]
-+++
+---
+categories:
+- development
+- design
+date: "2015-10-06T15:21:21+01:00"
+description: Performance seems to be increasingly becoming a battleground for those
+  of us who create websites. How has this situation arisen? How do we cope with these
+  new requirements? How do we ensure our sites and web apps (sorry, Jeremy) don't
+  suffer because of changing landscapes of user — and search engine — requirements.
+draft: false
+tags:
+- industry thought
+title: Why Performance Matters
+---
 
 **Performance seems to be increasingly becoming a battleground for those of us who create websites. How has this situation arisen? How do we cope with these new requirements? How do we ensure our sites and web apps (sorry, Jeremy) don't suffer because of changing landscapes of user — and search engine — requirements.**
 

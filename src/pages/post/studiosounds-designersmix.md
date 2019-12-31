@@ -1,15 +1,14 @@
-+++
-date = "2015-02-16T15:21:21+01:00"
-draft = false
-title = "#StudioSounds: Designer's Mix"
-description = "I have recently discovered Designer's Mix, an online site containing designer- and coder- friendly soundtracks of awesomeness."
-categories = [
-  "personal"
-]
-tags = [ 
-    "music", 
-]
-+++
+---
+categories:
+- personal
+date: "2015-02-16T15:21:21+01:00"
+description: I have recently discovered Designer's Mix, an online site containing
+  designer- and coder- friendly soundtracks of awesomeness.
+draft: false
+tags:
+- music
+title: '#StudioSounds: Designer''s Mix'
+---
 
 **I have recently discovered Designer's Mix, an online site containing designer- and coder- friendly soundtracks of awesomeness.**
 

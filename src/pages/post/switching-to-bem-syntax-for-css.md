@@ -1,15 +1,17 @@
-+++
-date = "2016-10-21T15:21:21+01:00"
-draft = false
-title = "Switching to BEM Syntax for CSS"
-description = "Like a lot of things in the web world, CSS is a bit of mess. As the web gets more complicated, the tools and languages we use need to develop with us. This is currently happening as the W3C push forward with new functionality like Grid and Flexbox, but until those come into general use, we can aim to limit the risk of our code becoming unfathomable by other developers."
-categories = [
-  "development"
-]
-tags = [ 
-    "CSS", 
-]
-+++
+---
+categories:
+- development
+date: "2016-10-21T15:21:21+01:00"
+description: Like a lot of things in the web world, CSS is a bit of mess. As the web
+  gets more complicated, the tools and languages we use need to develop with us. This
+  is currently happening as the W3C push forward with new functionality like Grid
+  and Flexbox, but until those come into general use, we can aim to limit the risk
+  of our code becoming unfathomable by other developers.
+draft: false
+tags:
+- CSS
+title: Switching to BEM Syntax for CSS
+---
 
 **Like a lot of things in the web world, CSS is a bit of mess. As the web gets more complicated, the tools and languages we use need to develop with us. This is currently happening as the W3C push forward with new functionality like Grid and Flexbox, but until those come into general use, we can aim to limit the risk of our code becoming unfathomable by other developers.**
 

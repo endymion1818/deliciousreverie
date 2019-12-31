@@ -1,18 +1,17 @@
-+++
-date = "2017-05-18T15:21:21+01:00"
-draft = false
-title = "Continuous Deployment with Netlify and Hugo"
-description = "Over the past few days, I've moved tech stack entirely for deliciousreverie.co.uk, from reseller hosting using PHP to cloud hosting on AWS by Netlify, and using continuous deployment. This post details some of the hazards and benefits I encountered."
-categories = [
-  "development"
-]
-tags = [ 
-    "hugo", 
-    "netlify",
-    "this website"
-]
-
-+++
+---
+categories:
+- development
+date: "2017-05-18T15:21:21+01:00"
+description: Over the past few days, I've moved tech stack entirely for deliciousreverie.co.uk,
+  from reseller hosting using PHP to cloud hosting on AWS by Netlify, and using continuous
+  deployment. This post details some of the hazards and benefits I encountered.
+draft: false
+tags:
+- hugo
+- netlify
+- this website
+title: Continuous Deployment with Netlify and Hugo
+---
 
 **Over the past few days, I've moved tech stack entirely for deliciousreverie.co.uk, from reseller hosting using PHP to cloud hosting on AWS by Netlify, and using continuous deployment. This post details some of the hazards and benefits I encountered.** 
 

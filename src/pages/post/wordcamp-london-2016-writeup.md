@@ -1,16 +1,17 @@
-+++
-date = "2016-04-28T15:21:21+01:00"
-draft = false
-title = "WordCamp London 2016 Writeup"
-description = "Wordcamp London 2016 was a great chance to make new friends and learn some excellent insights about running a successful agency, wordpress security and the necessity of backups, and some other stuff I've already started to use on a daily basis. Here's my roundup."
-categories = [
-  "design",
-  "development"
-]
-tags = [ 
-    "conference writeup",
-]
-+++
+---
+categories:
+- design
+- development
+date: "2016-04-28T15:21:21+01:00"
+description: Wordcamp London 2016 was a great chance to make new friends and learn
+  some excellent insights about running a successful agency, wordpress security and
+  the necessity of backups, and some other stuff I've already started to use on a
+  daily basis. Here's my roundup.
+draft: false
+tags:
+- conference writeup
+title: WordCamp London 2016 Writeup
+---
 
 **Wordcamp London 2016 was a great chance to make new friends and learn some excellent insights about running a successful agency, wordpress security and the necessity of backups, and some other stuff I've already started to use on a daily basis. Here's my roundup.**
 

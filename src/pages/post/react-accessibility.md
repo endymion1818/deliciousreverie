@@ -1,17 +1,17 @@
-+++
-date = "2018-12-24T11:21:21+01:00"
-draft = false
-title = "Published Article: React Accessibility"
-description = "In the recent past, I've heard React being criticised for not being accessible, or for allowing practices that don't help developers think about accessibility. I have to disagree."
-categories = [
-  "development",
-]
-tags = [
-    "accessibility",
-    "react",
-    "netmag articles"
-]
-+++
+---
+categories:
+- development
+date: "2018-12-24T11:21:21+01:00"
+description: In the recent past, I've heard React being criticised for not being accessible,
+  or for allowing practices that don't help developers think about accessibility.
+  I have to disagree.
+draft: false
+tags:
+- accessibility
+- react
+- netmag articles
+title: 'Published Article: React Accessibility'
+---
 
 **In the recent past, I've heard React being criticised for not being accessible, or for allowing practices that don't help developers think about accessibility.**
 

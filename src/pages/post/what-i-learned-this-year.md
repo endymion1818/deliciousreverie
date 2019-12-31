@@ -1,15 +1,16 @@
-+++
-date = "2015-09-10T15:21:21+01:00"
-draft = false
-title = "What I learned this year"
-description = "For the past year and a bit, I've worked at Blaze Communication, a marketing agency in Enfield. I've learned so many new things at this company. My knowledge and understanding is far, far different than it was a year ago. Here are some of my observations."
-categories = [
-  "personal"
-]
-tags = [ 
-    "year in review", 
-]
-+++
+---
+categories:
+- personal
+date: "2015-09-10T15:21:21+01:00"
+description: For the past year and a bit, I've worked at Blaze Communication, a marketing
+  agency in Enfield. I've learned so many new things at this company. My knowledge
+  and understanding is far, far different than it was a year ago. Here are some of
+  my observations.
+draft: false
+tags:
+- year in review
+title: What I learned this year
+---
 
 **For the past year and a bit, I've worked at Blaze Communication, a marketing agency in Enfield. I've learned so many new things at this company. My knowledge and understanding is far, far different than it was a year ago. Here are some of my observations.**
 

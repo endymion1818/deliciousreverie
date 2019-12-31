@@ -1,15 +1,15 @@
-+++
-date = "2015-02-23T15:21:21+01:00"
-draft = false
-title = "Normal People Don't Understand Sidebars"
-description = "We've reached a point that, like the image carousel, sidebars have become overused and for a lot of projects superfluous. And, as I've discovered, people don't always understand the concept or how they work."
-categories = [
-  "design"
-]
-tags = [ 
-    "design thinking", 
-]
-+++
+---
+categories:
+- design
+date: "2015-02-23T15:21:21+01:00"
+description: We've reached a point that, like the image carousel, sidebars have become
+  overused and for a lot of projects superfluous. And, as I've discovered, people
+  don't always understand the concept or how they work.
+draft: false
+tags:
+- design thinking
+title: Normal People Don't Understand Sidebars
+---
 
 **We've reached a point that, like the image carousel, sidebars have become overused and for a lot of projects superfluous. And, as I've discovered, people don't always understand the concept or how they work.**
 

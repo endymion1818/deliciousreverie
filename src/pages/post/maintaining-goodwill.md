@@ -1,15 +1,17 @@
-+++
-date = "2015-02-11T15:21:21+01:00"
-draft = false
-title = "Maintaining Goodwill on Difficult Projects"
-description = "It's been great to work with some excellent developers recently, but on one or two occasions, like all of us at some point, we've had relationships with clients and sometimes suppliers, that have been tested. How can we avoid things that could potentially derail a project in progress? How can we keep staff motivated past the pain points of difficult development and changing requirements?"
-categories = [
-  "project coordination"
-]
-tags = [ 
-    "client interaction", 
-]
-+++
+---
+categories:
+- project coordination
+date: "2015-02-11T15:21:21+01:00"
+description: It's been great to work with some excellent developers recently, but
+  on one or two occasions, like all of us at some point, we've had relationships with
+  clients and sometimes suppliers, that have been tested. How can we avoid things
+  that could potentially derail a project in progress? How can we keep staff motivated
+  past the pain points of difficult development and changing requirements?
+draft: false
+tags:
+- client interaction
+title: Maintaining Goodwill on Difficult Projects
+---
 
 **It's been great to work with some excellent developers recently, but on one or two occasions, like all of us at some point, we've had relationships with clients and sometimes suppliers, that have been tested. How can we avoid things that could potentially derail a project in progress? How can we keep staff motivated past the pain points of difficult development and changing requirements?**
 

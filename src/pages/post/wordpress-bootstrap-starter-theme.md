@@ -1,16 +1,16 @@
-+++
-date = "2015-06-26T15:21:21+01:00"
-draft = false
-title = "I Built A Wordpress Bootstrap starter theme"
-description = "I've been using the esteemed Rachel Baker's BootstrapWP theme for a while, but recently I decided to build my own Wordpress / Bootstrap starter theme. Here's why I took this step and what I plan to do with it in the future."
-categories = [
-  "development"
-]
-tags = [ 
-    "PHP" ,
-    "Wordpress", 
-]
-+++
+---
+categories:
+- development
+date: "2015-06-26T15:21:21+01:00"
+description: I've been using the esteemed Rachel Baker's BootstrapWP theme for a while,
+  but recently I decided to build my own Wordpress / Bootstrap starter theme. Here's
+  why I took this step and what I plan to do with it in the future.
+draft: false
+tags:
+- PHP
+- Wordpress
+title: I Built A Wordpress Bootstrap starter theme
+---
 
 **I've been using the esteemed [Rachel Baker's BootstrapWP](https://github.com/rachelbaker/bootstrapwp-Twitter-Bootstrap-for-WordPress/tree/bootstrap3 "Rachel Baker's BootstrapWP on GitHub") theme for a while, but recently I decided to build my own Wordpress / Bootstrap starter theme. Here's why I took this step and what I plan to do with it in the future.**
 

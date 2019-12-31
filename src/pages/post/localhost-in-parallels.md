@@ -1,16 +1,15 @@
-+++
-date = "2019-02-06T14:21:21+01:00"
-draft = false
-title = "Accessing Localhost in Parallels"
-description = "When you start a Node web server using it's HTTP interface you will by default run on a specific host that resolves to  `127.0.0.1`, your localhost. Here's how to access your NodeJS server on Mac in Windows using Parallels."
-categories = [
-  "development"
-]
-tags = [
-    "tools-and-processes"
-]
-
-+++
+---
+categories:
+- development
+date: "2019-02-06T14:21:21+01:00"
+description: When you start a Node web server using it's HTTP interface you will by
+  default run on a specific host that resolves to  `127.0.0.1`, your localhost. Here's
+  how to access your NodeJS server on Mac in Windows using Parallels.
+draft: false
+tags:
+- tools-and-processes
+title: Accessing Localhost in Parallels
+---
 **I just obtained a licence for Parallels for my work computer, and it was a doddle to set up. I didn't realise before now that Parallels will also download and install Windows 10 for you as part of the installer. This was a smooth move. But, when I went to preview my site in IE11 ... nothing happened.**
 
 When you start a Node web server using it's HTTP interface you will by default run on a specific host that resolves to  `127.0.0.1`, your localhost. This isn't shared by your Windows OS although I don't know if there's a way to forward through to there from MacOS.

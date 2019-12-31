@@ -1,17 +1,18 @@
-+++
-date = "2015-02-11T15:21:21+01:00"
-draft = false
-title = "Not Using SASS: Rebellion in the ranks"
-description = "A little while ago, I had a telephone interview in which the lead developer customarily dismissed my application because I didn't know how to write SASS or LESS. He was very born again about the whole thing, and I resolved to learn at least one of these frameworks in response."
-categories = [
-  "development"
-]
-tags = [ 
-    "CSS",
-    "sass",
-    "professional development" 
-]
-+++
+---
+categories:
+- development
+date: "2015-02-11T15:21:21+01:00"
+description: A little while ago, I had a telephone interview in which the lead developer
+  customarily dismissed my application because I didn't know how to write SASS or
+  LESS. He was very born again about the whole thing, and I resolved to learn at least
+  one of these frameworks in response.
+draft: false
+tags:
+- CSS
+- sass
+- professional development
+title: 'Not Using SASS: Rebellion in the ranks'
+---
 
 **A little while ago, I had a telephone interview in which the lead developer customarily dismissed my application because I didn't know how to write SASS or LESS. He was very "born again" about the whole thing, and I resolved to learn at least one of these frameworks in response.**
 

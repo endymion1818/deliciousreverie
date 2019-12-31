@@ -1,15 +1,14 @@
-+++
-date = "2015-02-15T15:21:21+01:00"
-draft = false
-title = "First Steps with Flexbox"
-description = "On a recent project for international research machine builder Anton Paar, I  used the new flex-box CSS module for the first time. Here's how it went."
-categories = [
-  "development"
-]
-tags = [ 
-    "CSS", 
-]
-+++
+---
+categories:
+- development
+date: "2015-02-15T15:21:21+01:00"
+description: On a recent project for international research machine builder Anton
+  Paar, I  used the new flex-box CSS module for the first time. Here's how it went.
+draft: false
+tags:
+- CSS
+title: First Steps with Flexbox
+---
 
 **On a recent project for international research machine builder Anton Paar, I  used the new flex-box CSS module for the first time. Here's how it went.**
 

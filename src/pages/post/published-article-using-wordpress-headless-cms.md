@@ -1,19 +1,17 @@
-+++
-date = "2018-07-25T08:21:21+01:00"
-draft = false
-title = "Published Article: Using WordPress as a Headless CMS"
-description = "This is the reproduction of an article I wrote for Net Magazine and was published in Issue 308 (August 2018)."
-categories = [
-  "development",
-]
-tags = [
-    "serverless",
-   "gatsby",
-   "wordpress",
-   "netmag articles"
-]
-
-+++
+---
+categories:
+- development
+date: "2018-07-25T08:21:21+01:00"
+description: This is the reproduction of an article I wrote for Net Magazine and was
+  published in Issue 308 (August 2018).
+draft: false
+tags:
+- serverless
+- gatsby
+- wordpress
+- netmag articles
+title: 'Published Article: Using WordPress as a Headless CMS'
+---
 In case you missed it, here's the article and links to the example code I wrote to help developers get started with Gatsbyjs.
 
 Code for this example:  https://github.com/endymion1818/netmag-wpheadless

@@ -1,15 +1,17 @@
-+++
-date = "2018-01-09T15:21:21+01:00"
-draft = false
-title = "Maintaining a Legacy PHP Codebase"
-description = "Whilst simultaneously trying to decide what to build in Laravel and considering an old system we had recently inherited, I realised that I _liked_ looking at the spaghetti code, and was comparatively _scared_ of the shiny, new, empty Laravel installation I had just set up. Here's how I dealt with my first few tasks and began strategising how we could protect our clients' investment going forward."
-categories = [
-  "development"
-]
-tags = [
-    "php",
-]
-+++
+---
+categories:
+- development
+date: "2018-01-09T15:21:21+01:00"
+description: Whilst simultaneously trying to decide what to build in Laravel and considering
+  an old system we had recently inherited, I realised that I _liked_ looking at the
+  spaghetti code, and was comparatively _scared_ of the shiny, new, empty Laravel
+  installation I had just set up. Here's how I dealt with my first few tasks and began
+  strategising how we could protect our clients' investment going forward.
+draft: false
+tags:
+- php
+title: Maintaining a Legacy PHP Codebase
+---
 Whilst simultaneously trying to decide what to build in Laravel and considering an old, 4GB spaghetti code monster site that I'd been given, I came to a bit of a realisation.
 
 I realised that I _liked_ looking at the spaghetti code, and was comparatively _scared_ of the shiny, new, empty Laravel installation I had just set up.

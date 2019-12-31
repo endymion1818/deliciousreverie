@@ -1,17 +1,17 @@
-+++
-date = "2018-08-28T14:21:21+01:00"
-draft = false
-title = "The Future of WordPress"
-description = "The blogging platform WordPress has done a huge amount to democratise publishing, to make writing and publishing available to everyone. The new Gutenberg content editor is a bold move, one that will really help many of the millions who use it ... but it won't help everyone."
-categories = [
-  "development"
-]
-tags = [
-    "wordpress",
-   "php"
-]
-
-+++
+---
+categories:
+- development
+date: "2018-08-28T14:21:21+01:00"
+description: The blogging platform WordPress has done a huge amount to democratise
+  publishing, to make writing and publishing available to everyone. The new Gutenberg
+  content editor is a bold move, one that will really help many of the millions who
+  use it ... but it won't help everyone.
+draft: false
+tags:
+- wordpress
+- php
+title: The Future of WordPress
+---
 
 ---
 I have strong opinions on WordPress and the imminent replacement for the classic editor, Gutenberg. I haven't waded into this discussion explicitly. However, I'm no longer developing with WordPress, and the two things are connected.

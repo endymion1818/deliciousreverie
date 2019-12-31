@@ -1,17 +1,17 @@
-+++
-date = "2015-02-06T15:21:21+01:00"
-draft = false
-title = "Code really is Poetry"
-description = "I'm not sure if you remember the early days of the web. I can. I remember when my friend and I would sit at home, bored of talking about _Babylon 5_ (yes, really) and yet not wanting to part company again."
-categories = [
-  "personal"
-]
-tags = [ 
-    "professional development", 
-    "soft skills",
-    "poetry"
-]
-+++
+---
+categories:
+- personal
+date: "2015-02-06T15:21:21+01:00"
+description: I'm not sure if you remember the early days of the web. I can. I remember
+  when my friend and I would sit at home, bored of talking about _Babylon 5_ (yes,
+  really) and yet not wanting to part company again.
+draft: false
+tags:
+- professional development
+- soft skills
+- poetry
+title: Code really is Poetry
+---
 
 **I'm not sure if you remember the early days of the web. I can. I remember when my friend and I would sit at home, bored of talking about _Babylon 5_ (yes, really) and yet not wanting to part company again.**
 

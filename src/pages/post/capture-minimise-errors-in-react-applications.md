@@ -1,17 +1,17 @@
-+++
-date = "2019-03-15T11:21:21+01:00"
-draft = false
-title = "Published Article: Capture and Minimise Errors in your React Applications"
-description = "If we we've spent any time developing, specifically with JavaScript, we've seen the White Screen of Death. Nothing renders to the screen, and the only way of investigating the issue we caused is by opening the console and looking at the stack trace."
-categories = [
-  "development"
-]
-tags = [
-    "react",
-   "netmag articles"
-]
-
-+++
+---
+categories:
+- development
+date: "2019-03-15T11:21:21+01:00"
+description: If we we've spent any time developing, specifically with JavaScript,
+  we've seen the White Screen of Death. Nothing renders to the screen, and the only
+  way of investigating the issue we caused is by opening the console and looking at
+  the stack trace.
+draft: false
+tags:
+- react
+- netmag articles
+title: 'Published Article: Capture and Minimise Errors in your React Applications'
+---
 We've all done it. Whether it's by forgetting to close a function, misspelling a variable or just plain old doing it wrong...
 
 If we we've spent any time developing, specifically with JavaScript, we've seen the White Screen of Death. Nothing renders to the screen, and the only way of investigating the issue we caused is by opening the console and looking at the stack trace.

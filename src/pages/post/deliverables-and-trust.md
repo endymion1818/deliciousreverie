@@ -1,16 +1,17 @@
-+++
-date = "2015-02-27T15:21:21+01:00"
-draft = false
-title = "Deliverables and Trust"
-description = "It's vitally important to have success before you start a project-perhaps the most critical stage to have success. But how far should we go in order to get our clients on board? Should we try to wow clients into signoff? Here's why that is a bad idea."
-categories = [
-  "design"
-]
-tags = [ 
-    "design thinking",
-    "visual design"
-]
-+++
+---
+categories:
+- design
+date: "2015-02-27T15:21:21+01:00"
+description: It's vitally important to have success before you start a project-perhaps
+  the most critical stage to have success. But how far should we go in order to get
+  our clients on board? Should we try to wow clients into signoff? Here's why that
+  is a bad idea.
+draft: false
+tags:
+- design thinking
+- visual design
+title: Deliverables and Trust
+---
 
 **It's vitally important to have success before you start a project-perhaps the most critical stage to have success. But how far should we go in order to get our clients on board? Should we try to "wow" clients into signoff? Here's why that is a bad idea.**
 

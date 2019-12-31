@@ -1,17 +1,18 @@
-+++
-date = "2018-06-08T15:21:21+01:00"
-draft = true
-title = "Content-Author friendly APIs with Strapi"
-description = "I've worked in a few different capacities around the web, and can see the value of interfaces that those writing content for the web feel comfortable using. I'm also becoming more comfortable with JavaScript, and want to find alternatives to the PHP tools I've been using. On that journey, I discovered Strapi."
-categories = [
-  "development"
-]
-tags = [ 
-    "javascript",
-    "tools",
-    "apis" 
-]
-+++
+---
+categories:
+- development
+date: "2018-06-08T15:21:21+01:00"
+description: I've worked in a few different capacities around the web, and can see
+  the value of interfaces that those writing content for the web feel comfortable
+  using. I'm also becoming more comfortable with JavaScript, and want to find alternatives
+  to the PHP tools I've been using. On that journey, I discovered Strapi.
+draft: true
+tags:
+- javascript
+- tools
+- apis
+title: Content-Author friendly APIs with Strapi
+---
 **I've worked in a few different capacities around the web, and can see the value of interfaces that those writing content for the web feel comfortable using. I'm also becoming more comfortable with JavaScript, and want to find alternatives to the PHP tools I've been using. On that journey, I discovered Strapi.**
 
 When I think of content authors, I'm specifically thinking about non-technical individuals who don't want to get involved in writing HTML. For these people, making or editing a Markdown file might be a disagreeable process. This is simply because they need to be in an envinronment that allows them to focus on their current task — writing an article, updating page content, publishing a job advert - without distraction. Or at least, with minimal distraction.

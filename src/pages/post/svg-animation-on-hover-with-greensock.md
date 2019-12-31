@@ -1,18 +1,17 @@
-+++
-date = "2017-05-21T15:21:21+01:00"
-draft = false
-title = "SVG Animation on Hover with GreenSock"
-description = "One thing I've tried to do more of is to use animations on frontend projects I've been involved with. GreenSock animation library is a great way of standardising and improving on animations that otherwise wouldn't be available on all browsers."
-categories = [
-  "development"
-]
-tags = [ 
-    "JavaScript", 
-    "SVG",
-    "animation"
-]
-
-+++
+---
+categories:
+- development
+date: "2017-05-21T15:21:21+01:00"
+description: One thing I've tried to do more of is to use animations on frontend projects
+  I've been involved with. GreenSock animation library is a great way of standardising
+  and improving on animations that otherwise wouldn't be available on all browsers.
+draft: false
+tags:
+- JavaScript
+- SVG
+- animation
+title: SVG Animation on Hover with GreenSock
+---
 **One thing I've tried to do more of is to use animations on frontend projects I've been involved with. GreenSock animation library is a great way of standardising and improving on animations that otherwise wouldn't be available on all browsers.**
 
 Animations add another dimension to your projects that helps users and can provide either an extra bit of feedback, extra charachter, and even increase conversions. 

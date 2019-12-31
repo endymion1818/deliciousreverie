@@ -1,17 +1,18 @@
-
-+++
-date = "2017-09-30T14:21:21+01:00"
-draft = false
-title = "Borges and I"
-description = "As a teenager, and on into my twenties, I developed a real affinity for existential philosophy, but one author that was never mentioned as part of that group was the Argentinian writer and translator Jorge Luis Borges. It wasn't until I stumbled across a collection of his work eight years ago that I even heard of him."
-categories = [
-  "personal"
-]
-tags = [
-    "literature",
-   "existentialist"
-]
-+++
+---
+categories:
+- personal
+date: "2017-09-30T14:21:21+01:00"
+description: As a teenager, and on into my twenties, I developed a real affinity for
+  existential philosophy, but one author that was never mentioned as part of that
+  group was the Argentinian writer and translator Jorge Luis Borges. It wasn't until
+  I stumbled across a collection of his work eight years ago that I even heard of
+  him.
+draft: false
+tags:
+- literature
+- existentialist
+title: Borges and I
+---
 **As a teenager, and on into my twenties, I developed a real affinity for existential philosophy, and really enjoyed reading the works of Kafka, Alain Robbe-Gruillet, Satre, Camus, Samuel Beckett and others. Though these writings aren't what you might call "easy reading", they appealed to this somewhat narcissistic, isolated youth who already felt as if he didn't really belong anywhere.**
 
 One author that I never encountered as part of that group was the Argentinian writer and translator Jorge Luis Borges, and it wasn't until I stumbled across a collection of his work that I even heard of him.

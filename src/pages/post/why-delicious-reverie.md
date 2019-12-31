@@ -1,16 +1,16 @@
-+++
-date = "2015-02-11T15:21:21+01:00"
-draft = false
-title = "Why 'Delicious Reverie'?"
-description = "I may have confused some of you with titling my personal site \"Delicious Reverie\". So I'm going to attempt to explain my decision, and discuss perhaps the greatest work of fiction ever produced in either French or English..."
-categories = [
-  "personal"
-]
-tags = [ 
-    "explaining things",
-    "professional development"
-]
-+++
+---
+categories:
+- personal
+date: "2015-02-11T15:21:21+01:00"
+description: I may have confused some of you with titling my personal site "Delicious
+  Reverie". So I'm going to attempt to explain my decision, and discuss perhaps the
+  greatest work of fiction ever produced in either French or English...
+draft: false
+tags:
+- explaining things
+- professional development
+title: Why 'Delicious Reverie'?
+---
 
 **I may have confused some of you with titling my personal site "Delicious Reverie". So I'm going to attempt to explain my decision, and discuss perhaps the greatest work of fiction ever produced in either French or English...**
 

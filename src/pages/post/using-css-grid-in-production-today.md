@@ -1,16 +1,17 @@
-+++
-date = "2017-07-09T08:21:21+01:00"
-draft = false
-title = "Using CSS Grid In Production Today"
-description = "For me, as well as a lot of others, CSS Grid is the most exciting thing to happen since CSS3 ... possibly even CSS2. But many fear using it in production. This post tackles one common use case where a Flexbox fallback provides support for Internet Explorer and Edge."
-categories = [
-  "development"
-]
-tags = [ 
-    "css", 
-    "new technology"
-]
-+++
+---
+categories:
+- development
+date: "2017-07-09T08:21:21+01:00"
+description: For me, as well as a lot of others, CSS Grid is the most exciting thing
+  to happen since CSS3 ... possibly even CSS2. But many fear using it in production.
+  This post tackles one common use case where a Flexbox fallback provides support
+  for Internet Explorer and Edge.
+draft: false
+tags:
+- css
+- new technology
+title: Using CSS Grid In Production Today
+---
 **For me, as well as a lot of others, CSS Grid is the most exciting thing to happen since CSS3 ... possibly even CSS2. But many fear using it in production. This post tackles one common use case where a Flexbox fallback provides support for Internet Explorer and Edge.**
 
 I'm really, really excited about CSS Grid. This new technology, which allows developers to finally build a structured document layout natively without using a hack, was released in most major browsers in about March of this year.

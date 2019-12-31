@@ -1,15 +1,15 @@
-+++
-date = "2015-04-14T15:21:21+01:00"
-draft = false
-title = "#StudioSounds: Crossroads Playlist"
-description = "Here's another fantastic playlist from Designer's Mix, called Crossroads. If you're an 80s kid, or possibly 90s too, you'll love the synth beats of this track listing."
-categories = [
-  "personal"
-]
-tags = [ 
-    "music", 
-]
-+++
+---
+categories:
+- personal
+date: "2015-04-14T15:21:21+01:00"
+description: Here's another fantastic playlist from Designer's Mix, called Crossroads.
+  If you're an 80s kid, or possibly 90s too, you'll love the synth beats of this track
+  listing.
+draft: false
+tags:
+- music
+title: '#StudioSounds: Crossroads Playlist'
+---
 
 **Here's another fantastic playlist from Designer's Mix, called Crossroads. If you're an 80s kid, or possibly 90s too, you'll love the synth beats of this track listing.**
 

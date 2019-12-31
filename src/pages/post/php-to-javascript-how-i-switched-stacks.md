@@ -1,20 +1,20 @@
-+++
-date = "2018-08-08T14:21:21+01:00"
-draft = false
-title = "From PHP to JavaScript: How I Switched Stacks"
-description = "The last 6 months has been a bit of a whirlwind for me. I have gone from working with agencies and using a mix of technologies, to JavaScript development in a fintech organisation. This has been largely due to my work with GatsbyJS and Serverless."
-categories = [
-  "personal",
-  "development"
-]
-tags = [
-    "zopa",
-   "indigotree",
-   "gatsbyjs",
-   "serverless"
-]
-
-+++
+---
+categories:
+- personal
+- development
+date: "2018-08-08T14:21:21+01:00"
+description: The last 6 months has been a bit of a whirlwind for me. I have gone from
+  working with agencies and using a mix of technologies, to JavaScript development
+  in a fintech organisation. This has been largely due to my work with GatsbyJS and
+  Serverless.
+draft: false
+tags:
+- zopa
+- indigotree
+- gatsbyjs
+- serverless
+title: 'From PHP to JavaScript: How I Switched Stacks'
+---
 I've been working in web development for the past 8 years or so. Traditionally, I have worked at agencies, creating sites that have been designed in Photoshop, and built afterwards with a CMS integration such as Perch, WordPress, or similar, with occasional forays into Laravel.
 
 During that time I've had the opportunity to work with JavaScript too. But understanding the language well seemed a bit beyond my grasp. One of the reasons for this was, I think, that I was trying to juggle several languages at once. I spent a lot of time understanding design patterns in PHP. Then, after I interviewed at Google, I decided to focus more deeply on CSS and HTML. And with these PHP projects, a lot was done in that language, leaving JavaScript as a vehicle for presentational enhancement only.

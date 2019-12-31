@@ -1,16 +1,17 @@
-+++
-date = "2015-02-18T15:21:21+01:00"
-draft = false
-title = "Where We Are with Wordpress"
-description = "Wordpress is becoming to websites what Facebook is to the Internet in some countries: inseperable. Almost as if you can't build a website without Wordpress, at least not one that has a Content Management System (CMS). I'm making a case for change."
-categories = [
-  "development"
-]
-tags = [ 
-    "industry thought", 
-    "wordpress"
-]
-+++
+---
+categories:
+- development
+date: "2015-02-18T15:21:21+01:00"
+description: 'Wordpress is becoming to websites what Facebook is to the Internet in
+  some countries: inseperable. Almost as if you can''t build a website without Wordpress,
+  at least not one that has a Content Management System (CMS). I''m making a case
+  for change.'
+draft: false
+tags:
+- industry thought
+- wordpress
+title: Where We Are with Wordpress
+---
 
 **Wordpress is becoming to websites what Facebook is to the Internet in some countries: inseperable. Almost as if you can't build a website without Wordpress, at least not one that has a Content Management System (CMS). I'm making a case for change.**
 

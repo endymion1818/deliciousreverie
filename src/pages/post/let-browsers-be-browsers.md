@@ -1,15 +1,16 @@
-+++
-date = "2015-11-23T15:21:21+01:00"
-draft = false
-title = "Let Browsers be Browsers"
-description = "I've been hearing a lot of different, seemingly contradictory messages from the industry in recent weeks regarding frontend frameworks and progressive enhancement. I got so frustrated that I started a discussion on Web Freelancers Hub about it. I felt the answers that came back were worth documenting."
-categories = [
-  "development"
-]
-tags = [ 
-    "industry thought", 
-]
-+++
+---
+categories:
+- development
+date: "2015-11-23T15:21:21+01:00"
+description: I've been hearing a lot of different, seemingly contradictory messages
+  from the industry in recent weeks regarding frontend frameworks and progressive
+  enhancement. I got so frustrated that I started a discussion on Web Freelancers
+  Hub about it. I felt the answers that came back were worth documenting.
+draft: false
+tags:
+- industry thought
+title: Let Browsers be Browsers
+---
 
 **I've been hearing a lot of different, seemingly contradictory messages from the industry in recent weeks regarding frontend frameworks and progressive enhancement. I got so frustrated that I started a discussion on Web Freelancers Hub about it. I felt the answers that came back were worth documenting.**
 

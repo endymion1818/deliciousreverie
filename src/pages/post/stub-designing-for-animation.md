@@ -1,18 +1,18 @@
-+++
-date = "2017-05-16T15:21:21+01:00"
-draft = false
-title = "Published article: Designing for Animation"
-description = "Deciding what to animate as a designer can be difficult, particularly because everything you do has to be expressed in code. And not everything can be. This post for the Indigo Tree blog aims to help designers identify some things they might like to keep in mind when designing for interactions."
-categories = [
-  "published content",
-  "development"
-]
-tags = [
-    "animation",
-    "indigotree"
-]
-
-+++
+---
+categories:
+- published content
+- development
+date: "2017-05-16T15:21:21+01:00"
+description: Deciding what to animate as a designer can be difficult, particularly
+  because everything you do has to be expressed in code. And not everything can be.
+  This post for the Indigo Tree blog aims to help designers identify some things they
+  might like to keep in mind when designing for interactions.
+draft: false
+tags:
+- animation
+- indigotree
+title: 'Published article: Designing for Animation'
+---
 
 **Deciding what to animate as a designer can be difficult, particularly because everything you do has to be expressed in code. And not everything can be. This post for the Indigo Tree blog aims to help designers identify some things they might like to keep in mind when designing for interactions.**
 

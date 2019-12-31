@@ -1,15 +1,17 @@
-+++
-date = "2016-01-25T15:21:21+01:00"
-draft = false
-title = "Finally [a fitting job title]"
-description = "I've always felt that my place in the web development industry has been misunderstood. It's been misunderstood by recruiters, by my employers, and more often that not, by myself as well. But over the past few weeks a new concept has been gaining ground that I identify with closely, and if this catches on, I think it could change the face of our industry."
-categories = [
-  "personal"
-]
-tags = [ 
-    "professional development", 
-]
-+++
+---
+categories:
+- personal
+date: "2016-01-25T15:21:21+01:00"
+description: I've always felt that my place in the web development industry has been
+  misunderstood. It's been misunderstood by recruiters, by my employers, and more
+  often that not, by myself as well. But over the past few weeks a new concept has
+  been gaining ground that I identify with closely, and if this catches on, I think
+  it could change the face of our industry.
+draft: false
+tags:
+- professional development
+title: Finally [a fitting job title]
+---
 
 **I've always felt that my place in the web development industry has been misunderstood. It's been misunderstood by recruiters, by my employers, and more often that not, by myself as well. But over the past few weeks a new concept has been gaining ground that I identify with closely, and if this catches on, I think it could change the face of our industry.**
 

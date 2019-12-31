@@ -1,18 +1,17 @@
-+++
-date = "2017-05-30T15:21:21+01:00"
-draft = false
-title = "Doughnut chart SVG Animation"
-description = "For a recent project, I was asked to design an animation for a doughnut chart. The data could be dynamically editable by the content author, who could also choose how many animations to display on a given content area."
-categories = [
-	"development"
-]
-tags = [ 
-  "Animation",
-  "JavaScript",
-  "SVG"
-]
-
-+++
+---
+categories:
+- development
+date: "2017-05-30T15:21:21+01:00"
+description: For a recent project, I was asked to design an animation for a doughnut
+  chart. The data could be dynamically editable by the content author, who could also
+  choose how many animations to display on a given content area.
+draft: false
+tags:
+- Animation
+- JavaScript
+- SVG
+title: Doughnut chart SVG Animation
+---
 
 **For a recent project, I was asked to design an animation for a doughnut chart. The data could be dynamically editable by the content author, who could also choose how many animations to display on a given content area.**
 

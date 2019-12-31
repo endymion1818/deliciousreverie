@@ -1,10 +1,9 @@
-+++
-date = "2012-05-07T16:12:46+01:00"
-draft = false
-title = "Links"
-type = "staticpage"
-
-+++
+---
+date: "2012-05-07T16:12:46+01:00"
+draft: false
+title: Links
+type: staticpage
+---
 
 ## A links page?! This is a bit old school, isn't it?
 

@@ -1,18 +1,18 @@
-+++
-date = "2019-01-09T15:21:21+01:00"
-draft = false
-title = "Published Article: Reusable Components with Atomic Design"
-description = "Structuring components in a reusable, discoverable way is a challenge across teams with diverse requirements. It can be difficult for developers unfamiliar with your library. Id like to introduce the idea of Atomic Development using React and styled-components."
-categories = [
-  "development",
-]
-tags = [
-    "react",
-    "atomic design",
-    "netmag articles"
-]
-
-+++
+---
+categories:
+- development
+date: "2019-01-09T15:21:21+01:00"
+description: Structuring components in a reusable, discoverable way is a challenge
+  across teams with diverse requirements. It can be difficult for developers unfamiliar
+  with your library. Id like to introduce the idea of Atomic Development using React
+  and styled-components.
+draft: false
+tags:
+- react
+- atomic design
+- netmag articles
+title: 'Published Article: Reusable Components with Atomic Design'
+---
 **Structuring components in a reusable, discoverable way is a challenge across teams with diverse requirements. It can be difficult for developers unfamiliar with your library. They need to learn quickly how adopt, use and discover, features it has. How do you help them do that without over-burdening your components with too much documentation? I'd like to introduce the idea of Atomic Development using React and styled-components.**
 
 Atomic Design is an approach to development that Brad Frost came up with a few years ago. He's published an excellent book about it which you can buy, or read online at http://atomicdesign.bradfrost.com/

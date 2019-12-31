@@ -1,15 +1,15 @@
-+++
-date = "2016-03-22T15:21:21+01:00"
-draft = false
-title = "Delaying click event in vanilla JavaScript"
-description = "I was inspired by Rachel Nabors' site to add a short delay to users' clicking on a link on my website, so that I could add a brief animation that would run before the redirection took place. Here's how I did it"
-categories = [
-  "development"
-]
-tags = [ 
-    "javascript", 
-]
-+++
+---
+categories:
+- development
+date: "2016-03-22T15:21:21+01:00"
+description: I was inspired by Rachel Nabors' site to add a short delay to users'
+  clicking on a link on my website, so that I could add a brief animation that would
+  run before the redirection took place. Here's how I did it
+draft: false
+tags:
+- javascript
+title: Delaying click event in vanilla JavaScript
+---
 
 **I was inspired by Rachel Nabors' site to add a short delay to users' clicking on a link on my website, so that I could add a brief animation that would run before the redirection took place. Here's how I did it.**
 

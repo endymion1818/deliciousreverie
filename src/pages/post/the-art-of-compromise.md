@@ -1,17 +1,17 @@
-+++
-date = "2019-08-08T11:21:21+01:00"
-draft = false
-title = "The Art of Compromise"
-description = "Working as part of a larger team often involves skills that aren't readily taught as part of a person's development career. But they are essential if you're going to be developing software as part of a team."
-categories = [
-  "development",
-  "personal"
-]
-tags = [
-    "professional-development",
-   "javascript"
-]
-+++
+---
+categories:
+- development
+- personal
+date: "2019-08-08T11:21:21+01:00"
+description: Working as part of a larger team often involves skills that aren't readily
+  taught as part of a person's development career. But they are essential if you're
+  going to be developing software as part of a team.
+draft: false
+tags:
+- professional-development
+- javascript
+title: The Art of Compromise
+---
 
 **We developers are inherently precious about things. Our tools. Our technologies. But we can't afford to be precious about those things too much. In fact, working in cross-functional teams and with other teams means that we sometimes need to compromise.**
 

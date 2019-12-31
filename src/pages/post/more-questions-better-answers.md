@@ -1,16 +1,17 @@
-+++
-date = "2018-06-08T15:21:21+01:00"
-draft = false
-title = "More Questions, Better Answers"
-description = "Proposing a solution that isn't a good fit for a project can be dangerious. It can be implemented without real thought, which can cause major frustration or even abandonment of a project. Instead I'm trying to think more about the question, instead of jumping to conclusions."
-categories = [
-  "development"
-]
-tags = [ 
-    "approaches",
-    "core skills" 
-]
-+++
+---
+categories:
+- development
+date: "2018-06-08T15:21:21+01:00"
+description: Proposing a solution that isn't a good fit for a project can be dangerious.
+  It can be implemented without real thought, which can cause major frustration or
+  even abandonment of a project. Instead I'm trying to think more about the question,
+  instead of jumping to conclusions.
+draft: false
+tags:
+- approaches
+- core skills
+title: More Questions, Better Answers
+---
 **Working with a large FinTech organisation has taught me a lot about the potential loopholes and considerations around certain technical decisions that I have been asked to contribute to.**
 
 One of the decisions that we have considered recently is how to deliver content into the new website we are building.

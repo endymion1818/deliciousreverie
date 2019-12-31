@@ -1,16 +1,15 @@
-+++
-date = "2019-01-03T15:21:21+01:00"
-draft = false
-title = "2018 Review / 2019 Aims"
-description = "Wow. 2018 was a real rollercoaster for me. This is a brief review so that I can look back on what I achieved, and set out what I hope I can achieve in web development this year."
-categories = [
-  "personal"
-]
-tags = [
-    "year in review",
-]
-
-+++
+---
+categories:
+- personal
+date: "2019-01-03T15:21:21+01:00"
+description: Wow. 2018 was a real rollercoaster for me. This is a brief review so
+  that I can look back on what I achieved, and set out what I hope I can achieve in
+  web development this year.
+draft: false
+tags:
+- year in review
+title: 2018 Review / 2019 Aims
+---
 Twenty Eighteen was a whirlwind of changes for me professionally. I went from working in an agency to working for a FinTech, and the difference in those two roles and the tech stacks involved have brought me many new skills as a developer. But I still suffer anxiety with all the things I want to learn.
 
 ## What I Learned

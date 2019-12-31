@@ -1,16 +1,16 @@
-+++
-date = "2015-05-26T15:21:21+01:00"
-draft = false
-title = "On Having Delusions of Grandeur"
-description = "I'm not as good at this as I thought I was. This much became apparent to me recently, when I tried to run with some industry leaders and found that my abilities in web development are still comparatively lacking."
-categories = [
-  "personal"
-]
-tags = [ 
-    "review", 
-    "professional development"
-]
-+++
+---
+categories:
+- personal
+date: "2015-05-26T15:21:21+01:00"
+description: I'm not as good at this as I thought I was. This much became apparent
+  to me recently, when I tried to run with some industry leaders and found that my
+  abilities in web development are still comparatively lacking.
+draft: false
+tags:
+- review
+- professional development
+title: On Having Delusions of Grandeur
+---
 
 **I'm not as good at this as I thought I was. This much became apparent to me recently, when I tried to run with some industry leaders and found that my abilities in web development are still comparatively lacking.**
 

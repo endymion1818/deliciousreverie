@@ -1,18 +1,20 @@
-+++
-date = "2018-08-18T14:21:21+01:00"
-draft = false
-title = "Serverless Content Authoring with StrapiJs"
-description = "In order for people outside of the development team or community to use your software, care must be given to allow them to write and publish content with the least amount of friction or obstruction as possible. A well crafted interface that allows people to do this isn't easy. I have started to use Strapi as a serverless backend API interface recently and believe it's going to be a very useful solution for a lot of projects."
-categories = [
-  "development"
-]
-tags = [
-    "strapi",
-   "javascript",
-	 "serverless"
-]
-
-+++
+---
+categories:
+- development
+date: "2018-08-18T14:21:21+01:00"
+description: In order for people outside of the development team or community to use
+  your software, care must be given to allow them to write and publish content with
+  the least amount of friction or obstruction as possible. A well crafted interface
+  that allows people to do this isn't easy. I have started to use Strapi as a serverless
+  backend API interface recently and believe it's going to be a very useful solution
+  for a lot of projects.
+draft: false
+tags:
+- strapi
+- javascript
+- serverless
+title: Serverless Content Authoring with StrapiJs
+---
 For years, WordPress has been the de facto standard for content authoring on the web. The reasons for this are many, but principal among them is it's clean, easy-to-use interface that gives content authors control over nearly every aspect of their content. WordPress isn't going away, but hosting and maintaining it safely can be a challenge.
 
 At the organisation I work for, we have a WordPress blog, but almost no PHP expertise as we were moving from Ruby towards a JavaScript stack. We also have another service that used a WordPress-like interface, but were tied into expensive hosted services - which was deprecated, and yet still fulfilled an essential function as a core part of our content strategy.

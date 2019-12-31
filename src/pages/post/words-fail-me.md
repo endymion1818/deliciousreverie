@@ -1,17 +1,16 @@
-+++
-date = "2015-02-27T15:21:21+01:00"
-draft = false
-title = "Words Fail Me."
-description = "I'm a great fan of Virginia Woolf's Stream of Consciousness writing, but that isn't why this post is here."
-categories = [
-  "personal",
-  "development"
-]
-tags = [ 
-    "prose",
-    "tools and processes"
-]
-+++
+---
+categories:
+- personal
+- development
+date: "2015-02-27T15:21:21+01:00"
+description: I'm a great fan of Virginia Woolf's Stream of Consciousness writing,
+  but that isn't why this post is here.
+draft: false
+tags:
+- prose
+- tools and processes
+title: Words Fail Me.
+---
 
 **I'm a great fan of Virginia Woolf's Stream of Consciousness writing, but that isn't why this post is here.**
 

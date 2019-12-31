@@ -1,15 +1,17 @@
-+++
-date = "2017-03-04T15:21:21+01:00"
-draft = false
-title = "First Steps with Laravel"
-description = "For a while now I've felt like I'm leaving Wordpress behind me. It's a great platform and I certainly wouldn't be a developer if Wordpress hadn't got me started along this route. However, comes a time when all of us must press on to things that help us to continue to grow; I don't feel that Wordpress is that tool. So I'm moving on to Laravel."
-categories = [
-  "development"
-]
-tags = [ 
-    "PHP", 
-]
-+++
+---
+categories:
+- development
+date: "2017-03-04T15:21:21+01:00"
+description: For a while now I've felt like I'm leaving Wordpress behind me. It's
+  a great platform and I certainly wouldn't be a developer if Wordpress hadn't got
+  me started along this route. However, comes a time when all of us must press on
+  to things that help us to continue to grow; I don't feel that Wordpress is that
+  tool. So I'm moving on to Laravel.
+draft: false
+tags:
+- PHP
+title: First Steps with Laravel
+---
 
 **For a while now I've felt like I'm leaving Wordpress behind me. It's a great platform and I certainly wouldn't be a developer if Wordpress hadn't got me started along this route. However, comes a time when all of us must press on to things that help us to continue to grow; I don't feel that Wordpress is that tool. So I'm moving on to Laravel.**
 

@@ -1,15 +1,15 @@
-+++
-date = "2015-04-02T15:21:21+01:00"
-draft = false
-title = "Poetry: Osip Mandelshtam / Philip Nikolayev"
-description = "Since reading Boris Pasternak's Doctor Zhivago, I've been deeply moved by his poetry. I've just discovered the wonderful contemporary Russian poet Osip Mandelshtam, who, like Pasternak, evokes some wonderful imagery and delightful reveries."
-categories = [
-  "personal"
-]
-tags = [ 
-    "poetry", 
-]
-+++
+---
+categories:
+- personal
+date: "2015-04-02T15:21:21+01:00"
+description: Since reading Boris Pasternak's Doctor Zhivago, I've been deeply moved
+  by his poetry. I've just discovered the wonderful contemporary Russian poet Osip
+  Mandelshtam, who, like Pasternak, evokes some wonderful imagery and delightful reveries.
+draft: false
+tags:
+- poetry
+title: 'Poetry: Osip Mandelshtam / Philip Nikolayev'
+---
 
 **Since reading Boris Pasternak's Doctor Zhivago, I've been deeply moved by his poetry. I've just discovered the wonderful contemporary Russian poet Osip Mandelshtam, who, like Pasternak, evokes some wonderful imagery and delightful reveries.**
 

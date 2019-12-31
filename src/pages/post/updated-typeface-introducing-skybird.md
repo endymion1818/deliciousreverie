@@ -1,15 +1,15 @@
-+++
-date = "2016-04-28T15:21:21+01:00"
-draft = false
-title = "Updated Typeface: Introducing Skybird"
-description = "So a few weeks' ago I discovered a very small but excellently designed typeface from a Phitra Design called Skybird. I decided almost at once that I would use it on deliciousreverie, and replace the old typeface, Vollkorn from Google Fonts"
-categories = [
-  "design"
-]
-tags = [ 
-    "typography", 
-]
-+++
+---
+categories:
+- design
+date: "2016-04-28T15:21:21+01:00"
+description: So a few weeks' ago I discovered a very small but excellently designed
+  typeface from a Phitra Design called Skybird. I decided almost at once that I would
+  use it on deliciousreverie, and replace the old typeface, Vollkorn from Google Fonts
+draft: false
+tags:
+- typography
+title: 'Updated Typeface: Introducing Skybird'
+---
 
 **So a few weeks' ago I discovered a very small but excellently designed typeface from a Phitra Design called [Skybird](http://phitradesign-fonts.com/#skybird "Phitra Design - Skybird").** I decided almost at once that I would use it on deliciousreverie, and replace the old typeface, Vollkorn from Google Fonts.
 

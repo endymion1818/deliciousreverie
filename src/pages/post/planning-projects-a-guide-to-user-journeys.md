@@ -1,16 +1,16 @@
-+++
-date = "2017-12-07T15:21:21+01:00"
-draft = false
-title = "Planning Projects — a guide to user journeys"
-description = "We're going to take a specific journey that was written for a project I worked on, examine who should be involved and break down the details so that we can examine why user journeys are useful, and how you can use them more effectively."
-categories = [
-  "development"
-]
-tags = [
-    "project planning",
-    "agile"
-]
-+++
+---
+categories:
+- development
+date: "2017-12-07T15:21:21+01:00"
+description: We're going to take a specific journey that was written for a project
+  I worked on, examine who should be involved and break down the details so that we
+  can examine why user journeys are useful, and how you can use them more effectively.
+draft: false
+tags:
+- project planning
+- agile
+title: Planning Projects — a guide to user journeys
+---
 
 **A few years ago I was lucky enough to work with a really talented team on a large software application that we built from scatch to serve a large, distributed construction organisation. I learned a huge amount working for this company. One of the things that I enjoyed learning most was how to capture project requirements so that what we delivered met or exceeded user expectations. I'd like to share with you how we achieved that.**
 

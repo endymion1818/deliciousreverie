@@ -1,15 +1,16 @@
-+++
-date = "2016-07-19T15:21:21+01:00"
-draft = false
-title = "Why We Need the Web Guild"
-description = "Wordcamp London 2016 was a great chance to make new friends and learn some excellent insights about running a successful agency, wordpress security and the necessity of backups, and some other stuff I've already started to use on a daily basis. Here's my roundup."
-categories = [
-  "development"
-]
-tags = [ 
-    "industry thought",
-]
-+++
+---
+categories:
+- development
+date: "2016-07-19T15:21:21+01:00"
+description: Wordcamp London 2016 was a great chance to make new friends and learn
+  some excellent insights about running a successful agency, wordpress security and
+  the necessity of backups, and some other stuff I've already started to use on a
+  daily basis. Here's my roundup.
+draft: false
+tags:
+- industry thought
+title: Why We Need the Web Guild
+---
 
 **As the scope of our market is being altered dramatically, we are also facing challenges to the way our industry operates. How can we meet these challenges? How can we do so in a way that still enables us to not only function on a professional level, but to continue to grow and adapt to changes outside our current sphere of influence?**
 

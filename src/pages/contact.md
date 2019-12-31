@@ -1,10 +1,9 @@
-+++
-date = "2012-05-07T16:12:46+01:00"
-draft = false
-title = "Contact"
-type = "staticpage"
-
-+++
+---
+date: "2012-05-07T16:12:46+01:00"
+draft: false
+title: Contact
+type: staticpage
+---
 
 ## I'd like to hear from you!
 

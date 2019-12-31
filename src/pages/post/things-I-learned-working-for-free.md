@@ -1,15 +1,16 @@
-+++
-date = "2015-03-14T15:21:21+01:00"
-draft = false
-title = "Things I Learned By Working for Free"
-description = "Developers sometimes get asked to do stuff for free. If that happens, it generally can be a warning sign that would be right to steer well clear of. It's easy to end up feeling cheated. But I've been fortunate to be involved in two projects that, although I earned no money from, I felt that I benefited greatly."
-categories = [
-  "personal"
-]
-tags = [ 
-    "professional development", 
-]
-+++
+---
+categories:
+- personal
+date: "2015-03-14T15:21:21+01:00"
+description: Developers sometimes get asked to do stuff for free. If that happens,
+  it generally can be a warning sign that would be right to steer well clear of. It's
+  easy to end up feeling cheated. But I've been fortunate to be involved in two projects
+  that, although I earned no money from, I felt that I benefited greatly.
+draft: false
+tags:
+- professional development
+title: Things I Learned By Working for Free
+---
 
 **Developers sometimes get asked to do stuff for free. If that happens, it generally can be a warning sign that would be right to steer well clear of. It's easy to end up feeling cheated. But I've been fortunate to be involved in two projects that, although I earned no money from, I felt that I benefited greatly.**
 

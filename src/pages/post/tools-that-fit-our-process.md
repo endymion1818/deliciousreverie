@@ -1,15 +1,15 @@
-+++
-date = "2015-03-11T15:21:21+01:00"
-draft = false
-title = "Tools That Fit Our Process"
-description = "It's all too easy to get caught up in the delightful features this CRM or that project management tool ... but does it really solve the problem at hand? Look for tools that fit the process and you'll be happier."
-categories = [
-  "project coordination"
-]
-tags = [ 
-    "tools and processes", 
-]
-+++
+---
+categories:
+- project coordination
+date: "2015-03-11T15:21:21+01:00"
+description: It's all too easy to get caught up in the delightful features this CRM
+  or that project management tool ... but does it really solve the problem at hand?
+  Look for tools that fit the process and you'll be happier.
+draft: false
+tags:
+- tools and processes
+title: Tools That Fit Our Process
+---
 
 **It's all too easy to get caught up in the delightful features this CRM or that project management tool ... but does it really solve the problem at hand? Look for tools that fit the process and you'll be happier.**
 

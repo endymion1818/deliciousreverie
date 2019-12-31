@@ -1,15 +1,16 @@
-+++
-date = "2015-05-06T15:21:21+01:00"
-draft = false
-title = "Why Agile is So Hard"
-description = "For many organisations, Agile methods are replacing the traditional waterfall or cascading approach to web development. But it's not always easy to implement, and sometimes Agile implementations fail. This isn't usually down to the process being adopted, but another reason that can affect every team..."
-categories = [
-  "project coordination"
-]
-tags = [ 
-    "tools and processes", 
-]
-+++
+---
+categories:
+- project coordination
+date: "2015-05-06T15:21:21+01:00"
+description: For many organisations, Agile methods are replacing the traditional waterfall
+  or cascading approach to web development. But it's not always easy to implement,
+  and sometimes Agile implementations fail. This isn't usually down to the process
+  being adopted, but another reason that can affect every team...
+draft: false
+tags:
+- tools and processes
+title: Why Agile is So Hard
+---
 
 **For many organisations, Agile methods are replacing the traditional waterfall or cascading approach to web development. But it's not always easy to implement, and sometimes Agile implementations fail. This isn't usually down to the process being adopted, but another reason that can affect every team...**
 

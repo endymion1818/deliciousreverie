@@ -1,15 +1,15 @@
-+++
-date = "2018-12-13T11:21:21+01:00"
-draft = false
-title = "Send Your Blogs!"
-description = "I started a mini project this week to collect developer blogs so that I can connect more with the community. I hope that this can be a way of encouraging people to do more with their personal blogs..."
-categories = [
-  "community",
-]
-tags = [ 
-    "community",
-]
-+++
+---
+categories:
+- community
+date: "2018-12-13T11:21:21+01:00"
+description: I started a mini project this week to collect developer blogs so that
+  I can connect more with the community. I hope that this can be a way of encouraging
+  people to do more with their personal blogs...
+draft: false
+tags:
+- community
+title: Send Your Blogs!
+---
 
 I was privileged to attended View Source London this year, and gained a lot once more by seeing talks by many members of the W3C and others. Lots of the talks had something really outstanding to share, but one in particular resonated with my desire to connect more with the developer community.
 

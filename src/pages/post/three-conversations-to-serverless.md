@@ -1,16 +1,17 @@
-+++
-date = "2018-11-09T23:51:21+01:00"
-draft = false
-title = "Three Conversations to Serverless"
-description = "When Im explaining the idea of Serverless architecture it often takes three conversations before someone understands where I'm coming from, why we put up with the sometimes difficult to understand restrictions it puts on development, and ultimately why it can be extremely useful. In this post, I'm going to document these three conversations that Ive had with many people in the last few months."
-categories = [
-  "development"
-]
-tags = [
-    "serverless",
-]
-
-+++
+---
+categories:
+- development
+date: "2018-11-09T23:51:21+01:00"
+description: When Im explaining the idea of Serverless architecture it often takes
+  three conversations before someone understands where I'm coming from, why we put
+  up with the sometimes difficult to understand restrictions it puts on development,
+  and ultimately why it can be extremely useful. In this post, I'm going to document
+  these three conversations that Ive had with many people in the last few months.
+draft: false
+tags:
+- serverless
+title: Three Conversations to Serverless
+---
 **Serverless isn't such a new concept but it is still difficult to understand for many of us. I've been privileged to work with some great people over the past few months, and I've really been helped to understand serverless because of the questions they've raised, many of which I couldn't answer straight away. Often their questions have got me thinking about different ways to explain serverless.**
 
 Since many of these people are used to managing, developing or supporting a project that's more monolithic in nature, I'm going to try to write down some of those questions in the form of the paths they often take: realisation, clarification, and comprehension. If you find you don't understand the concept of serverless after these 3 "conversations", remember that the idea of 3 conversations is perhaps a generalisation. One of my colleagues, a much more senior developer than I, was persuaded of the approach after several weeks of discussions!
