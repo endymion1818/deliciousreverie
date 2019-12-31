@@ -3,6 +3,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
+import Skybird from "../../assets/Skybird-Regular.woff2";
 import Wrapper from "../Atoms/Wrapper";
 import ErrorBoundary from "../Molecules/ErrorBoundary";
 import Footer from "../Organisms/Footer";
@@ -69,6 +70,10 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
   }
+  @font-face {
+    font-family: Skybird;
+    src: url(${Skybird});
+  }
   body {
     margin: 0;
     font-family: system;
@@ -79,7 +84,10 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: system;
+    font-family: Skybird;
+  }
+  p {
+    line-height: 1.2;
   }
   #gatsby-noscript {
     display:none;

@@ -29,6 +29,7 @@ const SiteDescription = styled.h2`
 const MainNav = styled.ul`
   display: flex;
   flex-direction: row;
+  align-content: space-between;
   list-style: none;
   overflow-x: auto;
   padding-left: 0;

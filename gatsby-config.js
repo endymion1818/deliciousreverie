@@ -63,8 +63,8 @@ module.exports = {
         name: siteTitle,
         short_name: siteTitle,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#331f33`,
+        theme_color: `#f7ebc1`,
         display: `standalone`,
         icon: `src/assets/icon.png`
       }
