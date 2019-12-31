@@ -1,30 +1,30 @@
-import { graphql } from 'gatsby'
-import React, { FC } from 'react'
-import Helmet from 'react-helmet'
-import Container from '../components/Atoms/Container'
-import Wrapper from '../components/Atoms/Wrapper'
-import Layout from '../components/Templates/Layout'
-
-import Row from '../components/Atoms/Row';
+import { graphql } from "gatsby";
+import React, { FC } from "react";
+import Helmet from "react-helmet";
+import Container from "../components/Atoms/Container";
+import Row from "../components/Atoms/Row";
+import Wrapper from "../components/Atoms/Wrapper";
+import PostList from "../components/Organisms/PostList";
+import Layout from "../components/Templates/Layout";
 
 export interface IIndexPageProps {
   data: {
     site: {
       siteMetadata: {
-        title: string
-      }
-    }
-  }
+        title: string;
+      };
+    };
+  };
 }
 
 export const frontmatter = {
-  title: 'Home',
-  path: '/',
-  description: 'Welcome to Free Babylon 5 campaign site.',
+  title: "Home",
+  path: "/",
+  description: "Welcome to Free Babylon 5 campaign site.",
   MainNavOrder: 1,
-  secondaryNavMenu: 'About',
-  secondaryNavOrder: 1,
-}
+  secondaryNavMenu: "About",
+  secondaryNavOrder: 1
+};
 
 const IndexPage: FC<IIndexPageProps> = ({ data }) => (
   <Layout>
@@ -36,15 +36,15 @@ const IndexPage: FC<IIndexPageProps> = ({ data }) => (
     </Helmet>
     <Wrapper>
       <Container>
-        <Row size={1}>
-          <h1>Home</h1>
+        <Row>
+          <PostList />
         </Row>
       </Container>
     </Wrapper>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
 
 export const query = graphql`
   query {
@@ -54,4 +54,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
