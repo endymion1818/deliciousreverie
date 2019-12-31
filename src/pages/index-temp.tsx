@@ -1,6 +1,7 @@
 import { graphql } from "gatsby";
 import React, { FC } from "react";
 import Helmet from "react-helmet";
+
 import Container from "../components/Atoms/Container";
 import Row from "../components/Atoms/Row";
 import Wrapper from "../components/Atoms/Wrapper";
@@ -20,7 +21,7 @@ export interface IIndexPageProps {
 export const frontmatter = {
   title: "Home",
   path: "/",
-  description: "Welcome to Free Babylon 5 campaign site.",
+  description: "Blog of web developer and bookwork Benjamin Read",
   MainNavOrder: 1,
   secondaryNavMenu: "About",
   secondaryNavOrder: 1
@@ -36,9 +37,7 @@ const IndexPage: FC<IIndexPageProps> = ({ data }) => (
     </Helmet>
     <Wrapper>
       <Container>
-        <Row>
-          <PostList />
-        </Row>
+        <PostList />
       </Container>
     </Wrapper>
   </Layout>

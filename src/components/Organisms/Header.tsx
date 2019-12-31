@@ -1,16 +1,15 @@
-import { withPrefix } from 'gatsby'
-import React, { FC } from 'react'
-import styled from 'styled-components'
-import NavItem from '../../components/Molecules/NavItem'
-import Container from '../Atoms/Container'
-import Link from '../Atoms/Link'
-import Wrapper from '../Atoms/Wrapper'
-import SearchForm from '../Molecules/SearchForm'
-import { IPrimaryNavProps } from '../Templates/Layout'
-import { borderradius, breakpoint, colors, size } from '../tokens'
+import { withPrefix } from "gatsby";
+import React, { FC } from "react";
+import styled from "styled-components";
+import Container from "../Atoms/Container";
+import Link from "../Atoms/Link";
+import Wrapper from "../Atoms/Wrapper";
+import SearchForm from "../Molecules/SearchForm";
+import { IPrimaryNavProps } from "../Templates/Layout";
+import { borderradius, breakpoint, colors, size } from "../tokens";
 
 export interface IHeaderProps extends IPrimaryNavProps {
-  siteTitle: string
+  siteTitle: string;
 }
 
 const MainNav = styled.ul`
@@ -38,7 +37,7 @@ const MainNav = styled.ul`
       }
     }
   }
-`
+`;
 
 const HeaderContainer = styled(Container)`
   overflow-x: hidden;
@@ -57,23 +56,35 @@ const HeaderContainer = styled(Container)`
       flex: 3;
     }
   }
-`
+`;
 
 const Header: FC<IHeaderProps> = ({ primaryNav, siteTitle }) => (
-  <Wrapper backgroundColour={colors.neutral.medium} textColour={colors.base.primary}>
+  <Wrapper
+    backgroundColour={colors.neutral.medium}
+    textColour={colors.base.primary}
+  >
     <HeaderContainer>
-      <Link to={withPrefix('/')}>{siteTitle}</Link>
+      <Link to={withPrefix("/")}>{siteTitle}</Link>
       <MainNav>
-        {primaryNav ? primaryNav.edges.map(item => NavItem(item)) : null}
         <li>
-          <Link to="/post" activeClassName="active">
-            Posts
+          <Link to="/" activeClassName="active">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/about" activeClassName="active">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" activeClassName="active">
+            Contact
           </Link>
         </li>
       </MainNav>
       <SearchForm />
     </HeaderContainer>
   </Wrapper>
-)
+);
 
-export default Header
+export default Header;
