@@ -1,11 +1,11 @@
-import styled from 'styled-components'
-import { ISemanticColorSpec, ISize } from '../types'
+import styled from "styled-components";
+import { ISemanticColorSpec, ISize } from "../types";
 
 export interface IWrapperProps {
-  backgroundColour?: string
-  textColour?: string
-  paddingTop?: string
-  paddingBottom?: string
+  backgroundColour?: string;
+  textColour?: string;
+  paddingTop?: string;
+  paddingBottom?: string;
 }
 
 const Wrapper = styled.div<IWrapperProps>`
@@ -14,6 +14,10 @@ const Wrapper = styled.div<IWrapperProps>`
   color: ${({ textColour }) => textColour};
   padding-top: ${({ paddingTop }) => paddingTop};
   padding-bottom: ${({ paddingBottom }) => paddingBottom};
-`
 
-export default Wrapper
+  a {
+    color: ${({ textColour }) => textColour};
+  }
+`;
+
+export default Wrapper;

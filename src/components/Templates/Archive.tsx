@@ -32,7 +32,6 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
 
   return (
     <Page>
-      <h2>All Posts</h2>
       {posts &&
         posts.edges.map((edge, index) => (
           <article key={index}>

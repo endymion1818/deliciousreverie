@@ -3,6 +3,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
+import Wrapper from "../Atoms/Wrapper";
 import ErrorBoundary from "../Molecules/ErrorBoundary";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
@@ -49,7 +50,7 @@ export interface IStaticQueryProps
 const AccessibilityMainContentSkipLink = styled.a`
   position: absolute;
   display: inline-block;
-  transform: translateY(-${size.quad});
+  transform: translateY(-${size.sextuple});
   padding: ${size.singleplushalf};
   background-color: ${colors.neutral.medium};
   color: ${colors.base.primary};
@@ -82,6 +83,14 @@ const GlobalStyle = createGlobalStyle`
   }
   #gatsby-noscript {
     display:none;
+  }
+`;
+
+const Main = styled(Wrapper)`
+  padding: ${size.single} 0;
+
+  *:first-child {
+    margin-top: 0;
   }
 `;
 
@@ -121,11 +130,19 @@ const Layout: React.SFC = ({ children }) => (
         </AccessibilityMainContentSkipLink>
         <Header
           siteTitle={data.site.siteMetadata.title}
+          siteDescription={data.site.siteMetadata.description}
           primaryNav={data.primaryNav}
         />
-        <main id="main">{children}</main>
+        <Main
+          id="main"
+          backgroundColour={colors.base.primary}
+          textColour={colors.neutral.medium}
+        >
+          {children}
+        </Main>
         <Footer
           siteTitle={data.site.siteMetadata.title}
+          siteDescription={data.site.siteMetadata.description}
           primaryNav={data.primaryNav}
           secondaryNav={data.secondaryNav}
         />
