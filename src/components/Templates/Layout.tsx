@@ -1,47 +1,50 @@
-import { graphql, StaticQuery } from 'gatsby'
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import { createGlobalStyle } from 'styled-components'
-import styled from 'styled-components'
-import ErrorBoundary from '../Molecules/ErrorBoundary'
-import Footer from '../Organisms/Footer'
-import Header from '../Organisms/Header'
-import { colors, size } from '../tokens'
+import { graphql, StaticQuery } from "gatsby";
+import React from "react";
+import { Helmet } from "react-helmet";
+import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
+import ErrorBoundary from "../Molecules/ErrorBoundary";
+import Footer from "../Organisms/Footer";
+import Header from "../Organisms/Header";
+import { colors, size } from "../tokens";
 
 export interface INavEdges {
   edges: [
     {
       node: {
         frontmatter: {
-          MainNavOrder: number
-          secondaryNavMenu: string
-          secondaryNavOrder: number
-          title: string
-          path: string
-        }
-      }
+          MainNavOrder: number;
+          secondaryNavMenu: string;
+          secondaryNavOrder: number;
+          title: string;
+          path: string;
+        };
+      };
     }
-  ]
+  ];
 }
 
 export interface IPrimaryNavProps {
-  primaryNav: INavEdges
+  primaryNav: INavEdges;
 }
 
 export interface ISecondaryNavProps {
-  secondaryNav: INavEdges
+  secondaryNav: INavEdges;
 }
 
 export interface ISiteMetaProps {
   site: {
     siteMetadata: {
-      title: string
-      description: string
-    }
-  }
+      title: string;
+      description: string;
+    };
+  };
 }
 
-export interface IStaticQueryProps extends ISiteMetaProps, IPrimaryNavProps, ISecondaryNavProps {}
+export interface IStaticQueryProps
+  extends ISiteMetaProps,
+    IPrimaryNavProps,
+    ISecondaryNavProps {}
 
 const AccessibilityMainContentSkipLink = styled.a`
   position: absolute;
@@ -56,7 +59,7 @@ const AccessibilityMainContentSkipLink = styled.a`
   &:active {
     transform: translateY(-${size.zero});
   }
-`
+`;
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -80,7 +83,7 @@ const GlobalStyle = createGlobalStyle`
   #gatsby-noscript {
     display:none;
   }
-`
+`;
 
 const Layout: React.SFC = ({ children }) => (
   <StaticQuery
@@ -89,38 +92,7 @@ const Layout: React.SFC = ({ children }) => (
         site {
           siteMetadata {
             title
-          }
-        }
-        primaryNav: allJavascriptFrontmatter(
-          filter: { frontmatter: { MainNavOrder: { gt: 0 } } }
-          sort: { fields: frontmatter___MainNavOrder, order: ASC }
-        ) {
-          edges {
-            node {
-              frontmatter {
-                path
-                MainNavOrder
-                secondaryNavMenu
-                secondaryNavOrder
-                title
-              }
-            }
-          }
-        }
-        secondaryNav: allJavascriptFrontmatter(
-          filter: { frontmatter: { secondaryNavOrder: { gt: 0 } } }
-          sort: { fields: frontmatter___secondaryNavOrder, order: ASC }
-        ) {
-          edges {
-            node {
-              frontmatter {
-                path
-                MainNavOrder
-                secondaryNavMenu
-                secondaryNavOrder
-                title
-              }
-            }
+            description
           }
         }
       }
@@ -131,20 +103,26 @@ const Layout: React.SFC = ({ children }) => (
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
-          <meta name="description" content="FreeBabylon5" />
+          <meta
+            name="description"
+            content={data.site.siteMetadata.description}
+          />
           <script type="application/ld+json">
             {`
               "@context": "http://schema.org",
-              "@type": "Organization",
-              "name": "#FreeBabylon5",
-              "url": "https://www.gatsby-starter-carraway.com",
+              "@type": "Individual",
+              "name": "Delicious Reverie",
+              "url": "https://deliciousreverie.co.uk",
             `}
           </script>
         </Helmet>
         <AccessibilityMainContentSkipLink href="#main">
           Skip to main content
         </AccessibilityMainContentSkipLink>
-        <Header siteTitle={data.site.siteMetadata.title} primaryNav={data.primaryNav} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          primaryNav={data.primaryNav}
+        />
         <main id="main">{children}</main>
         <Footer
           siteTitle={data.site.siteMetadata.title}
@@ -154,5 +132,5 @@ const Layout: React.SFC = ({ children }) => (
       </ErrorBoundary>
     )}
   />
-)
-export default Layout
+);
+export default Layout;

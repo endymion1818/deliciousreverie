@@ -32,7 +32,7 @@ const SearchForm: FC<ISearchfFormProps> = ({ query }) => {
       <Input
         tabIndex={0}
         type="search"
-        id="search-input"
+        className="search-input"
         name="keywords"
         onEnter={(e: SyntheticEvent) =>
           navigate(
