@@ -1,7 +1,7 @@
-import { graphql, withPrefix } from 'gatsby'
-import React, { FC } from 'react'
-import Link from '../Atoms/Link'
-import Page from '../Templates/Page'
+import { graphql, withPrefix } from "gatsby";
+import React, { FC } from "react";
+import Link from "../Atoms/Link";
+import Page from "../Templates/Page";
 
 export interface IArchiveProps {
   data: {
@@ -9,26 +9,26 @@ export interface IArchiveProps {
       edges: Array<{
         node: {
           frontmatter: {
-            title: string
-            date: string
-          }
+            title: string;
+            date: string;
+          };
           fields: {
-            slug: string
-          }
-          excerpt: string
-        }
-      }>
-    }
-  }
+            slug: string;
+          };
+          excerpt: string;
+        };
+      }>;
+    };
+  };
   pageContext: {
-    previousPagePath?: string
-    nextPagePath?: string
-  }
+    previousPagePath?: string;
+    nextPagePath?: string;
+  };
 }
 
 const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
-  const { previousPagePath, nextPagePath } = pageContext
-  const { posts } = data
+  const { previousPagePath, nextPagePath } = pageContext;
+  const { posts } = data;
 
   return (
     <Page>
@@ -37,7 +37,9 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
         posts.edges.map((edge, index) => (
           <article key={index}>
             <h2>
-              <Link to={withPrefix(edge.node.fields.slug)}>{edge.node.frontmatter.title}</Link>
+              <Link to={withPrefix(edge.node.fields.slug)}>
+                {edge.node.frontmatter.title}
+              </Link>
             </h2>
             <p dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
             <br />
@@ -47,24 +49,24 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
           </article>
         ))}
       <nav>
-        <ul>
+        <ul style={{ listStyle: "none", paddingLeft: "0" }}>
           {previousPagePath && (
             <li>
-              <Link to={previousPagePath}>Previous</Link>
+              <Link to={previousPagePath}>&laquo; More Recent posts</Link>
             </li>
           )}
           {nextPagePath && (
             <li>
-              <Link to={nextPagePath}>Next</Link>
+              <Link to={nextPagePath}>&raquo; Older posts</Link>
             </li>
           )}
         </ul>
       </nav>
     </Page>
-  )
-}
+  );
+};
 
-export default Archive
+export default Archive;
 
 export const archiveQuery = graphql`
   query($skip: Int!, $limit: Int!) {
@@ -88,4 +90,4 @@ export const archiveQuery = graphql`
       }
     }
   }
-`
+`;
