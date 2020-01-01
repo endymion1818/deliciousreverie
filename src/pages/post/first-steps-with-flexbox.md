@@ -6,7 +6,7 @@ description: On a recent project for international research machine builder Anto
   Paar, I  used the new flex-box CSS module for the first time. Here's how it went.
 draft: false
 tags:
-- CSS
+- css
 title: First Steps with Flexbox
 ---
 

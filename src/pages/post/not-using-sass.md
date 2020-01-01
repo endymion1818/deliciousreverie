@@ -8,7 +8,7 @@ description: A little while ago, I had a telephone interview in which the lead d
   one of these frameworks in response.
 draft: false
 tags:
-- CSS
+- css
 - sass
 - professional development
 title: 'Not Using SASS: Rebellion in the ranks'

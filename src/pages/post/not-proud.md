@@ -6,8 +6,8 @@ description: I'm not proud of the code I wrote today. In fact, I hated it. But t
   okay, it did what it needed to. And I'm going to redo it tomorrow.
 draft: false
 tags:
-- professional-development
-- tools-and-processes
+- professional development
+- tools and processes
 title: I'm Not Proud
 ---
 

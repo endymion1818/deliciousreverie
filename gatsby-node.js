@@ -77,7 +77,7 @@ exports.createPages = ({ graphql, actions }) => {
     categories = _.uniq(categories);
     categories.forEach(category => {
       createPage({
-        path: `/categories/${category.replace(/ /g, "-")}/`,
+        path: `/categories/${category.toLowerCase().replace(/ /g, "-")}/`,
         component: categoryTemplate,
         context: {
           category
@@ -94,7 +94,7 @@ exports.createPages = ({ graphql, actions }) => {
     tags = _.uniq(tags);
     tags.forEach(tag => {
       createPage({
-        path: `/tags/${tag.replace(/ /g, "-")}/`,
+        path: `/tags/${tag.toLowerCase().replace(/ /g, "-")}/`,
         component: tagTemplate,
         context: {
           tag

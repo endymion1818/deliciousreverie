@@ -7,7 +7,7 @@ description: When you start a Node web server using it's HTTP interface you will
   how to access your NodeJS server on Mac in Windows using Parallels.
 draft: false
 tags:
-- tools-and-processes
+- tools and processes
 title: Accessing Localhost in Parallels
 ---
 **I just obtained a licence for Parallels for my work computer, and it was a doddle to set up. I didn't realise before now that Parallels will also download and install Windows 10 for you as part of the installer. This was a smooth move. But, when I went to preview my site in IE11 ... nothing happened.**

@@ -7,8 +7,8 @@ description: I've been using the esteemed Rachel Baker's BootstrapWP theme for a
   why I took this step and what I plan to do with it in the future.
 draft: false
 tags:
-- PHP
-- Wordpress
+- php
+- wordpress
 title: I Built A Wordpress Bootstrap starter theme
 ---
 

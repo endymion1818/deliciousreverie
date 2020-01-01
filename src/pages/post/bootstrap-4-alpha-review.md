@@ -8,8 +8,8 @@ description: Bootstrap 4 was released last week, and I downloaded it straight aw
   in what they've changed ...
 draft: false
 tags:
-- CSS
-- Bootstrap
+- css
+- bootstrap
 title: Bootstrap 4 Alpha Review
 ---
 

@@ -8,7 +8,7 @@ description: So, I've been using the relatively new (and somewhat confusing) src
   here.
 draft: false
 tags:
-- HTML
+- html
 title: Using the Srcset attribute on images
 ---
 

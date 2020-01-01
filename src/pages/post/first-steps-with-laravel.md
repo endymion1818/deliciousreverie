@@ -9,7 +9,7 @@ description: For a while now I've felt like I'm leaving Wordpress behind me. It'
   tool. So I'm moving on to Laravel.
 draft: false
 tags:
-- PHP
+- php
 title: First Steps with Laravel
 ---
 

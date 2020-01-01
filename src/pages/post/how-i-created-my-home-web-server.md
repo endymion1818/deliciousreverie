@@ -9,7 +9,7 @@ description: Is it just me or does Apple's iCloud seem like a very simple soluti
   to get a solution I could be more in control of.
 draft: false
 tags:
-- system-administration
+- system administration
 title: How I Created My Home Web Server
 ---
 

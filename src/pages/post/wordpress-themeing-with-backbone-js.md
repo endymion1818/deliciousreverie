@@ -8,8 +8,8 @@ description: You'll notice that there's not a huge amount of posts about JavaScr
   that uses Backbone.js to render the posts in a list. Here's a bit about the project.
 draft: false
 tags:
-- PHP
-- Wordpress
+- php
+- wordpress
 - javascript
 title: Wordpress theming with Backbone.js
 ---

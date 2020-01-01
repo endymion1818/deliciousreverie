@@ -9,7 +9,7 @@ description: Like a lot of things in the web world, CSS is a bit of mess. As the
   of our code becoming unfathomable by other developers.
 draft: false
 tags:
-- CSS
+- css
 title: Switching to BEM Syntax for CSS
 ---
 

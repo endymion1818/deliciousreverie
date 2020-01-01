@@ -7,8 +7,8 @@ description: One thing I've tried to do more of is to use animations on frontend
   and improving on animations that otherwise wouldn't be available on all browsers.
 draft: false
 tags:
-- JavaScript
-- SVG
+- javascript
+- svg
 - animation
 title: SVG Animation on Hover with GreenSock
 ---
