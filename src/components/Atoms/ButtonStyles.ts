@@ -4,22 +4,23 @@ import { borderradius, colors, size } from "../tokens";
 const ButtonStyles = css`
   display: inline-block;
   border: none;
-  padding: ${size.single} ${size.double};
+  padding: 0.2rem 0.4rem;
   margin: 0;
   text-decoration: none;
   background: ${colors.neutral.medium};
-  color: ${colors.base.primary};
+  color: ${colors.neutral.nearWhite};
   font-size: ${size.single};
   cursor: pointer;
   text-align: center;
   transition: background 250ms ease-in-out, transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
-  border-radius: ${borderradius.medium};
+  border-radius: ${borderradius.small};
 
   &:hover,
   &:focus {
-    background: ${colors.neutral.medium};
+    background: ${colors.neutral.nearWhite};
+    color: ${colors.neutral.dark};
   }
 
   &:focus {
