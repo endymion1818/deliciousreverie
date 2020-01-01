@@ -93,7 +93,6 @@ exports.createPages = ({ graphql, actions }) => {
     });
     tags = _.uniq(tags);
     tags.forEach(tag => {
-      console.log(tag);
       createPage({
         path: `/tags/${tag.replace(/ /g, "-")}/`,
         component: tagTemplate,
