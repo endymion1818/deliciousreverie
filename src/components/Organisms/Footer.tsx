@@ -70,7 +70,7 @@ const Footer: FC<IFooterProps> = ({ siteTitle, siteDescription }) => (
             <p>
               <Link to={withPrefix("/")}>{siteTitle}</Link> is the{" "}
               {siteDescription}. Set in Skybird and your system font. Built with
-              Hugo, hosted by Netlify. &copy; Some rights are reserved.
+              Gatsby, hosted by Netlify. &copy; Some rights are reserved.
             </p>
             <h3 style={{ marginBottom: size.zero }}>Where you can find me:</h3>
             <List inline={true} style={{ marginTop: size.zero }}>
