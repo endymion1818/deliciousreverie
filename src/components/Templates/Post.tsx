@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet";
 import Container from "../Atoms/Container";
 import Link from "../Atoms/Link";
 import Wrapper from "../Atoms/Wrapper";
-import EvenColumns from "../Molecules/EvenColumns";
 import Layout from "./Layout";
 
 interface IPostTemplateProps {

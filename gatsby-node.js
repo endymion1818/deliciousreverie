@@ -29,7 +29,6 @@ exports.createPages = ({ graphql, actions }) => {
                 slug
               }
               frontmatter {
-                title
                 categories
                 tags
               }
@@ -76,7 +75,6 @@ exports.createPages = ({ graphql, actions }) => {
       }
     });
     categories = _.uniq(categories);
-
     categories.forEach(category => {
       createPage({
         path: `/categories/${category.replace(/ /g, "-")}/`,
@@ -94,8 +92,8 @@ exports.createPages = ({ graphql, actions }) => {
       }
     });
     tags = _.uniq(tags);
-
     tags.forEach(tag => {
+      console.log(tag);
       createPage({
         path: `/tags/${tag.replace(/ /g, "-")}/`,
         component: tagTemplate,
@@ -104,7 +102,6 @@ exports.createPages = ({ graphql, actions }) => {
         }
       });
     });
-
     return null;
   });
 };

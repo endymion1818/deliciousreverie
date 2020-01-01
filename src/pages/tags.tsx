@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Templates/Layout";
 
-export interface ICategoriesPageProps {
+export interface ITagsPageProps {
   data: {
     allMarkdownRemark: {
       group: Array<{
@@ -19,7 +19,7 @@ export interface ICategoriesPageProps {
   };
 }
 
-const CategoriesPage: FC<ICategoriesPageProps> = ({
+const TagsPage: FC<ITagsPageProps> = ({
   data: {
     allMarkdownRemark: { group },
     site: {
@@ -30,13 +30,11 @@ const CategoriesPage: FC<ICategoriesPageProps> = ({
   <Layout>
     <Helmet title={title} />
     <>
-      <h1>Categories</h1>
+      <h1>Tags</h1>
       <ul>
         {group.map(({ fieldValue, totalCount }) => (
           <li key={fieldValue}>
-            <Link
-              to={`/categories/${fieldValue.toString().replace(/ /g, "-")}/`}
-            >
+            <Link to={`/tags/${fieldValue.toString().replace(/ /g, "-")}/`}>
               {fieldValue} ({totalCount})
             </Link>
           </li>
@@ -46,7 +44,7 @@ const CategoriesPage: FC<ICategoriesPageProps> = ({
   </Layout>
 );
 
-export default CategoriesPage;
+export default TagsPage;
 
 export const pageQuery = graphql`
   query {
