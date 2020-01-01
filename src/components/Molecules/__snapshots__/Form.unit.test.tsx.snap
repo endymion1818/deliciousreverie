@@ -168,12 +168,12 @@ exports[`Should render 1`] = `
 .c0 button {
   display: inline-block;
   border: none;
-  padding: 1rem 2rem;
+  padding: 0.2rem 0.4rem;
   margin: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #4f4f4f;
-  color: #f7ebc1;
+  color: #F8F8F8;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -182,12 +182,13 @@ exports[`Should render 1`] = `
   transition: background 250ms ease-in-out,transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .c0 button:hover,
 .c0 button:focus {
-  background: #4f4f4f;
+  background: #F8F8F8;
+  color: #333333;
 }
 
 .c0 button:focus {
