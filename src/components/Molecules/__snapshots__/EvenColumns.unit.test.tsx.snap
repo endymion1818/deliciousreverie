@@ -44,37 +44,11 @@ exports[`<EvenColumns /> Should render 1`] = `
   width: 100%;
 }
 
-@media (min-width:) {
+@media (min-width:36em) {
   .c0 {
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-gap: 15px;
-  }
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .c0 {
-    display: block !important;
-  }
-
-  .c0 > * {
-    display: block !important;
-    float: left;
-    width: 100%;
-  }
-
-  .c0 > *:not(:first-child) {
-    margin-left: 1rem;
-  }
-
-  .c0 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
-
-  .c0:after {
-    content: '';
-    display: block;
-    clear: both;
   }
 }
 
