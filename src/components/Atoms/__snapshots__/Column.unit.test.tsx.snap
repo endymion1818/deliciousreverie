@@ -1,21 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Column /> Should render 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .c0 > h1,
 .c0 > h2,
 .c0 > h3,
@@ -33,7 +18,7 @@ exports[`<Column /> Should render 1`] = `
   flex: 2;
 }
 
-.c0 > p ~ div[class*='Button'] {
+.c0 > p ~ div[class*="Button"] {
   -webkit-flex: 0;
   -ms-flex: 0;
   flex: 0;
@@ -41,6 +26,23 @@ exports[`<Column /> Should render 1`] = `
 
 .c0 > img {
   width: 100%;
+}
+
+@media (min-width:36em) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 <div>
