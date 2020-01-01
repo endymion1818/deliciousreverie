@@ -91,8 +91,10 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
                     <h4>Categories:</h4>
                     <ul>
                       {categories.map(category => (
-                        <li key={category.replace(/ /g, "_")}>
-                          <Link href={`/categories/${category}`}>
+                        <li key={category}>
+                          <Link
+                            href={`/categories/${category.replace(/ /g, "-")}`}
+                          >
                             {category}
                           </Link>
                         </li>
@@ -105,8 +107,10 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
                     <h4>Tags:</h4>
                     <ul>
                       {tags.map(tag => (
-                        <li key={tag.replace(/ /g, "_")}>
-                          <Link href={`/tags/${tag}`}>{tag}</Link>
+                        <li key={tag}>
+                          <Link href={`/tags/${tag.replace(/ /g, "-")}`}>
+                            {tag}
+                          </Link>
                         </li>
                       ))}
                     </ul>

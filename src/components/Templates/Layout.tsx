@@ -89,6 +89,12 @@ const GlobalStyle = createGlobalStyle`
   p {
     line-height: 1.2;
   }
+  pre {
+    background-color: ${colors.base.secondary};
+    padding: 0.5rem;
+    color: ${colors.neutral.nearWhite};
+    overflow-y: scroll;
+  }
   #gatsby-noscript {
     display:none;
   }

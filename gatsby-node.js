@@ -79,7 +79,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     categories.forEach(category => {
       createPage({
-        path: `/categories/${_.kebabCase(category)}/`,
+        path: `/categories/${category.replace(/ /g, "-")}/`,
         component: categoryTemplate,
         context: {
           category
@@ -97,7 +97,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     tags.forEach(tag => {
       createPage({
-        path: `/tags/${_.kebabCase(tag)}/`,
+        path: `/tags/${tag.replace(/ /g, "-")}/`,
         component: tagTemplate,
         context: {
           tag
