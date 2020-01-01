@@ -45,7 +45,7 @@ const Footer: FC<IFooterProps> = ({ siteTitle, siteDescription }) => (
     <Wrapper
       backgroundColour={colors.base.secondary}
       textColour={colors.neutral.white}
-      paddingBottom={size.quad}
+      paddingBottom={size.double}
       paddingTop={size.quad}
     >
       <Container>
@@ -62,6 +62,8 @@ const Footer: FC<IFooterProps> = ({ siteTitle, siteDescription }) => (
     <Wrapper
       backgroundColour={colors.neutral.dark}
       textColour={colors.neutral.white}
+      paddingBottom={size.quad}
+      paddingTop={size.double}
     >
       <Container>
         <Row size={1}>

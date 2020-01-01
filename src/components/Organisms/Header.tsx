@@ -70,7 +70,12 @@ const MainNav = styled.ul`
 
 const SearchColumn = styled(Column)`
   form {
-    justify-content: flex-end;
+    padding-bottom: ${size.single};
+  }
+  @media (min-width: ${breakpoint.small}) {
+    form {
+      justify-content: flex-end;
+    }
   }
 `;
 
@@ -91,11 +96,6 @@ const Header: FC<IHeaderProps> = ({
         </SiteTitle>
         <SiteDescription>{siteDescription}</SiteDescription>
       </Container>
-    </Wrapper>
-    <Wrapper
-      backgroundColour={colors.base.secondary}
-      textColour={colors.neutral.white}
-    >
       <Container>
         <Row size={2}>
           <Column>
