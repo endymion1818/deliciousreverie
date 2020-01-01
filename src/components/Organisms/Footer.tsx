@@ -9,56 +9,50 @@ import List from "../Atoms/List";
 import Row from "../Atoms/Row";
 import Wrapper from "../Atoms/Wrapper";
 import { IPrimaryNavProps, ISecondaryNavProps } from "../Templates/Layout";
-import { borderradius, colors, size } from "../tokens";
+import { borderradius, colors, effects, size } from "../tokens";
 
 export interface IFooterProps extends IPrimaryNavProps, ISecondaryNavProps {
   siteTitle: string;
   siteDescription: string;
 }
 
-const SecondaryNav = styled(List)`
-  li {
-    a {
-      display: block;
-      padding: ${size.single};
-      text-decoration: none;
-      border-radius: ${borderradius.medium};
-      color: ${colors.base.primary};
+const Anchor = styled(Link)`
+  transition: ${effects.transition};
 
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: ${colors.neutral.medium};
-        color: ${colors.base.primary};
-      }
-      &.active {
-        background-color: ${colors.neutral.medium};
-        color: ${colors.base.primary};
-      }
-    }
+  &:hover,
+  &:active,
+  &:focus {
+    color: ${colors.neutral.nearWhite};
+    opacity: 0.8;
+  }
+  &.active {
+    color: ${colors.base.primary};
+    opacity: 0.4;
   }
 `;
 
 const Blockquote = styled.blockquote`
   margin: 0;
+
+  span {
+    font-size: ${size.double};
+    font-family: Skybird;
+  }
 `;
 
-const Footer: FC<IFooterProps> = ({
-  secondaryNav,
-  primaryNav,
-  siteTitle,
-  siteDescription
-}) => (
+const Footer: FC<IFooterProps> = ({ siteTitle, siteDescription }) => (
   <>
     <Wrapper
       backgroundColour={colors.base.secondary}
       textColour={colors.neutral.white}
+      paddingBottom={size.quad}
+      paddingTop={size.quad}
     >
       <Container>
         <Row size={1}>
           <Column>
             <Blockquote>
-              “Wisest are they who know they do not know.”
+              <span>“Wisest are they who know they do not know.”</span>
               <footer>&mdash; Jostein Gaarder</footer>
             </Blockquote>
           </Column>
@@ -66,7 +60,7 @@ const Footer: FC<IFooterProps> = ({
       </Container>
     </Wrapper>
     <Wrapper
-      backgroundColour={colors.neutral.medium}
+      backgroundColour={colors.neutral.dark}
       textColour={colors.neutral.white}
     >
       <Container>
@@ -81,24 +75,26 @@ const Footer: FC<IFooterProps> = ({
             <h3 style={{ marginBottom: size.zero }}>Where you can find me:</h3>
             <List inline={true} style={{ marginTop: size.zero }}>
               <li>
-                <a href="https://twitter.com/muzzlehatch_">twitter</a>
+                <Anchor href="https://twitter.com/muzzlehatch_">twitter</Anchor>
               </li>
               <li>
-                <a href="http://uk.linkedin.com/pub/benjamin-read/27/563/36a/">
+                <Anchor href="http://uk.linkedin.com/pub/benjamin-read/27/563/36a/">
                   linkedin
-                </a>
+                </Anchor>
               </li>
               <li>
-                <a href="https://codepen.io/endymion1818/">codepen</a>
+                <Anchor href="https://codepen.io/endymion1818/">codepen</Anchor>
               </li>
               <li>
-                <a href="https://codesandbox.io/u/endymion1818/">codesandbox</a>
+                <Anchor href="https://codesandbox.io/u/endymion1818/">
+                  codesandbox
+                </Anchor>
               </li>
               <li>
-                <a href="https://github.com/endymion1818/">github</a>
+                <Anchor href="https://github.com/endymion1818/">github</Anchor>
               </li>
               <li>
-                <Link to="/feed.xml">RSS Feed</Link>
+                <Anchor to="/feed.xml">RSS Feed</Anchor>
               </li>
             </List>
           </Column>

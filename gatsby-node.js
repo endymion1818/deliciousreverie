@@ -11,6 +11,7 @@ exports.createPages = ({ graphql, actions }) => {
   const categoryTemplate = path.resolve(
     `./src/components/Templates/Category.tsx`
   );
+  const tagTemplate = path.resolve(`./src/components/Templates/Tag.tsx`);
   const archiveTemplate = path.resolve(
     `./src/components/Templates/Archive.tsx`
   );
@@ -30,6 +31,7 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 title
                 categories
+                tags
               }
             }
           }
@@ -84,6 +86,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       });
     });
+
     let tags = [];
     _.each(posts, edge => {
       if (_.get(edge, `node.frontmatter.tags`)) {
@@ -92,12 +95,12 @@ exports.createPages = ({ graphql, actions }) => {
     });
     tags = _.uniq(tags);
 
-    tags.forEach(category => {
+    tags.forEach(tag => {
       createPage({
-        path: `/tags/${_.kebabCase(category)}/`,
-        component: categoryTemplate,
+        path: `/tags/${_.kebabCase(tag)}/`,
+        component: tagTemplate,
         context: {
-          category
+          tag
         }
       });
     });

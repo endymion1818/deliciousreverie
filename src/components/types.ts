@@ -9,7 +9,7 @@ export interface INeutralColorSpec {
   light: "#EAEAEE";
   medium: "#4f4f4f";
   nearDark: "#63637E";
-  dark: "#0D0A38";
+  dark: "#333333";
 }
 
 export interface ISemanticColorSpec {
@@ -62,4 +62,7 @@ export interface IBorderradius {
   small: string;
   medium: string;
   large: string;
+}
+export interface IEffects {
+  transition: string;
 }

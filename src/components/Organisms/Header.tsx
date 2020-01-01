@@ -8,7 +8,7 @@ import Row from "../Atoms/Row";
 import Wrapper from "../Atoms/Wrapper";
 import SearchForm from "../Molecules/SearchForm";
 import { IPrimaryNavProps } from "../Templates/Layout";
-import { borderradius, breakpoint, colors, size } from "../tokens";
+import { borderradius, breakpoint, colors, effects, size } from "../tokens";
 
 export interface IHeaderProps extends IPrimaryNavProps {
   siteTitle: string;
@@ -16,14 +16,24 @@ export interface IHeaderProps extends IPrimaryNavProps {
 }
 
 const SiteTitle = styled.h1`
-  color: ${colors.base.primary};
   margin: 0;
-  padding-top: 4vh;
+  padding-top: 6vh;
+
+  a {
+    color: ${colors.base.primary};
+    text-decoration: none;
+    transition: ${effects.transition};
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
 `;
 const SiteDescription = styled.h2`
   color: ${colors.neutral.white};
   margin: 0;
-  padding-top: 4vh;
 `;
 
 const MainNav = styled.ul`
@@ -40,18 +50,27 @@ const MainNav = styled.ul`
       padding: ${size.single};
       text-decoration: none;
       border-radius: ${borderradius.medium};
+      transition: ${effects.transition};
 
       &:hover,
       &:active,
       &:focus {
-        background-color: ${colors.neutral.medium};
-        color: ${colors.base.primary};
+        background-color: ${colors.neutral.nearWhite};
+        color: ${colors.neutral.nearDark};
+        opacity: 0.8;
       }
       &.active {
-        background-color: ${colors.neutral.medium};
+        background-color: ${colors.neutral.nearDark};
         color: ${colors.base.primary};
+        opacity: 0.4;
       }
     }
+  }
+`;
+
+const SearchColumn = styled(Column)`
+  form {
+    justify-content: flex-end;
   }
 `;
 
@@ -67,7 +86,9 @@ const Header: FC<IHeaderProps> = ({
       style={{ minHeight: "8vh" }}
     >
       <Container>
-        <SiteTitle href={withPrefix("/")}>{siteTitle}</SiteTitle>
+        <SiteTitle>
+          <Link href="/">{siteTitle}</Link>
+        </SiteTitle>
         <SiteDescription>{siteDescription}</SiteDescription>
       </Container>
     </Wrapper>
@@ -96,9 +117,9 @@ const Header: FC<IHeaderProps> = ({
               </li>
             </MainNav>
           </Column>
-          <Column verticalAlign="center">
+          <SearchColumn verticalAlign="center">
             <SearchForm />
-          </Column>
+          </SearchColumn>
         </Row>
       </Container>
     </Wrapper>

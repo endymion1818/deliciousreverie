@@ -72,59 +72,49 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
       </Helmet>
       <Wrapper>
         <Container>
-          <EvenColumns
-            content={[
-              {
-                innerContent: (
+          <article className="h-entry">
+            <header>
+              <h1>{title}</h1>
+              {featuredImage && (
+                <Img
+                  fluid={featuredImage.childImageSharp.fluid}
+                  alt={featuredImageAlt}
+                />
+              )}
+            </header>
+            <section dangerouslySetInnerHTML={{ __html: html }} />
+            {type !== "page" && (
+              <footer>
+                <time>Published on: {date}</time>
+                {categories ? (
                   <>
-                    <article className="h-entry">
-                      <header>
-                        <h1>{title}</h1>
-                        {featuredImage && (
-                          <Img
-                            fluid={featuredImage.childImageSharp.fluid}
-                            alt={featuredImageAlt}
-                          />
-                        )}
-                      </header>
-                      <section dangerouslySetInnerHTML={{ __html: html }} />
-                      {type !== "page" && (
-                        <footer>
-                          <time>Published on: {date}</time>
-                          {categories ? (
-                            <>
-                              <h4>Categories:</h4>
-                              <ul>
-                                {categories.map(category => (
-                                  <li key={category.replace(/ /g, "_")}>
-                                    <Link href={`/categories/${category}`}>
-                                      {category}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            </>
-                          ) : null}
-                          {tags ? (
-                            <>
-                              <h4>Tags:</h4>
-                              <ul>
-                                {tags.map(tag => (
-                                  <li key={tag.replace(/ /g, "_")}>
-                                    <Link href={`/tags/${tag}`}>{tag}</Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            </>
-                          ) : null}
-                        </footer>
-                      )}
-                    </article>
+                    <h4>Categories:</h4>
+                    <ul>
+                      {categories.map(category => (
+                        <li key={category.replace(/ /g, "_")}>
+                          <Link href={`/categories/${category}`}>
+                            {category}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                   </>
-                )
-              }
-            ]}
-          />
+                ) : null}
+                {tags ? (
+                  <>
+                    <h4>Tags:</h4>
+                    <ul>
+                      {tags.map(tag => (
+                        <li key={tag.replace(/ /g, "_")}>
+                          <Link href={`/tags/${tag}`}>{tag}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : null}
+              </footer>
+            )}
+          </article>
         </Container>
       </Wrapper>
     </Layout>

@@ -2,6 +2,7 @@ import {
   IBorderradius,
   IBreakpoint,
   IColorSpec,
+  IEffects,
   IFlexalign,
   IGridalign,
   ISize,
@@ -19,7 +20,7 @@ export const colors: IColorSpec = {
     light: "#EAEAEE",
     medium: "#4f4f4f",
     nearDark: "#63637E",
-    dark: "#0D0A38"
+    dark: "#333333"
   },
   semantic: {
     success: "#1EC06A",
@@ -66,4 +67,8 @@ export const borderradius: IBorderradius = {
   small: "0.25rem",
   medium: "0.5rem",
   large: "0.75rem"
+};
+
+export const effects: IEffects = {
+  transition: "opacity 0.2s ease-in-out"
 };

@@ -96,10 +96,6 @@ const GlobalStyle = createGlobalStyle`
 
 const Main = styled(Wrapper)`
   padding: ${size.single} 0;
-
-  *:first-child {
-    margin-top: 0;
-  }
 `;
 
 const Layout: React.SFC = ({ children }) => (

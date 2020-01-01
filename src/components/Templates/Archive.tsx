@@ -1,7 +1,9 @@
 import { graphql, withPrefix } from "gatsby";
 import React, { FC } from "react";
+import styled from "styled-components";
 import Link from "../Atoms/Link";
 import Page from "../Templates/Page";
+import { size } from "../tokens";
 
 export interface IArchiveProps {
   data: {
@@ -26,6 +28,10 @@ export interface IArchiveProps {
   };
 }
 
+const Article = styled.article`
+  margin-bottom: ${size.triple};
+`;
+
 const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
   const { previousPagePath, nextPagePath } = pageContext;
   const { posts } = data;
@@ -34,18 +40,22 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
     <Page>
       {posts &&
         posts.edges.map((edge, index) => (
-          <article key={index}>
+          <Article key={index}>
             <h2>
               <Link to={withPrefix(edge.node.fields.slug)}>
                 {edge.node.frontmatter.title}
               </Link>
             </h2>
             <p dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
-            <br />
-            <div>
-              Posted on: <time>{edge.node.frontmatter.date}</time>
-            </div>
-          </article>
+            <p>
+              <small>
+                This was posted on: <time>{edge.node.frontmatter.date}</time>
+              </small>
+            </p>
+            <Link to={withPrefix(edge.node.fields.slug)}>
+              &rsaquo; Read more of "{edge.node.frontmatter.title}"
+            </Link>
+          </Article>
         ))}
       <nav>
         <ul style={{ listStyle: "none", paddingLeft: "0" }}>
@@ -55,9 +65,12 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
             </li>
           )}
           {nextPagePath && (
-            <li>
-              <Link to={nextPagePath}>&raquo; Older posts</Link>
-            </li>
+            <>
+              <br />
+              <li>
+                <Link to={nextPagePath}>&raquo; Older posts</Link>
+              </li>
+            </>
           )}
         </ul>
       </nav>

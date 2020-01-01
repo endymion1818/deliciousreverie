@@ -2,9 +2,9 @@ import { graphql, Link } from "gatsby";
 import React, { FC } from "react";
 import Page from "../Templates/Page";
 
-export interface ICategoriesProps {
+export interface ITagsProps {
   pageContext: {
-    category: string;
+    tag: string;
   };
   data: {
     allMarkdownRemark: {
@@ -23,12 +23,12 @@ export interface ICategoriesProps {
   };
 }
 
-const Categories: FC<ICategoriesProps> = ({ pageContext, data }) => {
-  const { category } = pageContext;
+const Tags: FC<ITagsProps> = ({ pageContext, data }) => {
+  const { tag } = pageContext;
   const { edges, totalCount } = data.allMarkdownRemark;
   const categoryHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
-  } categorised with "${category}"`;
+  } tagged with "${tag}"`;
 
   return (
     <Page>
@@ -44,19 +44,19 @@ const Categories: FC<ICategoriesProps> = ({ pageContext, data }) => {
           );
         })}
       </ul>
-      <Link to="/categories">All categories</Link>
+      <Link to="/tags">All Tags</Link>
     </Page>
   );
 };
 
-export default Categories;
+export default Tags;
 
 export const pageQuery = graphql`
   query($category: String) {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { categories: { in: [$category] } } }
+      filter: { frontmatter: { tags: { in: [$category] } } }
     ) {
       totalCount
       edges {
