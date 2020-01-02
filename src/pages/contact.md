@@ -15,8 +15,8 @@ You can reach me on `endymion1818@gmail.com` or using the form below.
 <form id="contactform" action="https://formspree.io/endymion1818@gmail.com"
       method="POST">
     <input type="email" name="_replyto" placeholder="your email">
-    <br>
+    <br><br>
     <textarea name="message" placeholder="Your message" rows="4"></textarea>
-    <br>
-    <input class="btn" type="submit" value="Send">
+    <br><br>
+    <button class="btn" type="submit">Send</button>
 </form>

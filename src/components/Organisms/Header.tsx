@@ -92,7 +92,7 @@ const Header: FC<IHeaderProps> = ({
     >
       <Container>
         <SiteTitle>
-          <Link href="/">{siteTitle}</Link>
+          <Link to="/">{siteTitle}</Link>
         </SiteTitle>
         <SiteDescription>{siteDescription}</SiteDescription>
       </Container>

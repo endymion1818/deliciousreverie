@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 import Skybird from "../../assets/Skybird-Regular.woff2";
+import ButtonStyles from "../Atoms/ButtonStyles";
 import Wrapper from "../Atoms/Wrapper";
 import ErrorBoundary from "../Molecules/ErrorBoundary";
 import Footer from "../Organisms/Footer";
@@ -97,6 +98,9 @@ const GlobalStyle = createGlobalStyle`
     padding: 0.5rem;
     color: ${colors.neutral.nearWhite};
     overflow-y: scroll;
+  }
+  button {
+    ${ButtonStyles}
   }
   #gatsby-noscript {
     display:none;
