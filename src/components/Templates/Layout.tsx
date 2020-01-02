@@ -93,6 +93,9 @@ const GlobalStyle = createGlobalStyle`
   li {
     line-height: 1.25;
   }
+  img {
+    max-width: 100%;
+  }
   pre {
     background-color: ${colors.base.secondary};
     padding: 0.5rem;
@@ -141,6 +144,7 @@ const Layout: React.SFC = ({ children }) => (
               "url": "https://deliciousreverie.co.uk",
             `}
           </script>
+          <link rel="preload" href={Skybird} as="font" />
         </Helmet>
         <AccessibilityMainContentSkipLink href="#main">
           Skip to main content

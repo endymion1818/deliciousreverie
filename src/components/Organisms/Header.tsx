@@ -115,6 +115,11 @@ const Header: FC<IHeaderProps> = ({
                 </Link>
               </li>
               <li>
+                <Link to="/links" activeClassName="active">
+                  Links
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" activeClassName="active">
                   Contact
                 </Link>

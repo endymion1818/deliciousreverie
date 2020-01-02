@@ -71,8 +71,12 @@ const Footer: FC<IFooterProps> = ({ siteTitle, siteDescription }) => (
             <h3>About This Site</h3>
             <p>
               <Link to={withPrefix("/")}>{siteTitle}</Link> is the{" "}
-              {siteDescription}. Set in Skybird and your system font. Built with
-              Gatsby, hosted by Netlify. &copy; Some rights are reserved.
+              {siteDescription}. Set in{" "}
+              <Anchor href="https://shapedfonts.com/project/skybird/">
+                Skybird
+              </Anchor>{" "}
+              and your system font. Built with Gatsby, hosted by Netlify. &copy;
+              Some rights are reserved.
             </p>
             <h3 style={{ marginBottom: size.zero }}>Where you can find me:</h3>
             <List inline={true} style={{ marginTop: size.zero }}>
