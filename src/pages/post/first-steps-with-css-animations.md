@@ -8,7 +8,7 @@ description: CSS Animations are quickly complimenting if not replacing Javascrip
   the tired carousels resident on many websites. Here's how I implemented it.
 draft: false
 tags:
-- CSS
+- css
 title: First Steps with CSS Animations
 ---
 

@@ -26,13 +26,13 @@ export interface ITagsProps {
 const Tags: FC<ITagsProps> = ({ pageContext, data }) => {
   const { tag } = pageContext;
   const { edges, totalCount } = data.allMarkdownRemark;
-  const categoryHeader = `${totalCount} post${
+  const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`;
 
   return (
     <Page>
-      <h1>{categoryHeader}</h1>
+      <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
           const { slug } = node.fields;
@@ -52,11 +52,11 @@ const Tags: FC<ITagsProps> = ({ pageContext, data }) => {
 export default Tags;
 
 export const pageQuery = graphql`
-  query($category: String) {
+  query($tag: String) {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$category] } } }
+      filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount
       edges {
@@ -66,6 +66,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            tags
           }
         }
       }

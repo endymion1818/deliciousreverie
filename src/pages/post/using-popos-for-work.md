@@ -1,6 +1,6 @@
 ---
 categories:
-- sysAdmin
+- sysadmin
 date: "2018-02-10T15:21:21+01:00"
 description: In November last year I switched from using Windows at my place of work
   to using Pop!_OS by System76, an Ubuntu derivative designed for developers, researchers

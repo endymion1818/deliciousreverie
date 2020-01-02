@@ -7,9 +7,9 @@ description: For a recent project, I was asked to design an animation for a doug
   choose how many animations to display on a given content area.
 draft: false
 tags:
-- Animation
-- JavaScript
-- SVG
+- animation
+- javaScript
+- svg
 title: Doughnut chart SVG Animation
 ---
 
