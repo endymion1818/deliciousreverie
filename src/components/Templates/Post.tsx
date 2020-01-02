@@ -139,6 +139,7 @@ export const query = graphql`
         title
         categories
         tags
+        type
         date(formatString: "DD MMMM, YYYY")
         featuredImage {
           publicURL
