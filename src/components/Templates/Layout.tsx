@@ -89,6 +89,9 @@ const GlobalStyle = createGlobalStyle`
   p {
     line-height: 1.2;
   }
+  li {
+    line-height: 1.25;
+  }
   pre {
     background-color: ${colors.base.secondary};
     padding: 0.5rem;
