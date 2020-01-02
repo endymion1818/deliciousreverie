@@ -1,7 +1,7 @@
 import { graphql, Link } from "gatsby";
 import React, { FC } from "react";
 import { Helmet } from "react-helmet";
-import Layout from "../components/Templates/Layout";
+import Page from "../components/Templates/Page";
 
 export interface ITagsPageProps {
   data: {
@@ -27,7 +27,7 @@ const TagsPage: FC<ITagsPageProps> = ({
     }
   }
 }) => (
-  <Layout>
+  <Page>
     <Helmet title={title} />
     <>
       <h1>Tags</h1>
@@ -41,7 +41,7 @@ const TagsPage: FC<ITagsPageProps> = ({
         ))}
       </ul>
     </>
-  </Layout>
+  </Page>
 );
 
 export default TagsPage;

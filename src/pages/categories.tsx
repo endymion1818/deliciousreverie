@@ -1,7 +1,7 @@
 import { graphql, Link } from "gatsby";
 import React, { FC } from "react";
 import { Helmet } from "react-helmet";
-import Layout from "../components/Templates/Layout";
+import Page from "../components/Templates/Page";
 
 export interface ICategoriesPageProps {
   data: {
@@ -27,7 +27,7 @@ const CategoriesPage: FC<ICategoriesPageProps> = ({
     }
   }
 }) => (
-  <Layout>
+  <Page>
     <Helmet title={title} />
     <>
       <h1>Categories</h1>
@@ -43,7 +43,7 @@ const CategoriesPage: FC<ICategoriesPageProps> = ({
         ))}
       </ul>
     </>
-  </Layout>
+  </Page>
 );
 
 export default CategoriesPage;
