@@ -77,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
-    font-family: system;
+    font-family: system, sans-serif;
   }
   h1,
   h2,
