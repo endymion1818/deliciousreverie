@@ -34,6 +34,10 @@ const SiteTitle = styled.h1`
 const SiteDescription = styled.h2`
   color: ${colors.neutral.white};
   margin: 0;
+
+  @media (min-width: ${breakpoint.small}) {
+    font-size: 1.3rem;
+  }
 `;
 
 const MainNav = styled.ul`
