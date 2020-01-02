@@ -2,7 +2,7 @@
 date: "2012-05-07T16:12:46+01:00"
 draft: false
 title: About Benjamin Read
-type: staticpage
+type: page
 ---
 
 This is hard to write. Identifying your own core skills is difficult.

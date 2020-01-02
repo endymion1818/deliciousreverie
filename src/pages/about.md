@@ -2,7 +2,7 @@
 date: "2012-05-07T16:12:46+01:00"
 draft: false
 title: About
-type: staticpage
+type: page
 ---
 
 Delicious Reverie is the personal blog of [Benjamin Read](/about-benjamin-read "recruiters, click here"), a web developer from just outside London, UK.
