@@ -143,16 +143,10 @@ const Layout: React.SFC<ILayoutProps> = ({
           <GlobalStyle />
           <Helmet>
             <html lang="en" />
-            <title>
-              {pageTitle ? pageTitle : data.site.siteMetadata.title}
-            </title>
+            <title>{`${pageTitle} - ${data.site.siteMetadata.title}`}</title>
             <meta
               name="description"
-              content={
-                pageDescription
-                  ? pageDescription
-                  : data.site.siteMetadata.description
-              }
+              content={`${pageDescription} - ${data.site.siteMetadata.description}`}
             />
             <script type="application/ld+json">
               {`
