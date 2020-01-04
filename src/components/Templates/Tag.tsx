@@ -31,7 +31,7 @@ const Tags: FC<ITagsProps> = ({ pageContext, data }) => {
   } tagged with "${tag}"`;
 
   return (
-    <Page>
+    <Page pageTitle={tagHeader}>
       <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
