@@ -142,7 +142,7 @@ const Layout: React.SFC<ILayoutProps> = ({
         <ErrorBoundary>
           <GlobalStyle />
           <Helmet>
-            <html lang="en" />
+            <html lang="en-GB" />
             <title>{`${pageTitle} - ${data.site.siteMetadata.title}`}</title>
             <meta
               name="description"
