@@ -24,6 +24,7 @@ interface IPostTemplateProps {
       excerpt: string;
       frontmatter: {
         type: string;
+        description: string;
         featuredImageAlt: string;
         featuredImage: {
           childImageSharp: {
@@ -58,17 +59,14 @@ interface IPostTemplateProps {
 const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
   const { html } = data.markdownRemark;
   const { title } = data.markdownRemark.frontmatter;
+  const { description } = data.markdownRemark.frontmatter;
   const { type } = data.markdownRemark.frontmatter;
   const { date } = data.markdownRemark.frontmatter;
   const { featuredImage } = data.markdownRemark.frontmatter;
   const { featuredImageAlt } = data.markdownRemark.frontmatter;
   const { categories, tags } = data.markdownRemark.frontmatter;
   return (
-    <Layout>
-      <Helmet>
-        <title>{data.site.siteMetadata.title}</title>
-        <meta name="description" content="#FreeBabylon5" />
-      </Helmet>
+    <Layout pageTitle={title} description={description}>
       <Wrapper>
         <Container>
           <article className="h-entry">
@@ -140,6 +138,7 @@ export const query = graphql`
         categories
         tags
         type
+        description
         date(formatString: "DD MMMM, YYYY")
         featuredImage {
           publicURL
