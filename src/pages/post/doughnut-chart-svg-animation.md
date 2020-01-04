@@ -8,7 +8,7 @@ description: For a recent project, I was asked to design an animation for a doug
 draft: false
 tags:
 - animation
-- javaScript
+- javascript
 - svg
 title: Doughnut chart SVG Animation
 ---
