@@ -31,7 +31,7 @@ const Categories: FC<ICategoriesProps> = ({ pageContext, data }) => {
   } categorised with "${category}"`;
 
   return (
-    <Page>
+    <Page pageTitle={categoryHeader}>
       <h1>{categoryHeader}</h1>
       <ul>
         {edges.map(({ node }) => {

@@ -114,61 +114,75 @@ const Main = styled(Wrapper)`
   padding: ${size.single} 0;
 `;
 
-const Layout: React.SFC = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query LayoutQuery {
-        site {
-          siteMetadata {
-            title
-            description
+export interface ILayoutProps {
+  pageTitle?: string;
+  pageDescription?: string;
+  isIndexable?: boolean;
+}
+
+const Layout: React.SFC<ILayoutProps> = ({
+  children,
+  pageTitle,
+  pageDescription,
+  isIndexable
+}) => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query LayoutQuery {
+          site {
+            siteMetadata {
+              title
+              description
+            }
           }
         }
-      }
-    `}
-    render={(data: IStaticQueryProps) => (
-      <ErrorBoundary>
-        <GlobalStyle />
-        <Helmet>
-          <html lang="en" />
-          <title>{data.site.siteMetadata.title}</title>
-          <meta
-            name="description"
-            content={data.site.siteMetadata.description}
-          />
-          <script type="application/ld+json">
-            {`
+      `}
+      render={(data: IStaticQueryProps) => (
+        <ErrorBoundary>
+          <GlobalStyle />
+          <Helmet>
+            <html lang="en-GB" />
+            <title>{`${pageTitle} - ${data.site.siteMetadata.title}`}</title>
+            <meta
+              name="description"
+              content={`${pageDescription} - ${data.site.siteMetadata.description}`}
+            />
+            <script type="application/ld+json">
+              {`
               "@context": "http://schema.org",
               "@type": "Individual",
               "name": "Delicious Reverie",
               "url": "https://deliciousreverie.co.uk",
             `}
-          </script>
-          <link rel="preload" href={Skybird} as="font" />
-        </Helmet>
-        <AccessibilityMainContentSkipLink href="#main">
-          Skip to main content
-        </AccessibilityMainContentSkipLink>
-        <Header
-          siteTitle={data.site.siteMetadata.title}
-          siteDescription={data.site.siteMetadata.description}
-          primaryNav={data.primaryNav}
-        />
-        <Main
-          id="main"
-          backgroundColour={colors.base.primary}
-          textColour={colors.neutral.medium}
-        >
-          {children}
-        </Main>
-        <Footer
-          siteTitle={data.site.siteMetadata.title}
-          siteDescription={data.site.siteMetadata.description}
-          primaryNav={data.primaryNav}
-          secondaryNav={data.secondaryNav}
-        />
-      </ErrorBoundary>
-    )}
-  />
-);
+            </script>
+            <link rel="preload" href={Skybird} as="font" />
+            {!isIndexable && <meta name="robots" content="NOINDEX, NOFOLLOW" />}
+          </Helmet>
+          <AccessibilityMainContentSkipLink href="#main">
+            Skip to main content
+          </AccessibilityMainContentSkipLink>
+          <Header
+            siteTitle={data.site.siteMetadata.title}
+            siteDescription={data.site.siteMetadata.description}
+            primaryNav={data.primaryNav}
+          />
+          <Main
+            id="main"
+            backgroundColour={colors.base.primary}
+            textColour={colors.neutral.medium}
+          >
+            {children}
+          </Main>
+          <Footer
+            siteTitle={data.site.siteMetadata.title}
+            siteDescription={data.site.siteMetadata.description}
+            primaryNav={data.primaryNav}
+            secondaryNav={data.secondaryNav}
+          />
+        </ErrorBoundary>
+      )}
+    />
+  );
+};
 export default Layout;
