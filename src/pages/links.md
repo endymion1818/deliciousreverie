@@ -28,16 +28,14 @@ I don't believe it is. I've seen the world wide web morph from AOL and eWorld to
 
 ### Uses
 - [Hyper Terminal](https://hyper.is)
-- [GitHub](http://github.com)
-- [CodePen](https://codepen.io)
+- [Pure prompt](https://github.com/sindresorhus/pure)
 - [React](https://reactjs.org/)
 - [Gatsby](https://www.gatsbyjs.org/)
-- [GreenSock](https://greensock.com/)
-- [MeteorJS](https://www.meteor.com/)
-- [Apollo GraphQL](https://www.apollographql.com/)
-- [Snyk](https://snyk.io)
-- [Pop!_OS](https://system76.com/pop)
-- [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about)
+- [TypeScript](https://www.typescriptlang.org)
+- [Testing Library](https://testing-library.com/react/)
+- [Sentry](https://sentry.io/welcome/)
+- [CircleCI](http://circleci.com)
+- [Netlify](http://netlify.com)
 - [Spotify](https://www.spotify.com/uk/) (yeah, of course it's a _tool_)
 
 ### Industry
