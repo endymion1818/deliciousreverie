@@ -42,6 +42,8 @@ I don't believe it is. I've seen the world wide web morph from AOL and eWorld to
 - [Free Code Camp forum](https://www.freecodecamp.org/forum)
 - [History of the Web](https://thehistoryoftheweb.com)
 - [Ethan Marcotte](https://www.ethanmarcotte.com)
+- [Sweet Ops](https://sweetops.com/)
+- [The New Dynamic](https://www.thenewdynamic.org/)
 
 ### Literature
 - [Hokku: Writing Through the Seasons](http://github.com)
