@@ -77,6 +77,7 @@ const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: Skybird;
     src: url(${Skybird});
+    font-display: optional;
   }
   body {
     margin: 0;
