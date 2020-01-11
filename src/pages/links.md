@@ -38,26 +38,21 @@ I don't believe it is. I've seen the world wide web morph from AOL and eWorld to
 - [Netlify](http://netlify.com)
 - [Spotify](https://www.spotify.com/uk/) (yeah, of course it's a _tool_)
 
-### Industry
-- [Zeldman.com](http://www.zeldman.com)
-- [Rachel Nabors](http://rachelnabors.com)
-- [LukeW](https://www.lukew.com/ff/)
-- [Bruce Lawson](http://www.brucelawson.co.uk)
-- [Sara Souiedan](https://sarasoueidan.com)
-- [A List Apart](https://alistapart.com)
-- [Jeremy Keith - adactio.com](https://adactio.com/journal/)
-- [Aral Balkan](https://ar.al)
+### Frequents
+- [Free Code Camp forum](https://www.freecodecamp.org/forum)
+- [History of the Web](https://thehistoryoftheweb.com)
+- [Ethan Marcotte](https://www.ethanmarcotte.com)
 
 ### Literature
 - [Hokku: Writing Through the Seasons](http://github.com)
 - [Wordsworth Trust](https://wordsworth.org.uk)
 - [John Keats Online](http://john-keats.com)
-- [Pure Poetry](http://pure-poetry.co.uk/)
 
 ### Popular Culture
 - [Babylon 5](http://freebabylon5.com)
 - [Farscape](http://www.farscapeworld.com)
 - [Firefly](http://browncoats.com)
+- [The Expanse](https://theexpanselives.com)
 
 ### Keeps Me Sane
 - [Mike Oldfield](http://mikeoldfieldofficial.com)
