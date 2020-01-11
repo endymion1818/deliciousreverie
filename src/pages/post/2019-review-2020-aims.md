@@ -14,11 +14,11 @@ Professionally too, my team went from a band of three (a developer, QA and proje
 
 David and the other members of the team have taught me a great deal. Here are some of the main learns I think I've achieved:
 
-## What I think I've achieved
+## What I think I achieved last year
 
 ### 1. TypeScript
 
-TypeScript was going to be one of the biggest accelarators for me in terms of the quality of my output, and I have really enjoyed using it.
+TypeScript was going to be one of the biggest accelarators for me in terms of the quality of my output, and I have really enjoyed using it. I started out by implementing interfaces and ended up configuring my environments with much more type safe settings by using `noImplicitAny` and similar.
 
 ### 2. Testing
 
@@ -56,12 +56,12 @@ Kubernetes is an awesome tool, and has so many applications outside web developm
 
 Serverless really makes sense to me. That separation of concerns with the frontend, backend and satellite services, lambda functions, and other functionality, just seems more natural and less of a cognitive overload.
 
-I'd love to think that by the end of 2020 I will be able to write a Terraform script and get a full stack app up and running that's fully deployed, monitored and testable.
+I'd love to think that by the end of 2020 I will be able to write a Terraform script and get a system comprised of a few key pieces not only up and running but fully deployed, monitored and testable too.
 
 ### 4. Writing
 
 One thing that has surprised me is that I really love writing about web development. This way I can help others by utilising another skill I think I have: being able to write moderately well. 
 
-My relationship with Net magazine is very strong, and I'd love to see if I can write a bit more of the kinds of articles that have been well received by their audience so far. This might be more difficult to achieve though because my family still needs so much of my time, and because I am  employed full time.
+My relationship with Net magazine is very strong, and I'd love to see if I can write a bit more of the kinds of articles that have been well received by their audience so far. This might be more difficult to achieve though because of the lack of personal time I currently have.
 
-Let's see what'll happen!
+That's it I think! Let's see what'll happen this year!
