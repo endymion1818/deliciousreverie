@@ -42,6 +42,7 @@ export interface ISiteMetaProps {
     siteMetadata: {
       title: string;
       description: string;
+      siteUrl: string;
     };
   };
 }
@@ -138,6 +139,7 @@ const Layout: React.SFC<ILayoutProps> = ({
             siteMetadata {
               title
               description
+              siteUrl
             }
           }
         }
@@ -172,12 +174,18 @@ const Layout: React.SFC<ILayoutProps> = ({
               content={data.site.siteMetadata.description}
             />
             <meta property="og:title" content={data.site.siteMetadata.title} />
-            <meta property="og:image" content={ShareCard} />
+            <meta
+              property="og:image"
+              content={data.site.siteMetadata.siteUrl + ShareCard}
+            />
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:site" content="@muzzlehatch_" />
             <meta name="twitter:title" content={pageTitle} />
             <meta name="twitter:description" content={pageDescription} />
-            <meta name="twitter:image" content={ShareCard} />
+            <meta
+              name="twitter:image"
+              content={data.site.siteMetadata.siteUrl + ShareCard}
+            />
             {!isIndexable && <meta name="robots" content="NOINDEX, NOFOLLOW" />}
           </Helmet>
           <AccessibilityMainContentSkipLink href="#main">
