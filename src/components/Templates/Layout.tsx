@@ -172,7 +172,7 @@ const Layout: React.SFC<ILayoutProps> = ({
               <meta property="og:description" content={description} />
               <meta property="og:title" content={title} />
               <meta property="og:image" content={sharecardAbsoluteUrl} />
-              <meta name="twitter:card" content="summary" />
+              <meta name="twitter:card" content="summary_large_image" />
               <meta name="twitter:site" content="@muzzlehatch_" />
               <meta name="twitter:title" content={pageTitle} />
               <meta name="twitter:description" content={pageDescription} />

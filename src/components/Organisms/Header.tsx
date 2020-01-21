@@ -78,6 +78,7 @@ const SearchColumn = styled(Column)`
   }
   @media (min-width: ${breakpoint.small}) {
     form {
+      padding-bottom: 0;
       justify-content: flex-end;
     }
   }
