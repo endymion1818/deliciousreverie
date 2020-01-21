@@ -129,7 +129,7 @@ const Layout: React.SFC<ILayoutProps> = ({
   children,
   pageTitle,
   pageDescription,
-  isIndexable
+  isIndexable = true
 }) => {
   return (
     <StaticQuery
