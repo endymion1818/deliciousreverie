@@ -1,7 +1,6 @@
 import { graphql } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
 import React, { FC } from "react";
-import { Helmet } from "react-helmet";
 import Container from "../Atoms/Container";
 import Link from "../Atoms/Link";
 import Wrapper from "../Atoms/Wrapper";
