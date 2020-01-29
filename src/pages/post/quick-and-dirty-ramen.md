@@ -1,6 +1,7 @@
 ---
 title: 'A recipe for quick and dirty ramen'
 description: "I've been slowly perfecting a recipe for ramen that I can quickly make at home for a quick meal. If you too like that sort of thing ... here's my hopefully simple recipe!"
+featuredImage: "../assets/ramen.JPG"
 draft: false
 date: "2020-01-28T14:21:21+01:00"
 tags:
@@ -26,6 +27,8 @@ So this is a very quick and loose recipe, please don't stick to it, I'm sure it 
 - dried chilli
 - Rice noodles
 - Boiled water
+
+![A bowl of ramen made with my recipe](/images/ramen.jpg)
 
 ## Method
 
