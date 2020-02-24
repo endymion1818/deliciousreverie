@@ -157,6 +157,15 @@ const Layout: React.SFC<ILayoutProps> = ({
                 name="description"
                 content={`${pageDescription} - ${description}`}
               />
+              <script
+                src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+                type="text/javascript"
+                charSet="UTF-8"
+                data-domain-script="eb5c0e5b-bc57-4cf7-a997-c3ec07b990a6-test"
+              />
+              <script type="text/javascript">
+                {`function OptanonWrapper() { }`}
+              </script>
               <script type="application/ld+json">
                 {`
               "@context": "http://schema.org",
