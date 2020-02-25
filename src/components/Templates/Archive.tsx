@@ -10,7 +10,6 @@ export interface IArchiveProps {
     site: {
       siteMetadata: {
         title: string;
-        description: string;
       };
     };
     posts: {
