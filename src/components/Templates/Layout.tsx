@@ -168,7 +168,12 @@ const Layout: React.SFC<ILayoutProps> = ({
               "url": "https://deliciousreverie.co.uk",
             `}
               </script>
-              <link rel="preload" href={Skybird} as="font" />
+              <link
+                rel="preload"
+                href={Skybird}
+                as="font"
+                crossOrigin="anonymous"
+              />
               <meta property="og:site_name" content={title} />
               <meta property="og:locale" content="en_GB" />
               <meta property="og:type" content="website" />
