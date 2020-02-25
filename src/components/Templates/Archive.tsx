@@ -7,6 +7,12 @@ import { size } from "../tokens";
 
 export interface IArchiveProps {
   data: {
+    site: {
+      siteMetadata: {
+        title: string;
+        description: string;
+      };
+    };
     posts: {
       edges: Array<{
         node: {
@@ -25,6 +31,7 @@ export interface IArchiveProps {
   pageContext: {
     previousPagePath?: string;
     nextPagePath?: string;
+    pageNumber: number;
   };
 }
 
@@ -33,11 +40,37 @@ const Article = styled.article`
 `;
 
 const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
-  const { previousPagePath, nextPagePath } = pageContext;
+  const { previousPagePath, nextPagePath, pageNumber } = pageContext;
   const { posts } = data;
+  const { site } = data;
 
   return (
-    <Page pageTitle="All posts">
+    <Page
+      pageTitle={pageNumber === 0 ? "Home" : "All posts"}
+      pageDescription={
+        pageNumber === 0 ? "Welcome" : "Every post on this website"
+      }
+    >
+      {pageNumber === 0 && (
+        <>
+          <h1>Thanks for stopping by!</h1>
+          <p>
+            {site.siteMetadata.title} is a blog mostly about Frontend
+            Development and JavaScript engineering, but it's my personal blog
+            too, so you might find a few other things here like{" "}
+            <Link to="/tags/food/">recipes</Link>, my{" "}
+            <Link to="/tags/music/">musical interests</Link> and{" "}
+            <Link to="/tags/poetry/">poetry</Link>
+          </p>
+          <p>
+            I'm always trying to help my peers!{" "}
+            <Link to="/contact">Drop me a message</Link> if you'd like to say
+            hi!
+          </p>
+          <hr />
+          <h2>Recent posts:</h2>
+        </>
+      )}
       {posts &&
         posts.edges.map((edge, index) => (
           <Article key={index}>
@@ -82,6 +115,11 @@ export default Archive;
 
 export const archiveQuery = graphql`
   query($skip: Int!, $limit: Int!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     posts: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { type: { ne: "page" } } }
