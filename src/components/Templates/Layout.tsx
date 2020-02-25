@@ -104,7 +104,7 @@ const GlobalStyle = createGlobalStyle`
   hr {
     border: 0;
     border-bottom: 1px dashed #ccc;
-    background: #000;
+    background: ${colors.neutral.dark};
   }
   pre {
     background-color: ${colors.base.secondary};

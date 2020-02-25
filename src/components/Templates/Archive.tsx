@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import styled from "styled-components";
 import Link from "../Atoms/Link";
 import Page from "../Templates/Page";
-import { size } from "../tokens";
+import { colors, size } from "../tokens";
 
 export interface IArchiveProps {
   data: {
@@ -36,33 +36,34 @@ export interface IArchiveProps {
 
 const Article = styled.article`
   margin-bottom: ${size.triple};
+  padding-left: 1rem;
+  border-left: 1px dashed ${colors.neutral.dark};
 `;
 
 const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
   const { previousPagePath, nextPagePath, pageNumber } = pageContext;
   const { posts } = data;
   const { site } = data;
+  const isHomePage = pageNumber === 0 ? true : false;
 
   return (
     <Page
       pageTitle={pageNumber === 0 ? "Home" : "All posts"}
-      pageDescription={
-        pageNumber === 0 ? "Welcome" : "Every post on this website"
-      }
+      pageDescription={isHomePage ? "Welcome" : "Every post on this website"}
     >
-      {pageNumber === 0 && (
+      {isHomePage && (
         <>
-          <h1>Thanks for stopping by!</h1>
+          <h1>Thanks for popping round!</h1>
           <p>
-            {site.siteMetadata.title} is a blog mostly about Frontend
-            Development and JavaScript engineering, but it's my personal blog
-            too, so you might find a few other things here like{" "}
+            {site.siteMetadata.title} is a blog mostly about web development and
+            JavaScript engineering. But it's unashamedly my personal blog too,
+            so you might find a few other things such as{" "}
             <Link to="/tags/food/">recipes</Link>, my{" "}
             <Link to="/tags/music/">musical interests</Link> and{" "}
-            <Link to="/tags/poetry/">poetry</Link>
+            <Link to="/tags/poetry/">poetry reviews</Link>.
           </p>
           <p>
-            I'm always trying to help my peers!{" "}
+            I'm always trying to help my peers.{" "}
             <Link to="/contact">Drop me a message</Link> if you'd like to say
             hi!
           </p>
@@ -73,11 +74,11 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
       {posts &&
         posts.edges.map((edge, index) => (
           <Article key={index}>
-            <h2>
+            <h3>
               <Link to={withPrefix(edge.node.fields.slug)}>
                 {edge.node.frontmatter.title}
               </Link>
-            </h2>
+            </h3>
             <p dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
             <p>
               <small>

@@ -79,6 +79,7 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
               )}
             </header>
             <section dangerouslySetInnerHTML={{ __html: html }} />
+            <hr />
             {type !== "page" && (
               <footer>
                 <time>Published on: {date}</time>
