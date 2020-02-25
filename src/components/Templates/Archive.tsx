@@ -99,7 +99,6 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
           )}
           {nextPagePath && (
             <>
-              <br />
               <li>
                 <Link to={nextPagePath}>&raquo; Older posts</Link>
               </li>

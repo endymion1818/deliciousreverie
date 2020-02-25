@@ -57,16 +57,15 @@ const MainNav = styled.ul`
       transition: ${effects.transition};
 
       &:hover,
-      &:active,
       &:focus {
         background-color: ${colors.neutral.nearWhite};
         color: ${colors.neutral.nearDark};
         opacity: 0.8;
       }
-      &.active {
-        background-color: ${colors.neutral.nearDark};
-        color: ${colors.base.primary};
-        opacity: 0.4;
+      &.active,
+      &:active {
+        background-color: ${colors.neutral.medium};
+        color: ${colors.neutral.white}!important;
       }
     }
   }
