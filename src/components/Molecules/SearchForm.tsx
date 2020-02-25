@@ -37,12 +37,13 @@ const Button = styled.button`
 const SearchForm: FC<ISearchfFormProps> = ({ query }) => {
   return (
     <Form role="search" method="GET" action="/search">
-      <Label htmlFor="search-input">Search sites</Label>
+      <Label htmlFor="search">Search sites</Label>
       <Input
         tabIndex={0}
         type="search"
         className="search-input"
         name="keywords"
+        id="search"
         onEnter={(e: SyntheticEvent) =>
           navigate(
             `/search?keywords=${encodeURIComponent(
