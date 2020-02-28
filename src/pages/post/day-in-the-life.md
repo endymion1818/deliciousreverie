@@ -5,8 +5,6 @@ date: "2020-02-27T11:21:21+01:00"
 description: "Everyone's routines, days and tasks are different. I've decided that documenting what I do on a daily basis in case it's valuable to look back on in the future. Here's a snapshot into my work day."
 draft: false
 tags:
-- performance
-- netmag articles
 - javascript
 title: 'A Day in the life of this Software Engineer'
 ---
