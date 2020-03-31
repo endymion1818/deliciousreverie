@@ -7,7 +7,7 @@ draft: false
 tags:
 - javascript
 - typescript
-title: 'Scope Typecheck to your project folder'
+title: 'How to scope Typecheck to your project folder'
 ---
 I configured a command so that I can run a type check on my project, but the results always include stuff in the `node_modules` folder. It took me a lot of investigation and asking around before I figured out how to scope tsc to only the **./src/** folder?
 
