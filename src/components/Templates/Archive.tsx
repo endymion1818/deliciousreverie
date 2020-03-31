@@ -18,11 +18,11 @@ export interface IArchiveProps {
           frontmatter: {
             title: string;
             date: string;
+            description: string;
           };
           fields: {
             slug: string;
           };
-          excerpt: string;
         };
       }>;
     };
@@ -79,7 +79,11 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
                 {edge.node.frontmatter.title}
               </Link>
             </h3>
-            <p dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
+            <p
+              dangerouslySetInnerHTML={{
+                __html: edge.node.frontmatter.description
+              }}
+            />
             <p>
               <small>
                 This was posted on: <time>{edge.node.frontmatter.date}</time>
@@ -134,6 +138,7 @@ export const archiveQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            description
           }
         }
       }
