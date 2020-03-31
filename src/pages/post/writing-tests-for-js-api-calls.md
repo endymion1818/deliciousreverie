@@ -1,7 +1,7 @@
 ---
 categories:
 - development
-date: "2017-07-15T14:21:21+01:00"
+date: "2020-04-15T14:21:21+01:00"
 description: "In the January 2020 issue of Net Magazine, we walked through how to use React testing library to write basic unit tests for your React components. In this article I'm going to dive a little deeper and show how to write tests for some code that fetches data from an API."
 draft: false
 tags:
@@ -286,7 +286,7 @@ I would say that thoroughly testing your code is an important step, along with s
 
 ---
 
-## boxout: The price of confidence
+## Boxout: The price of confidence
 
 Developers will spend more time writing tests than writing the components they’re building. That makes sense if you think about it: you need to test every possible outcome of the code that’s being written. As is demonstrated in this article, one API call with some basic functionality can result in a number of differing outcomes.
 
