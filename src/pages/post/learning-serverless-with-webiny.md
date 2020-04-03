@@ -1,7 +1,7 @@
 ---
 categories:
 - development
-date: "2020-04-01T14:21:21+01:00"
+date: "2020-04-03T14:21:21+01:00"
 description: "Webiny is a new CMS in the market, one that seeks to compete with other well-established headless CMS platforms and existing apps. But I've also come to enjoy using it for another reason..."
 draft: false
 tags:
@@ -13,7 +13,7 @@ title: 'Learning serverless with Webiny'
 
 I've spent a great deal of time over the past 2 years around the CMS space. I am particularly focused in self-hosted, javascript-based CMSes. I had already created sites with both Ghost and Strapi, two very competent systems with content APIs. 
 
-Very recently, I came across Webiny, a hosted platform who recently pivoted to become a self-hosted product, and who has the interesting selling proposition of being a "serverless" CMS.
+Very recently, I came across Webiny, a hosted platform which recently pivoted to become a self-hosted product, and which has the interesting selling proposition of being a "serverless" CMS.
 
 ## Why I think serverless matters
 
