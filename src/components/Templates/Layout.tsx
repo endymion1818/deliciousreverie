@@ -101,6 +101,11 @@ const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
   }
+  hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: ${colors.neutral.dark};
+  }
   pre {
     background-color: ${colors.base.secondary};
     padding: 0.5rem;
@@ -147,16 +152,14 @@ const Layout: React.SFC<ILayoutProps> = ({
       render={(data: IStaticQueryProps) => {
         const { title, description, siteUrl } = data.site.siteMetadata;
         const sharecardAbsoluteUrl = siteUrl + ShareCard;
+        const amalgamatedDescription = `${pageDescription} - ${description}`;
         return (
           <ErrorBoundary>
             <GlobalStyle />
             <Helmet>
               <html lang="en-GB" />
               <title>{`${pageTitle} - ${title}`}</title>
-              <meta
-                name="description"
-                content={`${pageDescription} - ${description}`}
-              />
+              <meta name="description" content={amalgamatedDescription} />
               <script type="application/ld+json">
                 {`
               "@context": "http://schema.org",
@@ -165,17 +168,28 @@ const Layout: React.SFC<ILayoutProps> = ({
               "url": "https://deliciousreverie.co.uk",
             `}
               </script>
-              <link rel="preload" href={Skybird} as="font" />
+              <link
+                rel="preload"
+                href={Skybird}
+                as="font"
+                crossOrigin="anonymous"
+              />
               <meta property="og:site_name" content={title} />
               <meta property="og:locale" content="en_GB" />
               <meta property="og:type" content="website" />
-              <meta property="og:description" content={description} />
+              <meta
+                property="og:description"
+                content={amalgamatedDescription}
+              />
               <meta property="og:title" content={pageTitle} />
               <meta property="og:image" content={sharecardAbsoluteUrl} />
               <meta name="twitter:card" content="summary_large_image" />
               <meta name="twitter:site" content="@muzzlehatch_" />
               <meta name="twitter:title" content={pageTitle} />
-              <meta name="twitter:description" content={pageDescription} />
+              <meta
+                name="twitter:description"
+                content={amalgamatedDescription}
+              />
               <meta name="twitter:image" content={sharecardAbsoluteUrl} />
               {!isIndexable && (
                 <meta name="robots" content="NOINDEX, NOFOLLOW" />

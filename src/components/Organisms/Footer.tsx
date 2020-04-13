@@ -76,7 +76,8 @@ const Footer: FC<IFooterProps> = ({ siteTitle, siteDescription }) => (
                 Skybird
               </Anchor>{" "}
               and your system font. Built with Gatsby, hosted by Netlify. &copy;
-              Some rights are reserved.
+              Some rights are reserved. This site doesn't use any cookies or
+              other session storage and has no tracking scripts.
             </p>
             <h3 style={{ marginBottom: size.zero }}>Where you can find me:</h3>
             <List inline={true} style={{ marginTop: size.zero }}>

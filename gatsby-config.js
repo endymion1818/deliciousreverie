@@ -79,7 +79,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sentry`,
       options: {
-        dsn: `dsn-goes-here`,
+        dsn: process.env.SENTRY_DSN,
         environment: process.env.NODE_ENV,
         enabled: (() =>
           [`production`, `stage`].indexOf(process.env.NODE_ENV) !== -1)()
