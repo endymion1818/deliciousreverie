@@ -1,4 +1,5 @@
 import React, { ReactElement, useRef, useState } from "react";
+import { useScrollPosition } from 'react-use-scroll-position'
 import styled from "styled-components";
 
 const Scene = styled.aside`
@@ -9,16 +10,18 @@ const Scene = styled.aside`
 `;
 
 const getWindowWidth = () => {
-  var win = window,
+  const win = window,
     doc = document,
     docElem = doc.documentElement,
     body = doc.getElementsByTagName('body')[0];
   return win.innerWidth || docElem.clientWidth || body.clientWidth
 }
 
-export default function Rabbits() {
-  if(typeof window === 'undefined') return
-  if(getWindowWidth() < 998 ) return
+const Rabbits = () => {
+  if(typeof window === 'undefined') { return <></> }
+  if(getWindowWidth() < 998 ) { return <></> }
+  
+  const { x, y } = useScrollPosition();
 
   let treeSummer = useRef(null), 
     rabbitOne = useRef(null),
@@ -29,10 +32,11 @@ export default function Rabbits() {
     rabbitSix = useRef(null),
     rabbitSeven = useRef(null);
 
-  const [elementOpacity, setElementOpacity] = useState( '0' )
 
+  
   return (
     <Scene className="scene">
+      {console.log(treeSummer)}
       <svg
         width="100%"
         height="100%"
@@ -118,3 +122,5 @@ export default function Rabbits() {
     </Scene>
   );
 }
+
+export default Rabbits

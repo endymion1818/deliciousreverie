@@ -111,7 +111,7 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
           )}
         </ul>
       </nav>
-      {isHomePage && <Rabbits />}
+      {isHomePage && <Rabbits /> }
     </Page>
   );
 };
