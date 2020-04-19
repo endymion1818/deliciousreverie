@@ -19,11 +19,9 @@ const Scene = styled.aside`
 `;
 
 const getWindowWidth = () => {
-  const win = window,
-    doc = document,
-    docElem = doc.documentElement,
-    body = doc.getElementsByTagName('body')[0];
-  return win.innerWidth || docElem.clientWidth || body.clientWidth
+    let docElem = document.documentElement,
+    body = document.getElementsByTagName('body')[0];
+  return window.innerWidth || docElem.clientWidth || body.clientWidth
 }
 
 const Rabbits = () => {
@@ -31,18 +29,20 @@ const Rabbits = () => {
   if(getWindowWidth() < 998 ) { return <></> }
   const scrollYPosition = useScrollYPosition()
 
-  let treeSummer = useRef(), 
-    rabbitOne = useRef(),
-    rabbitTwo = useRef(),
-    rabbitThree = useRef(),
-    rabbitFour = useRef(),
-    rabbitFive = useRef(),
-    rabbitSix = useRef(),
-    rabbitSeven = useRef();
+  let treeSummer = useRef(null), 
+    rabbitOne = useRef(null),
+    rabbitTwo = useRef(null),
+    rabbitThree = useRef(null),
+    rabbitFour = useRef(null),
+    rabbitFive = useRef(null),
+    rabbitSix = useRef(null),
+    rabbitSeven = useRef(null);
 
     useEffect(() => {
-      if( scrollYPosition > 100){ 
-        rabbitOne.current.style.opacity += '1'
+      if( scrollYPosition > 100 && scrollYPosition < 300 ) { 
+        rabbitOne?.current?.style.opacity = '1'
+      } else {
+        rabbitOne?.current?.style.opacity = '0'
       }
     }, [scrollYPosition]);
   
