@@ -39,10 +39,10 @@ const Rabbits = () => {
     rabbitSeven = useRef(null);
 
     useEffect(() => {
-      if( scrollYPosition > 100 && scrollYPosition < 300 ) { 
-        rabbitOne?.current?.style.opacity = '1'
+      if( scrollYPosition >= 100 && scrollYPosition >= 300 ) { 
+        rabbitOne?.current?.className += ' visible'
       } else {
-        rabbitOne?.current?.style.opacity = '0'
+        rabbitOne?.current?.className.replace( /(?:^|\s)visible(?!\S)/ , '' )
       }
     }, [scrollYPosition]);
   
