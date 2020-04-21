@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useScrollYPosition } from 'react-use-scroll-position'
 import styled from "styled-components";
 
@@ -40,14 +40,14 @@ function getScrollPercent() {
     }
   }
 
-  let treeSummer = useRef(null) 
-  let rabbitOne = useRef(null)
-  let rabbitTwo = useRef(null)
-  let rabbitThree = useRef(null)
-  let rabbitFour = useRef(null)
-  let rabbitFive = useRef(null)
-  let rabbitSix = useRef(null)
-  let rabbitSeven = useRef(null);
+  const treeSummer = useRef(null) 
+  const rabbitOne = useRef(null)
+  const rabbitTwo = useRef(null)
+  const rabbitThree = useRef(null)
+  const rabbitFour = useRef(null)
+  const rabbitFive = useRef(null)
+  const rabbitSix = useRef(null)
+  const rabbitSeven = useRef(null);
 
     useEffect(() => {
       useScrollHeightToChangeOpacity(rabbitOne.current!, 5, 10)
