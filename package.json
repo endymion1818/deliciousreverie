@@ -22,7 +22,6 @@
     }
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.5.0",
     "babel-preset-gatsby": "^0.3.3",
     "gatsby": "^2.20.27",
     "gatsby-awesome-pagination": "^0.3.4",
