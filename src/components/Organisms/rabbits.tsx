@@ -11,10 +11,6 @@ const Scene = styled.aside`
   .rabbit {
     opacity: 0;
     transition: opacity 1s ease-in-out;
-
-    &.visible {
-      opacity: 1
-    }
   }
 `;
 
@@ -33,14 +29,14 @@ function getScrollPercent() {
 }
 
   const useScrollHeightToChangeOpacity = (
-    domElement:any,  // why are you like this?
+    domElement:HTMLDivElement,  // why are you like this?
     inHeight:number, 
     outHeight:number
   ) => {
     if (getScrollPercent() > inHeight &&  getScrollPercent() < outHeight){
-      domElement.current.style.opacity = 0.8
+      domElement.style.opacity = '0.8'
     } else { 
-      domElement.current.style.opacity = 0
+      domElement.style.opacity = '0'
     }
   }
 
@@ -54,14 +50,14 @@ function getScrollPercent() {
   let rabbitSeven = useRef(null);
 
     useEffect(() => {
-      useScrollHeightToChangeOpacity(rabbitOne, 5, 10)
-      useScrollHeightToChangeOpacity(rabbitOne, 8, 15)
-      useScrollHeightToChangeOpacity(rabbitTwo, 20, 25)
-      useScrollHeightToChangeOpacity(rabbitThree, 30, 40)
-      useScrollHeightToChangeOpacity(rabbitFour, 45, 60)
-      useScrollHeightToChangeOpacity(rabbitFive, 65, 80)
-      useScrollHeightToChangeOpacity(rabbitSix, 85, 90)
-      useScrollHeightToChangeOpacity(rabbitSeven, 90, 95)
+      useScrollHeightToChangeOpacity(rabbitOne.current!, 5, 10)
+      useScrollHeightToChangeOpacity(rabbitOne.current!, 8, 15)
+      useScrollHeightToChangeOpacity(rabbitTwo.current!, 20, 25)
+      useScrollHeightToChangeOpacity(rabbitThree.current!, 30, 40)
+      useScrollHeightToChangeOpacity(rabbitFour.current!, 45, 60)
+      useScrollHeightToChangeOpacity(rabbitFive.current!, 65, 80)
+      useScrollHeightToChangeOpacity(rabbitSix.current!, 85, 90)
+      useScrollHeightToChangeOpacity(rabbitSeven.current!, 90, 95)
     }, [getScrollPercent]);
   
   return (
