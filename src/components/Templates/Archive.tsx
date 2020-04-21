@@ -2,6 +2,7 @@ import { graphql, withPrefix } from "gatsby";
 import React, { FC } from "react";
 import styled from "styled-components";
 import Link from "../Atoms/Link";
+import Rabbits from "../Organisms/rabbits";
 import Page from "../Templates/Page";
 import { colors, size } from "../tokens";
 
@@ -110,6 +111,7 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
           )}
         </ul>
       </nav>
+      {isHomePage && <Rabbits />}
     </Page>
   );
 };
