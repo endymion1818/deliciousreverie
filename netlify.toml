@@ -1,2 +1,2 @@
 [build.environment]
-    YARN_VERSION = '1.13'
+    YARN_VERSION = '1.13.0'
