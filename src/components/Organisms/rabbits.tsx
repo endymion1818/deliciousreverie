@@ -29,7 +29,7 @@ function getScrollPercent() {
 }
 
   const useScrollHeightToChangeOpacity = (
-    domElement:HTMLDivElement,  // why are you like this?
+    domElement:HTMLDivElement,
     inHeight:number, 
     outHeight:number
   ) => {
