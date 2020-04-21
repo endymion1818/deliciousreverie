@@ -44,14 +44,14 @@ function getScrollPercent() {
     }
   }
 
-  let treeSummer = useRef(null), 
-    rabbitOne = useRef(null),
-    rabbitTwo = useRef(null),
-    rabbitThree = useRef(null),
-    rabbitFour = useRef(null),
-    rabbitFive = useRef(null),
-    rabbitSix = useRef(null),
-    rabbitSeven = useRef(null);
+  let treeSummer = useRef(null) 
+  let rabbitOne = useRef(null)
+  let rabbitTwo = useRef(null)
+  let rabbitThree = useRef(null)
+  let rabbitFour = useRef(null)
+  let rabbitFive = useRef(null)
+  let rabbitSix = useRef(null)
+  let rabbitSeven = useRef(null);
 
     useEffect(() => {
       useScrollHeightToChangeOpacity(rabbitOne, 5, 10)
