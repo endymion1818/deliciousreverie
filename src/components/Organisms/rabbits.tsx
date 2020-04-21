@@ -1,4 +1,4 @@
-import React, { ReactElement, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { useScrollYPosition } from 'react-use-scroll-position'
 import styled from "styled-components";
 
