@@ -18,16 +18,27 @@ const Scene = styled.aside`
   }
 `;
 
-const getWindowWidth = () => {
-    let docElem = document.documentElement,
-    body = document.getElementsByTagName('body')[0];
-  return window.innerWidth || docElem.clientWidth || body.clientWidth
+const Rabbits = () => {
+
+  if(typeof window === 'undefined') { return <></> }
+  if(window.innerWidth < 998 ) { return <></> }
+
+  const scrollYPosition = useScrollYPosition()
+
+function getScrollPercent() {
+    return (
+        scrollYPosition || document.body.scrollTop) / (
+          (document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight
+      ) * 100;
 }
 
-const Rabbits = () => {
-  if(typeof window === 'undefined') { return <></> }
-  if(getWindowWidth() < 998 ) { return <></> }
-  const scrollYPosition = useScrollYPosition()
+  const useScrollHeightToChangeOpacity = (domElement, inHeight:number, outHeight:number) => {
+    if (getScrollPercent() > inHeight &&  getScrollPercent() < outHeight){
+      domElement.current.style.opacity = 0.8
+    } else { 
+      domElement.current.style.opacity = 0
+    }
+  }
 
   let treeSummer = useRef(null), 
     rabbitOne = useRef(null),
@@ -39,12 +50,16 @@ const Rabbits = () => {
     rabbitSeven = useRef(null);
 
     useEffect(() => {
-      if( scrollYPosition >= 100 && scrollYPosition >= 300 ) { 
-        rabbitOne?.current?.className += ' visible'
-      } else {
-        rabbitOne?.current?.className.replace( /(?:^|\s)visible(?!\S)/ , '' )
-      }
-    }, [scrollYPosition]);
+      console.log(treeSummer)
+      useScrollHeightToChangeOpacity(rabbitOne, 5, 10)
+      useScrollHeightToChangeOpacity(rabbitOne, 8, 15)
+      useScrollHeightToChangeOpacity(rabbitTwo, 20, 25)
+      useScrollHeightToChangeOpacity(rabbitThree, 30, 40)
+      useScrollHeightToChangeOpacity(rabbitFour, 45, 60)
+      useScrollHeightToChangeOpacity(rabbitFive, 65, 80)
+      useScrollHeightToChangeOpacity(rabbitSix, 85, 90)
+      useScrollHeightToChangeOpacity(rabbitSeven, 90, 95)
+    }, [getScrollPercent]);
   
   return (
     <Scene className="scene">
