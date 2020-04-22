@@ -3,13 +3,13 @@ categories:
 - personal
 - development
 date: "2020-04-22T15:21:21+01:00"
-description: "I made the original animation for this site when I was using Hugo, but it's taken some time to refactor it to use React. Here's the story of how I achieved that."
+description: "I made the original animation for this site when I was using Hugo, but it's taken some time to refactor to React. Here's the story of how I achieved that."
 draft: false
 tags:
 - javascript
 title: "Creating my homepage animation"
 ---
-**I made the original animation for this site when I was using Hugo, but it's taken some time to refactor it to use React. Here's the story of how I achieved that.**
+**I made the original animation for this site when I was using Hugo, but it's taken some time to refactor to React. Here's the story of how I achieved that.**
 
 I wanted this site to be pretty minimal, but a few nice little touches can really make a website stand out. That's why I made the animation here on the homepage. You have to scroll up & down slowly to see it ... 
 
@@ -19,7 +19,7 @@ The original animation was created with both ScrollMagic and GreenSock, two of t
 
 However, the bundle sizes of GreenSock and ScrollMagic are ... quite large. I wanted to rewrite it because (1) I care about how much JavaScript I'm sending down (2) I want to see what I can achieve in plain JavaScript (3) I have the luxury of having no deadlines.
 
-Here's the original animation on CodePen (137 lines)ß:
+Here's the original animation on CodePen (137 lines):
 
 <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js" data-user="endymion1818" data-slug-hash="xrRyXw" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Animation on Scroll w/ ScrollMagic &amp;amp; GreenSock">
   <span>See the Pen <a href="https://codepen.io/endymion1818/pen/xrRyXw">
@@ -42,7 +42,9 @@ This is only 35 lines, and without any libraries, it's much faster and better fo
 
 ## Rebuild to React
 
-When I switched to React I was conscious that my JavaScript bundle had increased quite a lot, and I wanted to try to make compensation for that by implementing some other performance gains before I started getting fancy. Also it took some time to get this to work in React, actually quite a lot more annoying than straight JavaScript. Building this honestly got me to question whether React is "just javascript" ...
+When I switched to React I was conscious that my JavaScript bundle had increased quite a lot, and I wanted to try to make compensation for that by implementing some other performance gains before I started getting fancy. 
+
+It took some time to get this to work in React. Building this honestly got me to question whether React is "just javascript" ...
 
 <div style="overflow: scroll">
 
@@ -121,7 +123,7 @@ function getScrollPercent() {
 }
 ```
 
-The hardest part of this was to find out how to get the `.current` value of `useRef()`, because the initial value as you can see is `null` (the dom element doesn't exist yet). Unfortunately the only help you get from the compiler is:
+The hardest part of the TypeScript implementation was to find out how to get the `.current` value of `useRef()`, because the initial value as you can see is `null` (the dom element doesn't exist yet). Unfortunately the only help you get from the compiler is:
 
 ```
 Argument of type 'null' is not assignable to parameter of type 'HTMLDivElement'
@@ -129,7 +131,7 @@ Argument of type 'null' is not assignable to parameter of type 'HTMLDivElement'
 
 To tell the compiler that it's not possible for this value to be `null` at this point, you append it with a `!`, the non-null assertion operator.
 
-Annoying, but safer.
+Annoying, but not annoying enough for me to change my position on TypeScript.
 
 ## Future plans
 
