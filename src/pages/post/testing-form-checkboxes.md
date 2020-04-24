@@ -2,7 +2,7 @@
 categories:
 - development
 date: "2020-01-11T15:21:21+01:00"
-description: "This year has solidified my JavaScript knowledge, and I think I have also developed more of the holistic skills around the framework of tools and teams that surround me. But there's still a lot more I need to work on..."
+description: "I learned a few tricks recently when I was writing a test for a series of checkboxes that also had a 'select all' option."
 draft: false
 tags:
 - javascript
