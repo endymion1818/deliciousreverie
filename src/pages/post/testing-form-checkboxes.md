@@ -2,7 +2,7 @@
 categories:
 - development
 date: "2020-04-24T15:21:21+01:00"
-description: "I learned a few tricks recently when I was writing a test for a series of checkboxes that also had a 'select all' option."
+description: "Having written the functionality for a series of checkboxes that also had a 'select all' option, I needed to validate what I'd done in a unit test. Here's how I did that."
 draft: false
 tags:
 - javascript
@@ -17,7 +17,9 @@ I learned a few tricks recently when I was writing a test for a series of checkb
 - [ ] Option 3
 - [ ] Select All
 
-Where ticking the fourth option would select all options in this list.
+Where ticking the fourth option would select all options in this list. Having written the functionality for this, I needed to validate what I'd done in a unit test for this component.
+
+Let's walk through how this can be achieved.
 
 First let's render the module:
 
