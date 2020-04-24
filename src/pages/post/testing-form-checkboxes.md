@@ -1,7 +1,7 @@
 ---
 categories:
 - development
-date: "2020-01-11T15:21:21+01:00"
+date: "2020-04-24T15:21:21+01:00"
 description: "I learned a few tricks recently when I was writing a test for a series of checkboxes that also had a 'select all' option."
 draft: false
 tags:
