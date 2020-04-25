@@ -28,6 +28,10 @@ Here's the original animation on CodePen (137 lines):
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
+Animations, especially ones where you're telling a story like this one, depend much on timing. I was particularly happy with the specific points that each rabbit became visible in this iteration, especially the last three, where the rabbit appears to be listening out for something, before dashing off the screen. It took a considerable investment of hours to get this right, so I've more or less kept this though the other implementations.
+
+The SVG images are free ones I found after trawling through many, many many, websites.
+
 ## Rebuild in JavaScript
 
 For this re-implementation I made one significant change: the opacity of each rabbit is controlled by CSS, and doesn't fade in and out whilst you're scrolling. It's a a little bit of a cheat but I quite like how it makes the effect a little more dream like:
