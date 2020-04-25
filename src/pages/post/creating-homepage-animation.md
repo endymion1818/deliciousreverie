@@ -30,6 +30,10 @@ Here's the original animation on CodePen (137 lines):
 
 Animations, especially ones where you're telling a story like this one, depend much on timing. I was particularly happy with the specific points that each rabbit became visible in this iteration, especially the last three, where the rabbit appears to be listening out for something, before dashing off the screen. It took a considerable investment of hours to get this right, so I've more or less kept this though the other implementations.
 
+I've heard that this animation isn't prominent enough for most people to notice it. But I think that's partly the point: I like the idea that most people might not notice there is an animation: after all, most people aren't looking for that when they come to my site, so I didn't want to distract further their already distracted minds.
+
+However, for those that do stop to notice, the brevity almost emphasises the subjevt matter: it's only when we slow down ourselves that we start to notice the wonderful little things that are going on in nature around us.
+
 The SVG images are free ones I found after trawling through a huge raft of websites selling, giving away, and pretending to give away, svgs.
 
 ## Rebuild in JavaScript
