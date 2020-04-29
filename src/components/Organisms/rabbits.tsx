@@ -7,6 +7,7 @@ const Scene = styled.aside`
   position: fixed;
   bottom:0;
   right: 0;
+  width: 26vw;
 
   .rabbit {
     opacity: 0;
