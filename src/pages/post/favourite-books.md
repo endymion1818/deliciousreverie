@@ -18,7 +18,7 @@ In no strict order of preference:
 2. **John Keats complete poems** - the sheer genius of this 20 year olds ideas was amazing. Such a tragic life too (he died aged 26)
 3. **Victor Hugo - les Miserables (translated by Norman Denny).** An undiluted masterpiece, Paris in minature and a lot of fascinating philosophical meandering in between.
 4. **James Joyce - Poems & shorter writings.** JJ’s books are unnaproachable but he had a command of English like only Shakespeare, which makes his poetry magnificent.
-5. **Virginia Woolf - To The Lighthouse.** Just read the opening page. She understood people on such an intrinsic level.
+5. **Virginia Woolf - The Waves.** Just read the opening page. She understood people on such an intrinsic level.
 6. **Marcel Proust - Swanns Way.** He takes a long time to get to the point but it’s like climbing a mountain, the view from the peak is indescribably beautiful.
 7. **Foundation - Asimov.** The scope of the initial concept for the series is mind boggling.
 8. **Frank Herbert - Dune.** world building at its absolute best
@@ -27,7 +27,7 @@ In no strict order of preference:
 11. **Mervyn Peake - Titus Groan.** Brilliant, ponderous, odd, and wonderful.
 12. **Jorge Luis Borges - Collected Stories.** Mind bending infinite and looping concepts.
 13. **Anne Fadiman - Confessions of a Common Reader.** I re-read this slim volume every few years, a wonderful love letter to books, reading, and life in general.
-
+14. **Boris Pasternak - Doctor Zhivago.** Despite being used as a political football, this often tragic glimpse into a Russian life also has a grand, delightful melancholy. "I feel for each of them / As if I were in their skin", he writes in one of the poems attached to the book.
 ## Honourable mentions
 
 I am halfway through the Illiad, an old translation by a guy called Chapman who kept the original meter from the poem, it’s jolly wordy and doesn’t convey the barbarism of the original (probably a good thing!).
