@@ -27,7 +27,8 @@ In no strict order of preference:
 11. **Mervyn Peake - Titus Groan.** Brilliant, ponderous, odd, and wonderful.
 12. **Jorge Luis Borges - Collected Stories.** Mind bending infinite and looping concepts.
 13. **Anne Fadiman - Confessions of a Common Reader.** I re-read this slim volume every few years, a wonderful love letter to books, reading, and life in general.
-14. **Boris Pasternak - Doctor Zhivago.** Despite being used as a political football, this often tragic glimpse into a Russian life also has a grand, delightful melancholy. "I feel for each of them / As if I were in their skin", he writes in one of the poems attached to the book.
+14. **Boris Pasternak - Doctor Zhivago.** a grand, poetic, and empathic exploration of individuals in Russia in the civil war. "I feel for each of them / As if I were in their skin", he writes in one of the poems attached to the book.
+
 ## Honourable mentions
 
 I am halfway through the Illiad, an old translation by a guy called Chapman who kept the original meter from the poem, it’s jolly wordy and doesn’t convey the barbarism of the original (probably a good thing!).
