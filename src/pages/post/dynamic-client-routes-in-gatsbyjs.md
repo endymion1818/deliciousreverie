@@ -26,7 +26,7 @@ One of the lessons uses React Router to render routes for notes like this:
 
 where the last part of the url (the "pathname") needs to be generated client-side only. The reason is that the component would resolve to any number of records in the database, and needs be accessible only to the logged-in user.
 
-To achieve this in Gatsby I referred to their excellent documentation (https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/), but I still felt that for me it wasn't all that clear, so here's some extra pointers that I thought might be useful:
+To achieve this in Gatsby I referred to their excellent documentation (https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/), but there's a lot of information in that documentation, and it can be a little difficult to see what you need to do. So here's some extra pointers that I thought might be useful:
 
 ## Setup
 
