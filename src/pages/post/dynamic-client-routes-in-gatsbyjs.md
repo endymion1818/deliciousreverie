@@ -12,7 +12,7 @@ draft: false
 
 **Would you use GatsbyJS for a dynamic app? Yes I would. The reason is that I can make good use of Gatsby's great developer experience, as well as do everything I would normally do in a React application. Here's how I recently implemented dynamic routing.**
 
-_Disclaimer: My colleage Romina Moya origianlly discovered that Gatsby could do this, and showed it to me afterwards._
+_Disclaimer: My colleage Romina Moya originally discovered how Gatsby could do this, and showed it to me afterwards._
 
 I've been learning more about Amazon Web Services recently, and found an excellent tutorial written by the makers of Seed, a sort of CI pipeline for serverless applications. You can find the tutorial at https://serverless-stack.com.
 
