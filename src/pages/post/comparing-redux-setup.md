@@ -11,7 +11,7 @@ tags:
 draft: false
 ---
 
-I recently came across two different examples of setup that used Redux to render a simple app. They were so different that I thought it was worth delving a little deeper into why, and how we can write Redux code so it's a good fit for our needs.
+I recently came across two different examples of setup that used Redux to manage state in a sample app. They were so different that I thought it was worth delving a little deeper into why, and how we can write Redux code so it's a good fit for our needs.
 
 ## Minimum Viable Redux
 
