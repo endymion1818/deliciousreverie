@@ -85,16 +85,8 @@ const Footer: FC<IFooterProps> = ({ siteTitle, siteDescription }) => (
                 <Anchor href="https://twitter.com/muzzlehatch_">twitter</Anchor>
               </li>
               <li>
-                <Anchor href="http://uk.linkedin.com/pub/benjamin-read/27/563/36a/">
+                <Anchor href="https://www.linkedin.com/in/benjaminread1980/">
                   linkedin
-                </Anchor>
-              </li>
-              <li>
-                <Anchor href="https://codepen.io/endymion1818/">codepen</Anchor>
-              </li>
-              <li>
-                <Anchor href="https://codesandbox.io/u/endymion1818/">
-                  codesandbox
                 </Anchor>
               </li>
               <li>
