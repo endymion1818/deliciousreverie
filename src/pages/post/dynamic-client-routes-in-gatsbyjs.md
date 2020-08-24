@@ -103,3 +103,9 @@ Whenever the `noteId` changes the `useEffect` hook runs and `loadNote()` gets th
 If React is "just JavaScript", then Gatsby is "just a javascript framework", with all of the benefits that brings you, as well as some significant other things like better accessibility, static rendering, and loads of other cool stuff.
 
 Let's not be too quick to pigeon-hole Gatsby into a certain corner: it's a versatile set of tools that allows us to jump start our projects and create any number of really cool things.
+
+## Update: don't put this in your Layout / Entry file!
+
+After playing with this a little more, I realised that client only routes override file routes ... so if you have the dynamic routing on the root path (usually "/"), it'll override everything else and you won't be able to navigate to any other page you have defined in the **pages** folder.
+
+So it's best to scope your client routes to a folder (such as **app**), and avoid overriding your other pages!
