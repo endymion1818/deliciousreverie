@@ -55,7 +55,7 @@ SwiftType have recently been bought out by Elastic, and is now called "Elastic S
 
 ### 4. Meili
 
-Meili is an outlier in this space, and an entirely new product that isn't built on any existing technologies (most of the other platforms rely on Elastic under the hood). Meili is an open-source, self-hosted solution (I hope they'll offer it as a Saas in the future too), written in Rust. It is in active development, and possibly pre-alpha as I write this. There's no dashboard which seems a shame, and no SDK yet.
+Meili is an outlier in this space, and an entirely new product that isn't built on any existing technologies (most of the other platforms rely on Elastic under the hood). Meili is an open-source, self-hosted solution (I hope they'll offer it as a Saas in the future too), written in Rust. It is in active development, and possibly pre-alpha as I write this. There's no dashboard which seems a shame, but there is a good set of SDKs and [integration guides on their GitHub repo](https://github.com/meilisearch/integration-guides).
 
 **Pros:** Self hosted, fast as heck. Upload content via API  
 **Cons:** No analytics dashboard  
