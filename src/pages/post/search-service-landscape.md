@@ -65,4 +65,4 @@ Meili is an outlier in this space, and an entirely new product that isn't built 
 
 If I was an indie hacker or an investor with some developer punch, I'd be building an Algolia clone right now. Whilst they are clearly market leaders there's plenty of room for growth here, only one or two key features hold back the expansion into a mature market with a good amount of choice.
 
-For now, I'm not sure whether to recommend we swallow the bitter pill of Algolia's astronomical Enterprise costs for the one feature we need, or take the hit and drop some key features we wanted to have.
+For now, I'm not sure whether to recommend Algolia with the bitter pill of it's astronomical Enterprise costs, or bet on a competitor, hoping that they will eventually catch up.
