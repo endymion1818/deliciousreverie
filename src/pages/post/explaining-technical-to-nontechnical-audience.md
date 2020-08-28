@@ -27,7 +27,7 @@ In order to convey the breadth of what we had, I used _cars_ as a comparison to 
 
 Our SaaS tool was a _Porsche_, because it was not just what we needed in a neat package, but it was also really nice to travel in.
 
-We found a very basic cloud tool on AWS (CloudSearch) that was suitable, but had almost none of the features that the SaaS tool had, so I compared it to a _handcar_ that involved a lot of manual work, but would still get us there.
+We found a very basic cloud tool that was suitable, but had almost none of the features that the SaaS tool had, so I compared it to a _handcar_ that involved a lot of manual work, but would still get us there.
 
 There was a new contender on the market, which was still in active development. I compared this to a _concept car_ that I knew would eventually do everything we needed to, but for now it was a nice dream.
 
