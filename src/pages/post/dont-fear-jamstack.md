@@ -1,6 +1,6 @@
 ---
-title: "Don't hate on the JAMStack: An open letter to Matt Mullenweg"
-description: "WordPress has long been the de facto publishing platform for the web. But things are changing. Here's an open reply to WordPress owner Matt Mullenweg on where I think things are going to go from here."
+title: "Don't fear the JAMStack"
+description: "WordPress has long been the de facto publishing platform for the web. But many developers are hearing more about the JAMStack. Here's why I switched, and my take on where I think things are going to go from here."
 categories:
   - development
 tags:
@@ -9,22 +9,22 @@ tags:
 date: "2020-09-03T11:21:21+01:00"
 ---
 
-**WordPress has long been the de facto publishing platform for the web. But things are changing. Here's an open reply to WordPress owner Matt Mullenweg on where I think things are going to go from here.**
+**WordPress has long been the de facto publishing platform for the web. But many developers are hearing more about the JAMStack. Here's why I switched, and my take on where I think things are going to go from here.**
 
-I would like to address your recent efforts to be vocal against the new approaches to publishing that have arisen in recent years, most significantly these 2 that I've seen:
+I would like to acknowledge and address some recent efforts of those in WordPress circles to be vocal against the new approaches to publishing that have arisen in recent years, most significantly these 2 that I've seen:
 
 - ["WordPress Co-Founder Matt Mullenweg Is Not a Fan of JAMstack"](https://thenewstack.io/wordpress-co-founder-matt-mullenweg-is-not-a-fan-of-jamstack/)
 - [Tweet: "Switching back to WordPress after a year on Hugo"](https://twitter.com/photomatt/status/1301419020827074560?s=21)
 
-May I start by saying thank you for WordPress. Your efforts to democratise publishing over the past 20 years have been hugely successful, and I still am really happy that there's a solution out there that people with little technical knowledge can utilise. No other publishing platform has done that, and even now your real competitors cannot achieve it because they are closed silos.
+First of all, I must acknowledge a debt of gratitude to WordPress. The efforts the team have made to democratise publishing over the past 20 years have been hugely successful, and I still am really happy that there's a solution out there that people with little technical knowledge can utilise. No other publishing platform has done that, and even now its real competitors cannot achieve this because they are closed silos.
 
-However, a lot has happened in recent years which has preceded a sea change, one that still _includes_ WordPress, but which is radically different from the approach you have taken.
+However, a democracy can never consist of one. A lot has happened in recent years which has preceded a sea change for a lot of developers to the JAMStack, a myriad of alternative separate technologies &ndash; one that still _includes_ WordPress, but which is radically different from the approach it has taken.
 
 ## Progression
 
 For me, this change happened when I realised I was struggling to progress as a developer, or even to find enjoyable work, where I could produce things I could be proud of. And that in order to move forward, I needed to move away from that platform. I found 3 things that were damaging my development career:
 
-1. The WordPress API is often inconsistent. `get_the_content()` vs `the_content()`, `WP_Post` vs `WP_Term`,`get_header()` or `get_search_form()` versus the rest of the `get_*()` functions ... trying to find my way around this API doesn't help someone develop good habits, or understand how an API _should_ work.
+1. The WordPress API is often inconsistent. `get_the_content()` vs `the_content()`, `WP_Post` vs `WP_Term`, differing returns (sometimes _void_, sometimes not) for different `get_*()` functions ... trying to find my way around this API could never help someone cultivate good development habits, or understand how an API _should_ work.
 
 2. WordPress hasn't moved on from PHP 5. This means learning newer aspects of the language has been impossible and left me unprepared to work on other platforms. I could only get another job working with WordPress, which meant I was unlikely to ever move out of the cottage industry that provides.
 
@@ -56,10 +56,12 @@ A lot of progress has been made towards finding a better editor experience ... b
 
 In the meantime, developers like me will continue to push the JAMStack agenda. Why? Because we have been pushed out of our cottage industry, and we need to continue to work, and to enjoy our work. And because we do have a lot of buying power for our clients, stakeholders and family and friends whom we build for.
 
-WordPress is no longer our favourite option. But it is still an option.
+WordPress is no longer my favourite option. But it is still an option.
 
 You started the avalanche, and it's too late for the pebbles to vote.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/60loeoblu0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 (Wow there really _is_ a Babylon 5 quote for every occasion.)
+
+<small>with thanks to the TND community, specifically Frank Taillandier for the title!</small>
