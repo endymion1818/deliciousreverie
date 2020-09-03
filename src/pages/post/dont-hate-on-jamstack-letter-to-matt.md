@@ -22,9 +22,9 @@ However, a lot has happened in recent years which has preceded a sea change, one
 
 ## Progression
 
-For me, this change happened when I realised I was struggling to progress as a developer, and that in order to move forward, I needed to move away from that platform. I found 3 things that were damaging my development career:
+For me, this change happened when I realised I was struggling to progress as a developer, or even to find enjoyable work, where I could produce things I could be proud of. And that in order to move forward, I needed to move away from that platform. I found 3 things that were damaging my development career:
 
-1. The WordPress API is often inconsistent. `get_posts`, `the_posts`, `WP_Post` vs `WP_Term`,`get_header(`) or `get_search_form()` versus the rest of the `get_*()` functions ... trying to find my way around this API doesn't help someone develop good habits, or understand how an API _should_ work.
+1. The WordPress API is often inconsistent. `get_the_content()` vs `the_content()`, `WP_Post` vs `WP_Term`,`get_header()` or `get_search_form()` versus the rest of the `get_*()` functions ... trying to find my way around this API doesn't help someone develop good habits, or understand how an API _should_ work.
 
 2. WordPress hasn't moved on from PHP 5. This means learning newer aspects of the language has been impossible and left me unprepared to work on other platforms. I could only get another job working with WordPress, which meant I was unlikely to ever move out of the cottage industry that provides.
 
@@ -42,7 +42,7 @@ Largely this was because of the ease with which page layouts could be created wi
 
 I am overall pleased with this idea because it pulls the rug out from under a lot of cheap, low quality "web design" agencies that have built their empires on the free platform for many years. I've worked for a range of these companies and I personally would be happy to see them pivot or be made extinct.
 
-But that also means there's a lot less work for a developer to do ... so not only was WordPress keeping developers in a cottage industry, it is also forcing people _out_ of that industry at an increasing rate.
+But that also means there's a lot less work for a developer to do ... so not only has WordPress been keeping developers in a cottage industry, it is also forcing people _out_ of that industry at an increasing rate.
 
 When I looked to the horizon, my colleagues and I could see a world where WordPress was once again the de facto standard for small customers who needed a quick platform, and where agencies turn to using alternatives.
 
