@@ -16,7 +16,7 @@ tags:
 
 Is it better to freelance, or to work full time at one company? I think in a lot of ways, it is better to freelance. It does depend on your personality: are you risk averse, or do you mind living off your wits a little?
 
-I freelanced for a number of years, and it went OK. It provided about enough to support my wife and I until the 2008 recession hit … then it got bad really quickly. I used up all of our savings within the first year and had to find alternative employment. For myself, I don’t think I’d consider it now, but that’s mostly because I have 3 young kids to support. However, once they’ve grown up again I’d really like to go back to it.
+I freelanced for a number of years, and it went OK. It provided about enough to support my wife and I until the 2008 recession hit … then it got bad really quickly. I used up all of our savings within the first year and had to find alternative employment. For myself, I don’t think I’d consider it now, but that’s mostly because I have 3 young kids to support. However, once they’ve grown up I’d really like to go back to it.
 
 ## Do I need to be experienced?
 
