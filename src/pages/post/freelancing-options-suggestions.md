@@ -36,11 +36,13 @@ If you maintain a generalist approach, you can turn your hand to most things. An
 
 ## What tech stack should I use?
 
-If I were to freelance and manage my own clients today, I’d probably do the following:
+There's no right answer to this one either, if I were to freelance and manage my own clients today, I’d probably do the following:
 
 1. Make a standard frontend that I can fork and iterate on quickly, probably leaning on an existing library to do the heavy lifting. I’d probably use Gatsby because I’m familiar with it and it has a great plugin ecosystem.
 2. Set up a multi-tenant backend so that I have only 1 codebase to maintain and keep my clients happy. I can’t decide how to do this ... it needs to be something that supports multiple tenants, so that might be a bit complex. I’d likely use Strapi or Webiny, or perhaps even a paid platform such as DatoCMS or Sanity to start with, until I’m confident in my own platform
 3. Set up monitoring and analytics tools on my own platforms using open source software so I can keep an eye on what’s going on without paying too much for it.
+
+This is because I'm a JavaScript developer and I love open source and indie web. You'd likely make a different decision if you knew PHP or another language.
 
 ## Contracting or freelancing?
 
@@ -66,3 +68,7 @@ So there’s no clear cut answer … and you could do both: have a few clients a
 4. Build in a hosting and maintenance model for residual income. All technology needs to be maintained, if it isn't it'll break down sooner than it should. Sell that idea to your customers. If you can aim to get 20-40% of revenue this way, your life will be much easier.
 
 5. Build in a support model. Clients will often come to you for small updates or content updates (even if they have a cms!), because either they don't have the skill or the time to do it. Arrange a regular fee for those who come to you on this basis. And charge a high minimum 1-hour fee for those who don't (to push them towards the regular maintenance).
+
+6. Hire an accountant as soon as you can afford to do so. They can keep on top of things like taxes, late invoices and they'll find out where you can claim or save money.
+
+That's it! At least, I can't think of anything else right now ... I hope that's useful to someone.
