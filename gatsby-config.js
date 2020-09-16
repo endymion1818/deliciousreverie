@@ -1,5 +1,7 @@
 const siteTitle = `Delicious Reverie`;
 
+require("dotenv").config();
+
 const defaultPlugins = [
   `gatsby-plugin-typescript`,
   {
@@ -182,5 +184,5 @@ module.exports = {
     description: `blog of developer & bookworm benjamin read`,
   },
   plugins:
-    process.env.JS_DISABLED === true ? [...noJsPlugins] : [...defaultPlugins],
+    process.env.JS_DISABLED === true ? [...defaultPlugins] : [...noJsPlugins],
 };
