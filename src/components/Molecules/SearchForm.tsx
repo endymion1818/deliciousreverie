@@ -35,7 +35,6 @@ const Button = styled.button`
 `;
 
 const SearchForm: FC<ISearchFormProps> = ({ query }) => {
-  if (process.env.JS_DISABLED === 'true') { return <></> }
   return (
     <Form role="search" method="GET" action="/search">
       <Label htmlFor="search">Search sites</Label>

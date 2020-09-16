@@ -57,9 +57,15 @@ const Search: FC<ISearchProps> = ({ location }) => {
   return (
     <Page pageTitle="Search this site" pageDescription="Search results">
       <h1>Search</h1>
-      <SearchForm />
-      {searchQuery.length > 0 && (
-        <SearchResults query={searchQuery} results={results} />
+      {typeof window !== 'undefined' ? (
+        <>
+          <SearchForm />
+          {searchQuery.length > 0 && (
+            <SearchResults query={searchQuery} results={results} />
+          )}
+        </>
+      ) : (
+        <p>Sorry, search is only available on the JS version of this site.</p>
       )}
     </Page>
   );
