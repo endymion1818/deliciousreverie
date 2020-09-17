@@ -184,5 +184,5 @@ module.exports = {
     description: `blog of developer & bookworm benjamin read`,
   },
   plugins:
-    process.env.JS_DISABLED === true ? [...defaultPlugins] : [...noJsPlugins],
+    process.env.JS_DISABLED === "true" ? [...noJsPlugins] : [...defaultPlugins],
 };
