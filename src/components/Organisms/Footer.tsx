@@ -67,6 +67,13 @@ const Footer: FC<IFooterProps> = ({ siteTitle, siteDescription }) => (
     >
       <Container>
         <Row size={1}>
+          {typeof window === 'undefined' ? (
+            <p>You're currently on the <i>javascript disabled</i> version of the site. To enable the site search and some pretty animations, <a href="https://jsenabled.deliciousreverie.co.uk">view the javascript enabled react app</a>.</p>
+          ) : (
+            <p>You're currently on the <i>javascript enabled</i> version of the site. if you need to conserve your battery or CPU, <a href="https://deliciousreverie.co.uk">view the HTML & CSS only site</a>.</p>
+          ) }
+        </Row>
+        <Row size={1}>
           <Column>
             <h3>About This Site</h3>
             <p>

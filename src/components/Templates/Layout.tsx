@@ -160,6 +160,10 @@ const Layout: React.SFC<ILayoutProps> = ({
               <html lang="en-GB" />
               <title>{`${pageTitle} - ${title}`}</title>
               <meta name="description" content={amalgamatedDescription} />
+              {
+                // @ts-ignore
+                process.env.JS_DISABLED === 'false' && <meta name="robots" content="noindex"/>
+              }
               <script type="application/ld+json">
                 {`
               "@context": "http://schema.org",
