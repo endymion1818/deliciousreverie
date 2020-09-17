@@ -127,7 +127,7 @@ const Header: FC<IHeaderProps> = ({
             </MainNav>
           </Column>
           <SearchColumn verticalAlign="center">
-            <SearchForm />
+            {typeof window !== 'undefined' && <SearchForm />}
           </SearchColumn>
         </Row>
       </Container>
