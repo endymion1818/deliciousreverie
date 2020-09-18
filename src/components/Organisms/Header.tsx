@@ -46,7 +46,8 @@ const MainNav = styled.ul`
   align-content: space-between;
   list-style: none;
   overflow-x: auto;
-  padding-left: 0;
+  margin: 0;
+  padding: 1rem 0;
 
   li {
     a {
@@ -126,9 +127,9 @@ const Header: FC<IHeaderProps> = ({
               </li>
             </MainNav>
           </Column>
-          <SearchColumn verticalAlign="center">
-            {typeof window !== 'undefined' && <SearchForm />}
-          </SearchColumn>
+          {typeof window !== 'undefined' && (
+            <SearchColumn verticalAlign="center"><SearchForm /></SearchColumn>
+          )}
         </Row>
       </Container>
     </Wrapper>

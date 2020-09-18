@@ -171,7 +171,7 @@ const noJsPlugins = [
     resolve: `gatsby-plugin-no-javascript-utils`,
     options: {
       removeGeneratorTag: false,
-      noInlineStyles: true,
+      noInlineStyles: false,
     },
   },
 ];
