@@ -37,6 +37,7 @@ export const breakpoint: IBreakpoint = {
 
 export const size: ISize = {
   zero: "0rem",
+  half: "0.5rem",
   single: "1rem",
   singleplushalf: "1.5rem",
   double: "2rem",
