@@ -105,7 +105,7 @@ I used this method because I wanted to _toggle between_ elements that were insid
 
 ## Discouraging search engines
 
-The last thing I needed to do was to discourage robots from indexing the JS enabled version of the site: the last thing I need is duplicate content warnings or to hurt my own SEO.
+Finally, I needed to discourage robots from indexing the JS enabled version of the site: the last thing I need is duplicate content warnings or to hurt my own SEO.
 
 I could have used the same trick I've already used above to add this meta tag to the _Layout_ file, but I opted instead to use Netlify's postprocessing tool to add it to the appropriate site:
 
