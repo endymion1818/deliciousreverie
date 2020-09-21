@@ -103,6 +103,18 @@ I used this again to display a message in the footer to let users know which ver
 
 I used this method because I wanted to _toggle between_ elements that were inside a single parent element.
 
+## Discouraging search engines
+
+Finally, I needed to discourage robots from indexing the JS enabled version of the site: the last thing I need is duplicate content warnings or to hurt my own SEO.
+
+I could have used the same trick I've already used above to add this meta tag to the _Layout_ file, but I opted instead to use Netlify's postprocessing tool to add it to the appropriate site:
+
+```
+<meta name="robots" content="noindex" />
+```
+
+I thought this would be more robust since the first pass robots make is done without JavaScript enabled, so it needed to be added to the pre-rendered HTML that's under the React app.
+
 ## Conclusion
 
 What's stopping us building everything like this? It didn't take long to set up, and with some UI tweaks I got the best of both worlds: a fancy site with all the whistles and bangs of a JavaScript app, and a barebones (but still pretty) site that doesn't cost the earth to run.
