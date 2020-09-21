@@ -10,6 +10,7 @@ import ErrorBoundary from "../Molecules/ErrorBoundary";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
 import { colors, size } from "../tokens";
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 
 import ShareCard from "../../assets/sharecard-default.png";
 
@@ -150,6 +151,7 @@ const Layout: React.SFC<ILayoutProps> = ({
         }
       `}
       render={(data: IStaticQueryProps) => {
+        deckDeckGoHighlightElement();
         const { title, description, siteUrl } = data.site.siteMetadata;
         const sharecardAbsoluteUrl = siteUrl + ShareCard;
         const amalgamatedDescription = `${pageDescription} - ${description}`;

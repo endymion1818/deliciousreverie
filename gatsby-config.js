@@ -13,7 +13,14 @@ const defaultPlugins = [
   },
   `gatsby-plugin-react-helmet`,
   `gatsby-plugin-styled-components`,
-  `gatsby-transformer-remark`,
+  { 
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-highlight-code`
+      ]
+    }
+  },
   `gatsby-plugin-twitter`,
   `gatsby-plugin-sitemap`,
   `gatsby-plugin-offline`,

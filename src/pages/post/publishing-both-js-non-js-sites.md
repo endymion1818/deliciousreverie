@@ -42,7 +42,7 @@ require("dotenv").config()
 
 However, I wanted to keep everything else about the configurations the same. Since the export in this file is a single JavaScript object, I could compose it up from separate elements. I could have one array for the plugins, another array for my noJS plugins, like this:
 
-```
+```js
 const defaultPlugins = [
   // everything else
 ]
@@ -62,7 +62,7 @@ const defaultPlugins = [
 
 And now combine them into one object, conditionally choosing which array of plugins to choose, and export it as a module:
 
-```
+```js
 module.exports = {
   siteMetadata: {
     pathPrefix: "/",
@@ -93,7 +93,7 @@ Now, the JSX that gets built on the server doesn't render the searchform because
 
 I used this again to display a message in the footer to let users know which version of the site they are on:
 
-```
+```js
   {typeof window === 'undefined' ? (
     <p>You're currently on the <i>javascript disabled</i> version of the site. To enable the site search and some pretty animations, <a href="https://jsenabled.deliciousreverie.co.uk">view the javascript enabled react app</a>.</p>
   ) : (
