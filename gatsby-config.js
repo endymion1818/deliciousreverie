@@ -13,7 +13,6 @@ const defaultPlugins = [
   },
   `gatsby-plugin-react-helmet`,
   `gatsby-plugin-styled-components`,
-  `gatsby-transformer-remark`,
   `gatsby-plugin-twitter`,
   `gatsby-plugin-sitemap`,
   `gatsby-plugin-offline`,
@@ -164,8 +163,19 @@ const defaultPlugins = [
   },
 ];
 
-const noJsPlugins = [
+const jsEnabledPlugins = [
   ...defaultPlugins,
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [`gatsby-remark-highlight-code`],
+    },
+  },
+];
+
+const JsDisabledPlugins = [
+  ...defaultPlugins,
+  `gatsby-transformer-remark`,
   `gatsby-plugin-no-javascript`,
   {
     resolve: `gatsby-plugin-no-javascript-utils`,
@@ -184,5 +194,7 @@ module.exports = {
     description: `blog of developer & bookworm benjamin read`,
   },
   plugins:
-    process.env.JS_DISABLED === "true" ? [...noJsPlugins] : [...defaultPlugins],
+    process.env.JS_DISABLED === "true"
+      ? [...JsDisabledPlugins]
+      : [...jsEnabledPlugins],
 };
