@@ -41,8 +41,10 @@ Algolia is the shining beacon here. It is clear from their implementation that t
 
 Cludo are an up and coming SaaS platform not unlike Algolia, with a nice dashboard and machine learning backed features. I really want to like Cludo ... but they currently only offer a web scraper as a tool. Having seen the interface, I can say it's a really good scraper with a good set of features, but it's still a content scraper. In the use case I had, I needed to upload indexes at the time we built them, and we couldn't rely on that kind of tool. If they extended their product to include API uploads, it would be a much stronger product in my opinion.
 
+UPDATE: Cludo team have told me they _do_ have a data push API, so you don't need to use their site crawler. More info: https://docs.cludo.com/#data-indexing_push
+
 **Pros:** Good contender for the market  
-**Cons:** No content uploads API. No SDK.  
+**Cons:** No SDK.  
 **Link:** https://www.cludo.com
 
 ### 3. SwiftType
