@@ -23,7 +23,7 @@ In no strict order of preference:
 7. **Foundation - Asimov.** The scope of the initial concept for the series is mind boggling.
 8. **Frank Herbert - Dune.** world building at its absolute best
 9. **Dan Simmons - The Hyperion Cantos.** Requires a bit of a strong stomach but the author loved literature as well as high concept sci fi. Awesome.
-10. **China Mieville - either Perdido Street Station or Embassytown.** Some incredible concepts about language and world building.
+10. **China Mieville - Perdido Street Station, Embassytown or The City and the City.** Some incredible concepts about language and world building, writing style is mesmerising and transports you into the his worlds with ease.
 11. **Mervyn Peake - Titus Groan.** Brilliant, ponderous, odd, and wonderful.
 12. **Jorge Luis Borges - Collected Stories.** Mind bending infinite and looping concepts.
 13. **Anne Fadiman - Confessions of a Common Reader.** I re-read this slim volume every few years, a wonderful love letter to books, reading, and life in general.
