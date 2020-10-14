@@ -10,7 +10,7 @@ tags:
 title: Tools for Production Ready Code
 ---
 
-_**A note about this article**: This was a feature I wrote for Net magazine which was sadly closed down before it was published. It's aimed at people who want to get into devOps, or product owners who want to understand what it is they're getting themselves into. I hope it proves to be useful._
+_**A note about this article**: This was a feature I wrote for Net magazine which was sadly closed down before it was published, so I published it on dev.to initially. It's aimed at people who want to get into devOps, or product owners who want to understand what it is they're getting themselves into. I hope it proves to be useful._
 
 Websites are great tools for communication, but it's remarkably easy to take them offline. One of the most panic-inducing moments for any operation can be that first call from a customer informing you that the site is down ... and then the next call, and then fifty more ... suddenly the company grinds to a halt until the problem can be fixed.
 
