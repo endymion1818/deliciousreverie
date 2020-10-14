@@ -67,7 +67,7 @@ Documenting the features as a team can be instrumental in reducing undocumented 
 
 For more information on this strategy, see the box "Documenting Features" below.
 
----
+<div class="boxout">
 
 ## **Supplementary info:** Documenting Features
 
@@ -89,7 +89,7 @@ The first part of the statement, _Given_, may sound a bit redundant at first, an
 
 If the E2E tests fail against these acceptance criteria, the feature can be fixed or rethought.
 
----
+</div>
 
 ### Unit tests
 
@@ -183,6 +183,8 @@ Some also take the view that automated QA tests should run in production too, so
 
 This kind of issue is out of scope for this article, but I feel it's worth mentioning a valuable resource that has become _the_ go-to handbook for modern DevOps teams, and is highly valued for its insights into the way Google manages applications at vast scale: the **Site Reliability Handbook**, published by O'Reilly Media. It's available to read online here: https://landing.google.com/sre/sre-book/toc/index.html
 
+<div class="boxout">
+
 ## **Supplementary info:** How to Manage Incidents
 
 Despite everyone's best efforts, failures in production will occur. There are strategies and tools to help reduce the downtime and get your services back up and running more quickly:
@@ -199,9 +201,15 @@ Having a dedicated incident management team is invaluable when there are issues 
 
 Once a situation has been resolved, post mortem meetings can be very helpful to identify what the problem was and put things in place to avoid a similar issue from arising again. Such meetings aren't focused on blame; rather they should be about understanding the problem and how to avoid it happening in future.
 
+</div>
+<br/><br/>
+<div class="boxout">
+
 ## **Supplementary info:** A word about code reviews
 
 One of the best ways of catching a range of potential issues early on in the development process is by the use of effective code reviews. Having two or more developers that are familiar with a codebase and that use it regularly review each other's code means it's going to reflect a more well-thought out and well-structured project. Good code reviews can also point out flaws in logic and gaps in tests that might easily slip through without notice if there was just one developer looking after a project.
+
+</div>
 
 ## Conclusion
 

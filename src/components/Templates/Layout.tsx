@@ -119,6 +119,12 @@ const GlobalStyle = createGlobalStyle`
   #gatsby-noscript {
     display:none;
   }
+  .boxout {
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: rgba(255,255,255, 0.2);
+  }
 `;
 
 const Main = styled(Wrapper)`

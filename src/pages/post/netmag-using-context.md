@@ -149,7 +149,8 @@ As you can see, the two modules we've created don't have any props passed down f
 But wait! There's more we can do to boost performance here.
 
 
----
+<div class="boxout">
+
 ## Boxout: Analyse Performance with React Developer Tools
 
 React Developer Tools, an extension available on both Firefox and Chrome browsers, is a tool provided by Facebook to help debug your React apps.
@@ -165,7 +166,9 @@ Try interacting with your site when "Hilight Updates" is ticked. You might be su
 Now you know where to start fixing the problem!
 
 
----
+</div>
+<br/><br/>
+<div class="boxout">
 
 
 ## Boxout: Reducing Re-rendering
@@ -177,6 +180,8 @@ I have found this to be especially true on devices that aren't the most expensiv
 One way I've been able to reduce re-renders if by using my context's state to hold functions as well.
 
 By moving `onItemSelect` out of the class and into the state object, we can call it in a similar way (`context.onItemSelect` becomes `context.state.onItemSelect` in our modules), and avoid a component update.
+
+</div>
 
 ## Try Using Context Today
 

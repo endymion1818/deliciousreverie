@@ -183,7 +183,7 @@ If you got this far and followed along, congratulations on making your first Typ
 
 TypeScript is one of the fastest growing trends in JavaScript. Reinforcing types in your application can help you avoid making fatal errors in production, especially when working with teams of developers. By using TypeScript we can lean on our IDEs more and simplify our workflow, introduce self-documentation and better code hinting.
 
-<hr>
+<div class="boxout">
 
 ## BOXOUT: What is TypeScript?
 
@@ -191,7 +191,9 @@ TypeScript was developed by Google specifically for the frontend framework Angul
 
 TypeScript needs to be compiled to normal JavaScript to be used on a browser. But this is an advantage: errors that are generated can be caught and mitigated before anything goes into production.
 
-<hr>
+</div>
+<br/><br/>
+<div class="boxout">
 
 ## BOXOUT: Static vs Dynamic Typing
 
@@ -248,7 +250,9 @@ Instead, your code editor, terminal or CI tool lets you know, potentially before
 
 That's one reason why I like using Typescript: my code editor tells me where I've made a mistake, and it won't let me push code to my Git repo unless some TypeScript rules I've given it are followed.
 
-<hr>
+</div>
+<br/><br/>
+<div class="boxout">
 
 ## BOXOUT: Resources
 There are some great resources for TypeScript out there, and they're growing as more people write about their experience with the language. Here are some places to start:
@@ -262,3 +266,5 @@ The main problem I have with TypeScript is that people writing about it assume y
 If you want a good beginner level course on TypeScript, I can really recommend this one by Scott Tolinski. Scott is great at explaining things simply and clearly without assuming too much:
 
 https://www.leveluptutorials.com/tutorials/level-1-typescript
+
+</div>
