@@ -1,5 +1,5 @@
 ---
-date: "2020-14-10T11:21:21+01:00"
+date: "2020-10-14T11:21:21+01:00"
 description: "Websites are great tools for communication, but it's remarkably easy to take them offline. For those organisations in which there's a huge financial investment and thousands — perhaps millions - of customers, reliability is a huge concern. The strategies and tools we are looking at here cover both prevention and resolution of problems that could occur to any website."
 draft: false
 categories:
