@@ -9,7 +9,7 @@ import Wrapper from "../Atoms/Wrapper";
 import ErrorBoundary from "../Molecules/ErrorBoundary";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
-import { colors, size } from "../tokens";
+import { colors, size, borderradius } from "../tokens";
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 
 import ShareCard from "../../assets/sharecard-default.png";
@@ -112,12 +112,19 @@ const GlobalStyle = createGlobalStyle`
     padding: 0.5rem;
     color: ${colors.neutral.nearWhite};
     overflow-y: scroll;
+    border-radius: ${borderradius.small};
   }
   button {
     ${ButtonStyles}
   }
   #gatsby-noscript {
     display:none;
+  }
+  .boxout {
+    border: 1px solid white;
+    border-radius: ${borderradius.medium};
+    padding: 2rem;
+    background-color: rgba(255,255,255, 0.2);
   }
 `;
 

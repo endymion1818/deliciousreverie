@@ -288,7 +288,7 @@ There's a lot to these functions and it can take quite a bit of time to get used
 
 I would say that thoroughly testing your code is an important step, along with static typing, quality checking, and pre-release validation, to ensuring that your code is indeed production ready!
 
----
+<div class="boxout">
 
 ## Boxout: The price of confidence
 
@@ -298,7 +298,9 @@ The benefit of adding tests to your code can easily override the time spent by d
 
 Other ways that testing can benefit a project include during refactors. Often project requirements will change after the code has been written. That introduces more risk into the codebase because on revisiting the code a developer might decide to refactor to make it simpler … which could include deleting things that were actually needed! Looking at the test serves as documentation: developers can see that there was a decision behind every code outcome that has been written.
 
----
+</div>
+<br/><br/>
+<div class="boxout">
 
 ## Boxout: Scoping outcomes
 
@@ -307,3 +309,5 @@ The hardest part of finding out what to test is knowing what your code actually 
 When you’re doing this you’ll be more clearly able to think about all of the different outcome possibilities that your code offers: what variables might change? What different return values are possible?
 
 I’ve used an API call in this example because there’s plenty of variety in what can happen … but I’ve still missed out one valuable test … can you spot which test I haven’t done?
+
+</div>

@@ -122,9 +122,9 @@ To do that, we need to set a unique id of the accordion item so we can show the 
  
 Once I've replaced `id="accordion-1"` with `id={elementId}` I should have a fairly unique ID that links up the content and the button.
 
-<hr> 
+<div class="boxout">
 
-## BOXOUT: The Slings & Arrows of Outrageous Smooth Scrolling
+## The Slings & Arrows of Outrageous Smooth Scrolling
 
 One of the requirements you might have with an accordion of this kind is that when the accordion opens / closes, the user is scrolled to the content area or the title.
  
@@ -151,7 +151,7 @@ There's a bug in iOS Safari too! If you want to support Safari on iOS (particula
     }, 0)
 ```
  
-<hr>
+</div>
 
 ## Showing & Hiding Content
  
@@ -195,7 +195,7 @@ I think using React Hooks is a simpler and tidier workflow that helps our code t
 
 You can find this example on Code Sandbox: https://codesandbox.io/s/wqnmql8l78
  
-<hr>
+<div class="boxout">
 
 ## BOXOUT: What is Rehydration?
  
@@ -209,7 +209,9 @@ The advantage is a fully interactive application that is better for SEO and for 
  
 There are still some key puzzles to solve with rehydration. I'm looking forward to seeing a time when only parts of a page that need interactivity are rehydrated, instead of having to replace the entire page. But it's a great way of making faster and more resilient interactive experiences.
 
-<hr>
+</div>
+<br/><br/>
+<div class="boxout">
 
 ## BOXOUT: MVT, Object-Oriented or Functional Programming?
 Managing the code of large applications where several people are contributing over the course of longer periods of time tends to be difficult. In fact any sufficiently complicated system tends to break down over time. 
@@ -223,3 +225,5 @@ This proved in many cases to be a burden on the overall code that was sent down 
 However, JavaScript doesn't really work in an object-oriented way under the hood. The `class` keyword was a wrapper around some of the prototypes of the language.
 
 In an effort to work _with_ the language instead of imposing an artificial structure on top of it, functional programming has been growing in popularity in recent years.
+
+</div>

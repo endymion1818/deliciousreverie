@@ -306,7 +306,7 @@ I also enjoyed this one on Level Up Tutorials, it's the one that got me started 
 
 https://www.leveluptutorials.com/tutorials/react-testing-for-beginners
 
----
+<div class="boxout">
 
 ## Boxout: Unit and Integration Tests
 
@@ -322,7 +322,9 @@ When two or more modules are used in conjunction, then it's a good practice to w
 
 These are the two kinds of tests that developers are usually responsible for writing. There are other kinds of tests that QA Engineers write (see the box "The Role of Quality Assurance Engineers").
 
----
+</div>
+<br/><br/>
+<div class="boxout">
 
 ## Boxout: What is Test Driven Development?
 
@@ -336,7 +338,9 @@ I like this concept because it forces you to think about the structure of your c
 
 Be careful though: you can write tests that will pass under any circumstances! For this reason, three or more tests are often required that allow you to "triangulate", or effectively define the functionality of your component, before you can start building it.
 
----
+</div>
+<br/><br/>
+<div class="boxout">
 
 ## Boxout: The Role of Quality Assurance Engineers
 
@@ -347,3 +351,5 @@ QA Engineers have totally different mindset to developers: Developers naturally 
 This ensures that your customers aren't acting as your QAs, causing you to lose money and good will in a very public manner.
 
 A dedicated Quality Assurance engineer will write an automated tests suite that check the expected functionality of the built application, predominantly on a staging domain, and end-to-end tests that check users can carry out goals that you expect them to achieve.
+
+</div>
