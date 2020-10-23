@@ -190,7 +190,7 @@ module.exports = {
   siteMetadata: {
     pathPrefix: "/",
     title: siteTitle,
-    siteUrl: `https://deliciousreverie.co.uuk`,
+    siteUrl: `https://deliciousreverie.co.uk`,
     description: `blog of developer & bookworm benjamin read`,
   },
   plugins:
