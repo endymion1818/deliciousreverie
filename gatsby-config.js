@@ -110,8 +110,8 @@ const defaultPlugins = [
           query: `
             {
               allMarkdownRemark(
-                sort: { order: DESC, fields: [frontmatter___date] },
-              ) {
+                sort: {order: DESC, fields: [frontmatter___date]}, 
+                filter: {frontmatter: {type: {ne: "page"}}}) {
                 edges {
                   node {
                     excerpt
