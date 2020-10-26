@@ -63,6 +63,20 @@ Meili is an outlier in this space, and an entirely new product that isn't built 
 **Cons:** No analytics dashboard  
 **Link:** https://www.meilisearch.com
 
+### 5. TypeSense
+
+I'm adding Typesense about a month after I published this original article, since I've only just found it.
+
+Typesense is, like Meili, open source, with a "cloud" version that you can sign up to as well. Typesense seems to have its positioning right, as a search API that you can install from a Docker image or on a Linux server via apt or yum package managers. There's also API libraries in JavaScript, PHP, Python and Ruby. The JS package in particular seems to come at a reasonable bundle size.
+
+The interesting thing about this is it's written in C++, so it's likely to be pretty fast too.
+
+Shoutout to Christopher Geary for letting me know about this one.
+
+**Pros:** Self hosted and cloud option  
+**Cons:** No analytics dashboard  
+**Link:** https://typesense.org
+
 ## Conclusion
 
 If I was an indie hacker or an investor with some developer punch, I'd be building an Algolia clone right now. Whilst they are clearly market leaders there's plenty of room for growth here, only one or two key features hold back the expansion into a mature market with a good amount of choice.
