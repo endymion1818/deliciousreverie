@@ -168,7 +168,14 @@ const jsEnabledPlugins = [
   {
     resolve: `gatsby-transformer-remark`,
     options: {
-      plugins: [`gatsby-remark-highlight-code`],
+      plugins: [
+        {
+          resolve: `gatsby-remark-highlight-code`,
+          options: {
+            theme: "night-owl",
+          },
+        },
+      ],
     },
   },
 ];

@@ -127,12 +127,12 @@ Now we need to tell the compiler what the type is for our JSX template. I'm usin
 ```javascript
 import { FC } from "react";
 
-...
-
 export const Container: FC = ({
+```
 
 Now we need to pass in our properties. They're the same as the ones we've used above, with one addition: the children, other react nodes we want to render inside the template.
 
+```
 export interface IContainerProps {}
 
 export const Container: FC<IContainerProps> = ({
