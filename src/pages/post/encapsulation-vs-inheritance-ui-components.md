@@ -1,7 +1,7 @@
 ---
 title: Encapsulation vs inheritance in frontend development
 date: "2020-10-30T15:21:21+01:00"
-description: "This year has solidified my JavaScript knowledge, and I think I have also developed more of the holistic skills around the framework of tools and teams that surround me. But there's still a lot more I need to work on..."
+description: "I really like using React, and use Styled Components with a component library at work. However we have three conundrums to solve, mostly around the concept of encapsulation."
 draft: false
 tags:
   - javascript
