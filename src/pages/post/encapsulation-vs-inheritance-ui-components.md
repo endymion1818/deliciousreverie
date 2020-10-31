@@ -1,7 +1,7 @@
 ---
-title: Encapsulation vs inheritance in frontend development
+title: Encapsulation vs inheritance in UI Components
 date: "2020-10-30T15:21:21+01:00"
-description: "I really like using React, and use Styled Components with a component library at work. However we have three conundrums to solve, mostly around the concept of encapsulation."
+description: "I really like using React, and I'm using Styled Components with a component library at work. However we have three conundrums to solve, mostly around the concept of encapsulation."
 draft: false
 tags:
   - javascript
@@ -12,7 +12,7 @@ categories:
 
 Broadly speaking, the main differing opinions on this argue that the results of your functions should be bound to that function only, and not have any effect on anything outside that variable (this is _encapsulation_), versus the idea that it's OK for things to _inherit_, or to have an effect that carries on across multiple functions.
 
-I'm weighing into this discussion on a different level to most. In this post, I'm not talking about encapsulation and inheritance as it pertains to object-oriented programming, although the principles are the same. I'm chiefly interested in frontend web development, and here I'm going to talk about these principles and how they've impacted my recent work.
+I'm weighing into this discussion on a different level to most. In this post, I'm not talking about encapsulation and inheritance as it pertains to object-oriented programming, although the principles are the same. I'm chiefly interested in UI components, and here I'm going to talk about these principles and how they've impacted my recent work.
 
 The basic tenet of CSS assumes inheritance. It's in the name: _Cascading_ Style Sheets. If you started your web development career from this angle, then you're probably quite used to seeing things like:
 
@@ -65,11 +65,11 @@ So, how do I make the text in `<SCard/>` the colour I need it to be? At this poi
 
 ### 1: CSS inheritance: The solution
 
-In this instance, our solution was to change the API of `<Text/>` so that by default the colour was `inherit`. This made it possible for both approaches: inheritance where necessary using CSS, or by adding a colour directly to the Text component using it's `color` property.
+In this instance, our solution was to change the API of `<Text />` so that by default the colour was `inherit`. This made it possible for both approaches: inheritance where necessary using CSS, or by adding a colour directly to the Text component using it's `color` property.
 
 ### 2: Large pages: the conundrum
 
-I'm not sure what the average number of DOM elements on a page is. We have some pages that have a lot of components, around 1,100. Just about every element isn't a HTML element but a `React.Component`, and due to design variation, we extend a lot of them in a similar way to this:
+I'm not sure what the average number of DOM elements on a page is. We have some pages that have a lot of elements, around 1,100. Just about every element is a separate `React.Component`, and due to design variation, we extend a lot of them in a similar way to this:
 
 ```javascript
 import Card from "component-library";
@@ -90,7 +90,7 @@ We haven't solved this yet, but I found it particularly interesting that there w
 I can think of a few options:
 
 1. Switch to a css-in-js solution with lower (or zero) runtime, like Linaria
-2. Keep Styled Components but export CSS objects alongside the components so that we can extend them using CSS only (in most, the components' APIs don't change significantly)
+2. Keep Styled Components but export CSS strings alongside the components so that we can extend them using CSS only (in most, the components' APIs don't change significantly)
 3. Rationalise the design so that it uses styles that already exist in the library
 
 What would you choose?
