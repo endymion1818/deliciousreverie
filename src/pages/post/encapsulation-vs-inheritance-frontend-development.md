@@ -1,5 +1,5 @@
 ---
-title: Encapsulation vs inheritance in web development
+title: Encapsulation vs inheritance in frontend development
 date: "2020-10-30T15:21:21+01:00"
 description: "This year has solidified my JavaScript knowledge, and I think I have also developed more of the holistic skills around the framework of tools and teams that surround me. But there's still a lot more I need to work on..."
 draft: false
