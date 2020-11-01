@@ -1,7 +1,7 @@
 ---
-title: Encapsulation vs inheritance in UI Components
+title: Three UI Component Conundrums
 date: "2020-10-30T15:21:21+01:00"
-description: "I really like using React, and I'm using Styled Components with a component library at work. However we have three conundrums to solve, mostly around the concept of encapsulation."
+description: "I really like using React with Styled Components for building effective user interfaces. However I have recently come across three conundrums to solve."
 draft: false
 tags:
   - javascript
@@ -10,7 +10,13 @@ categories:
   - development
 ---
 
-Broadly speaking, the main differing opinions on this argue that the results of your functions should be bound to that function only, and not have any effect on anything outside that variable (this is _encapsulation_), versus the idea that it's OK for things to _inherit_, or to have an effect that carries on across multiple functions.
+**React combined with Styled Components is a flexible, easy to learn and maintain way of composing reusable user interfaces for the web. However, every set of tools has as well as awesome features, a few tricky problems to solve. Here are three that I've come across recently.**
+
+## Some conundrums
+
+### 1. CSS inheritance: The conundrum
+
+The first issue concerns encapsulation. Broadly speaking, the main differing opinions on this argue that the results of your functions should be bound to that function only, and not have any effect on anything outside that variable (this is _encapsulation_), versus the idea that it's OK for things to _inherit_, or to have an effect that carries on across multiple functions.
 
 I'm weighing into this discussion on a different level to most. In this post, I'm not talking about encapsulation and inheritance as it pertains to object-oriented programming, although the principles are the same. I'm chiefly interested in UI components, and here I'm going to talk about these principles and how they've impacted my recent work.
 
@@ -28,13 +34,9 @@ div.banner {
 
 The `div` with the class `banner` will _inherit_ the `background-color` from the first `div`. This is a normal way of writing CSS ... _if_ you've had a certain type of introduction to CSS.
 
-## Some conundrums
-
 At work, I'm using an internal library of components written in Styled Components. This has some really distinct advantages: it's very simple for developers to keep within the brand guidelines, and even very basic elements are _encapsulated_, that is, they can be composed together without any unexpected side effects.
 
 But this has also led us into some complications... here's the conundrum and solution for two of them:
-
-### 1. CSS inheritance: The conundrum
 
 Here's a real-world example in React using the CSS-in-JS library Styled Components:
 
@@ -95,15 +97,15 @@ I can think of a few options:
 
 What would you choose?
 
-### 2: Markdown content: the conundrum
+### 3: Markdown content: the conundrum
 
 This one is related to the above, but we are also using these components in Markdown content we pull in from our CMS. So for each `<p>` tag that's generated from the Markdown, we use our libraries' `<Text />` component.
 
 This hasn't been an issue yet, but I can see one day we're going to have an extremely long page of content that uses many elements that also impacts page performance.
 
-### 2: Markdown content: the solution(s)
+### 3: Markdown content: the possible solution(s)
 
-We're probably going to have to use one of the 3 solutions above to solve this one too.
+We're probably going to have to use one of the 3 solutions in the previous conundrum to solve this one too.
 
 ## Conclusion
 
