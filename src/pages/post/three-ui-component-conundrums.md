@@ -10,7 +10,7 @@ categories:
   - development
 ---
 
-**React combined with Styled Components is a flexible, easy to learn and maintain way of composing reusable user interfaces for the web. However, every set of tools has as well as awesome features, a few tricky problems to solve. Here are three that I've come across recently.**
+**React combined with Styled Components is a flexible and maintainable way of composing reusable user interfaces for the web. However, every set of tools has as well as awesome features, a few tricky problems to solve. Here are three that I've come across recently.**
 
 ## Some conundrums
 
