@@ -74,12 +74,12 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: 300;
     src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
-    font-display: optional;
+    font-display: auto;
   }
   @font-face {
     font-family: Skybird;
     src: url(${Skybird});
-    font-display: optional;
+    font-display: swap;
   }
   body {
     margin: 0;
@@ -164,7 +164,6 @@ const Layout: React.SFC<ILayoutProps> = ({
         const amalgamatedDescription = `${pageDescription} - ${description}`;
         return (
           <ErrorBoundary>
-            <GlobalStyle />
             <Helmet>
               <html lang="en-GB" />
               <title>{`${pageTitle} - ${title}`}</title>
@@ -175,7 +174,7 @@ const Layout: React.SFC<ILayoutProps> = ({
               "@type": "Individual",
               "name": "Delicious Reverie",
               "url": "https://deliciousreverie.co.uk",
-            `}
+              `}
               </script>
               <link
                 rel="preload"
@@ -202,8 +201,9 @@ const Layout: React.SFC<ILayoutProps> = ({
               <meta name="twitter:image" content={sharecardAbsoluteUrl} />
               {!isIndexable && (
                 <meta name="robots" content="NOINDEX, NOFOLLOW" />
-              )}
+                )}
             </Helmet>
+            <GlobalStyle />
             <AccessibilityMainContentSkipLink href="#main">
               Skip to main content
             </AccessibilityMainContentSkipLink>
