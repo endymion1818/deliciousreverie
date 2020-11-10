@@ -74,12 +74,12 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: 300;
     src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
-    font-display: optional;
+    font-display: auto;
   }
   @font-face {
     font-family: Skybird;
     src: url(${Skybird});
-    font-display: optional;
+    font-display: swap;
   }
   body {
     margin: 0;
