@@ -17,7 +17,7 @@ The requirements I had for my search were:
 
 - Has to be self-hosted, open source, so we can secure our perimeter
 - Needs to be maintainable by an internal team of JavaScript developers
-- Needs to be headless (in order to render the frontend as JavaScript)
+- Needs to be headless (in order to render the frontend in an existing JavaScript application)
 
 I had a separate search for a hosted platform-as-a-service which I executed in parallel, but my personal interest is more towards the open source community, hence the focus of this blog post.
 
@@ -25,7 +25,7 @@ I had a separate search for a hosted platform-as-a-service which I executed in p
 
 Ghost seems like the grandaddy of JavaScript CMSes. Their version 3, which was launched about a year ago, was fully API-enabled, allowing it to be used as a headless CMS.
 
-Ghost was built out of dissatisfaction with the WordPress technology stagnation if I remember correctly, but it's grown far past to become a slick, comfortable and beautiful interface for building simple blogs.
+Ghost was built out of dissatisfaction with the WordPress technology stagnation if I remember correctly, but it's grown far past that to become a slick, comfortable and beautiful interface for building simple blogs.
 
 **Pros:** Wonderful editing experience  
 **Cons:** Not very extendable in terms of custom fields and content types  
@@ -48,7 +48,7 @@ Webiny is a lot more than a CMS, in fact, the CMS aspect is just one of the plug
 If you're interested in serverless architecture, definitely give Webiny a look.
 
 **Pros:** Serverless, so expect a lot of free hosting. A great way to learn the serverless architecture paradigm  
-**Cons:** I can't recommend Webiny as a GatsbyJS backend yet sadly, because there's no way to transform data in Gatsby's node processes. They badly need their own gatsby-source plugin, which I'm sure they'll get to once v5 has been released.  
+**Cons:** Recommends use of gatsby-source-graphql plugin, which doesn't have access to nodes at build time. As a result, data transforming must be done on the frontend :-(
 **Link:** https://webiny.com
 
 ## 4: Keystone
