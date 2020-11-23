@@ -13,6 +13,14 @@ categories:
 
 **I've been keenly interested in a specific subset of CMSes since about 2 years ago, when it became clear that Zopa would soon need to invest in one, and that I would be involved in choosing something that would be a good fit for the company. This post is a roundup of some of the great products available, and is the result of some of the research and proofs-of-concept I have made.**
 
+The requirements I had for my search were:
+
+- Has to be self-hosted, open source, so we can secure our perimeter
+- Needs to be maintainable by an internal team of JavaScript developers
+- Needs to be headless (in order to render the frontend as JavaScript)
+
+I had a separate search for a hosted platform-as-a-service which I executed in parallel, but my personal interest is more towards the open source community, hence the focus of this blog post.
+
 ## 1. Ghost
 
 Ghost seems like the grandaddy of JavaScript CMSes. Their version 3, which was launched about a year ago, was fully API-enabled, allowing it to be used as a headless CMS.
