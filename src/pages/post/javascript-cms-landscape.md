@@ -5,7 +5,7 @@ description: "I've been keenly interested in a specific subset of CMSes since ab
 draft: false
 tags:
   - javascript
-  - CMS
+  - cms
   - content management
 categories:
   - development
@@ -35,7 +35,7 @@ I was particularly pleased that they continue to improve on their Gatsby integra
 
 ## 3: Webiny
 
-Webiny is a lot more than a CMS, in fact, the CMS aspect is just one of the plugins for this incredible serverless framework. And honestly, Webiny does showcase some of the incredible things that become possible with Serverless, and also levels out a lot of that road for newer developers.
+Webiny is a lot more than a CMS, in fact, the CMS aspect is just one of the plugins for this incredible serverless framework. And honestly, Webiny does showcase some of the fancy things that become possible with serverless, and also levels out a lot of that road for newer developers.
 
 If you're interested in serverless architecture, definitely give Webiny a look.
 
@@ -53,7 +53,7 @@ I haven't spent any time with Keystone, but Wes Bos hails it's solid role-based 
 
 ## 5. Apostrophe
 
-Apostrophe only just fits onto this list because it's a full-stack CMS with a Headless plugin ... which is just fine, but it's an interesting choice. However the presence of plugins like this one gives me confidence this is a mature app that has a solid future. Again, I haven't tried it out, but I will report back when I have!
+Apostrophe only just fits onto this list because it's a full-stack CMS with a Headless plugin ... which is just fine, but it's an interesting choice. However the presence of plugins like this one gives me confidence this is a mature app that has a solid future. Again, I haven't tried it out, but I will report back when I have.
 
 The marketing talks about "in-context editing", but I'm not sure this refers to headless mode or not ... if it is, this could be a killer feature.
 
@@ -64,10 +64,6 @@ https://apostrophecms.com
 
 ## Conclusion
 
-I have tremendous confidence in css-in-js, and believe if you're using React, Styled Components is a great, broadly performant solution that gets most people where they need to be.
+JavaScript, particularly on the server, is still a new language, but it's incredible that we have so much variety in tooling available to us already.
 
-However, it has to be noted that there is a runtime overhead that increases with every component you extend.
-
-I am interested to see if there's a way of compiling all components at build time and avoiding that `React.Context` link, since in our case we don't expect the original components to change after that.
-
-And I'm interested to see whether other solutions, like Linaria, can provide a solution we can utilise in the future.
+I've been keenly interested in how the CMS market has developed: I was initially afraid that hosted platforms would gobble up all of the market share and there would be no room left for open-source options. I'm glad to say this hasn't happened, and we have the freedom to choose between hosted platforms and these more maintenance-heavy but intrinsically open apps.
