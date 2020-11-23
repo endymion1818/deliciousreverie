@@ -48,7 +48,7 @@ Webiny is a lot more than a CMS, in fact, the CMS aspect is just one of the plug
 If you're interested in serverless architecture, definitely give Webiny a look.
 
 **Pros:** Serverless, so expect a lot of free hosting. A great way to learn the serverless architecture paradigm  
-**Cons:** Recommends use of gatsby-source-graphql plugin, which doesn't have access to nodes at build time. As a result, data transforming must be done on the frontend :-(
+**Cons:** Recommends use of gatsby-source-graphql plugin, which doesn't have access to nodes at build time. As a result, data transforming must be done on the frontend :-(  
 **Link:** https://webiny.com
 
 ## 4: Keystone
@@ -61,7 +61,7 @@ I haven't spent any time with Keystone, but Wes Bos hails it's solid role-based 
 
 ## 5. Apostrophe
 
-Apostrophe only just fits onto this list because it's a full-stack CMS with a Headless plugin ... which is just fine, but it's an interesting choice. However the presence of plugins like this one gives me confidence this is a mature app that has a solid future. Again, I haven't tried it out, but I will report back when I have.
+Apostrophe only just fits onto this list because it's a full-stack CMS with a Headless plugin ... which is just fine, but it's an interesting choice. The presence of plugins like this one gives me confidence this is a mature app that has a solid future. Again, I haven't tried it out, but I will report back when I have.
 
 The marketing talks about "in-context editing", but I'm not sure this refers to headless mode or not ... if it is, this could be a killer feature.
 
