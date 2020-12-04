@@ -9,13 +9,15 @@ tags:
 title: 2020 Review / 2021 Aims
 ---
 
+**2020 has been ... a lot. But I've also learned a ton of stuff. Though I can't ever say I know enough of anything, my objectives for 2021 are going to be quite different from previous years...**
+
 I've definitely not been the smartest person in the room over the last year. I've worked with some incredible people, such as David Hewitt, David Fernandez, Romina Moya, Kate Beavis, Gerard Blanes, and many other great folk who have been good enough to explain stuff, pair code with me, and bear with my failures.
 
-## What I think I achieved last year
+## What I set out to achieve this year
 
 ### 1. Bash scripting
 
-Erm, didn't really get to this a huge amount. Though I'm less concerned with remembering the syntax of specific languages these days (more of that later...)
+Erm, didn't really get to this a huge amount. Though I'm less concerned with remembering the syntax of specific languages these days (more about that later...)
 
 ### 2. Continue getting to grips with Kubernetes
 
@@ -51,11 +53,15 @@ If there's an issue I should pick it up and progress it as far as I can on my ow
 
 ### Stand up for whats right
 
-During a few exercised I wasn't able to explain clearly why my preferred approach should be adopted, over another approach that was favoured by someone who wasn't as experienced as I. I found that I struggled to make a case why it was better. If I'd been more insistent I think I would have been able to politely convince the other person why my approach was the best. I still need to introspect about this a little, hopefully I can find out why I do that!
+During a few exercised I wasn't able to explain clearly why my preferred approach should be adopted, over another approach that was favoured by someone who wasn't as experienced as I.
+
+I found that I struggled to make a case why it was better. If I'd been more insistent I think I would have been able to politely convince the other person why my approach was the best.
+
+I still need to introspect about this a little, hopefully I can find out why I do that!
 
 ### Not giving up
 
-I recently paired with David H on a project where we were both unfamiliar with the codebase. What impressed me is that David didn't give up, he kept pursuing different avenues to figure out what the code did and how it worked.
+I recently paired with David on a project where we were both unfamiliar with the codebase. What impressed me is that David didn't give up, he kept pursuing different avenues to figure out what the code did and how it worked.
 
 This persistence ultimately led to us refactoring the code to achieve our objective instead of reaching out to colleagues who would have been able to help.
 
