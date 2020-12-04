@@ -1,7 +1,7 @@
 ---
 categories:
   - personal
-date: "2020-01-11T15:21:21+01:00"
+date: "2020-12-04T15:21:21+01:00"
 description: "2020 has been ... a lot. But I've also learned a ton of stuff. Though I can't ever say I know enough of anything, my objectives for 2021 are going to be quite different from previous years..."
 draft: false
 tags:
