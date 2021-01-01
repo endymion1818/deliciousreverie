@@ -1,13 +1,12 @@
-import { graphql } from "gatsby";
+import { graphql, PageProps } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import Container from "../Atoms/Container";
 import Link from "../Atoms/Link";
 import Wrapper from "../Atoms/Wrapper";
 import Layout from "./Layout";
-import { remarkForm } from "gatsby-tinacms-remark"
+import { useForm, usePlugin } from 'tinacms'
 interface IPostTemplateProps {
-  data: {
     site: {
       siteMetadata: {
         title: string;
@@ -19,6 +18,7 @@ interface IPostTemplateProps {
       };
     };
     markdownRemark: {
+      id: string
       html: string;
       excerpt: string;
       frontmatter: {
@@ -53,17 +53,38 @@ interface IPostTemplateProps {
       };
     };
   };
-}
 
-const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
+const PostTemplate: FC<PageProps<IPostTemplateProps>> = ({ data, pageContext, location }) => {
   const { html } = data.markdownRemark;
-  const { title } = data.markdownRemark.frontmatter;
-  const { description } = data.markdownRemark.frontmatter;
-  const { type } = data.markdownRemark.frontmatter;
-  const { date } = data.markdownRemark.frontmatter;
-  const { featuredImage } = data.markdownRemark.frontmatter;
-  const { featuredImageAlt } = data.markdownRemark.frontmatter;
-  const { categories, tags } = data.markdownRemark.frontmatter;
+  const { title, description, type, date, featuredImage, featuredImageAlt, categories, tags } = data.markdownRemark.frontmatter;
+
+  const formConfig = {
+    id: data.markdownRemark.id,
+    label: "Blog Post",
+    initialValues: data.markdownRemark,
+    onSubmit: values => {
+      alert(`Submitting ${values.frontmatter.title}`)
+    },
+    fields: [
+      {
+        name: "frontmatter.title",
+        label: "Title",
+        component: "text",
+      },
+      {
+        name: "frontmatter.description",
+        label: "Description",
+        component: "textarea",
+      },
+    ],
+  }
+  // Create the form
+  const [post, form] = useForm(formConfig)
+  usePlugin(form)
+
+  const siteTitle = data.site.siteMetadata.title
+  const { previous, next } = pageContext
+
   return (
     <Layout pageTitle={title} pageDescription={description}>
       <Wrapper>
@@ -122,7 +143,30 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
   );
 };
 
-export default remarkForm(PostTemplate)
+const BlogPostForm = {
+  fields: [
+    {
+      label: "Title",
+      name: "frontmatter.title",
+      description: "Enter the title of the post here",
+      component: "text",
+    },
+    {
+      label: "Description",
+      name: "frontmatter.description",
+      description: "Enter the post description",
+      component: "textarea",
+    },
+    {
+      label: "Description",
+      name: "frontmatter.description",
+      description: "Enter the post description",
+      component: "textarea",
+    },
+  ],
+}
+
+export default PostTemplate
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
@@ -132,6 +176,7 @@ export const query = graphql`
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
       html
       ...TinaRemark
       frontmatter {
