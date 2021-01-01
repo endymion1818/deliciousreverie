@@ -1,16 +1,18 @@
 ---
 categories:
-- development
+  - development
 date: "2019-08-22T14:21:21+01:00"
-description: TypeScript. You either love it, or hate it ... or are terrified of it.
+description:
+  TypeScript. You either love it, or hate it ... or are terrified of it.
   But it could be a valuable tool that benefits your workflow. This article, originally
   published in Net magazine, shows you how to get started with TypeScript
 draft: false
 tags:
-- netmag articles
-- javascript
-title: 'Published Article: Getting Started with TypeScript'
+  - netmag articles
+  - javascript
+title: "Published Article: Getting Started with TypeScript"
 ---
+
 Mention TypeScript to a developer who works with JavaScript and you'll probably get one of two responses: they will either struggle to understand why someone would NOT want to use TypeScript, or they will struggle to see why someone WOULD use it.
 
 I think this sometimes depends on where you started your journey to JavaScript. Often people come to the language from a server-side language such as C or Java, which are statically typed. In these languages, dynamic typing is seen as a real hazard, an unsafe practice.
@@ -41,7 +43,7 @@ TypeScript works by forcing us to tell it what properties are going into, and co
 
 Let's add our first interface!
 
-```js
+```javascript
 export interface ISContainerProps {}
 ```
 
@@ -49,9 +51,9 @@ Here we're declaring what will interface with our function. As a convention we s
 
 Let's add our first property:
 
-```js
+```javascript
 export interface ISContainerProps {
-    bgColor: string;
+  bgColor: string;
 }
 ```
 
@@ -59,19 +61,19 @@ I've given `bgColor` the type "string" here. This means that it can only be a `s
 
 I want to restrict the use of the next property, text colour, a little more than that. I want them to have the choice between only black and gray text. Because of this, I'm going to rename `textColour` to `lighterText`:
 
-```js
+```javascript
     lighterText?: boolean;
 ```
 
 The question mark (`?`) tells the compiler that lighterText is an optional property. If nothing is declared, it'll be false by defaut. Within my styled component, I can output grey or black based on this boolean value:
 
-```js
+```javascript
     color: ${props.lighterText => (props.lighterText ? `black` : `gray`)};
 ```
 
 This can be shortened a little bit by some destructuring:
 
-```js
+```javascript
     color: ${({ lighterText }) => (lighterText ? `black` : `gray`)};
 ```
 
@@ -81,7 +83,7 @@ For my final property, I want to introduce you to the humble `enum`. enums, I'm 
 
 My `enum` is going to declare the container widths I want people to have access to:
 
-```js
+```javascript
 export enum EContainerWidth {
   SMALL = "36rem",
   MEDIUM = "48rem",
@@ -93,7 +95,7 @@ Can you see the name I've given the `enum` starts with a capital `E`? This is th
 
 Now I'm going to declare that my `containerWidth` property is a type of `EContainerWidth`:
 
-```js
+```javascript
 export interface ISContainerProps {
   bgColor: string;
   lighterText: boolean;
@@ -105,29 +107,32 @@ This makes sure someone can only use these values for the container width. In th
 
 So, now, how do I tell my styled component about my interface? By adding chevrons after the tag declaration, but before the body of the function (inside the backticks), and writing the name of my interface there:
 
-```js
+```javascript
 export interface ISContainerProps {
   containerWidth: EContainerWidth;
 }
 
-const SContainer = styled.div<ISContainerProps>`
-    max-width: ${({containerWidth}) => containerWidth}
-`
+const SContainer =
+  styled.div <
+  ISContainerProps >
+  `
+    max-width: ${({ containerWidth }) => containerWidth}
+`;
 ```
 
 ## Typing the Template
 
 Now we need to tell the compiler what the type is for our JSX template. I'm using a React functional component (`FC`) for this project. The type for this can be imported directly from React at the top of our module:
 
-```js
+```javascript
 import { FC } from "react";
 
-...
-
 export const Container: FC = ({
+```
 
 Now we need to pass in our properties. They're the same as the ones we've used above, with one addition: the children, other react nodes we want to render inside the template.
 
+```
 export interface IContainerProps {}
 
 export const Container: FC<IContainerProps> = ({
@@ -137,13 +142,13 @@ export const Container: FC<IContainerProps> = ({
 
 Interfaces can be re-used and extended by other interfaces. This is going to be particularly useful when it comes to our JSX template:
 
-```js
+```javascript
 export interface IContainerProps extends ISContainerProps {}
 ```
 
 Now the template has the same types as our styled component. Now let's add the additional property. We mentioned that this was a React node, and that's another type we can import from react:
 
-```js
+```javascript
 import {FC, ReactNode} from 'react'
 
 ...
@@ -161,17 +166,21 @@ We've declared an `enum` for our container width. We need other developers to ha
 
 Because we have already exported our `enum`, we can import it along with our component:
 
-```js
-import Container, { EContainerWidth } from './Container'
+```javascript
+import Container, { EContainerWidth } from "./Container";
 ```
 
 I have a global file in my **src/** folder (usually I call it "tokens") where all of my project's enums are kept. This is much better for helping others discover what properties they have access to, and it's much easier to re-use them.
 
 Now, instead of assigning properties to the template at will, every time you or another developer comes to use it, you or they will have reason to pause and make sure they're using it in the way it was intended:
 
-```js
-<Container bgColor="red" lighterText={true} containerWidth={EContainerWidth.MEDIUM}>
-    JavaScript Container
+```javascript
+<Container
+  bgColor="red"
+  lighterText={true}
+  containerWidth={EContainerWidth.MEDIUM}
+>
+  JavaScript Container
 </Container>
 ```
 
@@ -183,7 +192,7 @@ If you got this far and followed along, congratulations on making your first Typ
 
 TypeScript is one of the fastest growing trends in JavaScript. Reinforcing types in your application can help you avoid making fatal errors in production, especially when working with teams of developers. By using TypeScript we can lean on our IDEs more and simplify our workflow, introduce self-documentation and better code hinting.
 
-<hr>
+<div class="boxout">
 
 ## BOXOUT: What is TypeScript?
 
@@ -191,52 +200,54 @@ TypeScript was developed by Google specifically for the frontend framework Angul
 
 TypeScript needs to be compiled to normal JavaScript to be used on a browser. But this is an advantage: errors that are generated can be caught and mitigated before anything goes into production.
 
-<hr>
+</div>
+<br/><br/>
+<div class="boxout">
 
 ## BOXOUT: Static vs Dynamic Typing
 
 One of the most powerful features of any programming language is the ability to store things in allocated memory, often called a variable, the value of which can be updated or changed by the program.
 
-```js
+```javascript
 // define a variable
-var a = 1
+var a = 1;
 
-console.log(a) // 1
+console.log(a); // 1
 
 // define a function which will change it's value
 function updateAVariable() {
-    a = 'a is now a string'
+  a = "a is now a string";
 }
 
 // call the function
-updateAVariable()
+updateAVariable();
 
-console.log(a) // "a is now a string"
+console.log(a); // "a is now a string"
 ```
 
 This demonstrates how powerful JavaScript's dynamic typing is. The variable a can be anything: a string of letters, a number, whatever you want.
 
 The problem with that is it can easily break stuff:
 
-```js
+```javascript
 function addOneToA() {
-    a = a + 1
+  a = a + 1;
 }
-addOneToA()
+addOneToA();
 
-console.log(a)
+console.log(a);
 
 // 'a is now a string1'
 ```
 
 By contrast, static typing means that you'll only use one type of thing, and if that changes, you will know about it before you even run the code:
 
-```js
-var a:number = 1
+```javascript
+var a: number = 1;
 
 function updateAVariable() {
-    a = 'a is now a string'
-    // typeError!
+  a = "a is now a string";
+  // typeError!
 }
 ```
 
@@ -248,9 +259,12 @@ Instead, your code editor, terminal or CI tool lets you know, potentially before
 
 That's one reason why I like using Typescript: my code editor tells me where I've made a mistake, and it won't let me push code to my Git repo unless some TypeScript rules I've given it are followed.
 
-<hr>
+</div>
+<br/><br/>
+<div class="boxout">
 
 ## BOXOUT: Resources
+
 There are some great resources for TypeScript out there, and they're growing as more people write about their experience with the language. Here are some places to start:
 
 - https://www.typescriptlang.org/
@@ -262,3 +276,5 @@ The main problem I have with TypeScript is that people writing about it assume y
 If you want a good beginner level course on TypeScript, I can really recommend this one by Scott Tolinski. Scott is great at explaining things simply and clearly without assuming too much:
 
 https://www.leveluptutorials.com/tutorials/level-1-typescript
+
+</div>

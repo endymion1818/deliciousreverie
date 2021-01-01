@@ -1,22 +1,22 @@
 ---
 categories:
-- development
+  - development
 date: "2018-07-25T08:21:21+01:00"
-description: This is the reproduction of an article I wrote for Net Magazine and was
+description:
+  This is the reproduction of an article I wrote for Net Magazine and was
   published in Issue 308 (August 2018).
 draft: false
 tags:
-- serverless
-- gatsby
-- wordpress
-- netmag articles
-title: 'Published Article: Using WordPress as a Headless CMS'
+  - serverless
+  - gatsbyjs
+  - wordpress
+  - netmag articles
+title: "Published Article: Using WordPress as a Headless CMS"
 ---
+
 In case you missed it, here's the article and links to the example code I wrote to help developers get started with Gatsbyjs.
 
-Code for this example:  https://github.com/endymion1818/netmag-wpheadless
-
-
+Code for this example: https://github.com/endymion1818/netmag-wpheadless
 
 ## You Will Need
 
@@ -25,8 +25,6 @@ Code for this example:  https://github.com/endymion1818/netmag-wpheadless
 - A command line shell / terminal
 - A recent version of NodeJS installed (you can download & install from here: https://nodejs.org/en/)
 - A WordPress site to get content from. If you don't have one, you can use the WordPress.com platform (wordpress.com) or this Heroku build pack: https://www.technomile.com/capabilities/application-development/heroku/wordpress
-
-
 
 ## Getting Started
 
@@ -48,11 +46,12 @@ First, let's install a command-line tool that allows us to create Gatsby sites:
 
 Now, navigate to the folder where you want to keep your site, and run this command:
 
-`gatsby new blog `
+`gatsby new blog`
 
 This will create a new folder called 'blog' and install Gatsby and its dependencies to this folder. Open this folder in your favourite text editor. There might seem to be a lot of files there. Don't worry, we'll only be directly editing the `gatsby-config.js`, `gatsby-node.js` files, and the `src` folder, which is where our templates live.
 
 ---
+
 <small>
 ### Why Headless?
 
@@ -84,10 +83,10 @@ Now open the `gatsby-config.js` file. There will already be some basic setup Gat
 ```js
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: "Gatsby Default Starter",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-wordpress",
       options: {
@@ -98,11 +97,11 @@ module.exports = {
         searchAndReplaceContentUrls: {
           sourceUrl: "https://my-wordpress-site.com",
           replacementUrl: "https://my-static-site.com",
-        }
+        },
       },
     },
   ],
-}
+};
 ```
 
 **Did it work?**
@@ -124,12 +123,11 @@ Note that the development build is not optimized.
 To create a production build, use gatsby build
 ```
 
- If that isn't what you're getting, check your WordPress site isn't on a subdomain, and that it's definitely using HTTPS or HTTP, and you have the same in your settings.
+If that isn't what you're getting, check your WordPress site isn't on a subdomain, and that it's definitely using HTTPS or HTTP, and you have the same in your settings.
 
 Now we can go to http://localhost:8000/ and see our Gatsby site!
 
 ![The Gatsby default starter screen.](/images/netmag-wpheadless-1-gatsby-starter.png "Gatsby works")
-
 
 **Can We Query our Data?**
 
@@ -161,15 +159,11 @@ This might look a bit like JSON, but it's not. It's a new query language that I 
 
 What did you get when you pressed CTRL + Enter in GraphiQL? You hopefully will have seen your WordPress posts on the right site of the screen, something like this:
 
-
 ![Graphical GraphQL interface showing our posts that we have just queried.](/images/netmag-wpheadless-2-graphql-query.png "GraphQL interface")
-
 
 We are actually going to use this query in our next step, so keep it handy! You might want to see what other data you can get with GraphiQL whilst you're here. If you want to do that, try moving the cursor around and typing either CTRL + Space and / or CTRL + Enter. That will reveal other groups of content.
 
 So, we now have content in Gatsby. Next, we need to display it...
-
-
 
 ## Displaying our Posts
 
@@ -183,45 +177,45 @@ We're going to write some instructions here to tell Gatsby what to do with our d
 const path = require(`path`);
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+  const { createPage } = boundActionCreators;
   return new Promise((resolve, reject) => {
     graphql(
       `
-      {
-        allWordpressPost {
-          edges {
-            node {
-              id
-              slug
-              status
-              template
-              format
+        {
+          allWordpressPost {
+            edges {
+              node {
+                id
+                slug
+                status
+                template
+                format
+              }
             }
           }
         }
-      }
       `
-    ).then(result => {
-        if (result.errors) {
-          console.log(result.errors)
-          reject(result.errors)
-        }
+    ).then((result) => {
+      if (result.errors) {
+        console.log(result.errors);
+        reject(result.errors);
+      }
 
-        const postTemplate = path.resolve(`./src/templates/post.js`)
+      const postTemplate = path.resolve(`./src/templates/post.js`);
 
-        result.data.allWordpressPost.edges.forEach(edge  => {
-          createPage({
-            path: `/${edge.node.slug}/`,
-            component: postTemplate,
-            context: {
-              id: edge.node.id,
-            },
-          })
-        })
-        resolve()
-      })
-  })
-}
+      result.data.allWordpressPost.edges.forEach((edge) => {
+        createPage({
+          path: `/${edge.node.slug}/`,
+          component: postTemplate,
+          context: {
+            id: edge.node.id,
+          },
+        });
+      });
+      resolve();
+    });
+  });
+};
 ```
 
 This code creates pages from our GraphQL query, and for each page it'll use a template we've defined (`/src/templates/post.js`). So next, we need to create that file!
@@ -231,12 +225,11 @@ This code creates pages from our GraphQL query, and for each page it'll use a te
 Inside the /src/ folder, create a folder called templates, and a file inside that called `post.js`. Add to it this code:
 
 ```js
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from "react";
+import Helmet from "react-helmet";
 
 class postTemplate extends React.Component {
   render() {
-
     const post = this.props.data.wordpressPost;
     const slug = this.props.data.wordpressPost.slug;
 
@@ -246,11 +239,11 @@ class postTemplate extends React.Component {
         <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </div>
-    )
+    );
   }
 }
 
-export default pageTemplate
+export default pageTemplate;
 
 export const query = graphql`
   query currentPost($id: String!) {
@@ -265,7 +258,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 ```
 
 This uses a different GraphQL query to get data about the specific post it's been fed by the `gatsby-node.js` file, then uses React to render that out into the browser.
@@ -273,7 +266,6 @@ This uses a different GraphQL query to get data about the specific post it's bee
 If you want to quickly see a list of all your posts, you can type `http://localhost:8000/a` into your browser's address bar. This will take you to a development 404 page, which lists all of your posts. Click on one to visit it!
 
 ![Gatsby development 404 page showing all of our WordPress posts.](/images/netmag-wpheadless-3-gatsby-development-404.png "Gatsby JS logo")
-
 
 ## Next Steps
 
@@ -284,6 +276,7 @@ There's a lot more to this story, and my colleagues and I have blogged about it 
 Please, keep in touch with me via those channels and on Twitter to hear more exciting developments in the world of headless CMS!
 
 ---
+
 <small>
 ### Why use a Static Site Generator?
 

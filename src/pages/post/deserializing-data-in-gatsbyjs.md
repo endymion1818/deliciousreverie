@@ -1,20 +1,22 @@
 ---
 categories:
-- development
+  - development
 date: "2018-03-17T14:21:21+01:00"
-description: One of the great strengths in static site generator Gatsbyjs is the node
+description:
+  One of the great strengths in static site generator Gatsbyjs is the node
   API but it can present a few issues in certain circumstances when content is stored
   as escaped HTML, such as in WordPress posts and pages. Here's how we recently dealt
   with this issue when using react-helmet.
 draft: false
 tags:
-- javascript
-- gatsbyjs
-- react
-- wordpress
-- headless
+  - javascript
+  - gatsbyjs
+  - react
+  - wordpress
+  - headless
 title: Deserializing Data in GatsbyJS
 ---
+
 **One of the great strengths in static site generator Gatsbyjs is it's node API. This API gives Gatsby flexibility by allowing data to be transformed from myriad sources into a format that can easily be rendered as HTML: JSON. However, this can present a few issues when content is stored as escaped HTML, such as in WordPress posts and pages. Here's how a colleague and I worked around a tricky problem we discovered when working with content pulled in from WordPress.**
 
 I recently built a GatsbyJS site that stored content in Markdown and used NetlifyCMS to allow content authors to work directly with the site in editing and adding content. Using Markdown with NetlifyCMS was an interim solution. We needed to build a site in only a few days, but knew that requirements would at some point grow substantially, at which point we wanted to switch to a WordPress backend.
@@ -89,3 +91,29 @@ And the other strength is that it still took me only a few hours to switch from 
 [I've filed an issue on GatsbyJS on the repo](https://github.com/gatsbyjs/gatsby/issues/4543), but there are a few issues around how to write a normalizer to deal with this. For instance, in most cases we do want to use the escaped HTML, so that the Title field is rendered in the component. It's only when using Helmet that we want the string deserialized.
 
 So I'm not sure how to proceed with this .. at least there's a workaround for now, and I'm sure as a community we can address this issue so that we can drop the external dependency or build it into the existing processes in some way.
+
+## UPDATE: use CreateNodeField API
+
+So the way I rendered the title using the xmldom library was the best I could do at the time ... however, since I've learned more about Gatsby's API, I can now understand why transforming the title on the frontend isn't the best idea.
+
+1. it's not performant. Users have to download that library before they see a rendered title. This has an impact on how fast people can see the rendered site ... Gatsby is all about performance, so this is a bad idea
+
+2. rendering on the frontend can cause issues. Sometimes rehydration doesn't work properly when you're doing heavy manipulation on the frontend ... that's why we have backends, after all.
+
+Here's a better way to do it:
+
+In your **gatsby-node.js** file
+
+```
+import { decode } from 'he'
+```
+
+Then in the `onCreateNode` function:
+
+```
+createNodeField({
+  node,
+  name: 'renderedTitle',
+  value: decode(node.title.rendered)
+})
+```

@@ -9,7 +9,8 @@ import Wrapper from "../Atoms/Wrapper";
 import ErrorBoundary from "../Molecules/ErrorBoundary";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
-import { colors, size } from "../tokens";
+import { colors, size, borderradius } from "../tokens";
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 
 import ShareCard from "../../assets/sharecard-default.png";
 
@@ -73,12 +74,12 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: 300;
     src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
-    font-display: optional;
+    font-display: auto;
   }
   @font-face {
     font-family: Skybird;
     src: url(${Skybird});
-    font-display: optional;
+    font-display: swap;
   }
   body {
     margin: 0;
@@ -111,12 +112,19 @@ const GlobalStyle = createGlobalStyle`
     padding: 0.5rem;
     color: ${colors.neutral.nearWhite};
     overflow-y: scroll;
+    border-radius: ${borderradius.small};
   }
   button {
     ${ButtonStyles}
   }
   #gatsby-noscript {
     display:none;
+  }
+  .boxout {
+    border: 1px solid white;
+    border-radius: ${borderradius.medium};
+    padding: 2rem;
+    background-color: rgba(255,255,255, 0.2);
   }
 `;
 
@@ -150,12 +158,12 @@ const Layout: React.SFC<ILayoutProps> = ({
         }
       `}
       render={(data: IStaticQueryProps) => {
+        deckDeckGoHighlightElement();
         const { title, description, siteUrl } = data.site.siteMetadata;
         const sharecardAbsoluteUrl = siteUrl + ShareCard;
         const amalgamatedDescription = `${pageDescription} - ${description}`;
         return (
           <ErrorBoundary>
-            <GlobalStyle />
             <Helmet>
               <html lang="en-GB" />
               <title>{`${pageTitle} - ${title}`}</title>
@@ -166,7 +174,7 @@ const Layout: React.SFC<ILayoutProps> = ({
               "@type": "Individual",
               "name": "Delicious Reverie",
               "url": "https://deliciousreverie.co.uk",
-            `}
+              `}
               </script>
               <link
                 rel="preload"
@@ -193,8 +201,9 @@ const Layout: React.SFC<ILayoutProps> = ({
               <meta name="twitter:image" content={sharecardAbsoluteUrl} />
               {!isIndexable && (
                 <meta name="robots" content="NOINDEX, NOFOLLOW" />
-              )}
+                )}
             </Helmet>
+            <GlobalStyle />
             <AccessibilityMainContentSkipLink href="#main">
               Skip to main content
             </AccessibilityMainContentSkipLink>

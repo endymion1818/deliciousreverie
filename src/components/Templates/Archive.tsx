@@ -2,6 +2,7 @@ import { graphql, withPrefix } from "gatsby";
 import React, { FC } from "react";
 import styled from "styled-components";
 import Link from "../Atoms/Link";
+import Rabbits from "../Organisms/rabbits";
 import Page from "../Templates/Page";
 import { colors, size } from "../tokens";
 
@@ -18,11 +19,11 @@ export interface IArchiveProps {
           frontmatter: {
             title: string;
             date: string;
+            description: string;
           };
           fields: {
             slug: string;
           };
-          excerpt: string;
         };
       }>;
     };
@@ -79,7 +80,11 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
                 {edge.node.frontmatter.title}
               </Link>
             </h3>
-            <p dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
+            <p
+              dangerouslySetInnerHTML={{
+                __html: edge.node.frontmatter.description
+              }}
+            />
             <p>
               <small>
                 This was posted on: <time>{edge.node.frontmatter.date}</time>
@@ -106,6 +111,7 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
           )}
         </ul>
       </nav>
+      {isHomePage && <Rabbits />}
     </Page>
   );
 };
@@ -134,6 +140,7 @@ export const archiveQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            description
           }
         }
       }

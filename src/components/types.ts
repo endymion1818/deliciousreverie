@@ -32,6 +32,7 @@ export interface IBreakpoint {
 
 export interface ISize {
   zero: string;
+  half: string;
   single: string;
   singleplushalf: string;
   double: string;

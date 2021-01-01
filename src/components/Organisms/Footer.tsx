@@ -1,7 +1,7 @@
 import { withPrefix } from "gatsby";
 import React, { FC } from "react";
 import styled from "styled-components";
-import NavItem from "../../components/Molecules/NavItem";
+import Alert from "../Atoms/Alert";
 import Column from "../Atoms/Column";
 import Container from "../Atoms/Container";
 import Link from "../Atoms/Link";
@@ -9,7 +9,7 @@ import List from "../Atoms/List";
 import Row from "../Atoms/Row";
 import Wrapper from "../Atoms/Wrapper";
 import { IPrimaryNavProps, ISecondaryNavProps } from "../Templates/Layout";
-import { borderradius, colors, effects, size } from "../tokens";
+import { colors, effects, size } from "../tokens";
 
 export interface IFooterProps extends IPrimaryNavProps, ISecondaryNavProps {
   siteTitle: string;
@@ -67,6 +67,15 @@ const Footer: FC<IFooterProps> = ({ siteTitle, siteDescription }) => (
     >
       <Container>
         <Row size={1}>
+          <Alert>
+            {typeof window === 'undefined' ? (
+              <p>You're currently on the <i>javascript disabled</i> version of the site. To enable the site search and some pretty animations, <a href="https://jsenabled.deliciousreverie.co.uk">view the javascript enabled react app</a>.</p>
+            ) : (
+              <p>You're currently on the <i>javascript enabled</i> version of the site. if you need to conserve your battery or CPU, <a href="https://deliciousreverie.co.uk">view the HTML & CSS only site</a>.</p>
+            ) }
+          </Alert>
+        </Row>
+        <Row size={1}>
           <Column>
             <h3>About This Site</h3>
             <p>
@@ -76,7 +85,8 @@ const Footer: FC<IFooterProps> = ({ siteTitle, siteDescription }) => (
                 Skybird
               </Anchor>{" "}
               and your system font. Built with Gatsby, hosted by Netlify. &copy;
-              Some rights are reserved.
+              Some rights are reserved. This site doesn't use any cookies or
+              other session storage and has no tracking scripts.
             </p>
             <h3 style={{ marginBottom: size.zero }}>Where you can find me:</h3>
             <List inline={true} style={{ marginTop: size.zero }}>
@@ -84,16 +94,8 @@ const Footer: FC<IFooterProps> = ({ siteTitle, siteDescription }) => (
                 <Anchor href="https://twitter.com/muzzlehatch_">twitter</Anchor>
               </li>
               <li>
-                <Anchor href="http://uk.linkedin.com/pub/benjamin-read/27/563/36a/">
+                <Anchor href="https://www.linkedin.com/in/benjaminread1980/">
                   linkedin
-                </Anchor>
-              </li>
-              <li>
-                <Anchor href="https://codepen.io/endymion1818/">codepen</Anchor>
-              </li>
-              <li>
-                <Anchor href="https://codesandbox.io/u/endymion1818/">
-                  codesandbox
                 </Anchor>
               </li>
               <li>

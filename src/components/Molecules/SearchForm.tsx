@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ButtonStyles from "../Atoms/ButtonStyles";
 import { borderradius } from "../tokens";
 
-export interface ISearchfFormProps {
+export interface ISearchFormProps {
   query?: string;
 }
 
@@ -34,7 +34,7 @@ const Button = styled.button`
   ${ButtonStyles}
 `;
 
-const SearchForm: FC<ISearchfFormProps> = ({ query }) => {
+const SearchForm: FC<ISearchFormProps> = ({ query }) => {
   return (
     <Form role="search" method="GET" action="/search">
       <Label htmlFor="search">Search sites</Label>
