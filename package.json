@@ -47,6 +47,7 @@
     "gatsby-remark-highlight-code": "^2.1.0",
     "gatsby-source-filesystem": "^2.3.10",
     "gatsby-tinacms-git": "^0.34.0",
+    "gatsby-tinacms-json": "^0.34.0",
     "gatsby-tinacms-remark": "^0.35.0",
     "gatsby-transformer-javascript-frontmatter": "^2.3.4",
     "gatsby-transformer-json": "^2.4.4",
