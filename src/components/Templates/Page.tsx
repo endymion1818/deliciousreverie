@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import Container from "../Atoms/Container";
 import Wrapper from "../Atoms/Wrapper";
 import Layout from "./Layout";
-
+import { remarkForm } from "gatsby-tinacms-remark"
 interface IPageTemplateProps {
   pageTitle?: string;
   pageDescription?: string;

@@ -5,7 +5,7 @@ import Container from "../Atoms/Container";
 import Link from "../Atoms/Link";
 import Wrapper from "../Atoms/Wrapper";
 import Layout from "./Layout";
-
+import { remarkForm } from "gatsby-tinacms-remark"
 interface IPostTemplateProps {
   data: {
     site: {
@@ -122,7 +122,7 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
   );
 };
 
-export default PostTemplate;
+export default remarkForm(PostTemplate)
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
@@ -133,6 +133,7 @@ export const query = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      ...TinaRemark
       frontmatter {
         title
         categories
