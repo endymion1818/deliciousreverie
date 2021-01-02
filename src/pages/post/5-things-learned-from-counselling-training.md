@@ -1,6 +1,6 @@
 ---
 title: 5 things that I learned from counselling training
-date: "2020-12-04T15:21:21+01:00"
+date: "2021-01-02T15:21:21+01:00"
 description: "When I was younger, I studied a form of Cognitive Behavioural therapy called Counselling. I studied for over 2 years but never took it up as a career. Even so, there are some valuable lessons that continue to help me in my web development career. Here are four of them."
 draft: false
 categories:
