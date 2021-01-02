@@ -5,7 +5,6 @@ import Link from "../Atoms/Link";
 import Rabbits from "../Organisms/rabbits";
 import Page from "../Templates/Page";
 import { colors, size } from "../tokens";
-
 export interface IArchiveProps {
   data: {
     site: {

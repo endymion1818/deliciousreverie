@@ -6,6 +6,29 @@ import Link from "../Atoms/Link";
 import Wrapper from "../Atoms/Wrapper";
 import Layout from "./Layout";
 import { useForm, usePlugin } from 'tinacms'
+
+import { InlineForm } from 'react-tinacms-inline'
+import { InlineWysiwyg } from 'react-tinacms-editor'
+import { useCMS } from 'tinacms'
+
+export function InlineWysiwyg(props) {
+  const cms = useCMS()
+  const [{ InlineWysiwyg }, setEditor] = useState({})
+
+  React.useEffect(() => {
+    if (!InlineWysiwyg && cms.enabled) {
+      import('react-tinacms-editor').then(setEditor)
+    }
+  }, [cms.enabled])
+
+  if (InlineWysiwyg) {
+    return (
+      <InlineWysiwyg {...props}/>
+    )
+  }
+
+  return props.children
+}
 interface IPostTemplateProps {
     site: {
       siteMetadata: {
@@ -62,7 +85,7 @@ const PostTemplate: FC<PageProps<IPostTemplateProps>> = ({ data, pageContext, lo
     id: data.markdownRemark.id,
     label: "Blog Post",
     initialValues: data.markdownRemark,
-    onSubmit: values => {
+    onSubmit: (values:any) => {
       alert(`Submitting ${values.frontmatter.title}`)
     },
     fields: [
@@ -99,7 +122,15 @@ const PostTemplate: FC<PageProps<IPostTemplateProps>> = ({ data, pageContext, lo
                 />
               )}
             </header>
-            <section dangerouslySetInnerHTML={{ __html: html }} />
+            <InlineWysiwyg
+              name="rawMarkdownBody"
+              imageProps={{
+                parse: (media) => `images/about/${media.filename}`,
+                uploadDir: () => 'public/images/about/',
+              }}
+            >
+              <section dangerouslySetInnerHTML={{ __html: html }} />
+            </InlineWysiwyg>
             <hr />
             {type !== "page" && (
               <footer>
@@ -143,58 +174,7 @@ const PostTemplate: FC<PageProps<IPostTemplateProps>> = ({ data, pageContext, lo
   );
 };
 
-const BlogPostForm = {
-  fields: [
-    {
-      label: "Title",
-      name: "frontmatter.title",
-      description: "Enter the title of the post here",
-      component: "text",
-    },
-    {
-      label: "Description",
-      name: "frontmatter.description",
-      description: "Enter the post description",
-      component: "textarea",
-    },
-    {
-      label: "Description",
-      name: "frontmatter.description",
-      description: "Enter the post description",
-      component: "textarea",
-    },
-  ],
-}
 
 export default PostTemplate
 
-export const query = graphql`
-  query BlogPostQuery($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      html
-      ...TinaRemark
-      frontmatter {
-        title
-        categories
-        tags
-        type
-        description
-        date(formatString: "DD MMMM, YYYY")
-        featuredImage {
-          publicURL
-          childImageSharp {
-            fluid(maxWidth: 1240) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+

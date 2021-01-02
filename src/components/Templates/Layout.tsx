@@ -11,6 +11,24 @@ import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
 import { colors, size, borderradius } from "../tokens";
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+import { RemarkCreatorPlugin } from 'gatsby-tinacms-remark'
+import { withPlugin } from 'tinacms'
+
+const CreatePostPlugin = new RemarkCreatorPlugin({
+  label: 'New Blog Post',
+  filename: form => {
+    return form.filename
+  },
+  fields: [
+    {
+      name: 'filename',
+      component: 'text',
+      label: 'Filename',
+      placeholder: 'pages/post/index.md',
+      description: 'Hello world',
+    },
+  ],
+})
 
 import ShareCard from "../../assets/sharecard-default.png";
 
@@ -231,4 +249,4 @@ const Layout: React.SFC<ILayoutProps> = ({
     />
   );
 };
-export default Layout;
+export default withPlugin(Layout, CreatePostPlugin);
