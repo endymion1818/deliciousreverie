@@ -1,7 +1,7 @@
 ---
 title: "Automated accessibility testing is great, but ..."
 date: "2021-01-20T15:21:21+01:00"
-description: "We recently had a situation using jest-axe in tests, where the landmarks feature wasn't work as expected. This helped me realise that we shouldn't rely solely on automated tools, never mind how good they are."
+description: "We recently had a situation using jest-axe in tests, where the landmarks feature wasn't work as expected. This helped me verify why we shouldn't rely solely on automated tools, never mind how good they are."
 draft: false
 categories:
   - development
@@ -11,7 +11,7 @@ tags:
   - accessibility
 ---
 
-**We recently had a situation using jest-axe in tests, where the landmarks feature wasn't work as expected. This helped me realise that we shouldn't rely solely on automated tools, never mind how good they are.**
+**We recently had a situation using jest-axe in tests, where the landmarks feature wasn't work as expected. This helped me verify why we shouldn't rely solely on automated tools, never mind how good they are.**
 
 In unit tests for our [react component library](https://github.com/zopaUK/react-components) at Zopa, we have utilised [jest-axe](https://github.com/nickcolley/jest-axe) to test whether our components adhere to a number of accessibility rules.
 
@@ -19,7 +19,7 @@ The funny thing was, when we adhered to the rules (specifically the way componen
 
 **_Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions._**
 
-The trouble is that this library contains a lot of components that do not require the use of landmarks. We build our UI pages up from these component pieces, and would utilise landmarks _on the page_ typically.
+The trouble is that our library contains a lot of components that do not require the use of landmarks. We build our UI pages up from these component pieces, and would utilise landmarks _on the page_ typically.
 
 This rule was forcing our developers to add aria `role`s where they weren't needed.
 
