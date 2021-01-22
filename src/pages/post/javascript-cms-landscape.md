@@ -63,12 +63,19 @@ I haven't spent any time with Keystone, but Wes Bos hails it's solid role-based 
 
 Apostrophe only just fits onto this list because it's a full-stack CMS with a Headless plugin ... which is just fine, but it's an interesting choice. The presence of plugins like this one gives me confidence this is a mature app that has a solid future. Again, I haven't tried it out, but I will report back when I have.
 
-The marketing talks about "in-context editing", but I'm not sure this refers to headless mode or not ... if it is, this could be a killer feature.
+The marketing talks about "in-context editing", but I'm not sure this refers to headless mode or not (edit: it's not) ... if it is, this could be a killer feature.
 
 **Pros:** // TODO: try this app and update this blog post  
 **Cons:** // TODO: try this app and update this blog post  
-**Link:**
-https://apostrophecms.com
+**Link:** https://apostrophecms.com
+
+## 6. Payload
+
+I heard about this newcomer on the scene only a few days ago, but the value proposition made sense to me. The UI is very minimal, on the basis that you'll want to customize it significantly. Their strongest feature is that there are hooks for every action, so you can extend the functionality very easily, and the initial codebase you see is _extremely_ minimal.
+
+**Pros:** // TODO: try this app and update this blog post  
+**Cons:** // TODO: try this app and update this blog post  
+**Link:** https://payloadcms.com
 
 ## Conclusion
 
