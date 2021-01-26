@@ -11,6 +11,7 @@ tags:
 - react
 - atomic design
 - netmag articles
+- published articles
 title: 'Published Article: Reusable Components with Atomic Design'
 ---
 **Structuring components in a reusable, discoverable way is a challenge across teams with diverse requirements. It can be difficult for developers unfamiliar with your library. They need to learn quickly how adopt, use and discover, features it has. How do you help them do that without over-burdening your components with too much documentation? I'd like to introduce the idea of Atomic Development using React and styled-components.**

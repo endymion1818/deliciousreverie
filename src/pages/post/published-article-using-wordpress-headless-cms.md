@@ -11,6 +11,7 @@ tags:
   - gatsbyjs
   - wordpress
   - netmag articles
+  - published articles
 title: "Published Article: Using WordPress as a Headless CMS"
 ---
 

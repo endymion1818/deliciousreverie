@@ -10,6 +10,7 @@ tags:
 - accessibility
 - react
 - netmag articles
+- published articles
 title: 'Published Article: React Accessibility'
 ---
 

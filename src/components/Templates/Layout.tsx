@@ -126,6 +126,20 @@ const GlobalStyle = createGlobalStyle`
     padding: 2rem;
     background-color: rgba(255,255,255, 0.2);
   }
+  .responsive-iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+
+    > iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
 `;
 
 const Main = styled(Wrapper)`

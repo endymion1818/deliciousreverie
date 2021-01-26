@@ -57,7 +57,7 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
           <h1>Thanks for popping round!</h1>
           <p>
             {site.siteMetadata.title} is a blog mostly about web development and
-            JavaScript engineering. But it's unashamedly my personal blog too,
+            JavaScript engineering. It's here I share <Link to="/tags/talks">talks I've given</Link> and <Link to="/tags/published-articles">articles I've had published</Link>. But it's my personal blog too,
             so you might find a few other things such as{" "}
             <Link to="/tags/food/">recipes</Link>, my{" "}
             <Link to="/tags/music/">musical interests</Link> and{" "}

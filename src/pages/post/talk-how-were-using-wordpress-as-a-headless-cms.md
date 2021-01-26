@@ -9,9 +9,18 @@ tags:
 - performance
 - indigotree
 - wordpress
+- talks
 title: 'Talk: How Were Using WordPress as a Headless CMS'
 ---
 **I'm not a stranger to public speaking. But speaking on a technical subject? To people who are smarter than me? Not something I relish. Yet, I felt I had something to offer the WordPress community, so I volunteered to speak at one of the UK's biggest WordPress meetups, WordCamp London.**
+
+UPDATE: Here's the talk hosted on Wordpress.tv:
+
+<div class="responsive-iframe-container">
+  <iframe width="560" height="315" src="https://videopress.com/embed/XXuKwsPC" frameborder="0" allowfullscreen></iframe>
+<script src="https://videopress.com/videopress-iframe.js"></script>
+</div>
+
 
 Ever since starting my web development career I've wanted to be in the place where I could help other developers out with their development dilemmas. It's taken me a long time to get to this stage, and it's only because of some great help from the following people:
 

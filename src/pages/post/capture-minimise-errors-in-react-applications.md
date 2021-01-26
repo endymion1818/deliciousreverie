@@ -10,6 +10,7 @@ draft: false
 tags:
 - react
 - netmag articles
+- published articles
 title: 'Published Article: Capture and Minimise Errors in your React Applications'
 ---
 We've all done it. Whether it's by forgetting to close a function, misspelling a variable or just plain old doing it wrong...
