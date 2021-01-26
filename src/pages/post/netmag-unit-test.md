@@ -8,6 +8,7 @@ tags:
 - performance
 - netmag articles
 - javascript
+- published articles
 title: 'Published Article: Unit Test your React apps'
 ---
 

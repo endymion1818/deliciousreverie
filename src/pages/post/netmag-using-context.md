@@ -9,6 +9,7 @@ tags:
 - performance
 - netmag articles
 - javascript
+- published articles
 title: 'Published Article: Better Performance with the React Context API'
 ---
 

@@ -9,6 +9,7 @@ description:
 draft: false
 tags:
   - netmag articles
+  - published articles
   - javascript
 title: "Published Article: Getting Started with TypeScript"
 ---

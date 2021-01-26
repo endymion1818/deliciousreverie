@@ -8,6 +8,7 @@ description: I wrote this post for Net Magazine issue 320. I wanted to showcase 
 draft: false
 tags:
 - netmag articles
+- published articles
 - javascript
 title: 'Published Article: Building an Accordion Component with React Hooks'
 ---
