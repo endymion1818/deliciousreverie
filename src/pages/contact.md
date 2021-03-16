@@ -11,8 +11,7 @@ Have a question about an article you've read here? Or are you a new developer wh
 
 You can reach me on `endymion1818@gmail.com` or using the form below.
 
-
-<form id="contactform" action="https://formspree.io/endymion1818@gmail.com"
+<form id="contactform" action="https://formspree.io/f/maylrkjb"
       method="POST">
     <input type="email" name="_replyto" placeholder="your email">
     <br><br>
