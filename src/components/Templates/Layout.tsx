@@ -1,5 +1,5 @@
 import { graphql, StaticQuery } from "gatsby";
-import React from "react";
+import React, { FC } from "react";
 import { Helmet } from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
@@ -150,13 +150,15 @@ export interface ILayoutProps {
   pageTitle?: string;
   pageDescription?: string;
   isIndexable?: boolean;
+  datePublished?: string;
 }
 
-const Layout: React.SFC<ILayoutProps> = ({
+const Layout: FC<ILayoutProps> = ({
   children,
   pageTitle,
   pageDescription,
-  isIndexable = true
+  isIndexable = true,
+  datePublished = "2017-05-12T15:21:21+01:00"
 }) => {
   return (
     <StaticQuery
@@ -183,12 +185,17 @@ const Layout: React.SFC<ILayoutProps> = ({
               <title>{`${pageTitle} - ${title}`}</title>
               <meta name="description" content={amalgamatedDescription} />
               <script type="application/ld+json">
-                {`
-              "@context": "http://schema.org",
-              "@type": "Individual",
-              "name": "Delicious Reverie",
-              "url": "https://deliciousreverie.co.uk",
-              `}
+                {`{
+                  "@context": "http://schema.org",
+                  "@type": "NewsArticle",
+                  "headline": "${pageTitle}",
+                  "author": {
+                    "@type": "Person",
+                    "name": "Benjamin Read"
+                  },
+                  "datePublished": "${datePublished}",
+                  "image": "${sharecardAbsoluteUrl}"
+                }`}
               </script>
               <link
                 rel="preload"
