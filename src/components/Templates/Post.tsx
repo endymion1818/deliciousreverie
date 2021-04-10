@@ -65,7 +65,7 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
   const { featuredImageAlt } = data.markdownRemark.frontmatter;
   const { categories, tags } = data.markdownRemark.frontmatter;
   return (
-    <Layout pageTitle={title} pageDescription={description}>
+    <Layout pageTitle={title} pageDescription={description} datePublished={date}>
       <Wrapper>
         <Container>
           <article className="h-entry">
