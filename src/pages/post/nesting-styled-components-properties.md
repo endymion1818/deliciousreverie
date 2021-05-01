@@ -1,6 +1,6 @@
 ---
-title: "Working with styled components: whether to destructure multiple nested properties"
-date: "2021-01-02T15:21:21+01:00"
+title: "Working with styled components: multiple nested properties"
+date: "2021-05-01T15:21:21+01:00"
 description: "Destructuring is a common pattern when it comes to using styled components in complex situations. But it can be hazardous to clearly identify nesting. Here are a few suggestions."
 draft: false
 categories:
