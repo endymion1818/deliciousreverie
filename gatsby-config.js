@@ -1,4 +1,6 @@
 const siteTitle = `Delicious Reverie`;
+const path = require("path");
+const REPO_ABSOLUTE_PATH = path.join(process.cwd(), "../..");
 
 require("dotenv").config();
 
@@ -173,6 +175,33 @@ const jsEnabledPlugins = [
           resolve: `gatsby-remark-highlight-code`,
           options: {
             theme: "night-owl",
+          },
+        },
+        {
+          resolve: "gatsby-plugin-tinacms",
+          options: {
+            enabled: process.env.NODE_ENV !== "production",
+            sidebar: {
+              position: "displace",
+            },
+            plugins: [
+              {
+                resolve: "gatsby-tinacms-git",
+                options: {
+                  pathToRepo: REPO_ABSOLUTE_PATH,
+                  pathToContent: "/",
+                  defaultCommitMessage: "Edited with TinaCMS",
+                  defaultCommitName: "Ben Read",
+                  defaultCommitEmail: "endymion1818@gmail.com",
+                  pushOnCommit: false,
+                  gitRemote: "git@github.com:endymion1818/deliciousreverie.git",
+                  sshKey: process.env.SSH_KEY,
+                },
+              },
+              "gatsby-tinacms-git",
+              "gatsby-tinacms-remark",
+              "gatsby-tinacms-json",
+            ],
           },
         },
       ],

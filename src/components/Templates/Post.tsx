@@ -1,13 +1,35 @@
-import { graphql } from "gatsby";
+import { graphql, PageProps } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import Container from "../Atoms/Container";
 import Link from "../Atoms/Link";
 import Wrapper from "../Atoms/Wrapper";
 import Layout from "./Layout";
+import { useForm, usePlugin } from 'tinacms'
 
+import { InlineForm } from 'react-tinacms-inline'
+import { InlineWysiwyg } from 'react-tinacms-editor'
+import { useCMS } from 'tinacms'
+
+export function InlineWysiwyg(props) {
+  const cms = useCMS()
+  const [{ InlineWysiwyg }, setEditor] = useState({})
+
+  React.useEffect(() => {
+    if (!InlineWysiwyg && cms.enabled) {
+      import('react-tinacms-editor').then(setEditor)
+    }
+  }, [cms.enabled])
+
+  if (InlineWysiwyg) {
+    return (
+      <InlineWysiwyg {...props}/>
+    )
+  }
+
+  return props.children
+}
 interface IPostTemplateProps {
-  data: {
     site: {
       siteMetadata: {
         title: string;
@@ -19,6 +41,7 @@ interface IPostTemplateProps {
       };
     };
     markdownRemark: {
+      id: string
       html: string;
       excerpt: string;
       frontmatter: {
@@ -53,17 +76,38 @@ interface IPostTemplateProps {
       };
     };
   };
-}
 
-const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
+const PostTemplate: FC<PageProps<IPostTemplateProps>> = ({ data, pageContext, location }) => {
   const { html } = data.markdownRemark;
-  const { title } = data.markdownRemark.frontmatter;
-  const { description } = data.markdownRemark.frontmatter;
-  const { type } = data.markdownRemark.frontmatter;
-  const { date } = data.markdownRemark.frontmatter;
-  const { featuredImage } = data.markdownRemark.frontmatter;
-  const { featuredImageAlt } = data.markdownRemark.frontmatter;
-  const { categories, tags } = data.markdownRemark.frontmatter;
+  const { title, description, type, date, featuredImage, featuredImageAlt, categories, tags } = data.markdownRemark.frontmatter;
+
+  const formConfig = {
+    id: data.markdownRemark.id,
+    label: "Blog Post",
+    initialValues: data.markdownRemark,
+    onSubmit: (values:any) => {
+      alert(`Submitting ${values.frontmatter.title}`)
+    },
+    fields: [
+      {
+        name: "frontmatter.title",
+        label: "Title",
+        component: "text",
+      },
+      {
+        name: "frontmatter.description",
+        label: "Description",
+        component: "textarea",
+      },
+    ],
+  }
+  // Create the form
+  const [post, form] = useForm(formConfig)
+  usePlugin(form)
+
+  const siteTitle = data.site.siteMetadata.title
+  const { previous, next } = pageContext
+
   return (
     <Layout pageTitle={title} pageDescription={description} datePublished={date}>
       <Wrapper>
@@ -78,7 +122,15 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
                 />
               )}
             </header>
-            <section dangerouslySetInnerHTML={{ __html: html }} />
+            <InlineWysiwyg
+              name="rawMarkdownBody"
+              imageProps={{
+                parse: (media) => `images/about/${media.filename}`,
+                uploadDir: () => 'public/images/about/',
+              }}
+            >
+              <section dangerouslySetInnerHTML={{ __html: html }} />
+            </InlineWysiwyg>
             <hr />
             {type !== "page" && (
               <footer>
@@ -122,33 +174,7 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
   );
 };
 
-export default PostTemplate;
 
-export const query = graphql`
-  query BlogPostQuery($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        categories
-        tags
-        type
-        description
-        date(formatString: "DD MMMM, YYYY")
-        featuredImage {
-          publicURL
-          childImageSharp {
-            fluid(maxWidth: 1240) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+export default PostTemplate
+
+

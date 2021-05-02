@@ -1,12 +1,15 @@
 ---
+title: 2020 Review / 2021 Aims
 categories:
   - personal
-date: "2020-12-04T15:21:21+01:00"
-description: "2020 has been ... a lot. But I've also learned a ton of stuff. Though I can't ever say I know enough of anything, my objectives for 2021 are going to be quite different from previous years..."
+date: '2020-12-04T15:21:21+01:00'
+description: >-
+  2020 has been ... a lot. But I've also learned a ton of stuff. Though I can't
+  ever say I know enough of anything, my objectives for 2021 are going to be
+  quite different from previous years...
 draft: false
 tags:
   - year in review
-title: 2020 Review / 2021 Aims
 ---
 
 **2020 has been ... a lot. But I've also learned a ton of stuff. Though I can't ever say I know enough of anything, my objectives for 2021 are going to be quite different from previous years...**
