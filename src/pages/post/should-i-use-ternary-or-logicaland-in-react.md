@@ -1,6 +1,6 @@
 ---
 title: Should I use ternary or the logical and (&&) operator?
-date: "2020-12-04T15:21:21+01:00"
+date: "2021-05-06T10:21:21+01:00"
 description: "Templating with JSX in React is easy ... until it's not. Recently a colleague recommended I use the logical and operator instead of a ternary. However once we'd dug into it a little, we found these operators do very different things ..."
 draft: false
 categories:
