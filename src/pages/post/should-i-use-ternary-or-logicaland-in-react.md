@@ -1,15 +1,16 @@
 ---
-title: Should I use ternary or the logical and (&&) operator?
+title: Should I use ternary or the logical and operator?
 date: "2021-05-06T10:21:21+01:00"
 description: "Templating with JSX in React is easy ... until it's not. Recently a colleague recommended I use the logical and operator instead of a ternary. However once we'd dug into it a little, we found these operators do very different things ..."
 draft: false
 categories:
-  - personal
+  - development
 tags:
-  - year in review
+  - javascript
+  - react
 ---
 
-Templating with JSX in React is easy ... until it's not. Recently a colleague recommended I use the logical and operator instead of a ternary. However once we'd dug into it a little, we found these operators do very different things ...
+**Templating with JSX in React is easy ... until it's not. Recently a colleague recommended I use the logical and operator instead of a ternary. However once we'd dug into it a little, we found these operators do very different things ...**
 
 Quite often we follow this pattern for brevity, and there's good value doing it if there's only one variable at play:
 
