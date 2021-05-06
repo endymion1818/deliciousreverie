@@ -1,0 +1,97 @@
+---
+title: Should I use ternary or the logical and (&&) operator?
+date: "2020-12-04T15:21:21+01:00"
+description: "Templating with JSX in React is easy ... until it's not. Recently a colleague recommended I use the logical and operator instead of a ternary. However once we'd dug into it a little, we found these operators do very different things ..."
+draft: false
+categories:
+  - personal
+tags:
+  - year in review
+---
+
+Templating with JSX in React is easy ... until it's not. Recently a colleague recommended I use the logical and operator instead of a ternary. However once we'd dug into it a little, we found these operators do very different things ...
+
+Quite often we follow this pattern for brevity, and there's good value doing it if there's only one variable at play:
+
+```javascript
+{
+  isLoggedIn && <SomeComponent />;
+}
+```
+
+This avoids us from having to write something like
+
+```javascript
+{
+  isLoggedIn ? <SomeComponent /> : null;
+}
+```
+
+which is totally redundant here, since if it's value is `false`, it won't return the component.
+
+However, when there's a couple of things going on you might find it doing something unexpected:
+
+```javascript
+{
+  formErrors.likesPotatoes ||
+  formErrors.likesBananas ||
+  formErrors.likesCake ? (
+    <NotificationMessage icon="alert" status="error">
+      <p>
+        Please ensure that all the required questions have been answered before
+        proceeding.
+      </p>
+    </NotificationMessage>
+  ) : null;
+}
+```
+
+is **not** equivalent to:
+
+```javascript
+{
+  formErrors.likesPotatoes ||
+    formErrors.likesBananas ||
+    (formErrors.likesCake && (
+      <NotificationMessage icon="alert" status="error">
+        <p>
+          Please ensure that all the required questions have been answered
+          before proceeding.
+        </p>
+      </NotificationMessage>
+    ));
+}
+```
+
+With the ternary operator (`isTrue ? dothis : dothat`), our `<NotificationMessage/>` will show when _any_ of the conditions are met. The logical AND (`isTrue && dothat`) will only show the component if _all_ of the conditions are met.
+
+Why?
+
+## The Difference between the logical AND and ternaries
+
+Ternaries work similar to the `if` operator. So it short circuits (closes off before any other variable is assessed), and returns true if any of the values are true.
+
+On the other hand, the logical AND operator returns true [only if and only if all of its operands are true](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND "MDN docs for logical and operator").
+
+In our case, when checking for form errors, we want to show a notification if _any_ of the fields have an error. So the ternary is the way to go.
+
+## Supplementary
+
+There is another way of handling this situation where you could use the logical AND: chain those errors in a variable before `return`ing the JSX:
+
+```javascript
+const hasError =
+  formErrors.likesPotatoes || formErrors.likesBananas || formErrors.likesCake;
+return (
+  <>
+    {hasError && (
+      <NotificationMessage icon="alert" status="error">
+        <p>
+          Please ensure that all the required questions have been answered
+          before proceeding.
+        </p>
+      </NotificationMessage>
+    )}
+  </>
+);
+```
