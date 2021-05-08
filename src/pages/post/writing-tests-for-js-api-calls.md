@@ -22,23 +22,24 @@ In our example of fetching data from an API, the API call could be successful, t
 
 Let's look at our imaginary API call to see what outcomes exist. Here's the code we're going to test:
 
-```
-import env from "./ENV"
-import axios from "axios"
+```javascript
+import env from "./ENV";
+import axios from "axios";
 
-
-const getApiData = (parameters = {}, domain = env.domain) => axios.get(`${domain}/api/v1/data/?${parameters}`)
-  .then(function (response) {
-    // handle success
-    if (!Array.isArray(data) || !data.length) {
-      return []
-    }
-    return data
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-})
+const getApiData = (parameters = {}, domain = env.domain) =>
+  axios
+    .get(`${domain}/api/v1/data/?${parameters}`)
+    .then(function (response) {
+      // handle success
+      if (!Array.isArray(data) || !data.length) {
+        return [];
+      }
+      return data;
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    });
 ```
 
 Looking at my code, I can see the following outcomes:
@@ -63,32 +64,32 @@ Although this test is about fetching data from the API, I don't want to actually
 
 To do that, I'm going to "mock" this function. When you "mock" something you essentially overwrite the function with a fake function. Let's first import the code that was written to fetch data from that API, and also the library that we used to connect to the API, Axios:
 
-```
-import GetApiData from './GetApiData'
-import axios from 'axios'
+```javascript
+import GetApiData from "./GetApiData";
+import axios from "axios";
 ```
 
 After importing it, we can overwrite the functionality of axios like this:
 
-```
-jest.mock('axios')
-const mockedAxios = axios.get
+```javascript
+jest.mock("axios");
+const mockedAxios = axios.get;
 ```
 
 Now, every time we call GetApiData in this file, and that calls Axios, it'll use our mocked implementation. Using it in the variable `mockedAxios` will help us identify clearly what we're doing when we write our tests.
 
 The last thing we want to set up in regard to our API is the domain. This would be a parameter that is passed via our configuration, or part of our environment variables. But we're not testing our environment variables, so we should mock that domain too:
 
-```
-const domain = 'http://fakeapi.com/'
+```javascript
+const domain = "http://fakeapi.com/";
 ```
 
 ### 2. Mock the console
 
 The next thing we want to mock is what we would have used in our code to log out errors: `console.log()`, for similar reasons we mentioned above: we're not testing the functionality of the console. Also, we don't want to actually log the errors to the console as we're running tests, but instead somewhere we can test the output.
 
-```
-const mockedConsole = jest.spyOn(global.console, 'error')
+```javascript
+const mockedConsole = jest.spyOn(global.console, "error");
 ```
 
 By using Jest's `SpyOn` function, we can examine when that function was called, and what it was called with ... it's actually is a spy function, reporting back to us (thankfully!).
@@ -97,25 +98,25 @@ By using Jest's `SpyOn` function, we can examine when that function was called, 
 
 Finally, because we're not contacting the api, we need to provide mocked data to test against as if though it did:
 
-```
+```javascript
 const mockedDataOne = {
   id: 1234,
-  title: 'Super Blog Post',
-  categories: ['1'],
+  title: "Super Blog Post",
+  categories: ["1"],
   _embedded: {
-    'term': [[{ name: 'Category' }]],
-    author: [{ name: 'Author' }],
+    term: [[{ name: "Category" }]],
+    author: [{ name: "Author" }],
   },
-}
+};
 const mockedDataTwo = {
   id: 165,
-  title: 'Super Post Two',
-  categories: ['2'],
+  title: "Super Post Two",
+  categories: ["2"],
   _embedded: {
-    'term': [[{ name: 'Category' }]],
-    author: [{ name: 'Author' }],
+    term: [[{ name: "Category" }]],
+    author: [{ name: "Author" }],
   },
-}
+};
 ```
 
 Right! Let's begin our tests with a wrapping description:
@@ -128,11 +129,11 @@ describe('GetApiData() Source data so we can consume it', () => {
 
 Last piece of setup here: we want to reset our mocked API call and console log before each new test, otherwise we'll have stale data left over from the previous test, which could cause subsequent tests to fail:
 
-```
+```javascript
 beforeEach(() => {
-    mockedAxios.mockReset()
-	mockedConsole.mockReset()
-})
+  mockedAxios.mockReset();
+  mockedConsole.mockReset();
+});
 ```
 
 Right, now we've set up our tests, and mocked the important stuff, let's dive into our first test ...
@@ -141,18 +142,18 @@ Right, now we've set up our tests, and mocked the important stuff, let's dive in
 
 Let's begin our tests with a wrapping description:
 
-```
+```javascript
 describe('GetApiData()', () => {
 ```
 
 This wrapping function describes the component, or makes a short statement to help us understand what these tests are for. If your function name adequately describes what it does, and you don't need a longer description, that's a good sign that you have named your function well!
 
-```
-it('Should get api data', async () => {
-	mockedAxios.mockResolvedValueOnce({ data: [{ test: 'Hi I worked!' }] })
-	const data = await getApiData(domain)
-	expect(mockedAxios).toBeCalledTimes(1)
-})
+```javascript
+it("Should get api data", async () => {
+  mockedAxios.mockResolvedValueOnce({ data: [{ test: "Hi I worked!" }] });
+  const data = await getApiData(domain);
+  expect(mockedAxios).toBeCalledTimes(1);
+});
 ```
 
 First thing to note: this is an _asynchronous_ function! `axios.get` is already an async function so it makes sense to test it asynchronously too. It's best to make api calls async because you have a callback even if something fails, rather than the request simply hanging indefinitely, which is bad for user experience.
@@ -171,21 +172,21 @@ Well ... how do we know our code contacted the right API endpoint? How do we kno
 
 Our next test will check that we have the data we expected in the return value of the `GetApiData()` function:
 
-```
+```javascript
 it('Should get data from the api', async () => {
 	mockedAxios.mockResolvedValueOnce({ data: [ mockedDataOne, mockedDataTwo ] })
 ```
 
 This time we're mocking the return value containing the two objects we originally set up.
 
-```
-	const data = await getApiData(domain)
-	expect(mockedAxios).toBeCalledTimes(1)
+```javascript
+const data = await getApiData(domain);
+expect(mockedAxios).toBeCalledTimes(1);
 ```
 
 Just as before, I like to check that we did actually call the `mockedAxios` function. Next I'm going to check one of the data objects to make sure it has the same `id` as `mockedDataOne`:
 
-```
+```javascript
   expect(data[0]).toEqual(
   expect.objectContaining({
       id: mockedDataOne.id
@@ -204,7 +205,7 @@ If nobody threw our ball back, then something is very wrong with the code we're 
 
 Here's our next assertion. We want to make sure our code passed the parameters we wanted, and returned the value we expected.
 
-```
+```javascript
   it('should get data using parameters', async () => {
     const params = {
       categories: ['2'],
@@ -213,7 +214,7 @@ Here's our next assertion. We want to make sure our code passed the parameters w
 
 So this time our `params` contain an array specifying category 2 should be fetched. Remember we mocked some data in our setup? How many of those mocked data sets has the category of `2`? Only one of them:`mockedDataTwo`.
 
-```
+```javascript
     mockAxios.mockResolvedValueOnce({ data: mockedDataTwo })
     await GetApiData(domain, params)
 
@@ -228,12 +229,12 @@ So this time our `params` contain an array specifying category 2 should be fetch
 
 Okay, so if this test passes, our code is passing the categories correctly. Great! But does the data reflect that?
 
-```
-	expect(data[0]).toEqual(
-      expect.objectContaining({
-        categories: ['2']
-      })
-    )
+```javascript
+expect(data[0]).toEqual(
+  expect.objectContaining({
+    categories: ["2"],
+  })
+);
 ```
 
 If this test passes, then great! We have successfully obtained data with the correct parameters.
@@ -246,15 +247,14 @@ These next two tests are to verify we have captured two significant _branches_, 
 
 If there hasn't been any data sent back to us after the API call, we have returned an array as a fallback so that we don't have an exception in our data layer. that can be used by our UI to provide a fallback - once the API call has been resolved.
 
-```
-it('Should return an empty array if no data was recieved', async () => {
+```javascript
+it("Should return an empty array if no data was recieved", async () => {
+  const data = await GetApiData(domain, params);
+  mockAxios.mockResolvedValueOnce({ data: null });
 
-	const data = await GetApiData(domain, params)
-	mockAxios.mockResolvedValueOnce({ data: null })
-
-	expect(mockAxios).toBeCalledTimes(1)
-	expect(Array.isArray(data)).toBeTruthy
-})
+  expect(mockAxios).toBeCalledTimes(1);
+  expect(Array.isArray(data)).toBeTruthy;
+});
 ```
 
 We're mocking a data object with a `null` value here to represent no values being returned from the API call. We're using `Array.isArray` because that is far more robust than using `isArray`, which is an older method that returns `true` for a number of different cases (don't ask...).
@@ -265,17 +265,17 @@ Logging errors is a vital part of a robust application. It's a great way of bein
 
 Our final test uses our `consoleMock` from our initial setup (see above):
 
-```
-  it('Should log an error if the request was unsuccessful', async () => {
-    const error = new Error('there was an error')
+```javascript
+it("Should log an error if the request was unsuccessful", async () => {
+  const error = new Error("there was an error");
 
-    mockAxios.mockRejectedValue(error)
-    await GetApiData(domain)
+  mockAxios.mockRejectedValue(error);
+  await GetApiData(domain);
 
-    expect(mockAxios).toBeCalledTimes(1)
-    expect(mockedConsole).toBeCalledTimes(1)
-    expect(mockedConsole).toBeCalledWith(error)
-  })
+  expect(mockAxios).toBeCalledTimes(1);
+  expect(mockedConsole).toBeCalledTimes(1);
+  expect(mockedConsole).toBeCalledWith(error);
+});
 ```
 
 the `consoleMock` function allows us to mock the functionality of the console.log object. Because we're testing that an error is thrown by our code, we need to use the `Error` object to test the output correctly.
