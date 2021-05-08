@@ -1,6 +1,6 @@
 ---
 title: Towards better hydration
-description: "There are two huge issues that we're facing with JavaScript. Well, perhaps three if you look at it in a different way. GatsbyJS and NextJS have made huge leaps forward but still haven't answered the key problems of rehydration and concurrency."
+description: "I came across a tool recently that I'm really excited about ... it's something that I think can solve one of the most pressing concerns in JavaScript development: rehydration."
 tags:
   - horizon thinking
 categories:
@@ -10,11 +10,15 @@ date: "2021-05-02T15:21:21+01:00"
 draft: false
 ---
 
-**There are two huge issues that we're facing with JavaScript. Well, perhaps three if you look at it in a different way. GatsbyJS and NextJS have made huge leaps forward but still haven't answered the key questions of rehydration and concurrency.**
+**I came across a tool recently that I'm really excited about ... it's something that I think can solve one of the most pressing concerns in JavaScript development: rehydration.**
 
-Very recently, I came across a project that aims to change all that. I think we're much closer to finding a suitable answer to these significant problems.
+Imagine how orange juice is transported: the water is removed to reduce the quantity, and water is added back - "rehydrated" - at the destination.
 
-## The issues
+A similar thing happens with the JavaScript we send down to our browsers. But there's a fundamental problem with that that I think needs to be solved before we can scale our applications for the next generation of frontend architecture.
+
+Today I think we're much closer to finding a suitable answer to this significant issue.
+
+## The issue
 
 JavaScript is inextricably tied to the other building blocks of the web: html and css. There's one property that allowed more and more control to be given to JavaScript:
 
@@ -40,9 +44,7 @@ However, when you want to add any dynamic functionaliy, you need to load on a se
 
 ## Solution 2: Next, Nuxt, Gatsby
 
-In sharp contrast to the static generators above, these SSGs send down HTML and then _rehydrate_ the entire page in JavaScript\*. This has some cool advantages, such as literally no overhead when making components dynamic or interactive, because, at the end of the day, the whole page is already rendered in JavaScript. But ... and this is a big but! ... it's expensive. Because every page has both HTML and JavaScript counterparts, it means bundle sizes are larger, and browsers are working harder to process JavaScript for scroll position, routing and even CSS styles.
-
-- an explanation of the term _rehydrate_: imagine how orange juice is transported: the water is removed to reduce the quantity, and water is added back ("rehydrated") at the destination.
+In sharp contrast to the static generators above, these SSGs send down HTML and then _rehydrate_ the entire page in JavaScript. This has some cool advantages, such as literally no overhead when making components dynamic or interactive, because, at the end of the day, the whole page is already rendered in JavaScript. But ... and this is a big but! ... it's expensive. Because every page has both HTML and JavaScript counterparts, it means bundle sizes are larger, and browsers are working harder to process JavaScript for scroll position, routing and even CSS styles.
 
 ## Many ideas, not so many that work yet ...
 
