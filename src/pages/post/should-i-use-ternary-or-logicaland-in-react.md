@@ -99,7 +99,7 @@ return (
 
 ## Alternative 2: Wrap it
 
-My friend Warrick Hill mentioned that you could also wrap the options in brackets to ensure they get evaluated together and therefore don't short circuit. This is how mathematical bracket operators work, where everything inside the brackets gets evaluated first, for example `(2 * 3) + 2 = 8` but 2 \* (3 + 2) = 10`:
+My friend Warrick Hill mentioned that you could also wrap the options in brackets to ensure they get evaluated together and therefore don't short circuit. This is how mathematical bracket operators work, where everything inside the brackets gets evaluated first, for example `(2 * 3) + 2 = 8` but `2 \* (3 + 2) = 10`:
 
 ```javascript
 return (
