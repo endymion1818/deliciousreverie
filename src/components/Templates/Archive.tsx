@@ -64,9 +64,9 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
             <Link to="/tags/poetry/">poetry reviews</Link>.
           </p>
           <p>
-            I like to try to help my peers.{" "}
+            I don't get everything right, and I like to try to help my peers.{" "}
             <Link to="/contact">Drop me a message</Link> if you'd like to say
-            hi!
+            hi, if you're looking for some help, or if I got something wrong.
           </p>
           <hr />
           <h2>Recent posts:</h2>
