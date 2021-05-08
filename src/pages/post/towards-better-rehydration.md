@@ -14,7 +14,7 @@ draft: false
 
 Imagine how orange juice is transported: the water is removed to reduce the quantity, and water is added back - "rehydrated" - at the destination.
 
-A similar thing happens with the JavaScript we send down to our browsers. But there's a fundamental problem with that that I think needs to be solved before we can scale our applications for the next generation of frontend architecture.
+A similar thing happens with a lot of modern JavaScript frameworks: they build static HTML pages (either when the application is built or on the server) send that down to the browser. But there's a fundamental problem with that that I think needs to be solved before we can scale our applications for the next generation of frontend architecture.
 
 Today I think we're much closer to finding a suitable answer to this significant issue.
 
@@ -36,19 +36,19 @@ But this creates a few issues:
 
 ## Solution 1: Hugo, Jekyll, Eleventy et al
 
-The first answer to this problem is static-site generation: use JS to compile in the pipeline, and serve static HTML to the browser. Certain static-site generators (like the ones mentioned above), excel at this.
+The first answer to this problem is static-site generation: use JS to compile in the pipeline, and serve only static HTML to the browser. Certain static-site generators (like the ones mentioned above), excel at this.
 
 The advantage of this approach is that HTML is still the fastest and best way to serve up content.
 
-However, when you want to add any dynamic functionaliy, you need to load on a separate JavaScript framework, like Vue, Alpine or React. Some static site generators bundle this functionality on, some just focus on statically generating pages. But still I think the problem remains: the static site and the javascript are _separate entities_, and it could sometimes be challenging to keep them in sync.
+However, when you want to add any dynamic functionality, you need to load on a separate JavaScript framework, like Vue, Alpine or React. Some static site generators bundle this functionality on, some just focus on statically generating pages. But still I think the problem remains: the static site and the javascript are _separate entities_, and it could sometimes be challenging to keep them in sync.
 
 ## Solution 2: Next, Nuxt, Gatsby
 
-In sharp contrast to the static generators above, these SSGs send down HTML and then _rehydrate_ the entire page in JavaScript. This has some cool advantages, such as literally no overhead when making components dynamic or interactive, because, at the end of the day, the whole page is already rendered in JavaScript. But ... and this is a big but! ... it's expensive. Because every page has both HTML and JavaScript counterparts, it means bundle sizes are larger, and browsers are working harder to process JavaScript for scroll position, routing and even CSS styles.
+In sharp contrast to the static generators above, these send down HTML and then _rehydrate_ the entire page in JavaScript. This has some cool advantages, such as literally no overhead when making components dynamic or interactive, because, at the end of the day, the whole page is already rendered in JavaScript. But ... and this is a big but! ... it's expensive. Because every page has both HTML and JavaScript counterparts, it means bundle sizes are larger, and browsers are working harder to process JavaScript for scroll position, routing and even CSS styles.
 
 ## Many ideas, not so many that work yet ...
 
-I've been trying to figure out how we negate these problems, because until we do, we face an impasse which prevents us from scaling our applications as we want — and from reaching broader audiences. The next billion web users come from countries where conditions are a lot less ... guaranteed.
+I've been trying to figure out how we negate these problems, because until we do, we face an impasse which prevents us from scaling our applications as we want — and from reaching broader audiences. Remember, the next billion web users come from countries where conditions are a lot less ... guaranteed.
 
 My attempt at this idea is what I currently do on my website: I allow people the _option_ to visit a statically-rendered HTML and CSS site, or to visit a JavaScript SPA rendered with Preact. That's fine to do on small blogs like this one, but it's not a viable option for sites when some complex functionality is required .. or even some simple functionality: my HTML site doesn't have animations or a search tool.
 
