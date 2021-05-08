@@ -76,7 +76,7 @@ On the other hand, the logical AND operator returns true [only if and only if al
 
 In our case, when checking for form errors, we want to show a notification if _any_ of the fields have an error. So the ternary is the way to go.
 
-## Alternative 1: abstract the ternary
+## Alternative 1: abstract it
 
 There is another way of handling this situation where you could use the logical AND: chain those errors in a variable before `return`ing the JSX:
 
@@ -97,7 +97,7 @@ return (
 );
 ```
 
-## Alternative 2: Wrap the ternary
+## Alternative 2: Wrap it
 
 My friend Warrick Hill mentioned that you could also wrap the options in brackets to ensure they get evaluated together and therefore don't short circuit. This is how mathematical bracket operators work, where everything inside the brackets gets evaluated first, for example `(2 * 3) + 2 = 8` but 2 \* (3 + 2) = 10`:
 
