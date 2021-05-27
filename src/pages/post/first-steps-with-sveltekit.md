@@ -21,7 +21,7 @@ However Svelte ... isn't just a framework. It's a compiler too. This facilitates
 
 ![Here's a comparison of some common JS frameworks](/images/moviano-jsframeworkcomparison.png "Chart showing popular JS frameworks as of today: React is hugely popular, but also much larger in size than others. Svelte has the smallest bundle size.")
 
-React is 42.2kb. By comparison, Preact is 4kb. But both require react-dom on top of their core libraries. By contrast, Svelte is 1.6kb. That blows my mind.
+React is 42.2kb including react-dom. By comparison, Preact is 4kb. By contrast, Svelte is 1.6kb. That blows my mind.
 
 In our day of multi-megabyte downloads for some websites (that I've seen), Svelte could really turn the tide.
 
