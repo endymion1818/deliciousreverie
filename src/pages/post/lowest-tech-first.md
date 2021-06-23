@@ -1,7 +1,7 @@
 ---
 title: Lowest tech first
-date: "2021-06-04T15:21:21+01:00"
-description: "Should I use CSS or JavaScript to perform this task? If you're asking yourself this question, I have an answer for you: use the lowest technology available to you first."
+date: "2021-06-23T10:21:21+01:00"
+description: "Should I use CSS or JavaScript to perform this task? If you're asking yourself this question, I have an answer for you: use the lowest technology available to you which can complete the task."
 draft: false
 tags:
   - javascript
@@ -9,7 +9,7 @@ categories:
   - development
 ---
 
-**Should I use CSS or JavaScript to perform this task? If you're asking yourself this question, I have an answer for you: use the lowest technology available to you first.**
+**Should I use CSS or JavaScript to perform this task? If you're asking yourself this question, I have an answer for you: use the lowest technology available to you which can complete the task.**
 
 I did a lot of prop threading the other day. I was updating our navigation section so that the last dropdown in the navigation would be positioned better.
 
@@ -20,14 +20,9 @@ I did a lot of prop threading the other day. I was updating our navigation secti
 My colleague pointed out that I was threading this through 3 successive components so I could apply some CSS to the menu, which is OK sometimes, but there could be a better way of doing it.
 
 ```css
-
-const Dropdown = styled.li`
-
-  &:last-of-type {
-    left: 0;
-  }
-`
-
+&:last-of-type {
+  left: 0;
+}
 ```
 
 Why is this better?
