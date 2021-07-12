@@ -2,7 +2,7 @@
 title: "React: data fetching results in type error: object is not a function"
 categories:
   - development
-date: "2017-07-15T14:21:21+01:00"
+date: "2021-07-12T10:21:21+01:00"
 description: "Sometimes I hate React, and I hate it when there are obscure errors that are a result of it's component lifecycle methods. But at least it means I can tell you about how to avoid them ..."
 draft: false
 tags:
