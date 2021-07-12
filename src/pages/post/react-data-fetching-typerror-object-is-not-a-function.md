@@ -27,7 +27,6 @@ async function getFacts() {
 }
 export default async function Home() {
   const facts = await getFacts();
-  console.log(facts)
   return (
     <div>
     {facts && facts.map(fact => (
@@ -58,7 +57,6 @@ export default async function Home() {
       getFacts().then(facts => setFacts(facts))
   }, [])
 
-  console.log(facts)
   return (
     <div>
     {facts && facts.map(fact => (
