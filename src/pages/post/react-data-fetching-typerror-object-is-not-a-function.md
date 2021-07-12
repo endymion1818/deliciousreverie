@@ -3,14 +3,14 @@ title: "React: data fetching results in type error: object is not a function"
 categories:
   - development
 date: "2021-07-12T10:21:21+01:00"
-description: "Sometimes I hate React, and I hate it when there are obscure errors that are a result of it's component lifecycle methods. But at least it means I can tell you about how to avoid them ..."
+description: "Sometimes I get frustrated with React, there can still sometimes be obscure errors that are a result of it's component lifecycle methods. But at least it means I can tell you about how to avoid them ..."
 draft: false
 tags:
   - javascript
   - indigotree
 ---
 
-**Sometimes I hate React, and I hate it when there are obscure errors that are a result of it's component lifecycle methods. But at least it means I can tell you about how to avoid them ...**
+**Sometimes I get frustrated with React, there can still sometimes be obscure errors that are a result of it's component lifecycle methods. But at least it means I can tell you about how to avoid them ...**
 
 Take a look at this code a second. There's nothing wrong with the fetch() resolution, the API works fine. There's nothing wrong with the render method either.
 
