@@ -51,6 +51,10 @@ In the Vue world, there are plenty of choices, from the more low-level Nuxt, to 
 
 Similarly, Gatsby or NextJS are React frameworks. Gatsby has a large plugin ecosystem and GraphQL build-time API, whereas NextJS has a more low-level approach, you source data yourself, and plugins are scarce and likely not officially supported.
 
+I must admit i really enjoy using the build-time data layer approach. It's much easier to see when things are going to be rendered, and you can save API calls for your visitors by doing them upfront at the build stage.
+
+But also Next and Nuxt have some tricks up their sleeves. Next's innovated ISR "incremental static regeneration" means it can keep content more fresh than Gatsby currently can. However I imagine that's going to be a short-lived triumph.
+
 ## Go forth and build!
 
 Phew! There's a lot to choose from isn't there?!
