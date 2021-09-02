@@ -1,5 +1,5 @@
 ---
-title: How to resolve Jest issues: tests passing, but code coverage fails!
+title: "How to resolve Jest issues: tests passing, but code coverage fails!"
 date: "2021-08-02T15:21:21+01:00"
 description: "Today I'm continuing with my trend of making silly mistakes so you don't have to. The subject today is asynchronous tests in Jest. I've spent too much time on this one, and I don't want you to have the same trouble!"
 categories:
