@@ -136,7 +136,7 @@ const defaultPlugins = [
     resolve: `gatsby-plugin-sitemap`,
     options: {
       output: `/sitemap.xml`,
-      exclude: [],
+      excludes: [],
     },
   },
   {
