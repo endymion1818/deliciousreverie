@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import { Helmet } from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
-import Skybird from "../../assets/Skybird-Regular.woff2";
+import Lovechild from "../../assets/Lovechild-Regular.woff2";
 import ButtonStyles from "../Atoms/ButtonStyles";
 import Wrapper from "../Atoms/Wrapper";
 import ErrorBoundary from "../Molecules/ErrorBoundary";
@@ -77,8 +77,8 @@ const GlobalStyle = createGlobalStyle`
     font-display: auto;
   }
   @font-face {
-    font-family: Skybird;
-    src: url(${Skybird});
+    font-family: Lovechild;
+    src: url(${Lovechild});
     font-display: swap;
   }
   body {
@@ -91,7 +91,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: Skybird;
+    font-family: Lovechild;
   }
   p {
     line-height: 1.2;
@@ -199,7 +199,7 @@ const Layout: FC<ILayoutProps> = ({
               </script>
               <link
                 rel="preload"
-                href={Skybird}
+                href={Lovechild}
                 as="font"
                 crossOrigin="anonymous"
               />

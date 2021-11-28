@@ -36,7 +36,7 @@ const Blockquote = styled.blockquote`
 
   span {
     font-size: ${size.double};
-    font-family: Skybird;
+    font-family: Lovechild;
   }
 `;
 
