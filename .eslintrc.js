@@ -82,7 +82,7 @@ module.exports = {
                 }
             }
         ],
-        "@typescript-eslint/naming-convention": "error",
+        "@typescript-eslint/naming-convention": "off",
         "@typescript-eslint/no-empty-function": "error",
         "@typescript-eslint/no-empty-interface": "off",
         "@typescript-eslint/no-explicit-any": "error",
