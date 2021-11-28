@@ -36,7 +36,7 @@ const Blockquote = styled.blockquote`
 
   span {
     font-size: ${size.double};
-    font-family: Skybird;
+    font-family: Lovechild;
   }
 `;
 
@@ -81,8 +81,8 @@ const Footer: FC<IFooterProps> = ({ siteTitle, siteDescription }) => (
             <p>
               <Link to={withPrefix("/")}>{siteTitle}</Link> is the{" "}
               {siteDescription}. Set in{" "}
-              <Anchor href="https://shapedfonts.com/project/skybird/">
-                Skybird
+              <Anchor href="https://beastsofengland.co/products/lovechild-2">
+                Lovechild
               </Anchor>{" "}
               and your system font. Built with Gatsby, hosted by Netlify. &copy;
               Some rights are reserved. This site doesn't use any cookies or

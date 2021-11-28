@@ -16,7 +16,9 @@ The style of the site reflects my enjoyment of the countryside, especially durin
 
 Text and background colours have been selected that hopefully improve readability for those with cognitive and visual impairments.
 
-As soon as I saw the "Skybird" typeface I fell in love with it. It perfectly reflects my interest in a personal, home-grown, labour-of-love approach to crafted work instead of what can end up looking mass-produced, impersonal and somewhat homogenous.
+The original font on this site was Skybird. As soon as I saw the "Skybird" typeface I fell in love with it. It perfectly reflects my interest in a personal, home-grown, labour-of-love approach to crafted work instead of what can end up looking mass-produced, impersonal and somewhat homogenous.
+
+However, I've recently moved to "Lovechild" to reflect my growing interest in the folk & roots movement of the 70s, which eschewed conformity in favour of a similar homegrown, personal feel towards things. Also, I recieved a few comments that the font "Skybird" was difficult to read for people with dyslexia, and I don't want to limit access to my content for them.
 
 ## The Name
 I called this site "Delicious Reverie" after an expression which occurs in Norman Denny's English translation of Victor Hugo's epic masterpiece _Les Miserables_.
