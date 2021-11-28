@@ -6,10 +6,10 @@ import Page from "../components/Templates/Page";
 export interface ITagsPageProps {
   data: {
     allMarkdownRemark: {
-      group: Array<{
+      group: {
         fieldValue: number;
         totalCount: number;
-      }>;
+      }[];
     };
   };
 }
