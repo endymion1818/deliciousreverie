@@ -1,6 +1,6 @@
 ---
 title: On digital estates
-date: "2021-11-16T15:21:21+01:00"
+date: "2021-11-29T15:21:21+01:00"
 description: "I recently heard the term 'Digital estate' to mean the technical property of an organisation. This, and the associations the term provides, have got me thinking about how we contribute to the success of organisations over time..."
 draft: false
 categories:
