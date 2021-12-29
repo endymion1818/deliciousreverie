@@ -16,6 +16,7 @@ const Scene = styled.aside`
 `;
 
 const Rabbits = () => {
+
   const treeSummer = useRef(null) 
   const rabbitOne = useRef(null)
   const rabbitTwo = useRef(null)
@@ -24,13 +25,15 @@ const Rabbits = () => {
   const rabbitFive = useRef(null)
   const rabbitSix = useRef(null)
   const rabbitSeven = useRef(null)
+
   const scrollYPosition = useScrollYPosition()
 
   function getScrollPercent() {
-      return (
-          scrollYPosition || document.body.scrollTop) / (
-            (document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight
-        ) * 100;
+    if(!document) return false
+    return (
+        scrollYPosition || document.body.scrollTop) / (
+          (document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight
+      ) * 100;
   }
 
   function useScrollHeightToChangeOpacity(
