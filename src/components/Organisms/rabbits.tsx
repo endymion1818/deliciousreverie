@@ -23,26 +23,27 @@ const Rabbits = () => {
   const rabbitFour = useRef(null)
   const rabbitFive = useRef(null)
   const rabbitSix = useRef(null)
-  const rabbitSeven = useRef(null);
-  const scrollYPosition = useScrollYPosition();
+  const rabbitSeven = useRef(null)
+  const scrollYPosition = useScrollYPosition()
 
   function getScrollPercent() {
       return (
           scrollYPosition || document.body.scrollTop) / (
             (document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight
         ) * 100;
-  };
+  }
 
   function useScrollHeightToChangeOpacity(
-    domElement:HTMLDivElement,
+    domElement: any,
     inHeight:number, 
     outHeight:number
   ) {
+    const scrollPercent = getScrollPercent()
     if(typeof window !== 'undefined') return
-    if (getScrollPercent() > inHeight &&  getScrollPercent() < outHeight){
-      domElement.style.opacity = '0.8'
+    if (scrollPercent > inHeight &&  getScrollPercent() < outHeight){
+      domElement.current.style.opacity = '0.8'
     } else { 
-      domElement.style.opacity = '0'
+      domElement.current.style.opacity = '0'
     }
   }
 
