@@ -1,4 +1,3 @@
-import { Link, navigate } from "gatsby";
 import React, { FC, useEffect, useState } from "react";
 import SearchForm from "../components/Molecules/SearchForm";
 import Page from "../components/Templates/Page";
@@ -53,7 +52,7 @@ const Search: FC<ISearchProps> = ({ location }) => {
       }
     }
     /* tslint:enable */
-  }, []);
+  }, [searchQuery]);
 
   return (
     <Page pageTitle="Search this site" pageDescription="Search results">
