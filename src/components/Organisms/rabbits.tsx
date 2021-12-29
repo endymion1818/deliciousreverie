@@ -29,7 +29,7 @@ const Rabbits = () => {
   const scrollYPosition = useScrollYPosition()
 
   function getScrollPercent() {
-    if(!document) return false
+    if(typeof document === 'undefined') return false
     return (
         scrollYPosition || document.body.scrollTop) / (
           (document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight
