@@ -1,4 +1,3 @@
-import { Link, navigate } from "gatsby";
 import React, { FC, useEffect, useState } from "react";
 import SearchForm from "../components/Molecules/SearchForm";
 import Page from "../components/Templates/Page";
@@ -37,10 +36,10 @@ const Search: FC<ISearchProps> = ({ location }) => {
   let searchQuery = "";
   const { search } = location;
 
-  if (typeof window !== "undefined") {
     searchQuery = new URLSearchParams(search).get("keywords") || "";
-
-    useEffect(() => {
+    
+  useEffect(() => {
+    if (typeof window !== "undefined") {
       // LUNR type definitions do not yet include its extension on the window object
       /* tslint:disable */
       const { __LUNR__ }: any = window;
@@ -51,9 +50,10 @@ const Search: FC<ISearchProps> = ({ location }) => {
           setResults(posts);
         });
       }
-      /* tslint:enable */
-    }, []);
-  }
+    }
+    /* tslint:enable */
+  }, [searchQuery]);
+
   return (
     <Page pageTitle="Search this site" pageDescription="Search results">
       <h1>Search</h1>
