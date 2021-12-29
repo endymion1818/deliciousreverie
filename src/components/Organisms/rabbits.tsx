@@ -37,16 +37,18 @@ const Rabbits = () => {
   }
 
   function useScrollHeightToChangeOpacity(
-    domElement: any,
+    domElement: HTMLElement,
     inHeight:number, 
     outHeight:number
   ) {
     const scrollPercent = getScrollPercent()
     if(typeof window !== 'undefined') return
-    if (scrollPercent > inHeight &&  getScrollPercent() < outHeight){
-      domElement.current.style.opacity = '0.8'
+    if(!domElement) return
+    
+    if (scrollPercent > inHeight &&  scrollPercent < outHeight){
+      domElement.style.opacity = '0.8'
     } else { 
-      domElement.current.style.opacity = '0'
+      domElement.style.opacity = '0'
     }
   }
 
