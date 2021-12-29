@@ -25,11 +25,7 @@ interface IPostTemplateProps {
         type: string;
         description: string;
         featuredImageAlt: string;
-        featuredImage: {
-          childImageSharp: {
-            fluid: FluidObject;
-          };
-        };
+        featuredImage: FluidObject
         title: string;
         date: string;
         categories: string[];
@@ -61,7 +57,7 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
   const { description } = data.markdownRemark.frontmatter;
   const { type } = data.markdownRemark.frontmatter;
   const { date } = data.markdownRemark.frontmatter;
-  const { featuredImage } = data.markdownRemark.frontmatter;
+  const featuredImgFluid = data.markdownRemark.frontmatter.featuredImage
   const { featuredImageAlt } = data.markdownRemark.frontmatter;
   const { categories, tags } = data.markdownRemark.frontmatter;
   return (
@@ -71,9 +67,9 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
           <article className="h-entry">
             <header>
               <h1>{title}</h1>
-              {featuredImage && (
+              {featuredImgFluid && (
                 <Img
-                  fluid={featuredImage.childImageSharp.fluid}
+                  fluid={featuredImgFluid}
                   alt={featuredImageAlt}
                 />
               )}
@@ -140,14 +136,7 @@ export const query = graphql`
         type
         description
         date(formatString: "DD MMMM, YYYY")
-        featuredImage {
-          publicURL
-          childImageSharp {
-            fluid(maxWidth: 1240) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        featuredImage
       }
     }
   }

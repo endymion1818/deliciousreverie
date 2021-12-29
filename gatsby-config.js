@@ -4,6 +4,15 @@ require("dotenv").config();
 
 const defaultPlugins = [
   `gatsby-plugin-typescript`,
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `image`,
+      path: `${__dirname}/src/assets/`,
+    },
+  },
   {
     resolve: `gatsby-source-filesystem`,
     options: {
@@ -32,16 +41,7 @@ const defaultPlugins = [
       path: `${__dirname}/src/pages/`,
     },
   },
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `image`,
-      path: `${__dirname}/src/assets/`,
-    },
-  },
   `gatsby-transformer-javascript-frontmatter`,
-  `gatsby-plugin-sharp`,
-  `gatsby-transformer-sharp`,
   `gatsby-plugin-webpack-size`,
   {
     resolve: `gatsby-plugin-react-svg`,

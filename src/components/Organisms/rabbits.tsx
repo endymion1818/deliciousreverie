@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { useScrollYPosition } from 'react-use-scroll-position'
 import styled from "styled-components";
 
@@ -16,31 +16,6 @@ const Scene = styled.aside`
 `;
 
 const Rabbits = () => {
-
-  if(typeof window === 'undefined') { return <></> }
-  if(window.innerWidth < 998 ) { return <></> }
-
-  const scrollYPosition = useScrollYPosition()
-
-function getScrollPercent() {
-    return (
-        scrollYPosition || document.body.scrollTop) / (
-          (document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight
-      ) * 100;
-}
-
-  const useScrollHeightToChangeOpacity = (
-    domElement:HTMLDivElement,
-    inHeight:number, 
-    outHeight:number
-  ) => {
-    if (getScrollPercent() > inHeight &&  getScrollPercent() < outHeight){
-      domElement.style.opacity = '0.8'
-    } else { 
-      domElement.style.opacity = '0'
-    }
-  }
-
   const treeSummer = useRef(null) 
   const rabbitOne = useRef(null)
   const rabbitTwo = useRef(null)
@@ -49,17 +24,39 @@ function getScrollPercent() {
   const rabbitFive = useRef(null)
   const rabbitSix = useRef(null)
   const rabbitSeven = useRef(null);
+  const scrollYPosition = useScrollYPosition();
 
-    useEffect(() => {
-      useScrollHeightToChangeOpacity(rabbitOne.current!, 5, 10)
-      useScrollHeightToChangeOpacity(rabbitOne.current!, 8, 15)
-      useScrollHeightToChangeOpacity(rabbitTwo.current!, 20, 25)
-      useScrollHeightToChangeOpacity(rabbitThree.current!, 30, 40)
-      useScrollHeightToChangeOpacity(rabbitFour.current!, 45, 60)
-      useScrollHeightToChangeOpacity(rabbitFive.current!, 65, 80)
-      useScrollHeightToChangeOpacity(rabbitSix.current!, 85, 90)
-      useScrollHeightToChangeOpacity(rabbitSeven.current!, 90, 95)
-    }, [getScrollPercent]);
+  function getScrollPercent() {
+      return (
+          scrollYPosition || document.body.scrollTop) / (
+            (document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight
+        ) * 100;
+  };
+
+  function useScrollHeightToChangeOpacity(
+    domElement:HTMLDivElement,
+    inHeight:number, 
+    outHeight:number
+  ) {
+    if(typeof window !== 'undefined') return
+    if (getScrollPercent() > inHeight &&  getScrollPercent() < outHeight){
+      domElement.style.opacity = '0.8'
+    } else { 
+      domElement.style.opacity = '0'
+    }
+  }
+
+  useScrollHeightToChangeOpacity(rabbitOne.current!, 5, 10)
+  useScrollHeightToChangeOpacity(rabbitOne.current!, 8, 15)
+  useScrollHeightToChangeOpacity(rabbitTwo.current!, 20, 25)
+  useScrollHeightToChangeOpacity(rabbitThree.current!, 30, 40)
+  useScrollHeightToChangeOpacity(rabbitFour.current!, 45, 60)
+  useScrollHeightToChangeOpacity(rabbitFive.current!, 65, 80)
+  useScrollHeightToChangeOpacity(rabbitSix.current!, 85, 90)
+  useScrollHeightToChangeOpacity(rabbitSeven.current!, 90, 95)
+  
+  if(typeof window === 'undefined') { return <></> }
+  if(window.innerWidth < 998 ) { return <></> }
   
   return (
     <Scene className="scene">
