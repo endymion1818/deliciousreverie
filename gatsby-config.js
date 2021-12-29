@@ -14,6 +14,12 @@ const defaultPlugins = [
     },
   },
   {
+    resolve: `gatsby-remark-relative-images`,
+    options: {
+      include: ['featuredImage'],
+    },
+  },
+  {
     resolve: `gatsby-source-filesystem`,
     options: {
       name: `src`,
